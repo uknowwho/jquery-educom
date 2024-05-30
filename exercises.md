@@ -2,7 +2,8 @@
 
 `jq '. [] | {country: .country, population_density: (.population_1970 / .area_km2)}' < world-population.json`
 
-```yaml [{
+```yaml
+[{
   "country": "Afghanistan",
   "population_density": 16.48647103015807
 }
@@ -937,6 +938,6 @@
 {
   "country": "Zimbabwe",
   "population_density": 13.31497068510609
-}]```
-
+}]
+```
 `jq `
