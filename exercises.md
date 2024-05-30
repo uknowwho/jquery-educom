@@ -940,4 +940,4510 @@
   "population_density": 13.31497068510609
 }]
 ```
-`jq `
+
+`jq '. [] | {population_growth: (.population_1970 - .population_2022)} | map_values(abs) ' < world-population.json`
+
+```yaml
+[{
+  "country": "Afghanistan",
+  "absolute_population_growth": 30375800
+}
+{
+  "country": "Albania",
+  "absolute_population_growth": 517590
+}
+{
+  "country": "Algeria",
+  "absolute_population_growth": 31107310
+}
+{
+  "country": "American Samoa",
+  "absolute_population_growth": 17198
+}
+{
+  "country": "Andorra",
+  "absolute_population_growth": 59964
+}
+{
+  "country": "Angola",
+  "absolute_population_growth": 29559287
+}
+{
+  "country": "Anguilla",
+  "absolute_population_growth": 9574
+}
+{
+  "country": "Antigua and Barbuda",
+  "absolute_population_growth": 29247
+}
+{
+  "country": "Argentina",
+  "absolute_population_growth": 21667515
+}
+{
+  "country": "Armenia",
+  "absolute_population_growth": 246092
+}
+{
+  "country": "Aruba",
+  "absolute_population_growth": 47339
+}
+{
+  "country": "Australia",
+  "absolute_population_growth": 13582379
+}
+{
+  "country": "Austria",
+  "absolute_population_growth": 1474316
+}
+{
+  "country": "Azerbaijan",
+  "absolute_population_growth": 4932757
+}
+{
+  "country": "Bahamas",
+  "absolute_population_growth": 230855
+}
+{
+  "country": "Bahrain",
+  "absolute_population_growth": 1249678
+}
+{
+  "country": "Bangladesh",
+  "absolute_population_growth": 103644512
+}
+{
+  "country": "Barbados",
+  "absolute_population_growth": 40238
+}
+{
+  "country": "Belarus",
+  "absolute_population_growth": 364168
+}
+{
+  "country": "Belgium",
+  "absolute_population_growth": 2026554
+}
+{
+  "country": "Belize",
+  "absolute_population_growth": 284367
+}
+{
+  "country": "Benin",
+  "absolute_population_growth": 10329421
+}
+{
+  "country": "Bermuda",
+  "absolute_population_growth": 12165
+}
+{
+  "country": "Bhutan",
+  "absolute_population_growth": 483561
+}
+{
+  "country": "Bolivia",
+  "absolute_population_growth": 7638417
+}
+{
+  "country": "Bosnia and Herzegovina",
+  "absolute_population_growth": 582035
+}
+{
+  "country": "Botswana",
+  "absolute_population_growth": 2038052
+}
+{
+  "country": "Brazil",
+  "absolute_population_growth": 118943623
+}
+{
+  "country": "British Virgin Islands",
+  "absolute_population_growth": 21724
+}
+{
+  "country": "Brunei",
+  "absolute_population_growth": 315659
+}
+{
+  "country": "Bulgaria",
+  "absolute_population_growth": 1800997
+}
+{
+  "country": "Burkina Faso",
+  "absolute_population_growth": 17062096
+}
+{
+  "country": "Burundi",
+  "absolute_population_growth": 9391742
+}
+{
+  "country": "Cambodia",
+  "absolute_population_growth": 10059317
+}
+{
+  "country": "Cameroon",
+  "absolute_population_growth": 21461749
+}
+{
+  "country": "Canada",
+  "absolute_population_growth": 17019750
+}
+{
+  "country": "Cape Verde",
+  "absolute_population_growth": 305887
+}
+{
+  "country": "Cayman Islands",
+  "absolute_population_growth": 58173
+}
+{
+  "country": "Central African Republic",
+  "absolute_population_growth": 3511788
+}
+{
+  "country": "Chad",
+  "absolute_population_growth": 14055921
+}
+{
+  "country": "Chile",
+  "absolute_population_growth": 9783252
+}
+{
+  "country": "China",
+  "absolute_population_growth": 603352887
+}
+{
+  "country": "Colombia",
+  "absolute_population_growth": 30968770
+}
+{
+  "country": "Comoros",
+  "absolute_population_growth": 594423
+}
+{
+  "country": "Cook Islands",
+  "absolute_population_growth": 3459
+}
+{
+  "country": "Costa Rica",
+  "absolute_population_growth": 3325132
+}
+{
+  "country": "Croatia",
+  "absolute_population_growth": 462280
+}
+{
+  "country": "Cuba",
+  "absolute_population_growth": 2342555
+}
+{
+  "country": "Curacao",
+  "absolute_population_growth": 40778
+}
+{
+  "country": "Cyprus",
+  "absolute_population_growth": 610684
+}
+{
+  "country": "Czech Republic",
+  "absolute_population_growth": 698242
+}
+{
+  "country": "Denmark",
+  "absolute_population_growth": 959298
+}
+{
+  "country": "Djibouti",
+  "absolute_population_growth": 976470
+}
+{
+  "country": "Dominica",
+  "absolute_population_growth": 3842
+}
+{
+  "country": "Dominican Republic",
+  "absolute_population_growth": 6752950
+}
+{
+  "country": "DR Congo",
+  "absolute_population_growth": 78858479
+}
+{
+  "country": "Ecuador",
+  "absolute_population_growth": 11828785
+}
+{
+  "country": "Egypt",
+  "absolute_population_growth": 76208117
+}
+{
+  "country": "El Salvador",
+  "absolute_population_growth": 2717302
+}
+{
+  "country": "Equatorial Guinea",
+  "absolute_population_growth": 1357953
+}
+{
+  "country": "Eritrea",
+  "absolute_population_growth": 2411284
+}
+{
+  "country": "Estonia",
+  "absolute_population_growth": 35937
+}
+{
+  "country": "Eswatini",
+  "absolute_population_growth": 758805
+}
+{
+  "country": "Ethiopia",
+  "absolute_population_growth": 95071678
+}
+{
+  "country": "Falkland Islands",
+  "absolute_population_growth": 1506
+}
+{
+  "country": "Faroe Islands",
+  "absolute_population_growth": 14674
+}
+{
+  "country": "Fiji",
+  "absolute_population_growth": 402132
+}
+{
+  "country": "Finland",
+  "absolute_population_growth": 934124
+}
+{
+  "country": "France",
+  "absolute_population_growth": 14103042
+}
+{
+  "country": "French Guiana",
+  "absolute_population_growth": 258073
+}
+{
+  "country": "French Polynesia",
+  "absolute_population_growth": 188388
+}
+{
+  "country": "Gabon",
+  "absolute_population_growth": 1791800
+}
+{
+  "country": "Gambia",
+  "absolute_population_growth": 2177261
+}
+{
+  "country": "Georgia",
+  "absolute_population_growth": 1056041
+}
+{
+  "country": "Germany",
+  "absolute_population_growth": 5075260
+}
+{
+  "country": "Ghana",
+  "absolute_population_growth": 24613975
+}
+{
+  "country": "Gibraltar",
+  "absolute_population_growth": 5964
+}
+{
+  "country": "Greece",
+  "absolute_population_growth": 1840098
+}
+{
+  "country": "Greenland",
+  "absolute_population_growth": 11032
+}
+{
+  "country": "Grenada",
+  "absolute_population_growth": 26644
+}
+{
+  "country": "Guadeloupe",
+  "absolute_population_growth": 77442
+}
+{
+  "country": "Guam",
+  "absolute_population_growth": 83474
+}
+{
+  "country": "Guatemala",
+  "absolute_population_growth": 12390700
+}
+{
+  "country": "Guernsey",
+  "absolute_population_growth": 10645
+}
+{
+  "country": "Guinea",
+  "absolute_population_growth": 9636967
+}
+{
+  "country": "Guinea-Bissau",
+  "absolute_population_growth": 1513903
+}
+{
+  "country": "Guyana",
+  "absolute_population_growth": 103465
+}
+{
+  "country": "Haiti",
+  "absolute_population_growth": 6904184
+}
+{
+  "country": "Honduras",
+  "absolute_population_growth": 7650107
+}
+{
+  "country": "Hong Kong",
+  "absolute_population_growth": 3533793
+}
+{
+  "country": "Hungary",
+  "absolute_population_growth": 348058
+}
+{
+  "country": "Iceland",
+  "absolute_population_growth": 168431
+}
+{
+  "country": "India",
+  "absolute_population_growth": 859671872
+}
+{
+  "country": "Indonesia",
+  "absolute_population_growth": 160272945
+}
+{
+  "country": "Iran",
+  "absolute_population_growth": 60100865
+}
+{
+  "country": "Iraq",
+  "absolute_population_growth": 34684775
+}
+{
+  "country": "Ireland",
+  "absolute_population_growth": 2085472
+}
+{
+  "country": "Isle of Man",
+  "absolute_population_growth": 29221
+}
+{
+  "country": "Israel",
+  "absolute_population_growth": 6131002
+}
+{
+  "country": "Italy",
+  "absolute_population_growth": 5713438
+}
+{
+  "country": "Ivory Coast",
+  "absolute_population_growth": 22683456
+}
+{
+  "country": "Jamaica",
+  "absolute_population_growth": 968286
+}
+{
+  "country": "Japan",
+  "absolute_population_growth": 18534853
+}
+{
+  "country": "Jersey",
+  "absolute_population_growth": 42431
+}
+{
+  "country": "Jordan",
+  "absolute_population_growth": 9728495
+}
+{
+  "country": "Kazakhstan",
+  "absolute_population_growth": 7132693
+}
+{
+  "country": "Kenya",
+  "absolute_population_growth": 42554400
+}
+{
+  "country": "Kiribati",
+  "absolute_population_growth": 73795
+}
+{
+  "country": "Kuwait",
+  "absolute_population_growth": 3466087
+}
+{
+  "country": "Kyrgyzstan",
+  "absolute_population_growth": 3614239
+}
+{
+  "country": "Laos",
+  "absolute_population_growth": 4854192
+}
+{
+  "country": "Latvia",
+  "absolute_population_growth": 546763
+}
+{
+  "country": "Lebanon",
+  "absolute_population_growth": 3107948
+}
+{
+  "country": "Lesotho",
+  "absolute_population_growth": 1282344
+}
+{
+  "country": "Liberia",
+  "absolute_population_growth": 3839118
+}
+{
+  "country": "Libya",
+  "absolute_population_growth": 4903164
+}
+{
+  "country": "Liechtenstein",
+  "absolute_population_growth": 18238
+}
+{
+  "country": "Lithuania",
+  "absolute_population_growth": 460092
+}
+{
+  "country": "Luxembourg",
+  "absolute_population_growth": 308257
+}
+{
+  "country": "Macau",
+  "absolute_population_growth": 447884
+}
+{
+  "country": "Madagascar",
+  "absolute_population_growth": 22971963
+}
+{
+  "country": "Malawi",
+  "absolute_population_growth": 15780176
+}
+{
+  "country": "Malaysia",
+  "absolute_population_growth": 23631713
+}
+{
+  "country": "Maldives",
+  "absolute_population_growth": 400544
+}
+{
+  "country": "Mali",
+  "absolute_population_growth": 16440003
+}
+{
+  "country": "Malta",
+  "absolute_population_growth": 217872
+}
+{
+  "country": "Marshall Islands",
+  "absolute_population_growth": 17600
+}
+{
+  "country": "Martinique",
+  "absolute_population_growth": 41079
+}
+{
+  "country": "Mauritania",
+  "absolute_population_growth": 3613941
+}
+{
+  "country": "Mauritius",
+  "absolute_population_growth": 469354
+}
+{
+  "country": "Mayotte",
+  "absolute_population_growth": 290718
+}
+{
+  "country": "Mexico",
+  "absolute_population_growth": 77214819
+}
+{
+  "country": "Micronesia",
+  "absolute_population_growth": 55175
+}
+{
+  "country": "Moldova",
+  "absolute_population_growth": 438144
+}
+{
+  "country": "Monaco",
+  "absolute_population_growth": 12199
+}
+{
+  "country": "Mongolia",
+  "absolute_population_growth": 2104486
+}
+{
+  "country": "Montenegro",
+  "absolute_population_growth": 96814
+}
+{
+  "country": "Montserrat",
+  "absolute_population_growth": 7012
+}
+{
+  "country": "Morocco",
+  "absolute_population_growth": 22183620
+}
+{
+  "country": "Mozambique",
+  "absolute_population_growth": 24557841
+}
+{
+  "country": "Myanmar",
+  "absolute_population_growth": 26895194
+}
+{
+  "country": "Namibia",
+  "absolute_population_growth": 1812545
+}
+{
+  "country": "Nauru",
+  "absolute_population_growth": 6005
+}
+{
+  "country": "Nepal",
+  "absolute_population_growth": 18046295
+}
+{
+  "country": "Netherlands",
+  "absolute_population_growth": 4526328
+}
+{
+  "country": "New Caledonia",
+  "absolute_population_growth": 178968
+}
+{
+  "country": "New Zealand",
+  "absolute_population_growth": 2361227
+}
+{
+  "country": "Nicaragua",
+  "absolute_population_growth": 4503625
+}
+{
+  "country": "Niger",
+  "absolute_population_growth": 21538269
+}
+{
+  "country": "Nigeria",
+  "absolute_population_growth": 162971948
+}
+{
+  "country": "Niue",
+  "absolute_population_growth": 3251
+}
+{
+  "country": "North Korea",
+  "absolute_population_growth": 11072537
+}
+{
+  "country": "North Macedonia",
+  "absolute_population_growth": 436816
+}
+{
+  "country": "Northern Mariana Islands",
+  "absolute_population_growth": 39408
+}
+{
+  "country": "Norway",
+  "absolute_population_growth": 1558773
+}
+{
+  "country": "Oman",
+  "absolute_population_growth": 3905605
+}
+{
+  "country": "Pakistan",
+  "absolute_population_growth": 176533990
+}
+{
+  "country": "Palau",
+  "absolute_population_growth": 6689
+}
+{
+  "country": "Palestine",
+  "absolute_population_growth": 4131831
+}
+{
+  "country": "Panama",
+  "absolute_population_growth": 2892393
+}
+{
+  "country": "Papua New Guinea",
+  "absolute_population_growth": 7653560
+}
+{
+  "country": "Paraguay",
+  "absolute_population_growth": 4371957
+}
+{
+  "country": "Peru",
+  "absolute_population_growth": 20487217
+}
+{
+  "country": "Philippines",
+  "absolute_population_growth": 78123423
+}
+{
+  "country": "Poland",
+  "absolute_population_growth": 7374202
+}
+{
+  "country": "Portugal",
+  "absolute_population_growth": 1587234
+}
+{
+  "country": "Puerto Rico",
+  "absolute_population_growth": 514788
+}
+{
+  "country": "Qatar",
+  "absolute_population_growth": 2577115
+}
+{
+  "country": "Republic of the Congo",
+  "absolute_population_growth": 4573435
+}
+{
+  "country": "Reunion",
+  "absolute_population_growth": 500127
+}
+{
+  "country": "Romania",
+  "absolute_population_growth": 263351
+}
+{
+  "country": "Russia",
+  "absolute_population_growth": 14620304
+}
+{
+  "country": "Rwanda",
+  "absolute_population_growth": 9880331
+}
+{
+  "country": "Saint Barthelemy",
+  "absolute_population_growth": 8550
+}
+{
+  "country": "Saint Kitts and Nevis",
+  "absolute_population_growth": 2689
+}
+{
+  "country": "Saint Lucia",
+  "absolute_population_growth": 76767
+}
+{
+  "country": "Saint Martin",
+  "absolute_population_growth": 25989
+}
+{
+  "country": "Saint Pierre and Miquelon",
+  "absolute_population_growth": 325
+}
+{
+  "country": "Saint Vincent and the Grenadines",
+  "absolute_population_growth": 5489
+}
+{
+  "country": "Samoa",
+  "absolute_population_growth": 79611
+}
+{
+  "country": "San Marino",
+  "absolute_population_growth": 15491
+}
+{
+  "country": "Sao Tome and Principe",
+  "absolute_population_growth": 149797
+}
+{
+  "country": "Saudi Arabia",
+  "absolute_population_growth": 30302629
+}
+{
+  "country": "Senegal",
+  "absolute_population_growth": 12948705
+}
+{
+  "country": "Serbia",
+  "absolute_population_growth": 27832
+}
+{
+  "country": "Seychelles",
+  "absolute_population_growth": 52739
+}
+{
+  "country": "Sierra Leone",
+  "absolute_population_growth": 5827161
+}
+{
+  "country": "Singapore",
+  "absolute_population_growth": 3913858
+}
+{
+  "country": "Sint Maarten",
+  "absolute_population_growth": 37915
+}
+{
+  "country": "Slovakia",
+  "absolute_population_growth": 1120586
+}
+{
+  "country": "Slovenia",
+  "absolute_population_growth": 378558
+}
+{
+  "country": "Solomon Islands",
+  "absolute_population_growth": 551440
+}
+{
+  "country": "Somalia",
+  "absolute_population_growth": 13876534
+}
+{
+  "country": "South Africa",
+  "absolute_population_growth": 37525579
+}
+{
+  "country": "South Korea",
+  "absolute_population_growth": 19214667
+}
+{
+  "country": "South Sudan",
+  "absolute_population_growth": 7570754
+}
+{
+  "country": "Spain",
+  "absolute_population_growth": 13766013
+}
+{
+  "country": "Sri Lanka",
+  "absolute_population_growth": 9443374
+}
+{
+  "country": "Sudan",
+  "absolute_population_growth": 35568998
+}
+{
+  "country": "Suriname",
+  "absolute_population_growth": 238122
+}
+{
+  "country": "Sweden",
+  "absolute_population_growth": 2521645
+}
+{
+  "country": "Switzerland",
+  "absolute_population_growth": 2559245
+}
+{
+  "country": "Syria",
+  "absolute_population_growth": 15806050
+}
+{
+  "country": "Taiwan",
+  "absolute_population_growth": 8935524
+}
+{
+  "country": "Tajikistan",
+  "absolute_population_growth": 6959768
+}
+{
+  "country": "Tanzania",
+  "absolute_population_growth": 51879556
+}
+{
+  "country": "Thailand",
+  "absolute_population_growth": 35905302
+}
+{
+  "country": "Timor-Leste",
+  "absolute_population_growth": 787275
+}
+{
+  "country": "Togo",
+  "absolute_population_growth": 6651316
+}
+{
+  "country": "Tokelau",
+  "absolute_population_growth": 157
+}
+{
+  "country": "Tonga",
+  "absolute_population_growth": 20374
+}
+{
+  "country": "Trinidad and Tobago",
+  "absolute_population_growth": 542154
+}
+{
+  "country": "Tunisia",
+  "absolute_population_growth": 7308713
+}
+{
+  "country": "Turkey",
+  "absolute_population_growth": 49800251
+}
+{
+  "country": "Turkmenistan",
+  "absolute_population_growth": 4229338
+}
+{
+  "country": "Turks and Caicos Islands",
+  "absolute_population_growth": 40038
+}
+{
+  "country": "Tuvalu",
+  "absolute_population_growth": 5498
+}
+{
+  "country": "Uganda",
+  "absolute_population_growth": 36932373
+}
+{
+  "country": "Ukraine",
+  "absolute_population_growth": 7577347
+}
+{
+  "country": "United Arab Emirates",
+  "absolute_population_growth": 9143045
+}
+{
+  "country": "United Kingdom",
+  "absolute_population_growth": 11858770
+}
+{
+  "country": "United States",
+  "absolute_population_growth": 137961517
+}
+{
+  "country": "United States Virgin Islands",
+  "absolute_population_growth": 36019
+}
+{
+  "country": "Uruguay",
+  "absolute_population_growth": 632529
+}
+{
+  "country": "Uzbekistan",
+  "absolute_population_growth": 22616291
+}
+{
+  "country": "Vanuatu",
+  "absolute_population_growth": 239721
+}
+{
+  "country": "Vatican City",
+  "absolute_population_growth": 242
+}
+{
+  "country": "Venezuela",
+  "absolute_population_growth": 16946221
+}
+{
+  "country": "Vietnam",
+  "absolute_population_growth": 56258007
+}
+{
+  "country": "Wallis and Futuna",
+  "absolute_population_growth": 2195
+}
+{
+  "country": "Western Sahara",
+  "absolute_population_growth": 499615
+}
+{
+  "country": "Yemen",
+  "absolute_population_growth": 26853007
+}
+{
+  "country": "Zambia",
+  "absolute_population_growth": 15736004
+}
+{
+  "country": "Zimbabwe",
+  "absolute_population_growth": 11117619
+}]
+```
+
+`jq 'map({
+  country: .country,
+  population: [
+    to_entries
+    | map(select(.key | test("^population_\\d+$")))
+    | map({(.key | sub("population_"; "")): .value})
+    | add
+  ]
+})' < world-population.json`
+
+```yaml [
+  {
+    "country": "Afghanistan",
+    "population": [
+      {
+        "2022": 41128771,
+        "2020": 38972230,
+        "2015": 33753499,
+        "2010": 28189672,
+        "2000": 19542982,
+        "1990": 10694796,
+        "1980": 12486631,
+        "1970": 10752971
+      }
+    ]
+  },
+  {
+    "country": "Albania",
+    "population": [
+      {
+        "2022": 2842321,
+        "2020": 2866849,
+        "2015": 2882481,
+        "2010": 2913399,
+        "2000": 3182021,
+        "1990": 3295066,
+        "1980": 2941651,
+        "1970": 2324731
+      }
+    ]
+  },
+  {
+    "country": "Algeria",
+    "population": [
+      {
+        "2022": 44903225,
+        "2020": 43451666,
+        "2015": 39543154,
+        "2010": 35856344,
+        "2000": 30774621,
+        "1990": 25518074,
+        "1980": 18739378,
+        "1970": 13795915
+      }
+    ]
+  },
+  {
+    "country": "American Samoa",
+    "population": [
+      {
+        "2022": 44273,
+        "2020": 46189,
+        "2015": 51368,
+        "2010": 54849,
+        "2000": 58230,
+        "1990": 47818,
+        "1980": 32886,
+        "1970": 27075
+      }
+    ]
+  },
+  {
+    "country": "Andorra",
+    "population": [
+      {
+        "2022": 79824,
+        "2020": 77700,
+        "2015": 71746,
+        "2010": 71519,
+        "2000": 66097,
+        "1990": 53569,
+        "1980": 35611,
+        "1970": 19860
+      }
+    ]
+  },
+  {
+    "country": "Angola",
+    "population": [
+      {
+        "2022": 35588987,
+        "2020": 33428485,
+        "2015": 28127721,
+        "2010": 23364185,
+        "2000": 16394062,
+        "1990": 11828638,
+        "1980": 8330047,
+        "1970": 6029700
+      }
+    ]
+  },
+  {
+    "country": "Anguilla",
+    "population": [
+      {
+        "2022": 15857,
+        "2020": 15585,
+        "2015": 14525,
+        "2010": 13172,
+        "2000": 11047,
+        "1990": 8316,
+        "1980": 6560,
+        "1970": 6283
+      }
+    ]
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "population": [
+      {
+        "2022": 93763,
+        "2020": 92664,
+        "2015": 89941,
+        "2010": 85695,
+        "2000": 75055,
+        "1990": 63328,
+        "1980": 64888,
+        "1970": 64516
+      }
+    ]
+  },
+  {
+    "country": "Argentina",
+    "population": [
+      {
+        "2022": 45510318,
+        "2020": 45036032,
+        "2015": 43257065,
+        "2010": 41100123,
+        "2000": 37070774,
+        "1990": 32637657,
+        "1980": 28024803,
+        "1970": 23842803
+      }
+    ]
+  },
+  {
+    "country": "Armenia",
+    "population": [
+      {
+        "2022": 2780469,
+        "2020": 2805608,
+        "2015": 2878595,
+        "2010": 2946293,
+        "2000": 3168523,
+        "1990": 3556539,
+        "1980": 3135123,
+        "1970": 2534377
+      }
+    ]
+  },
+  {
+    "country": "Aruba",
+    "population": [
+      {
+        "2022": 106445,
+        "2020": 106585,
+        "2015": 104257,
+        "2010": 100341,
+        "2000": 89101,
+        "1990": 65712,
+        "1980": 62267,
+        "1970": 59106
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "population": [
+      {
+        "2022": 26177413,
+        "2020": 25670051,
+        "2015": 23820236,
+        "2010": 22019168,
+        "2000": 19017963,
+        "1990": 17048003,
+        "1980": 14706322,
+        "1970": 12595034
+      }
+    ]
+  },
+  {
+    "country": "Austria",
+    "population": [
+      {
+        "2022": 8939617,
+        "2020": 8907777,
+        "2015": 8642421,
+        "2010": 8362829,
+        "2000": 8010428,
+        "1990": 7678729,
+        "1980": 7547561,
+        "1970": 7465301
+      }
+    ]
+  },
+  {
+    "country": "Azerbaijan",
+    "population": [
+      {
+        "2022": 10358074,
+        "2020": 10284951,
+        "2015": 9863480,
+        "2010": 9237202,
+        "2000": 8190337,
+        "1990": 7427836,
+        "1980": 6383060,
+        "1970": 5425317
+      }
+    ]
+  },
+  {
+    "country": "Bahamas",
+    "population": [
+      {
+        "2022": 409984,
+        "2020": 406471,
+        "2015": 392697,
+        "2010": 373272,
+        "2000": 325014,
+        "1990": 270679,
+        "1980": 223752,
+        "1970": 179129
+      }
+    ]
+  },
+  {
+    "country": "Bahrain",
+    "population": [
+      {
+        "2022": 1472233,
+        "2020": 1477469,
+        "2015": 1362142,
+        "2010": 1213645,
+        "2000": 711442,
+        "1990": 517418,
+        "1980": 362595,
+        "1970": 222555
+      }
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "population": [
+      {
+        "2022": 171186372,
+        "2020": 167420951,
+        "2015": 157830000,
+        "2010": 148391139,
+        "2000": 129193327,
+        "1990": 107147651,
+        "1980": 83929765,
+        "1970": 67541860
+      }
+    ]
+  },
+  {
+    "country": "Barbados",
+    "population": [
+      {
+        "2022": 281635,
+        "2020": 280693,
+        "2015": 278083,
+        "2010": 274711,
+        "2000": 264657,
+        "1990": 258868,
+        "1980": 253575,
+        "1970": 241397
+      }
+    ]
+  },
+  {
+    "country": "Belarus",
+    "population": [
+      {
+        "2022": 9534954,
+        "2020": 9633740,
+        "2015": 9700609,
+        "2010": 9731427,
+        "2000": 10256483,
+        "1990": 10428525,
+        "1980": 9817257,
+        "1970": 9170786
+      }
+    ]
+  },
+  {
+    "country": "Belgium",
+    "population": [
+      {
+        "2022": 11655930,
+        "2020": 11561717,
+        "2015": 11248303,
+        "2010": 10877947,
+        "2000": 10264343,
+        "1990": 9959560,
+        "1980": 9828986,
+        "1970": 9629376
+      }
+    ]
+  },
+  {
+    "country": "Belize",
+    "population": [
+      {
+        "2022": 405272,
+        "2020": 394921,
+        "2015": 359871,
+        "2010": 322106,
+        "2000": 240406,
+        "1990": 182589,
+        "1980": 145133,
+        "1970": 120905
+      }
+    ]
+  },
+  {
+    "country": "Benin",
+    "population": [
+      {
+        "2022": 13352864,
+        "2020": 12643123,
+        "2015": 10932783,
+        "2010": 9445710,
+        "2000": 6998023,
+        "1990": 5133419,
+        "1980": 3833939,
+        "1970": 3023443
+      }
+    ]
+  },
+  {
+    "country": "Bermuda",
+    "population": [
+      {
+        "2022": 64184,
+        "2020": 64031,
+        "2015": 63144,
+        "2010": 63447,
+        "2000": 61371,
+        "1990": 57470,
+        "1980": 53565,
+        "1970": 52019
+      }
+    ]
+  },
+  {
+    "country": "Bhutan",
+    "population": [
+      {
+        "2022": 782455,
+        "2020": 772506,
+        "2015": 743274,
+        "2010": 705516,
+        "2000": 587207,
+        "1990": 558442,
+        "1980": 415257,
+        "1970": 298894
+      }
+    ]
+  },
+  {
+    "country": "Bolivia",
+    "population": [
+      {
+        "2022": 12224110,
+        "2020": 11936162,
+        "2015": 11090085,
+        "2010": 10223270,
+        "2000": 8592656,
+        "1990": 7096194,
+        "1980": 5736088,
+        "1970": 4585693
+      }
+    ]
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "population": [
+      {
+        "2022": 3233526,
+        "2020": 3318407,
+        "2015": 3524324,
+        "2010": 3811088,
+        "2000": 4179350,
+        "1990": 4494310,
+        "1980": 4199820,
+        "1970": 3815561
+      }
+    ]
+  },
+  {
+    "country": "Botswana",
+    "population": [
+      {
+        "2022": 2630296,
+        "2020": 2546402,
+        "2015": 2305171,
+        "2010": 2091664,
+        "2000": 1726985,
+        "1990": 1341474,
+        "1980": 938578,
+        "1970": 592244
+      }
+    ]
+  },
+  {
+    "country": "Brazil",
+    "population": [
+      {
+        "2022": 215313498,
+        "2020": 213196304,
+        "2015": 205188205,
+        "2010": 196353492,
+        "2000": 175873720,
+        "1990": 150706446,
+        "1980": 122288383,
+        "1970": 96369875
+      }
+    ]
+  },
+  {
+    "country": "British Virgin Islands",
+    "population": [
+      {
+        "2022": 31305,
+        "2020": 30910,
+        "2015": 29366,
+        "2010": 27556,
+        "2000": 20104,
+        "1990": 15617,
+        "1980": 11109,
+        "1970": 9581
+      }
+    ]
+  },
+  {
+    "country": "Brunei",
+    "population": [
+      {
+        "2022": 449002,
+        "2020": 441725,
+        "2015": 421437,
+        "2010": 396053,
+        "2000": 333926,
+        "1990": 261928,
+        "1980": 187921,
+        "1970": 133343
+      }
+    ]
+  },
+  {
+    "country": "Bulgaria",
+    "population": [
+      {
+        "2022": 6781953,
+        "2020": 6979175,
+        "2015": 7309253,
+        "2010": 7592273,
+        "2000": 8097691,
+        "1990": 8767778,
+        "1980": 8980606,
+        "1970": 8582950
+      }
+    ]
+  },
+  {
+    "country": "Burkina Faso",
+    "population": [
+      {
+        "2022": 22673762,
+        "2020": 21522626,
+        "2015": 18718019,
+        "2010": 16116845,
+        "2000": 11882888,
+        "1990": 9131361,
+        "1980": 6932967,
+        "1970": 5611666
+      }
+    ]
+  },
+  {
+    "country": "Burundi",
+    "population": [
+      {
+        "2022": 12889576,
+        "2020": 12220227,
+        "2015": 10727148,
+        "2010": 9126605,
+        "2000": 6307659,
+        "1990": 5483793,
+        "1980": 4312834,
+        "1970": 3497834
+      }
+    ]
+  },
+  {
+    "country": "Cambodia",
+    "population": [
+      {
+        "2022": 16767842,
+        "2020": 16396860,
+        "2015": 15417523,
+        "2010": 14363532,
+        "2000": 12118841,
+        "1990": 8910808,
+        "1980": 6198959,
+        "1970": 6708525
+      }
+    ]
+  },
+  {
+    "country": "Cameroon",
+    "population": [
+      {
+        "2022": 27914536,
+        "2020": 26491087,
+        "2015": 23012646,
+        "2010": 19878036,
+        "2000": 15091594,
+        "1990": 11430520,
+        "1980": 8519891,
+        "1970": 6452787
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "population": [
+      {
+        "2022": 38454327,
+        "2020": 37888705,
+        "2015": 35732126,
+        "2010": 33963412,
+        "2000": 30683313,
+        "1990": 27657204,
+        "1980": 24511510,
+        "1970": 21434577
+      }
+    ]
+  },
+  {
+    "country": "Cape Verde",
+    "population": [
+      {
+        "2022": 593149,
+        "2020": 582640,
+        "2015": 552166,
+        "2010": 521212,
+        "2000": 458251,
+        "1990": 364563,
+        "1980": 317234,
+        "1970": 287262
+      }
+    ]
+  },
+  {
+    "country": "Cayman Islands",
+    "population": [
+      {
+        "2022": 68706,
+        "2020": 67311,
+        "2015": 60911,
+        "2010": 54074,
+        "2000": 39658,
+        "1990": 26027,
+        "1980": 17100,
+        "1970": 10533
+      }
+    ]
+  },
+  {
+    "country": "Central African Republic",
+    "population": [
+      {
+        "2022": 5579144,
+        "2020": 5343020,
+        "2015": 4819333,
+        "2010": 4660067,
+        "2000": 3759170,
+        "1990": 2809221,
+        "1980": 2415276,
+        "1970": 2067356
+      }
+    ]
+  },
+  {
+    "country": "Chad",
+    "population": [
+      {
+        "2022": 17723315,
+        "2020": 16644701,
+        "2015": 14140274,
+        "2010": 11894727,
+        "2000": 8259137,
+        "1990": 5827069,
+        "1980": 4408230,
+        "1970": 3667394
+      }
+    ]
+  },
+  {
+    "country": "Chile",
+    "population": [
+      {
+        "2022": 19603733,
+        "2020": 19300315,
+        "2015": 17870124,
+        "2010": 17004162,
+        "2000": 15351799,
+        "1990": 13342868,
+        "1980": 11469828,
+        "1970": 9820481
+      }
+    ]
+  },
+  {
+    "country": "China",
+    "population": [
+      {
+        "2022": 1425887337,
+        "2020": 1424929781,
+        "2015": 1393715448,
+        "2010": 1348191368,
+        "2000": 1264099069,
+        "1990": 1153704252,
+        "1980": 982372466,
+        "1970": 822534450
+      }
+    ]
+  },
+  {
+    "country": "Colombia",
+    "population": [
+      {
+        "2022": 51874024,
+        "2020": 50930662,
+        "2015": 47119728,
+        "2010": 44816108,
+        "2000": 39215135,
+        "1990": 32601393,
+        "1980": 26176195,
+        "1970": 20905254
+      }
+    ]
+  },
+  {
+    "country": "Comoros",
+    "population": [
+      {
+        "2022": 836774,
+        "2020": 806166,
+        "2015": 730216,
+        "2010": 656024,
+        "2000": 536758,
+        "1990": 431119,
+        "1980": 328328,
+        "1970": 242351
+      }
+    ]
+  },
+  {
+    "country": "Cook Islands",
+    "population": [
+      {
+        "2022": 17011,
+        "2020": 17029,
+        "2015": 17695,
+        "2010": 17212,
+        "2000": 15897,
+        "1990": 17123,
+        "1980": 17651,
+        "1970": 20470
+      }
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "population": [
+      {
+        "2022": 5180829,
+        "2020": 5123105,
+        "2015": 4895242,
+        "2010": 4622252,
+        "2000": 3979193,
+        "1990": 3158253,
+        "1980": 2414303,
+        "1970": 1855697
+      }
+    ]
+  },
+  {
+    "country": "Croatia",
+    "population": [
+      {
+        "2022": 4030358,
+        "2020": 4096868,
+        "2015": 4254815,
+        "2010": 4368682,
+        "2000": 4548434,
+        "1990": 4873707,
+        "1980": 4680144,
+        "1970": 4492638
+      }
+    ]
+  },
+  {
+    "country": "Cuba",
+    "population": [
+      {
+        "2022": 11212191,
+        "2020": 11300698,
+        "2015": 11339894,
+        "2010": 11290417,
+        "2000": 11105791,
+        "1990": 10626680,
+        "1980": 9809107,
+        "1970": 8869636
+      }
+    ]
+  },
+  {
+    "country": "Curacao",
+    "population": [
+      {
+        "2022": 191163,
+        "2020": 189288,
+        "2015": 169572,
+        "2010": 159380,
+        "2000": 141424,
+        "1990": 155446,
+        "1980": 156851,
+        "1970": 150385
+      }
+    ]
+  },
+  {
+    "country": "Cyprus",
+    "population": [
+      {
+        "2022": 1251488,
+        "2020": 1237537,
+        "2015": 1187280,
+        "2010": 1129686,
+        "2000": 948237,
+        "1990": 788500,
+        "1980": 679327,
+        "1970": 640804
+      }
+    ]
+  },
+  {
+    "country": "Czech Republic",
+    "population": [
+      {
+        "2022": 10493986,
+        "2020": 10530953,
+        "2015": 10523798,
+        "2010": 10464749,
+        "2000": 10234710,
+        "1990": 10301192,
+        "1980": 10270060,
+        "1970": 9795744
+      }
+    ]
+  },
+  {
+    "country": "Denmark",
+    "population": [
+      {
+        "2022": 5882261,
+        "2020": 5825641,
+        "2015": 5677796,
+        "2010": 5550849,
+        "2000": 5340655,
+        "1990": 5144623,
+        "1980": 5125392,
+        "1970": 4922963
+      }
+    ]
+  },
+  {
+    "country": "Djibouti",
+    "population": [
+      {
+        "2022": 1120849,
+        "2020": 1090156,
+        "2015": 1006259,
+        "2010": 919199,
+        "2000": 742033,
+        "1990": 577173,
+        "1980": 324121,
+        "1970": 144379
+      }
+    ]
+  },
+  {
+    "country": "Dominica",
+    "population": [
+      {
+        "2022": 72737,
+        "2020": 71995,
+        "2015": 70007,
+        "2010": 68755,
+        "2000": 68346,
+        "1990": 69481,
+        "1980": 72978,
+        "1970": 68895
+      }
+    ]
+  },
+  {
+    "country": "Dominican Republic",
+    "population": [
+      {
+        "2022": 11228821,
+        "2020": 10999664,
+        "2015": 10405832,
+        "2010": 9775755,
+        "2000": 8540791,
+        "1990": 7129004,
+        "1980": 5755800,
+        "1970": 4475871
+      }
+    ]
+  },
+  {
+    "country": "DR Congo",
+    "population": [
+      {
+        "2022": 99010212,
+        "2020": 92853164,
+        "2015": 78656904,
+        "2010": 66391257,
+        "2000": 48616317,
+        "1990": 35987541,
+        "1980": 26708686,
+        "1970": 20151733
+      }
+    ]
+  },
+  {
+    "country": "Ecuador",
+    "population": [
+      {
+        "2022": 18001000,
+        "2020": 17588595,
+        "2015": 16195902,
+        "2010": 14989585,
+        "2000": 12626507,
+        "1990": 10449837,
+        "1980": 8135845,
+        "1970": 6172215
+      }
+    ]
+  },
+  {
+    "country": "Egypt",
+    "population": [
+      {
+        "2022": 110990103,
+        "2020": 107465134,
+        "2015": 97723799,
+        "2010": 87252413,
+        "2000": 71371371,
+        "1990": 57214630,
+        "1980": 43748556,
+        "1970": 34781986
+      }
+    ]
+  },
+  {
+    "country": "El Salvador",
+    "population": [
+      {
+        "2022": 6336392,
+        "2020": 6292731,
+        "2015": 6231066,
+        "2010": 6114034,
+        "2000": 5958482,
+        "1990": 5367179,
+        "1980": 4508992,
+        "1970": 3619090
+      }
+    ]
+  },
+  {
+    "country": "Equatorial Guinea",
+    "population": [
+      {
+        "2022": 1674908,
+        "2020": 1596049,
+        "2015": 1346973,
+        "2010": 1094524,
+        "2000": 684977,
+        "1990": 465549,
+        "1980": 282509,
+        "1970": 316955
+      }
+    ]
+  },
+  {
+    "country": "Eritrea",
+    "population": [
+      {
+        "2022": 3684032,
+        "2020": 3555868,
+        "2015": 3340006,
+        "2010": 3147727,
+        "2000": 2392880,
+        "1990": 2149960,
+        "1980": 1657982,
+        "1970": 1272748
+      }
+    ]
+  },
+  {
+    "country": "Estonia",
+    "population": [
+      {
+        "2022": 1326062,
+        "2020": 1329444,
+        "2015": 1314657,
+        "2010": 1331535,
+        "2000": 1396877,
+        "1990": 1570674,
+        "1980": 1476983,
+        "1970": 1361999
+      }
+    ]
+  },
+  {
+    "country": "Eswatini",
+    "population": [
+      {
+        "2022": 1201670,
+        "2020": 1180655,
+        "2015": 1133936,
+        "2010": 1099920,
+        "2000": 1030496,
+        "1990": 854011,
+        "1980": 598564,
+        "1970": 442865
+      }
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "population": [
+      {
+        "2022": 123379924,
+        "2020": 117190911,
+        "2015": 102471895,
+        "2010": 89237791,
+        "2000": 67031867,
+        "1990": 47878073,
+        "1980": 34945469,
+        "1970": 28308246
+      }
+    ]
+  },
+  {
+    "country": "Falkland Islands",
+    "population": [
+      {
+        "2022": 3780,
+        "2020": 3747,
+        "2015": 3408,
+        "2010": 3187,
+        "2000": 3080,
+        "1990": 2332,
+        "1980": 2240,
+        "1970": 2274
+      }
+    ]
+  },
+  {
+    "country": "Faroe Islands",
+    "population": [
+      {
+        "2022": 53090,
+        "2020": 52415,
+        "2015": 48816,
+        "2010": 48410,
+        "2000": 45660,
+        "1990": 47479,
+        "1980": 43054,
+        "1970": 38416
+      }
+    ]
+  },
+  {
+    "country": "Fiji",
+    "population": [
+      {
+        "2022": 929766,
+        "2020": 920422,
+        "2015": 917200,
+        "2010": 905169,
+        "2000": 832509,
+        "1990": 780430,
+        "1980": 644582,
+        "1970": 527634
+      }
+    ]
+  },
+  {
+    "country": "Finland",
+    "population": [
+      {
+        "2022": 5540745,
+        "2020": 5529468,
+        "2015": 5479461,
+        "2010": 5363271,
+        "2000": 5176209,
+        "1990": 4986545,
+        "1980": 4779418,
+        "1970": 4606621
+      }
+    ]
+  },
+  {
+    "country": "France",
+    "population": [
+      {
+        "2022": 64626628,
+        "2020": 64480053,
+        "2015": 63809769,
+        "2010": 62444567,
+        "2000": 58665453,
+        "1990": 56412897,
+        "1980": 53713830,
+        "1970": 50523586
+      }
+    ]
+  },
+  {
+    "country": "French Guiana",
+    "population": [
+      {
+        "2022": 304557,
+        "2020": 290969,
+        "2015": 257026,
+        "2010": 228453,
+        "2000": 164351,
+        "1990": 113931,
+        "1980": 66825,
+        "1970": 46484
+      }
+    ]
+  },
+  {
+    "country": "French Polynesia",
+    "population": [
+      {
+        "2022": 306279,
+        "2020": 301920,
+        "2015": 291787,
+        "2010": 283788,
+        "2000": 250927,
+        "1990": 211089,
+        "1980": 163591,
+        "1970": 117891
+      }
+    ]
+  },
+  {
+    "country": "Gabon",
+    "population": [
+      {
+        "2022": 2388992,
+        "2020": 2292573,
+        "2015": 2028517,
+        "2010": 1711105,
+        "2000": 1272935,
+        "1990": 983028,
+        "1980": 749078,
+        "1970": 597192
+      }
+    ]
+  },
+  {
+    "country": "Gambia",
+    "population": [
+      {
+        "2022": 2705992,
+        "2020": 2573995,
+        "2015": 2253133,
+        "2010": 1937275,
+        "2000": 1437539,
+        "1990": 1040616,
+        "1980": 718586,
+        "1970": 528731
+      }
+    ]
+  },
+  {
+    "country": "Georgia",
+    "population": [
+      {
+        "2022": 3744385,
+        "2020": 3765912,
+        "2015": 3771132,
+        "2010": 3836831,
+        "2000": 4265172,
+        "1990": 5391636,
+        "1980": 5145843,
+        "1970": 4800426
+      }
+    ]
+  },
+  {
+    "country": "Germany",
+    "population": [
+      {
+        "2022": 83369843,
+        "2020": 83328988,
+        "2015": 82073226,
+        "2010": 81325090,
+        "2000": 81551677,
+        "1990": 79370196,
+        "1980": 77786703,
+        "1970": 78294583
+      }
+    ]
+  },
+  {
+    "country": "Ghana",
+    "population": [
+      {
+        "2022": 33475870,
+        "2020": 32180401,
+        "2015": 28870939,
+        "2010": 25574719,
+        "2000": 19665502,
+        "1990": 15446982,
+        "1980": 11865246,
+        "1970": 8861895
+      }
+    ]
+  },
+  {
+    "country": "Gibraltar",
+    "population": [
+      {
+        "2022": 32649,
+        "2020": 32709,
+        "2015": 32520,
+        "2010": 31262,
+        "2000": 27741,
+        "1990": 27317,
+        "1980": 28734,
+        "1970": 26685
+      }
+    ]
+  },
+  {
+    "country": "Greece",
+    "population": [
+      {
+        "2022": 10384971,
+        "2020": 10512232,
+        "2015": 10806641,
+        "2010": 11033783,
+        "2000": 11038109,
+        "1990": 10302255,
+        "1980": 9307148,
+        "1970": 8544873
+      }
+    ]
+  },
+  {
+    "country": "Greenland",
+    "population": [
+      {
+        "2022": 56466,
+        "2020": 56026,
+        "2015": 55895,
+        "2010": 56351,
+        "2000": 56184,
+        "1990": 55599,
+        "1980": 50106,
+        "1970": 45434
+      }
+    ]
+  },
+  {
+    "country": "Grenada",
+    "population": [
+      {
+        "2022": 125438,
+        "2020": 123663,
+        "2015": 118980,
+        "2010": 114039,
+        "2000": 107432,
+        "1990": 99047,
+        "1980": 94838,
+        "1970": 98794
+      }
+    ]
+  },
+  {
+    "country": "Guadeloupe",
+    "population": [
+      {
+        "2022": 395752,
+        "2020": 395642,
+        "2015": 399089,
+        "2010": 403072,
+        "2000": 424067,
+        "1990": 391951,
+        "1980": 334234,
+        "1970": 318310
+      }
+    ]
+  },
+  {
+    "country": "Guam",
+    "population": [
+      {
+        "2022": 171774,
+        "2020": 169231,
+        "2015": 167978,
+        "2010": 164905,
+        "2000": 160188,
+        "1990": 138263,
+        "1980": 110286,
+        "1970": 88300
+      }
+    ]
+  },
+  {
+    "country": "Guatemala",
+    "population": [
+      {
+        "2022": 17843908,
+        "2020": 17362718,
+        "2015": 16001107,
+        "2010": 14543121,
+        "2000": 11735894,
+        "1990": 9084780,
+        "1980": 6987767,
+        "1970": 5453208
+      }
+    ]
+  },
+  {
+    "country": "Guernsey",
+    "population": [
+      {
+        "2022": 63301,
+        "2020": 62794,
+        "2015": 61629,
+        "2010": 60782,
+        "2000": 59114,
+        "1990": 57727,
+        "1980": 52860,
+        "1970": 52656
+      }
+    ]
+  },
+  {
+    "country": "Guinea",
+    "population": [
+      {
+        "2022": 13859341,
+        "2020": 13205153,
+        "2015": 11625998,
+        "2010": 10270728,
+        "2000": 8336967,
+        "1990": 6354145,
+        "1980": 4972609,
+        "1970": 4222374
+      }
+    ]
+  },
+  {
+    "country": "Guinea-Bissau",
+    "population": [
+      {
+        "2022": 2105566,
+        "2020": 2015828,
+        "2015": 1788919,
+        "2010": 1567220,
+        "2000": 1230849,
+        "1990": 973551,
+        "1980": 831462,
+        "1970": 591663
+      }
+    ]
+  },
+  {
+    "country": "Guyana",
+    "population": [
+      {
+        "2022": 808726,
+        "2020": 797202,
+        "2015": 755031,
+        "2010": 747932,
+        "2000": 759051,
+        "1990": 747116,
+        "1980": 778176,
+        "1970": 705261
+      }
+    ]
+  },
+  {
+    "country": "Haiti",
+    "population": [
+      {
+        "2022": 11584996,
+        "2020": 11306801,
+        "2015": 10563757,
+        "2010": 9842880,
+        "2000": 8360225,
+        "1990": 6925331,
+        "1980": 5646676,
+        "1970": 4680812
+      }
+    ]
+  },
+  {
+    "country": "Honduras",
+    "population": [
+      {
+        "2022": 10432860,
+        "2020": 10121763,
+        "2015": 9294505,
+        "2010": 8450933,
+        "2000": 6656725,
+        "1990": 5053234,
+        "1980": 3777990,
+        "1970": 2782753
+      }
+    ]
+  },
+  {
+    "country": "Hong Kong",
+    "population": [
+      {
+        "2022": 7488865,
+        "2020": 7500958,
+        "2015": 7399838,
+        "2010": 7132438,
+        "2000": 6731195,
+        "1990": 5838574,
+        "1980": 4978544,
+        "1970": 3955072
+      }
+    ]
+  },
+  {
+    "country": "Hungary",
+    "population": [
+      {
+        "2022": 9967308,
+        "2020": 9750573,
+        "2015": 9844246,
+        "2010": 9986825,
+        "2000": 10202055,
+        "1990": 10375989,
+        "1980": 10698679,
+        "1970": 10315366
+      }
+    ]
+  },
+  {
+    "country": "Iceland",
+    "population": [
+      {
+        "2022": 372899,
+        "2020": 366669,
+        "2015": 331060,
+        "2010": 318333,
+        "2000": 281462,
+        "1990": 255019,
+        "1980": 228263,
+        "1970": 204468
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "population": [
+      {
+        "2022": 1417173173,
+        "2020": 1396387127,
+        "2015": 1322866505,
+        "2010": 1240613620,
+        "2000": 1059633675,
+        "1990": 870452165,
+        "1980": 696828385,
+        "1970": 557501301
+      }
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "population": [
+      {
+        "2022": 275501339,
+        "2020": 271857970,
+        "2015": 259091970,
+        "2010": 244016173,
+        "2000": 214072421,
+        "1990": 182159874,
+        "1980": 148177096,
+        "1970": 115228394
+      }
+    ]
+  },
+  {
+    "country": "Iran",
+    "population": [
+      {
+        "2022": 88550570,
+        "2020": 87290193,
+        "2015": 81790841,
+        "2010": 75373855,
+        "2000": 65544383,
+        "1990": 55793629,
+        "1980": 38520664,
+        "1970": 28449705
+      }
+    ]
+  },
+  {
+    "country": "Iraq",
+    "population": [
+      {
+        "2022": 44496122,
+        "2020": 42556984,
+        "2015": 37757813,
+        "2010": 31264875,
+        "2000": 24628858,
+        "1990": 17658381,
+        "1980": 13653369,
+        "1970": 9811347
+      }
+    ]
+  },
+  {
+    "country": "Ireland",
+    "population": [
+      {
+        "2022": 5023109,
+        "2020": 4946119,
+        "2015": 4665760,
+        "2010": 4524585,
+        "2000": 3768950,
+        "1990": 3485374,
+        "1980": 3391387,
+        "1970": 2937637
+      }
+    ]
+  },
+  {
+    "country": "Isle of Man",
+    "population": [
+      {
+        "2022": 84519,
+        "2020": 84046,
+        "2015": 83593,
+        "2010": 83828,
+        "2000": 75562,
+        "1990": 68865,
+        "1980": 64022,
+        "1970": 55298
+      }
+    ]
+  },
+  {
+    "country": "Israel",
+    "population": [
+      {
+        "2022": 9038309,
+        "2020": 8757489,
+        "2015": 8007778,
+        "2010": 7328445,
+        "2000": 6116958,
+        "1990": 4803254,
+        "1980": 3744608,
+        "1970": 2907307
+      }
+    ]
+  },
+  {
+    "country": "Italy",
+    "population": [
+      {
+        "2022": 59037474,
+        "2020": 59500579,
+        "2015": 60232906,
+        "2010": 59822450,
+        "2000": 56966397,
+        "1990": 56756561,
+        "1980": 56329482,
+        "1970": 53324036
+      }
+    ]
+  },
+  {
+    "country": "Ivory Coast",
+    "population": [
+      {
+        "2022": 28160542,
+        "2020": 26811790,
+        "2015": 23596741,
+        "2010": 21120042,
+        "2000": 16799670,
+        "1990": 11910540,
+        "1980": 8303809,
+        "1970": 5477086
+      }
+    ]
+  },
+  {
+    "country": "Jamaica",
+    "population": [
+      {
+        "2022": 2827377,
+        "2020": 2820436,
+        "2015": 2794445,
+        "2010": 2733896,
+        "2000": 2612205,
+        "1990": 2392030,
+        "1980": 2135546,
+        "1970": 1859091
+      }
+    ]
+  },
+  {
+    "country": "Japan",
+    "population": [
+      {
+        "2022": 123951692,
+        "2020": 125244761,
+        "2015": 127250933,
+        "2010": 128105431,
+        "2000": 126803861,
+        "1990": 123686321,
+        "1980": 117624196,
+        "1970": 105416839
+      }
+    ]
+  },
+  {
+    "country": "Jersey",
+    "population": [
+      {
+        "2022": 110778,
+        "2020": 108319,
+        "2015": 100561,
+        "2010": 96151,
+        "2000": 86192,
+        "1990": 82874,
+        "1980": 75124,
+        "1970": 68347
+      }
+    ]
+  },
+  {
+    "country": "Jordan",
+    "population": [
+      {
+        "2022": 11285869,
+        "2020": 10928721,
+        "2015": 9494246,
+        "2010": 6931258,
+        "2000": 5056174,
+        "1990": 3480587,
+        "1980": 2216903,
+        "1970": 1557374
+      }
+    ]
+  },
+  {
+    "country": "Kazakhstan",
+    "population": [
+      {
+        "2022": 19397998,
+        "2020": 18979243,
+        "2015": 17835909,
+        "2010": 16627837,
+        "2000": 15236253,
+        "1990": 16866563,
+        "1980": 14172710,
+        "1970": 12265305
+      }
+    ]
+  },
+  {
+    "country": "Kenya",
+    "population": [
+      {
+        "2022": 54027487,
+        "2020": 51985780,
+        "2015": 46851488,
+        "2010": 41517895,
+        "2000": 30851606,
+        "1990": 23162269,
+        "1980": 16187124,
+        "1970": 11473087
+      }
+    ]
+  },
+  {
+    "country": "Kiribati",
+    "population": [
+      {
+        "2022": 131232,
+        "2020": 126463,
+        "2015": 116707,
+        "2010": 107995,
+        "2000": 88826,
+        "1990": 75124,
+        "1980": 60813,
+        "1970": 57437
+      }
+    ]
+  },
+  {
+    "country": "Kuwait",
+    "population": [
+      {
+        "2022": 4268873,
+        "2020": 4360444,
+        "2015": 3908743,
+        "2010": 2943356,
+        "2000": 1934901,
+        "1990": 1674938,
+        "1980": 1493870,
+        "1970": 802786
+      }
+    ]
+  },
+  {
+    "country": "Kyrgyzstan",
+    "population": [
+      {
+        "2022": 6630623,
+        "2020": 6424874,
+        "2015": 5914980,
+        "2010": 5483774,
+        "2000": 4935182,
+        "1990": 4394734,
+        "1980": 3691209,
+        "1970": 3016384
+      }
+    ]
+  },
+  {
+    "country": "Laos",
+    "population": [
+      {
+        "2022": 7529475,
+        "2020": 7319399,
+        "2015": 6787419,
+        "2010": 6323418,
+        "2000": 5430853,
+        "1990": 4314443,
+        "1980": 3297519,
+        "1970": 2675283
+      }
+    ]
+  },
+  {
+    "country": "Latvia",
+    "population": [
+      {
+        "2022": 1850651,
+        "2020": 1897052,
+        "2015": 1991955,
+        "2010": 2101530,
+        "2000": 2392530,
+        "1990": 2689391,
+        "1980": 2572037,
+        "1970": 2397414
+      }
+    ]
+  },
+  {
+    "country": "Lebanon",
+    "population": [
+      {
+        "2022": 5489739,
+        "2020": 5662923,
+        "2015": 6398940,
+        "2010": 4995800,
+        "2000": 4320642,
+        "1990": 3593700,
+        "1980": 2963702,
+        "1970": 2381791
+      }
+    ]
+  },
+  {
+    "country": "Lesotho",
+    "population": [
+      {
+        "2022": 2305825,
+        "2020": 2254100,
+        "2015": 2118521,
+        "2010": 2022747,
+        "2000": 1998630,
+        "1990": 1798997,
+        "1980": 1407672,
+        "1970": 1023481
+      }
+    ]
+  },
+  {
+    "country": "Liberia",
+    "population": [
+      {
+        "2022": 5302681,
+        "2020": 5087584,
+        "2015": 4612329,
+        "2010": 4019956,
+        "2000": 2895224,
+        "1990": 2209731,
+        "1980": 1932169,
+        "1970": 1463563
+      }
+    ]
+  },
+  {
+    "country": "Libya",
+    "population": [
+      {
+        "2022": 6812341,
+        "2020": 6653942,
+        "2015": 6192235,
+        "2010": 6491988,
+        "2000": 5154790,
+        "1990": 4236983,
+        "1980": 2962720,
+        "1970": 1909177
+      }
+    ]
+  },
+  {
+    "country": "Liechtenstein",
+    "population": [
+      {
+        "2022": 39327,
+        "2020": 38756,
+        "2015": 37355,
+        "2010": 35926,
+        "2000": 33026,
+        "1990": 28765,
+        "1980": 25003,
+        "1970": 21089
+      }
+    ]
+  },
+  {
+    "country": "Lithuania",
+    "population": [
+      {
+        "2022": 2750055,
+        "2020": 2820267,
+        "2015": 2963765,
+        "2010": 3139019,
+        "2000": 3599637,
+        "1990": 3785847,
+        "1980": 3521206,
+        "1970": 3210147
+      }
+    ]
+  },
+  {
+    "country": "Luxembourg",
+    "population": [
+      {
+        "2022": 647599,
+        "2020": 630399,
+        "2015": 569408,
+        "2010": 507070,
+        "2000": 435628,
+        "1990": 381267,
+        "1980": 363741,
+        "1970": 339342
+      }
+    ]
+  },
+  {
+    "country": "Macau",
+    "population": [
+      {
+        "2022": 695168,
+        "2020": 676283,
+        "2015": 615239,
+        "2010": 557297,
+        "2000": 431896,
+        "1990": 350227,
+        "1980": 245332,
+        "1970": 247284
+      }
+    ]
+  },
+  {
+    "country": "Madagascar",
+    "population": [
+      {
+        "2022": 29611714,
+        "2020": 28225177,
+        "2015": 24850912,
+        "2010": 21731053,
+        "2000": 16216431,
+        "1990": 11882762,
+        "1980": 8948162,
+        "1970": 6639751
+      }
+    ]
+  },
+  {
+    "country": "Malawi",
+    "population": [
+      {
+        "2022": 20405317,
+        "2020": 19377061,
+        "2015": 16938942,
+        "2010": 14718422,
+        "2000": 11229387,
+        "1990": 9539665,
+        "1980": 6267369,
+        "1970": 4625141
+      }
+    ]
+  },
+  {
+    "country": "Malaysia",
+    "population": [
+      {
+        "2022": 33938221,
+        "2020": 33199993,
+        "2015": 31068833,
+        "2010": 28717731,
+        "2000": 22945150,
+        "1990": 17517054,
+        "1980": 13215707,
+        "1970": 10306508
+      }
+    ]
+  },
+  {
+    "country": "Maldives",
+    "population": [
+      {
+        "2022": 523787,
+        "2020": 514438,
+        "2015": 435582,
+        "2010": 361575,
+        "2000": 282507,
+        "1990": 224957,
+        "1980": 164887,
+        "1970": 123243
+      }
+    ]
+  },
+  {
+    "country": "Mali",
+    "population": [
+      {
+        "2022": 22593590,
+        "2020": 21224040,
+        "2015": 18112907,
+        "2010": 15529181,
+        "2000": 11239101,
+        "1990": 8945026,
+        "1980": 7372581,
+        "1970": 6153587
+      }
+    ]
+  },
+  {
+    "country": "Malta",
+    "population": [
+      {
+        "2022": 533286,
+        "2020": 515357,
+        "2015": 456579,
+        "2010": 418755,
+        "2000": 399212,
+        "1990": 365392,
+        "1980": 333587,
+        "1970": 315414
+      }
+    ]
+  },
+  {
+    "country": "Marshall Islands",
+    "population": [
+      {
+        "2022": 41569,
+        "2020": 43413,
+        "2015": 49410,
+        "2010": 53416,
+        "2000": 54224,
+        "1990": 46047,
+        "1980": 31988,
+        "1970": 23969
+      }
+    ]
+  },
+  {
+    "country": "Martinique",
+    "population": [
+      {
+        "2022": 367507,
+        "2020": 370391,
+        "2015": 383515,
+        "2010": 392181,
+        "2000": 432543,
+        "1990": 374271,
+        "1980": 333786,
+        "1970": 326428
+      }
+    ]
+  },
+  {
+    "country": "Mauritania",
+    "population": [
+      {
+        "2022": 4736139,
+        "2020": 4498604,
+        "2015": 3946220,
+        "2010": 3419461,
+        "2000": 2695003,
+        "1990": 2006027,
+        "1980": 1506694,
+        "1970": 1122198
+      }
+    ]
+  },
+  {
+    "country": "Mauritius",
+    "population": [
+      {
+        "2022": 1299469,
+        "2020": 1297828,
+        "2015": 1293153,
+        "2010": 1283330,
+        "2000": 1215930,
+        "1990": 1090290,
+        "1980": 954865,
+        "1970": 830115
+      }
+    ]
+  },
+  {
+    "country": "Mayotte",
+    "population": [
+      {
+        "2022": 326101,
+        "2020": 305587,
+        "2015": 249545,
+        "2010": 211786,
+        "2000": 159215,
+        "1990": 92659,
+        "1980": 52233,
+        "1970": 35383
+      }
+    ]
+  },
+  {
+    "country": "Mexico",
+    "population": [
+      {
+        "2022": 127504125,
+        "2020": 125998302,
+        "2015": 120149897,
+        "2010": 112532401,
+        "2000": 97873442,
+        "1990": 81720428,
+        "1980": 67705186,
+        "1970": 50289306
+      }
+    ]
+  },
+  {
+    "country": "Micronesia",
+    "population": [
+      {
+        "2022": 114164,
+        "2020": 112106,
+        "2015": 109462,
+        "2010": 107588,
+        "2000": 111709,
+        "1990": 98603,
+        "1980": 76299,
+        "1970": 58989
+      }
+    ]
+  },
+  {
+    "country": "Moldova",
+    "population": [
+      {
+        "2022": 3272996,
+        "2020": 3084847,
+        "2015": 3277388,
+        "2010": 3678186,
+        "2000": 4251573,
+        "1990": 4480199,
+        "1980": 4103240,
+        "1970": 3711140
+      }
+    ]
+  },
+  {
+    "country": "Monaco",
+    "population": [
+      {
+        "2022": 36469,
+        "2020": 36922,
+        "2015": 36760,
+        "2010": 33178,
+        "2000": 32465,
+        "1990": 30329,
+        "1980": 27076,
+        "1970": 24270
+      }
+    ]
+  },
+  {
+    "country": "Mongolia",
+    "population": [
+      {
+        "2022": 3398366,
+        "2020": 3294335,
+        "2015": 2964749,
+        "2010": 2702520,
+        "2000": 2450979,
+        "1990": 2161433,
+        "1980": 1697780,
+        "1970": 1293880
+      }
+    ]
+  },
+  {
+    "country": "Montenegro",
+    "population": [
+      {
+        "2022": 627082,
+        "2020": 629048,
+        "2015": 633966,
+        "2010": 631044,
+        "2000": 633324,
+        "1990": 621442,
+        "1980": 589324,
+        "1970": 530268
+      }
+    ]
+  },
+  {
+    "country": "Montserrat",
+    "population": [
+      {
+        "2022": 4390,
+        "2020": 4500,
+        "2015": 5059,
+        "2010": 4938,
+        "2000": 5138,
+        "1990": 10805,
+        "1980": 11452,
+        "1970": 11402
+      }
+    ]
+  },
+  {
+    "country": "Morocco",
+    "population": [
+      {
+        "2022": 37457971,
+        "2020": 36688772,
+        "2015": 34680458,
+        "2010": 32464865,
+        "2000": 28554415,
+        "1990": 24570814,
+        "1980": 19678444,
+        "1970": 15274351
+      }
+    ]
+  },
+  {
+    "country": "Mozambique",
+    "population": [
+      {
+        "2022": 32969517,
+        "2020": 31178239,
+        "2015": 26843246,
+        "2010": 23073723,
+        "2000": 17768505,
+        "1990": 13303459,
+        "1980": 11413587,
+        "1970": 8411676
+      }
+    ]
+  },
+  {
+    "country": "Myanmar",
+    "population": [
+      {
+        "2022": 54179306,
+        "2020": 53423198,
+        "2015": 51483949,
+        "2010": 49390988,
+        "2000": 45538332,
+        "1990": 40099553,
+        "1980": 33465781,
+        "1970": 27284112
+      }
+    ]
+  },
+  {
+    "country": "Namibia",
+    "population": [
+      {
+        "2022": 2567012,
+        "2020": 2489098,
+        "2015": 2282704,
+        "2010": 2099271,
+        "2000": 1819141,
+        "1990": 1369011,
+        "1980": 975994,
+        "1970": 754467
+      }
+    ]
+  },
+  {
+    "country": "Nauru",
+    "population": [
+      {
+        "2022": 12668,
+        "2020": 12315,
+        "2015": 11185,
+        "2010": 10241,
+        "2000": 10377,
+        "1990": 9598,
+        "1980": 7635,
+        "1970": 6663
+      }
+    ]
+  },
+  {
+    "country": "Nepal",
+    "population": [
+      {
+        "2022": 30547580,
+        "2020": 29348627,
+        "2015": 27610325,
+        "2010": 27161567,
+        "2000": 24559500,
+        "1990": 19616530,
+        "1980": 15600442,
+        "1970": 12501285
+      }
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "population": [
+      {
+        "2022": 17564014,
+        "2020": 17434557,
+        "2015": 17041107,
+        "2010": 16617116,
+        "2000": 15899135,
+        "1990": 14944548,
+        "1980": 14130387,
+        "1970": 13037686
+      }
+    ]
+  },
+  {
+    "country": "New Caledonia",
+    "population": [
+      {
+        "2022": 289950,
+        "2020": 286403,
+        "2015": 283032,
+        "2010": 261426,
+        "2000": 221537,
+        "1990": 177264,
+        "1980": 148599,
+        "1970": 110982
+      }
+    ]
+  },
+  {
+    "country": "New Zealand",
+    "population": [
+      {
+        "2022": 5185288,
+        "2020": 5061133,
+        "2015": 4590590,
+        "2010": 4346338,
+        "2000": 3855266,
+        "1990": 3397389,
+        "1980": 3147168,
+        "1970": 2824061
+      }
+    ]
+  },
+  {
+    "country": "Nicaragua",
+    "population": [
+      {
+        "2022": 6948392,
+        "2020": 6755895,
+        "2015": 6298598,
+        "2010": 5855734,
+        "2000": 5123222,
+        "1990": 4227820,
+        "1980": 3303309,
+        "1970": 2444767
+      }
+    ]
+  },
+  {
+    "country": "Niger",
+    "population": [
+      {
+        "2022": 26207977,
+        "2020": 24333639,
+        "2015": 20128124,
+        "2010": 16647543,
+        "2000": 11622665,
+        "1990": 8370647,
+        "1980": 6173177,
+        "1970": 4669708
+      }
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "population": [
+      {
+        "2022": 218541212,
+        "2020": 208327405,
+        "2015": 183995785,
+        "2010": 160952853,
+        "2000": 122851984,
+        "1990": 95214257,
+        "1980": 72951439,
+        "1970": 55569264
+      }
+    ]
+  },
+  {
+    "country": "Niue",
+    "population": [
+      {
+        "2022": 1934,
+        "2020": 1942,
+        "2015": 1847,
+        "2010": 1812,
+        "2000": 2074,
+        "1990": 2533,
+        "1980": 3637,
+        "1970": 5185
+      }
+    ]
+  },
+  {
+    "country": "North Korea",
+    "population": [
+      {
+        "2022": 26069416,
+        "2020": 25867467,
+        "2015": 25258015,
+        "2010": 24686435,
+        "2000": 23367059,
+        "1990": 20799523,
+        "1980": 17973650,
+        "1970": 14996879
+      }
+    ]
+  },
+  {
+    "country": "North Macedonia",
+    "population": [
+      {
+        "2022": 2093599,
+        "2020": 2111072,
+        "2015": 2107962,
+        "2010": 2093828,
+        "2000": 2037936,
+        "1990": 2044174,
+        "1980": 1907023,
+        "1970": 1656783
+      }
+    ]
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "population": [
+      {
+        "2022": 49551,
+        "2020": 49587,
+        "2015": 51514,
+        "2010": 54087,
+        "2000": 80338,
+        "1990": 48002,
+        "1980": 17613,
+        "1970": 10143
+      }
+    ]
+  },
+  {
+    "country": "Norway",
+    "population": [
+      {
+        "2022": 5434319,
+        "2020": 5379839,
+        "2015": 5190356,
+        "2010": 4889741,
+        "2000": 4491202,
+        "1990": 4241636,
+        "1980": 4085776,
+        "1970": 3875546
+      }
+    ]
+  },
+  {
+    "country": "Oman",
+    "population": [
+      {
+        "2022": 4576298,
+        "2020": 4543399,
+        "2015": 4191776,
+        "2010": 2881914,
+        "2000": 2344253,
+        "1990": 1804524,
+        "1980": 1017462,
+        "1970": 670693
+      }
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "population": [
+      {
+        "2022": 235824862,
+        "2020": 227196741,
+        "2015": 210969298,
+        "2010": 194454498,
+        "2000": 154369924,
+        "1990": 115414069,
+        "1980": 80624057,
+        "1970": 59290872
+      }
+    ]
+  },
+  {
+    "country": "Palau",
+    "population": [
+      {
+        "2022": 18055,
+        "2020": 17972,
+        "2015": 17794,
+        "2010": 18540,
+        "2000": 19726,
+        "1990": 15293,
+        "1980": 12252,
+        "1970": 11366
+      }
+    ]
+  },
+  {
+    "country": "Palestine",
+    "population": [
+      {
+        "2022": 5250072,
+        "2020": 5019401,
+        "2015": 4484614,
+        "2010": 3992278,
+        "2000": 3139954,
+        "1990": 2124609,
+        "1980": 1453620,
+        "1970": 1118241
+      }
+    ]
+  },
+  {
+    "country": "Panama",
+    "population": [
+      {
+        "2022": 4408581,
+        "2020": 4294396,
+        "2015": 3957099,
+        "2010": 3623617,
+        "2000": 3001731,
+        "1990": 2449968,
+        "1980": 1956987,
+        "1970": 1516188
+      }
+    ]
+  },
+  {
+    "country": "Papua New Guinea",
+    "population": [
+      {
+        "2022": 10142619,
+        "2020": 9749640,
+        "2015": 8682174,
+        "2010": 7583269,
+        "2000": 5508297,
+        "1990": 3864972,
+        "1980": 3104788,
+        "1970": 2489059
+      }
+    ]
+  },
+  {
+    "country": "Paraguay",
+    "population": [
+      {
+        "2022": 6780744,
+        "2020": 6618695,
+        "2015": 6177950,
+        "2010": 5768613,
+        "2000": 5123819,
+        "1990": 4059195,
+        "1980": 3078912,
+        "1970": 2408787
+      }
+    ]
+  },
+  {
+    "country": "Peru",
+    "population": [
+      {
+        "2022": 34049588,
+        "2020": 33304756,
+        "2015": 30711863,
+        "2010": 29229572,
+        "2000": 26654439,
+        "1990": 22109099,
+        "1980": 17492406,
+        "1970": 13562371
+      }
+    ]
+  },
+  {
+    "country": "Philippines",
+    "population": [
+      {
+        "2022": 115559009,
+        "2020": 112190977,
+        "2015": 103031365,
+        "2010": 94636700,
+        "2000": 77958223,
+        "1990": 61558898,
+        "1980": 48419546,
+        "1970": 37435586
+      }
+    ]
+  },
+  {
+    "country": "Poland",
+    "population": [
+      {
+        "2022": 39857145,
+        "2020": 38428366,
+        "2015": 38553146,
+        "2010": 38597353,
+        "2000": 38504431,
+        "1990": 38064255,
+        "1980": 35521429,
+        "1970": 32482943
+      }
+    ]
+  },
+  {
+    "country": "Portugal",
+    "population": [
+      {
+        "2022": 10270865,
+        "2020": 10298192,
+        "2015": 10365435,
+        "2010": 10588401,
+        "2000": 10300626,
+        "1990": 10007346,
+        "1980": 9785252,
+        "1970": 8683631
+      }
+    ]
+  },
+  {
+    "country": "Puerto Rico",
+    "population": [
+      {
+        "2022": 3252407,
+        "2020": 3271564,
+        "2015": 3497335,
+        "2010": 3717922,
+        "2000": 3827108,
+        "1990": 3543776,
+        "1980": 3214568,
+        "1970": 2737619
+      }
+    ]
+  },
+  {
+    "country": "Qatar",
+    "population": [
+      {
+        "2022": 2695122,
+        "2020": 2760385,
+        "2015": 2414573,
+        "2010": 1713504,
+        "2000": 645937,
+        "1990": 441675,
+        "1980": 277450,
+        "1970": 118007
+      }
+    ]
+  },
+  {
+    "country": "Republic of the Congo",
+    "population": [
+      {
+        "2022": 5970424,
+        "2020": 5702174,
+        "2015": 5064386,
+        "2010": 4437884,
+        "2000": 3134030,
+        "1990": 2385435,
+        "1980": 1829256,
+        "1970": 1396989
+      }
+    ]
+  },
+  {
+    "country": "Reunion",
+    "population": [
+      {
+        "2022": 974052,
+        "2020": 957822,
+        "2015": 922495,
+        "2010": 890130,
+        "2000": 785424,
+        "1990": 658992,
+        "1980": 551674,
+        "1970": 473925
+      }
+    ]
+  },
+  {
+    "country": "Romania",
+    "population": [
+      {
+        "2022": 19659267,
+        "2020": 19442038,
+        "2015": 19906079,
+        "2010": 20335211,
+        "2000": 21919876,
+        "1990": 22836234,
+        "1980": 22125224,
+        "1970": 19922618
+      }
+    ]
+  },
+  {
+    "country": "Russia",
+    "population": [
+      {
+        "2022": 144713314,
+        "2020": 145617329,
+        "2015": 144668389,
+        "2010": 143242599,
+        "2000": 146844839,
+        "1990": 148005704,
+        "1980": 138257420,
+        "1970": 130093010
+      }
+    ]
+  },
+  {
+    "country": "Rwanda",
+    "population": [
+      {
+        "2022": 13776698,
+        "2020": 13146362,
+        "2015": 11642959,
+        "2010": 10309031,
+        "2000": 8109989,
+        "1990": 7319962,
+        "1980": 5247532,
+        "1970": 3896367
+      }
+    ]
+  },
+  {
+    "country": "Saint Barthelemy",
+    "population": [
+      {
+        "2022": 10967,
+        "2020": 10681,
+        "2015": 9643,
+        "2010": 8988,
+        "2000": 7082,
+        "1990": 5168,
+        "1980": 2983,
+        "1970": 2417
+      }
+    ]
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "population": [
+      {
+        "2022": 47657,
+        "2020": 47642,
+        "2015": 47790,
+        "2010": 47403,
+        "2000": 45461,
+        "1990": 40636,
+        "1980": 43097,
+        "1970": 44968
+      }
+    ]
+  },
+  {
+    "country": "Saint Lucia",
+    "population": [
+      {
+        "2022": 179857,
+        "2020": 179237,
+        "2015": 175623,
+        "2010": 170935,
+        "2000": 159500,
+        "1990": 142301,
+        "1980": 121633,
+        "1970": 103090
+      }
+    ]
+  },
+  {
+    "country": "Saint Martin",
+    "population": [
+      {
+        "2022": 31791,
+        "2020": 32552,
+        "2015": 35020,
+        "2010": 36458,
+        "2000": 29610,
+        "1990": 28127,
+        "1980": 7776,
+        "1970": 5802
+      }
+    ]
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "population": [
+      {
+        "2022": 5862,
+        "2020": 5906,
+        "2015": 5978,
+        "2010": 6052,
+        "2000": 6274,
+        "1990": 6324,
+        "1980": 6106,
+        "1970": 5537
+      }
+    ]
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "population": [
+      {
+        "2022": 103948,
+        "2020": 104632,
+        "2015": 106482,
+        "2010": 109308,
+        "2000": 113813,
+        "1990": 112487,
+        "1980": 107480,
+        "1970": 98459
+      }
+    ]
+  },
+  {
+    "country": "Samoa",
+    "population": [
+      {
+        "2022": 222382,
+        "2020": 214929,
+        "2015": 203571,
+        "2010": 194672,
+        "2000": 184008,
+        "1990": 168186,
+        "1980": 164905,
+        "1970": 142771
+      }
+    ]
+  },
+  {
+    "country": "San Marino",
+    "population": [
+      {
+        "2022": 33660,
+        "2020": 34007,
+        "2015": 33570,
+        "2010": 31608,
+        "2000": 26823,
+        "1990": 23132,
+        "1980": 21346,
+        "1970": 18169
+      }
+    ]
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "population": [
+      {
+        "2022": 227380,
+        "2020": 218641,
+        "2015": 201124,
+        "2010": 182138,
+        "2000": 143714,
+        "1990": 120343,
+        "1980": 97210,
+        "1970": 77583
+      }
+    ]
+  },
+  {
+    "country": "Saudi Arabia",
+    "population": [
+      {
+        "2022": 36408820,
+        "2020": 35997107,
+        "2015": 32749848,
+        "2010": 29411929,
+        "2000": 21547390,
+        "1990": 16004763,
+        "1980": 10171710,
+        "1970": 6106191
+      }
+    ]
+  },
+  {
+    "country": "Senegal",
+    "population": [
+      {
+        "2022": 17316449,
+        "2020": 16436119,
+        "2015": 14356181,
+        "2010": 12530121,
+        "2000": 9704287,
+        "1990": 7536001,
+        "1980": 5703869,
+        "1970": 4367744
+      }
+    ]
+  },
+  {
+    "country": "Serbia",
+    "population": [
+      {
+        "2022": 7221365,
+        "2020": 7358005,
+        "2015": 7519496,
+        "2010": 7653748,
+        "2000": 7935022,
+        "1990": 7987529,
+        "1980": 7777010,
+        "1970": 7193533
+      }
+    ]
+  },
+  {
+    "country": "Seychelles",
+    "population": [
+      {
+        "2022": 107118,
+        "2020": 105530,
+        "2015": 99240,
+        "2010": 92409,
+        "2000": 80060,
+        "1990": 71057,
+        "1980": 65290,
+        "1970": 54379
+      }
+    ]
+  },
+  {
+    "country": "Sierra Leone",
+    "population": [
+      {
+        "2022": 8605718,
+        "2020": 8233969,
+        "2015": 7314773,
+        "2010": 6436698,
+        "2000": 4584067,
+        "1990": 4325388,
+        "1980": 3367477,
+        "1970": 2778557
+      }
+    ]
+  },
+  {
+    "country": "Singapore",
+    "population": [
+      {
+        "2022": 5975689,
+        "2020": 5909869,
+        "2015": 5650018,
+        "2010": 5163590,
+        "2000": 4053602,
+        "1990": 3022209,
+        "1980": 2400729,
+        "1970": 2061831
+      }
+    ]
+  },
+  {
+    "country": "Sint Maarten",
+    "population": [
+      {
+        "2022": 44175,
+        "2020": 43621,
+        "2015": 40205,
+        "2010": 33034,
+        "2000": 30489,
+        "1990": 27845,
+        "1980": 12243,
+        "1970": 6260
+      }
+    ]
+  },
+  {
+    "country": "Slovakia",
+    "population": [
+      {
+        "2022": 5643453,
+        "2020": 5456681,
+        "2015": 5424444,
+        "2010": 5396424,
+        "2000": 5376690,
+        "1990": 5261305,
+        "1980": 4973883,
+        "1970": 4522867
+      }
+    ]
+  },
+  {
+    "country": "Slovenia",
+    "population": [
+      {
+        "2022": 2119844,
+        "2020": 2117641,
+        "2015": 2080862,
+        "2010": 2057286,
+        "2000": 1984339,
+        "1990": 1986024,
+        "1980": 1901570,
+        "1970": 1741286
+      }
+    ]
+  },
+  {
+    "country": "Solomon Islands",
+    "population": [
+      {
+        "2022": 724273,
+        "2020": 691191,
+        "2015": 612660,
+        "2010": 540394,
+        "2000": 429978,
+        "1990": 324171,
+        "1980": 233668,
+        "1970": 172833
+      }
+    ]
+  },
+  {
+    "country": "Somalia",
+    "population": [
+      {
+        "2022": 17597511,
+        "2020": 16537016,
+        "2015": 13763906,
+        "2010": 12026649,
+        "2000": 8721465,
+        "1990": 6999096,
+        "1980": 5892224,
+        "1970": 3720977
+      }
+    ]
+  },
+  {
+    "country": "South Africa",
+    "population": [
+      {
+        "2022": 59893885,
+        "2020": 58801927,
+        "2015": 55876504,
+        "2010": 51784921,
+        "2000": 46813266,
+        "1990": 39877570,
+        "1980": 29463549,
+        "1970": 22368306
+      }
+    ]
+  },
+  {
+    "country": "South Korea",
+    "population": [
+      {
+        "2022": 51815810,
+        "2020": 51844690,
+        "2015": 50994401,
+        "2010": 48813042,
+        "2000": 46788591,
+        "1990": 44120039,
+        "1980": 38170501,
+        "1970": 32601143
+      }
+    ]
+  },
+  {
+    "country": "South Sudan",
+    "population": [
+      {
+        "2022": 10913164,
+        "2020": 10606227,
+        "2015": 11194299,
+        "2010": 9714419,
+        "2000": 6114440,
+        "1990": 4750817,
+        "1980": 4192011,
+        "1970": 3342410
+      }
+    ]
+  },
+  {
+    "country": "Spain",
+    "population": [
+      {
+        "2022": 47558630,
+        "2020": 47363807,
+        "2015": 46431342,
+        "2010": 46572772,
+        "2000": 40741651,
+        "1990": 38889889,
+        "1980": 37491666,
+        "1970": 33792617
+      }
+    ]
+  },
+  {
+    "country": "Sri Lanka",
+    "population": [
+      {
+        "2022": 21832143,
+        "2020": 21715079,
+        "2015": 21336697,
+        "2010": 20668557,
+        "2000": 18776371,
+        "1990": 17204094,
+        "1980": 14943645,
+        "1970": 12388769
+      }
+    ]
+  },
+  {
+    "country": "Sudan",
+    "population": [
+      {
+        "2022": 46874204,
+        "2020": 44440486,
+        "2015": 38171178,
+        "2010": 33739933,
+        "2000": 26298773,
+        "1990": 21090886,
+        "1980": 16673586,
+        "1970": 11305206
+      }
+    ]
+  },
+  {
+    "country": "Suriname",
+    "population": [
+      {
+        "2022": 618040,
+        "2020": 607065,
+        "2015": 575475,
+        "2010": 546080,
+        "2000": 478998,
+        "1990": 412756,
+        "1980": 375112,
+        "1970": 379918
+      }
+    ]
+  },
+  {
+    "country": "Sweden",
+    "population": [
+      {
+        "2022": 10549347,
+        "2020": 10368969,
+        "2015": 9849349,
+        "2010": 9381729,
+        "2000": 8871043,
+        "1990": 8548406,
+        "1980": 8311763,
+        "1970": 8027702
+      }
+    ]
+  },
+  {
+    "country": "Switzerland",
+    "population": [
+      {
+        "2022": 8740472,
+        "2020": 8638613,
+        "2015": 8281732,
+        "2010": 7822435,
+        "2000": 7182059,
+        "1990": 6711693,
+        "1980": 6319113,
+        "1970": 6181227
+      }
+    ]
+  },
+  {
+    "country": "Syria",
+    "population": [
+      {
+        "2022": 22125249,
+        "2020": 20772595,
+        "2015": 19205178,
+        "2010": 22337563,
+        "2000": 16307654,
+        "1990": 12408996,
+        "1980": 8898954,
+        "1970": 6319199
+      }
+    ]
+  },
+  {
+    "country": "Taiwan",
+    "population": [
+      {
+        "2022": 23893394,
+        "2020": 23821464,
+        "2015": 23512136,
+        "2010": 23083083,
+        "2000": 22194731,
+        "1990": 20586174,
+        "1980": 18100281,
+        "1970": 14957870
+      }
+    ]
+  },
+  {
+    "country": "Tajikistan",
+    "population": [
+      {
+        "2022": 9952787,
+        "2020": 9543207,
+        "2015": 8524063,
+        "2010": 7621779,
+        "2000": 6272998,
+        "1990": 5417860,
+        "1980": 4045965,
+        "1970": 2993019
+      }
+    ]
+  },
+  {
+    "country": "Tanzania",
+    "population": [
+      {
+        "2022": 65497748,
+        "2020": 61704518,
+        "2015": 52542823,
+        "2010": 45110527,
+        "2000": 34463704,
+        "1990": 26206012,
+        "1980": 19297659,
+        "1970": 13618192
+      }
+    ]
+  },
+  {
+    "country": "Thailand",
+    "population": [
+      {
+        "2022": 71697030,
+        "2020": 71475664,
+        "2015": 70294397,
+        "2010": 68270489,
+        "2000": 63066603,
+        "1990": 55228410,
+        "1980": 45737753,
+        "1970": 35791728
+      }
+    ]
+  },
+  {
+    "country": "Timor-Leste",
+    "population": [
+      {
+        "2022": 1341296,
+        "2020": 1299995,
+        "2015": 1205813,
+        "2010": 1088486,
+        "2000": 878360,
+        "1990": 758106,
+        "1980": 642224,
+        "1970": 554021
+      }
+    ]
+  },
+  {
+    "country": "Togo",
+    "population": [
+      {
+        "2022": 8848699,
+        "2020": 8442580,
+        "2015": 7473229,
+        "2010": 6571855,
+        "2000": 5008035,
+        "1990": 3875947,
+        "1980": 2838110,
+        "1970": 2197383
+      }
+    ]
+  },
+  {
+    "country": "Tokelau",
+    "population": [
+      {
+        "2022": 1871,
+        "2020": 1827,
+        "2015": 1454,
+        "2010": 1367,
+        "2000": 1666,
+        "1990": 1669,
+        "1980": 1647,
+        "1970": 1714
+      }
+    ]
+  },
+  {
+    "country": "Tonga",
+    "population": [
+      {
+        "2022": 106858,
+        "2020": 105254,
+        "2015": 106122,
+        "2010": 107383,
+        "2000": 102603,
+        "1990": 98727,
+        "1980": 96708,
+        "1970": 86484
+      }
+    ]
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "population": [
+      {
+        "2022": 1531044,
+        "2020": 1518147,
+        "2015": 1460177,
+        "2010": 1410296,
+        "2000": 1332203,
+        "1990": 1266518,
+        "1980": 1127852,
+        "1970": 988890
+      }
+    ]
+  },
+  {
+    "country": "Tunisia",
+    "population": [
+      {
+        "2022": 12356117,
+        "2020": 12161723,
+        "2015": 11557779,
+        "2010": 10895063,
+        "2000": 9893316,
+        "1990": 8440023,
+        "1980": 6578156,
+        "1970": 5047404
+      }
+    ]
+  },
+  {
+    "country": "Turkey",
+    "population": [
+      {
+        "2022": 85341241,
+        "2020": 84135428,
+        "2015": 79646178,
+        "2010": 73195345,
+        "2000": 64113547,
+        "1990": 54324142,
+        "1980": 44089069,
+        "1970": 35540990
+      }
+    ]
+  },
+  {
+    "country": "Turkmenistan",
+    "population": [
+      {
+        "2022": 6430770,
+        "2020": 6250438,
+        "2015": 5766431,
+        "2010": 5267970,
+        "2000": 4569132,
+        "1990": 3720278,
+        "1980": 2862903,
+        "1970": 2201432
+      }
+    ]
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "population": [
+      {
+        "2022": 45703,
+        "2020": 44276,
+        "2015": 36538,
+        "2010": 29726,
+        "2000": 18744,
+        "1990": 11709,
+        "1980": 7598,
+        "1970": 5665
+      }
+    ]
+  },
+  {
+    "country": "Tuvalu",
+    "population": [
+      {
+        "2022": 11312,
+        "2020": 11069,
+        "2015": 10877,
+        "2010": 10550,
+        "2000": 9638,
+        "1990": 9182,
+        "1980": 7731,
+        "1970": 5814
+      }
+    ]
+  },
+  {
+    "country": "Uganda",
+    "population": [
+      {
+        "2022": 47249585,
+        "2020": 44404611,
+        "2015": 37477356,
+        "2010": 32341728,
+        "2000": 24020697,
+        "1990": 17586630,
+        "1980": 13284026,
+        "1970": 10317212
+      }
+    ]
+  },
+  {
+    "country": "Ukraine",
+    "population": [
+      {
+        "2022": 39701739,
+        "2020": 43909666,
+        "2015": 44982564,
+        "2010": 45683020,
+        "2000": 48879755,
+        "1990": 51589817,
+        "1980": 49973920,
+        "1970": 47279086
+      }
+    ]
+  },
+  {
+    "country": "United Arab Emirates",
+    "population": [
+      {
+        "2022": 9441129,
+        "2020": 9287289,
+        "2015": 8916899,
+        "2010": 8481771,
+        "2000": 3275333,
+        "1990": 1900151,
+        "1980": 1014048,
+        "1970": 298084
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "population": [
+      {
+        "2022": 67508936,
+        "2020": 67059474,
+        "2015": 65224364,
+        "2010": 62760039,
+        "2000": 58850043,
+        "1990": 57210442,
+        "1980": 56326328,
+        "1970": 55650166
+      }
+    ]
+  },
+  {
+    "country": "United States",
+    "population": [
+      {
+        "2022": 338289857,
+        "2020": 335942003,
+        "2015": 324607776,
+        "2010": 311182845,
+        "2000": 282398554,
+        "1990": 248083732,
+        "1980": 223140018,
+        "1970": 200328340
+      }
+    ]
+  },
+  {
+    "country": "United States Virgin Islands",
+    "population": [
+      {
+        "2022": 99465,
+        "2020": 100442,
+        "2015": 102803,
+        "2010": 106142,
+        "2000": 108185,
+        "1990": 100685,
+        "1980": 96640,
+        "1970": 63446
+      }
+    ]
+  },
+  {
+    "country": "Uruguay",
+    "population": [
+      {
+        "2022": 3422794,
+        "2020": 3429086,
+        "2015": 3402818,
+        "2010": 3352651,
+        "2000": 3292224,
+        "1990": 3117012,
+        "1980": 2953750,
+        "1970": 2790265
+      }
+    ]
+  },
+  {
+    "country": "Uzbekistan",
+    "population": [
+      {
+        "2022": 34627652,
+        "2020": 33526656,
+        "2015": 30949417,
+        "2010": 28614227,
+        "2000": 24925554,
+        "1990": 20579100,
+        "1980": 15947129,
+        "1970": 12011361
+      }
+    ]
+  },
+  {
+    "country": "Vanuatu",
+    "population": [
+      {
+        "2022": 326740,
+        "2020": 311685,
+        "2015": 276438,
+        "2010": 245453,
+        "2000": 192074,
+        "1990": 150882,
+        "1980": 118156,
+        "1970": 87019
+      }
+    ]
+  },
+  {
+    "country": "Vatican City",
+    "population": [
+      {
+        "2022": 510,
+        "2020": 520,
+        "2015": 564,
+        "2010": 596,
+        "2000": 651,
+        "1990": 700,
+        "1980": 733,
+        "1970": 752
+      }
+    ]
+  },
+  {
+    "country": "Venezuela",
+    "population": [
+      {
+        "2022": 28301696,
+        "2020": 28490453,
+        "2015": 30529716,
+        "2010": 28715022,
+        "2000": 24427729,
+        "1990": 19750579,
+        "1980": 15210443,
+        "1970": 11355475
+      }
+    ]
+  },
+  {
+    "country": "Vietnam",
+    "population": [
+      {
+        "2022": 98186856,
+        "2020": 96648685,
+        "2015": 92191398,
+        "2010": 87411012,
+        "2000": 79001142,
+        "1990": 66912613,
+        "1980": 52968270,
+        "1970": 41928849
+      }
+    ]
+  },
+  {
+    "country": "Wallis and Futuna",
+    "population": [
+      {
+        "2022": 11572,
+        "2020": 11655,
+        "2015": 12182,
+        "2010": 13142,
+        "2000": 14723,
+        "1990": 13454,
+        "1980": 11315,
+        "1970": 9377
+      }
+    ]
+  },
+  {
+    "country": "Western Sahara",
+    "population": [
+      {
+        "2022": 575986,
+        "2020": 556048,
+        "2015": 491824,
+        "2010": 413296,
+        "2000": 270375,
+        "1990": 178529,
+        "1980": 116775,
+        "1970": 76371
+      }
+    ]
+  },
+  {
+    "country": "Yemen",
+    "population": [
+      {
+        "2022": 33696614,
+        "2020": 32284046,
+        "2015": 28516545,
+        "2010": 24743946,
+        "2000": 18628700,
+        "1990": 13375121,
+        "1980": 9204938,
+        "1970": 6843607
+      }
+    ]
+  },
+  {
+    "country": "Zambia",
+    "population": [
+      {
+        "2022": 20017675,
+        "2020": 18927715,
+        "2015": 16248230,
+        "2010": 13792086,
+        "2000": 9891136,
+        "1990": 7686401,
+        "1980": 5720438,
+        "1970": 4281671
+      }
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "population": [
+      {
+        "2022": 16320537,
+        "2020": 15669666,
+        "2015": 14154937,
+        "2010": 12839771,
+        "2000": 11834676,
+        "1990": 10113893,
+        "1980": 7049926,
+        "1970": 5202918
+      }
+    ]
+  }
+]
+```
+
+`jq '[
+  group_by(.continent)[] |
+  {
+    continent: .[0].continent,
+    population_2022: (map(.population_2022) | add)
+  }
+] as $continents |
+($continents | map(.population_2022) | add) as $world_population |
+$continents | map({
+  continent: .continent,
+  world_population_percentage: (.population_2022 / $world_population * 100)
+})' < world-population.json`
+
+```yaml
+[
+  {
+    "continent": "Africa",
+    "world_population_percentage": 17.893603711292595
+  },
+  {
+    "continent": "Asia",
+    "world_population_percentage": 59.21408121127158
+  },
+  {
+    "continent": "Europe",
+    "world_population_percentage": 9.320319091529134
+  },
+  {
+    "continent": "North America",
+    "world_population_percentage": 7.528722428374607
+  },
+  {
+    "continent": "Oceania",
+    "world_population_percentage": 0.5648591608481732
+  },
+  {
+    "continent": "South America",
+    "world_population_percentage": 5.478414396683904
+  }
+]
+```
