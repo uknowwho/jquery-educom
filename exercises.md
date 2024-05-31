@@ -5496,10305 +5496,10799 @@ With this command we have to fidget a bit with the data, namely replacing \t wit
 
 See `world-population.csv` for the results.
 
-`jq '.[] | {rank: .rank, cca3: .cca3, capital: .capital, continent: .continent, population: [{year: 2022, population:.population_2022}, {year: 2020, population: .population_2020}, {year: 2015, population: .population_2015}, {year: 2010, population: .population_2010}, {year: 2000, population: .population_2000}, {year: 1990, population: .population_1990}, {year: 1980, population: .population_1980}, {year: 1970, population: .population_1970}], area_km2: .area_km2, population_density: .population_density, population_growth_rate: .population_growth_rate, percentage_world_population: .percentage_world_population}' < world-population.json`
+`jq '.[] | {country: .country, rank: .rank, cca3: .cca3, capital: .capital, continent: .continent, population: [{year: 2022, population:.population_2022}, {year: 2020, population: .population_2020}, {year: 2015, population: .population_2015}, {year: 2010, population: .population_2010}, {year: 2000, population: .population_2000}, {year: 1990, population: .population_1990}, {year: 1980, population: .population_1980}, {year: 1970, population: .population_1970}], area_km2: .area_km2, population_density: .population_density, population_growth_rate: .population_growth_rate, percentage_world_population: .percentage_world_population}' < world-population.json`
 
 ```yaml
-[
-  {
-    "rank": 36,
-    "cca3": "AFG",
-    "capital": "Kabul",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 41128771
-      },
-      {
-        "year": 2020,
-        "population": 38972230
-      },
-      {
-        "year": 2015,
-        "population": 33753499
-      },
-      {
-        "year": 2010,
-        "population": 28189672
-      },
-      {
-        "year": 2000,
-        "population": 19542982
-      },
-      {
-        "year": 1990,
-        "population": 10694796
-      },
-      {
-        "year": 1980,
-        "population": 12486631
-      },
-      {
-        "year": 1970,
-        "population": 10752971
-      }
-    ],
-    "area_km2": 652230,
-    "population_density": 63.0587,
-    "population_growth_rate": 1.0257,
-    "percentage_world_population": 0.52
-  },
-  {
-    "rank": 138,
-    "cca3": "ALB",
-    "capital": "Tirana",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2842321
-      },
-      {
-        "year": 2020,
-        "population": 2866849
-      },
-      {
-        "year": 2015,
-        "population": 2882481
-      },
-      {
-        "year": 2010,
-        "population": 2913399
-      },
-      {
-        "year": 2000,
-        "population": 3182021
-      },
-      {
-        "year": 1990,
-        "population": 3295066
-      },
-      {
-        "year": 1980,
-        "population": 2941651
-      },
-      {
-        "year": 1970,
-        "population": 2324731
-      }
-    ],
-    "area_km2": 28748,
-    "population_density": 98.8702,
-    "population_growth_rate": 0.9957,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 34,
-    "cca3": "DZA",
-    "capital": "Algiers",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 44903225
-      },
-      {
-        "year": 2020,
-        "population": 43451666
-      },
-      {
-        "year": 2015,
-        "population": 39543154
-      },
-      {
-        "year": 2010,
-        "population": 35856344
-      },
-      {
-        "year": 2000,
-        "population": 30774621
-      },
-      {
-        "year": 1990,
-        "population": 25518074
-      },
-      {
-        "year": 1980,
-        "population": 18739378
-      },
-      {
-        "year": 1970,
-        "population": 13795915
-      }
-    ],
-    "area_km2": 2381741,
-    "population_density": 18.8531,
-    "population_growth_rate": 1.0164,
-    "percentage_world_population": 0.56
-  },
-  {
-    "rank": 213,
-    "cca3": "ASM",
-    "capital": "Pago Pago",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 44273
-      },
-      {
-        "year": 2020,
-        "population": 46189
-      },
-      {
-        "year": 2015,
-        "population": 51368
-      },
-      {
-        "year": 2010,
-        "population": 54849
-      },
-      {
-        "year": 2000,
-        "population": 58230
-      },
-      {
-        "year": 1990,
-        "population": 47818
-      },
-      {
-        "year": 1980,
-        "population": 32886
-      },
-      {
-        "year": 1970,
-        "population": 27075
-      }
-    ],
-    "area_km2": 199,
-    "population_density": 222.4774,
-    "population_growth_rate": 0.9831,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 203,
-    "cca3": "AND",
-    "capital": "Andorra la Vella",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 79824
-      },
-      {
-        "year": 2020,
-        "population": 77700
-      },
-      {
-        "year": 2015,
-        "population": 71746
-      },
-      {
-        "year": 2010,
-        "population": 71519
-      },
-      {
-        "year": 2000,
-        "population": 66097
-      },
-      {
-        "year": 1990,
-        "population": 53569
-      },
-      {
-        "year": 1980,
-        "population": 35611
-      },
-      {
-        "year": 1970,
-        "population": 19860
-      }
-    ],
-    "area_km2": 468,
-    "population_density": 170.5641,
-    "population_growth_rate": 1.01,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 42,
-    "cca3": "AGO",
-    "capital": "Luanda",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 35588987
-      },
-      {
-        "year": 2020,
-        "population": 33428485
-      },
-      {
-        "year": 2015,
-        "population": 28127721
-      },
-      {
-        "year": 2010,
-        "population": 23364185
-      },
-      {
-        "year": 2000,
-        "population": 16394062
-      },
-      {
-        "year": 1990,
-        "population": 11828638
-      },
-      {
-        "year": 1980,
-        "population": 8330047
-      },
-      {
-        "year": 1970,
-        "population": 6029700
-      }
-    ],
-    "area_km2": 1246700,
-    "population_density": 28.5466,
-    "population_growth_rate": 1.0315,
-    "percentage_world_population": 0.45
-  },
-  {
-    "rank": 224,
-    "cca3": "AIA",
-    "capital": "The Valley",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 15857
-      },
-      {
-        "year": 2020,
-        "population": 15585
-      },
-      {
-        "year": 2015,
-        "population": 14525
-      },
-      {
-        "year": 2010,
-        "population": 13172
-      },
-      {
-        "year": 2000,
-        "population": 11047
-      },
-      {
-        "year": 1990,
-        "population": 8316
-      },
-      {
-        "year": 1980,
-        "population": 6560
-      },
-      {
-        "year": 1970,
-        "population": 6283
-      }
-    ],
-    "area_km2": 91,
-    "population_density": 174.2527,
-    "population_growth_rate": 1.0066,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 201,
-    "cca3": "ATG",
-    "capital": "Saint John’s",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 93763
-      },
-      {
-        "year": 2020,
-        "population": 92664
-      },
-      {
-        "year": 2015,
-        "population": 89941
-      },
-      {
-        "year": 2010,
-        "population": 85695
-      },
-      {
-        "year": 2000,
-        "population": 75055
-      },
-      {
-        "year": 1990,
-        "population": 63328
-      },
-      {
-        "year": 1980,
-        "population": 64888
-      },
-      {
-        "year": 1970,
-        "population": 64516
-      }
-    ],
-    "area_km2": 442,
-    "population_density": 212.1335,
-    "population_growth_rate": 1.0058,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 33,
-    "cca3": "ARG",
-    "capital": "Buenos Aires",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 45510318
-      },
-      {
-        "year": 2020,
-        "population": 45036032
-      },
-      {
-        "year": 2015,
-        "population": 43257065
-      },
-      {
-        "year": 2010,
-        "population": 41100123
-      },
-      {
-        "year": 2000,
-        "population": 37070774
-      },
-      {
-        "year": 1990,
-        "population": 32637657
-      },
-      {
-        "year": 1980,
-        "population": 28024803
-      },
-      {
-        "year": 1970,
-        "population": 23842803
-      }
-    ],
-    "area_km2": 2780400,
-    "population_density": 16.3683,
-    "population_growth_rate": 1.0052,
-    "percentage_world_population": 0.57
-  },
-  {
-    "rank": 140,
-    "cca3": "ARM",
-    "capital": "Yerevan",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2780469
-      },
-      {
-        "year": 2020,
-        "population": 2805608
-      },
-      {
-        "year": 2015,
-        "population": 2878595
-      },
-      {
-        "year": 2010,
-        "population": 2946293
-      },
-      {
-        "year": 2000,
-        "population": 3168523
-      },
-      {
-        "year": 1990,
-        "population": 3556539
-      },
-      {
-        "year": 1980,
-        "population": 3135123
-      },
-      {
-        "year": 1970,
-        "population": 2534377
-      }
-    ],
-    "area_km2": 29743,
-    "population_density": 93.4831,
-    "population_growth_rate": 0.9962,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 198,
-    "cca3": "ABW",
-    "capital": "Oranjestad",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 106445
-      },
-      {
-        "year": 2020,
-        "population": 106585
-      },
-      {
-        "year": 2015,
-        "population": 104257
-      },
-      {
-        "year": 2010,
-        "population": 100341
-      },
-      {
-        "year": 2000,
-        "population": 89101
-      },
-      {
-        "year": 1990,
-        "population": 65712
-      },
-      {
-        "year": 1980,
-        "population": 62267
-      },
-      {
-        "year": 1970,
-        "population": 59106
-      }
-    ],
-    "area_km2": 180,
-    "population_density": 591.3611,
-    "population_growth_rate": 0.9991,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 55,
-    "cca3": "AUS",
-    "capital": "Canberra",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 26177413
-      },
-      {
-        "year": 2020,
-        "population": 25670051
-      },
-      {
-        "year": 2015,
-        "population": 23820236
-      },
-      {
-        "year": 2010,
-        "population": 22019168
-      },
-      {
-        "year": 2000,
-        "population": 19017963
-      },
-      {
-        "year": 1990,
-        "population": 17048003
-      },
-      {
-        "year": 1980,
-        "population": 14706322
-      },
-      {
-        "year": 1970,
-        "population": 12595034
-      }
-    ],
-    "area_km2": 7692024,
-    "population_density": 3.4032,
-    "population_growth_rate": 1.0099,
-    "percentage_world_population": 0.33
-  },
-  {
-    "rank": 99,
-    "cca3": "AUT",
-    "capital": "Vienna",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 8939617
-      },
-      {
-        "year": 2020,
-        "population": 8907777
-      },
-      {
-        "year": 2015,
-        "population": 8642421
-      },
-      {
-        "year": 2010,
-        "population": 8362829
-      },
-      {
-        "year": 2000,
-        "population": 8010428
-      },
-      {
-        "year": 1990,
-        "population": 7678729
-      },
-      {
-        "year": 1980,
-        "population": 7547561
-      },
-      {
-        "year": 1970,
-        "population": 7465301
-      }
-    ],
-    "area_km2": 83871,
-    "population_density": 106.5877,
-    "population_growth_rate": 1.002,
-    "percentage_world_population": 0.11
-  },
-  {
-    "rank": 91,
-    "cca3": "AZE",
-    "capital": "Baku",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10358074
-      },
-      {
-        "year": 2020,
-        "population": 10284951
-      },
-      {
-        "year": 2015,
-        "population": 9863480
-      },
-      {
-        "year": 2010,
-        "population": 9237202
-      },
-      {
-        "year": 2000,
-        "population": 8190337
-      },
-      {
-        "year": 1990,
-        "population": 7427836
-      },
-      {
-        "year": 1980,
-        "population": 6383060
-      },
-      {
-        "year": 1970,
-        "population": 5425317
-      }
-    ],
-    "area_km2": 86600,
-    "population_density": 119.6082,
-    "population_growth_rate": 1.0044,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 176,
-    "cca3": "BHS",
-    "capital": "Nassau",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 409984
-      },
-      {
-        "year": 2020,
-        "population": 406471
-      },
-      {
-        "year": 2015,
-        "population": 392697
-      },
-      {
-        "year": 2010,
-        "population": 373272
-      },
-      {
-        "year": 2000,
-        "population": 325014
-      },
-      {
-        "year": 1990,
-        "population": 270679
-      },
-      {
-        "year": 1980,
-        "population": 223752
-      },
-      {
-        "year": 1970,
-        "population": 179129
-      }
-    ],
-    "area_km2": 13943,
-    "population_density": 29.4043,
-    "population_growth_rate": 1.0051,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 154,
-    "cca3": "BHR",
-    "capital": "Manama",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1472233
-      },
-      {
-        "year": 2020,
-        "population": 1477469
-      },
-      {
-        "year": 2015,
-        "population": 1362142
-      },
-      {
-        "year": 2010,
-        "population": 1213645
-      },
-      {
-        "year": 2000,
-        "population": 711442
-      },
-      {
-        "year": 1990,
-        "population": 517418
-      },
-      {
-        "year": 1980,
-        "population": 362595
-      },
-      {
-        "year": 1970,
-        "population": 222555
-      }
-    ],
-    "area_km2": 765,
-    "population_density": 1924.4876,
-    "population_growth_rate": 1.0061,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 8,
-    "cca3": "BGD",
-    "capital": "Dhaka",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 171186372
-      },
-      {
-        "year": 2020,
-        "population": 167420951
-      },
-      {
-        "year": 2015,
-        "population": 157830000
-      },
-      {
-        "year": 2010,
-        "population": 148391139
-      },
-      {
-        "year": 2000,
-        "population": 129193327
-      },
-      {
-        "year": 1990,
-        "population": 107147651
-      },
-      {
-        "year": 1980,
-        "population": 83929765
-      },
-      {
-        "year": 1970,
-        "population": 67541860
-      }
-    ],
-    "area_km2": 147570,
-    "population_density": 1160.035,
-    "population_growth_rate": 1.0108,
-    "percentage_world_population": 2.15
-  },
-  {
-    "rank": 186,
-    "cca3": "BRB",
-    "capital": "Bridgetown",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 281635
-      },
-      {
-        "year": 2020,
-        "population": 280693
-      },
-      {
-        "year": 2015,
-        "population": 278083
-      },
-      {
-        "year": 2010,
-        "population": 274711
-      },
-      {
-        "year": 2000,
-        "population": 264657
-      },
-      {
-        "year": 1990,
-        "population": 258868
-      },
-      {
-        "year": 1980,
-        "population": 253575
-      },
-      {
-        "year": 1970,
-        "population": 241397
-      }
-    ],
-    "area_km2": 430,
-    "population_density": 654.9651,
-    "population_growth_rate": 1.0015,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 96,
-    "cca3": "BLR",
-    "capital": "Minsk",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 9534954
-      },
-      {
-        "year": 2020,
-        "population": 9633740
-      },
-      {
-        "year": 2015,
-        "population": 9700609
-      },
-      {
-        "year": 2010,
-        "population": 9731427
-      },
-      {
-        "year": 2000,
-        "population": 10256483
-      },
-      {
-        "year": 1990,
-        "population": 10428525
-      },
-      {
-        "year": 1980,
-        "population": 9817257
-      },
-      {
-        "year": 1970,
-        "population": 9170786
-      }
-    ],
-    "area_km2": 207600,
-    "population_density": 45.9295,
-    "population_growth_rate": 0.9955,
-    "percentage_world_population": 0.12
-  },
-  {
-    "rank": 81,
-    "cca3": "BEL",
-    "capital": "Brussels",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11655930
-      },
-      {
-        "year": 2020,
-        "population": 11561717
-      },
-      {
-        "year": 2015,
-        "population": 11248303
-      },
-      {
-        "year": 2010,
-        "population": 10877947
-      },
-      {
-        "year": 2000,
-        "population": 10264343
-      },
-      {
-        "year": 1990,
-        "population": 9959560
-      },
-      {
-        "year": 1980,
-        "population": 9828986
-      },
-      {
-        "year": 1970,
-        "population": 9629376
-      }
-    ],
-    "area_km2": 30528,
-    "population_density": 381.8111,
-    "population_growth_rate": 1.0038,
-    "percentage_world_population": 0.15
-  },
-  {
-    "rank": 177,
-    "cca3": "BLZ",
-    "capital": "Belmopan",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 405272
-      },
-      {
-        "year": 2020,
-        "population": 394921
-      },
-      {
-        "year": 2015,
-        "population": 359871
-      },
-      {
-        "year": 2010,
-        "population": 322106
-      },
-      {
-        "year": 2000,
-        "population": 240406
-      },
-      {
-        "year": 1990,
-        "population": 182589
-      },
-      {
-        "year": 1980,
-        "population": 145133
-      },
-      {
-        "year": 1970,
-        "population": 120905
-      }
-    ],
-    "area_km2": 22966,
-    "population_density": 17.6466,
-    "population_growth_rate": 1.0131,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 77,
-    "cca3": "BEN",
-    "capital": "Porto-Novo",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 13352864
-      },
-      {
-        "year": 2020,
-        "population": 12643123
-      },
-      {
-        "year": 2015,
-        "population": 10932783
-      },
-      {
-        "year": 2010,
-        "population": 9445710
-      },
-      {
-        "year": 2000,
-        "population": 6998023
-      },
-      {
-        "year": 1990,
-        "population": 5133419
-      },
-      {
-        "year": 1980,
-        "population": 3833939
-      },
-      {
-        "year": 1970,
-        "population": 3023443
-      }
-    ],
-    "area_km2": 112622,
-    "population_density": 118.5635,
-    "population_growth_rate": 1.0274,
-    "percentage_world_population": 0.17
-  },
-  {
-    "rank": 206,
-    "cca3": "BMU",
-    "capital": "Hamilton",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 64184
-      },
-      {
-        "year": 2020,
-        "population": 64031
-      },
-      {
-        "year": 2015,
-        "population": 63144
-      },
-      {
-        "year": 2010,
-        "population": 63447
-      },
-      {
-        "year": 2000,
-        "population": 61371
-      },
-      {
-        "year": 1990,
-        "population": 57470
-      },
-      {
-        "year": 1980,
-        "population": 53565
-      },
-      {
-        "year": 1970,
-        "population": 52019
-      }
-    ],
-    "area_km2": 54,
-    "population_density": 1188.5926,
-    "population_growth_rate": 1,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 165,
-    "cca3": "BTN",
-    "capital": "Thimphu",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 782455
-      },
-      {
-        "year": 2020,
-        "population": 772506
-      },
-      {
-        "year": 2015,
-        "population": 743274
-      },
-      {
-        "year": 2010,
-        "population": 705516
-      },
-      {
-        "year": 2000,
-        "population": 587207
-      },
-      {
-        "year": 1990,
-        "population": 558442
-      },
-      {
-        "year": 1980,
-        "population": 415257
-      },
-      {
-        "year": 1970,
-        "population": 298894
-      }
-    ],
-    "area_km2": 38394,
-    "population_density": 20.3796,
-    "population_growth_rate": 1.0064,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 80,
-    "cca3": "BOL",
-    "capital": "Sucre",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 12224110
-      },
-      {
-        "year": 2020,
-        "population": 11936162
-      },
-      {
-        "year": 2015,
-        "population": 11090085
-      },
-      {
-        "year": 2010,
-        "population": 10223270
-      },
-      {
-        "year": 2000,
-        "population": 8592656
-      },
-      {
-        "year": 1990,
-        "population": 7096194
-      },
-      {
-        "year": 1980,
-        "population": 5736088
-      },
-      {
-        "year": 1970,
-        "population": 4585693
-      }
-    ],
-    "area_km2": 1098581,
-    "population_density": 11.1272,
-    "population_growth_rate": 1.012,
-    "percentage_world_population": 0.15
-  },
-  {
-    "rank": 137,
-    "cca3": "BIH",
-    "capital": "Sarajevo",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3233526
-      },
-      {
-        "year": 2020,
-        "population": 3318407
-      },
-      {
-        "year": 2015,
-        "population": 3524324
-      },
-      {
-        "year": 2010,
-        "population": 3811088
-      },
-      {
-        "year": 2000,
-        "population": 4179350
-      },
-      {
-        "year": 1990,
-        "population": 4494310
-      },
-      {
-        "year": 1980,
-        "population": 4199820
-      },
-      {
-        "year": 1970,
-        "population": 3815561
-      }
-    ],
-    "area_km2": 51209,
-    "population_density": 63.1437,
-    "population_growth_rate": 0.9886,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 144,
-    "cca3": "BWA",
-    "capital": "Gaborone",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2630296
-      },
-      {
-        "year": 2020,
-        "population": 2546402
-      },
-      {
-        "year": 2015,
-        "population": 2305171
-      },
-      {
-        "year": 2010,
-        "population": 2091664
-      },
-      {
-        "year": 2000,
-        "population": 1726985
-      },
-      {
-        "year": 1990,
-        "population": 1341474
-      },
-      {
-        "year": 1980,
-        "population": 938578
-      },
-      {
-        "year": 1970,
-        "population": 592244
-      }
-    ],
-    "area_km2": 582000,
-    "population_density": 4.5194,
-    "population_growth_rate": 1.0162,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 7,
-    "cca3": "BRA",
-    "capital": "Brasilia",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 215313498
-      },
-      {
-        "year": 2020,
-        "population": 213196304
-      },
-      {
-        "year": 2015,
-        "population": 205188205
-      },
-      {
-        "year": 2010,
-        "population": 196353492
-      },
-      {
-        "year": 2000,
-        "population": 175873720
-      },
-      {
-        "year": 1990,
-        "population": 150706446
-      },
-      {
-        "year": 1980,
-        "population": 122288383
-      },
-      {
-        "year": 1970,
-        "population": 96369875
-      }
-    ],
-    "area_km2": 8515767,
-    "population_density": 25.2841,
-    "population_growth_rate": 1.0046,
-    "percentage_world_population": 2.7
-  },
-  {
-    "rank": 221,
-    "cca3": "VGB",
-    "capital": "Road Town",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 31305
-      },
-      {
-        "year": 2020,
-        "population": 30910
-      },
-      {
-        "year": 2015,
-        "population": 29366
-      },
-      {
-        "year": 2010,
-        "population": 27556
-      },
-      {
-        "year": 2000,
-        "population": 20104
-      },
-      {
-        "year": 1990,
-        "population": 15617
-      },
-      {
-        "year": 1980,
-        "population": 11109
-      },
-      {
-        "year": 1970,
-        "population": 9581
-      }
-    ],
-    "area_km2": 151,
-    "population_density": 207.3179,
-    "population_growth_rate": 1.0059,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 175,
-    "cca3": "BRN",
-    "capital": "Bandar Seri Begawan",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 449002
-      },
-      {
-        "year": 2020,
-        "population": 441725
-      },
-      {
-        "year": 2015,
-        "population": 421437
-      },
-      {
-        "year": 2010,
-        "population": 396053
-      },
-      {
-        "year": 2000,
-        "population": 333926
-      },
-      {
-        "year": 1990,
-        "population": 261928
-      },
-      {
-        "year": 1980,
-        "population": 187921
-      },
-      {
-        "year": 1970,
-        "population": 133343
-      }
-    ],
-    "area_km2": 5765,
-    "population_density": 77.8841,
-    "population_growth_rate": 1.0081,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 108,
-    "cca3": "BGR",
-    "capital": "Sofia",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6781953
-      },
-      {
-        "year": 2020,
-        "population": 6979175
-      },
-      {
-        "year": 2015,
-        "population": 7309253
-      },
-      {
-        "year": 2010,
-        "population": 7592273
-      },
-      {
-        "year": 2000,
-        "population": 8097691
-      },
-      {
-        "year": 1990,
-        "population": 8767778
-      },
-      {
-        "year": 1980,
-        "population": 8980606
-      },
-      {
-        "year": 1970,
-        "population": 8582950
-      }
-    ],
-    "area_km2": 110879,
-    "population_density": 61.1654,
-    "population_growth_rate": 0.9849,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 58,
-    "cca3": "BFA",
-    "capital": "Ouagadougou",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 22673762
-      },
-      {
-        "year": 2020,
-        "population": 21522626
-      },
-      {
-        "year": 2015,
-        "population": 18718019
-      },
-      {
-        "year": 2010,
-        "population": 16116845
-      },
-      {
-        "year": 2000,
-        "population": 11882888
-      },
-      {
-        "year": 1990,
-        "population": 9131361
-      },
-      {
-        "year": 1980,
-        "population": 6932967
-      },
-      {
-        "year": 1970,
-        "population": 5611666
-      }
-    ],
-    "area_km2": 272967,
-    "population_density": 83.0641,
-    "population_growth_rate": 1.0259,
-    "percentage_world_population": 0.28
-  },
-  {
-    "rank": 78,
-    "cca3": "BDI",
-    "capital": "Bujumbura",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 12889576
-      },
-      {
-        "year": 2020,
-        "population": 12220227
-      },
-      {
-        "year": 2015,
-        "population": 10727148
-      },
-      {
-        "year": 2010,
-        "population": 9126605
-      },
-      {
-        "year": 2000,
-        "population": 6307659
-      },
-      {
-        "year": 1990,
-        "population": 5483793
-      },
-      {
-        "year": 1980,
-        "population": 4312834
-      },
-      {
-        "year": 1970,
-        "population": 3497834
-      }
-    ],
-    "area_km2": 27834,
-    "population_density": 463.0874,
-    "population_growth_rate": 1.027,
-    "percentage_world_population": 0.16
-  },
-  {
-    "rank": 73,
-    "cca3": "KHM",
-    "capital": "Phnom Penh",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 16767842
-      },
-      {
-        "year": 2020,
-        "population": 16396860
-      },
-      {
-        "year": 2015,
-        "population": 15417523
-      },
-      {
-        "year": 2010,
-        "population": 14363532
-      },
-      {
-        "year": 2000,
-        "population": 12118841
-      },
-      {
-        "year": 1990,
-        "population": 8910808
-      },
-      {
-        "year": 1980,
-        "population": 6198959
-      },
-      {
-        "year": 1970,
-        "population": 6708525
-      }
-    ],
-    "area_km2": 181035,
-    "population_density": 92.6221,
-    "population_growth_rate": 1.0108,
-    "percentage_world_population": 0.21
-  },
-  {
-    "rank": 53,
-    "cca3": "CMR",
-    "capital": "Yaounde",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 27914536
-      },
-      {
-        "year": 2020,
-        "population": 26491087
-      },
-      {
-        "year": 2015,
-        "population": 23012646
-      },
-      {
-        "year": 2010,
-        "population": 19878036
-      },
-      {
-        "year": 2000,
-        "population": 15091594
-      },
-      {
-        "year": 1990,
-        "population": 11430520
-      },
-      {
-        "year": 1980,
-        "population": 8519891
-      },
-      {
-        "year": 1970,
-        "population": 6452787
-      }
-    ],
-    "area_km2": 475442,
-    "population_density": 58.7128,
-    "population_growth_rate": 1.0263,
-    "percentage_world_population": 0.35
-  },
-  {
-    "rank": 39,
-    "cca3": "CAN",
-    "capital": "Ottawa",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 38454327
-      },
-      {
-        "year": 2020,
-        "population": 37888705
-      },
-      {
-        "year": 2015,
-        "population": 35732126
-      },
-      {
-        "year": 2010,
-        "population": 33963412
-      },
-      {
-        "year": 2000,
-        "population": 30683313
-      },
-      {
-        "year": 1990,
-        "population": 27657204
-      },
-      {
-        "year": 1980,
-        "population": 24511510
-      },
-      {
-        "year": 1970,
-        "population": 21434577
-      }
-    ],
-    "area_km2": 9984670,
-    "population_density": 3.8513,
-    "population_growth_rate": 1.0078,
-    "percentage_world_population": 0.48
-  },
-  {
-    "rank": 171,
-    "cca3": "CPV",
-    "capital": "Praia",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 593149
-      },
-      {
-        "year": 2020,
-        "population": 582640
-      },
-      {
-        "year": 2015,
-        "population": 552166
-      },
-      {
-        "year": 2010,
-        "population": 521212
-      },
-      {
-        "year": 2000,
-        "population": 458251
-      },
-      {
-        "year": 1990,
-        "population": 364563
-      },
-      {
-        "year": 1980,
-        "population": 317234
-      },
-      {
-        "year": 1970,
-        "population": 287262
-      }
-    ],
-    "area_km2": 4033,
-    "population_density": 147.0739,
-    "population_growth_rate": 1.0089,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 205,
-    "cca3": "CYM",
-    "capital": "George Town",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 68706
-      },
-      {
-        "year": 2020,
-        "population": 67311
-      },
-      {
-        "year": 2015,
-        "population": 60911
-      },
-      {
-        "year": 2010,
-        "population": 54074
-      },
-      {
-        "year": 2000,
-        "population": 39658
-      },
-      {
-        "year": 1990,
-        "population": 26027
-      },
-      {
-        "year": 1980,
-        "population": 17100
-      },
-      {
-        "year": 1970,
-        "population": 10533
-      }
-    ],
-    "area_km2": 264,
-    "population_density": 260.25,
-    "population_growth_rate": 1.0084,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 117,
-    "cca3": "CAF",
-    "capital": "Bangui",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5579144
-      },
-      {
-        "year": 2020,
-        "population": 5343020
-      },
-      {
-        "year": 2015,
-        "population": 4819333
-      },
-      {
-        "year": 2010,
-        "population": 4660067
-      },
-      {
-        "year": 2000,
-        "population": 3759170
-      },
-      {
-        "year": 1990,
-        "population": 2809221
-      },
-      {
-        "year": 1980,
-        "population": 2415276
-      },
-      {
-        "year": 1970,
-        "population": 2067356
-      }
-    ],
-    "area_km2": 622984,
-    "population_density": 8.9555,
-    "population_growth_rate": 1.0224,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 69,
-    "cca3": "TCD",
-    "capital": "N'Djamena",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17723315
-      },
-      {
-        "year": 2020,
-        "population": 16644701
-      },
-      {
-        "year": 2015,
-        "population": 14140274
-      },
-      {
-        "year": 2010,
-        "population": 11894727
-      },
-      {
-        "year": 2000,
-        "population": 8259137
-      },
-      {
-        "year": 1990,
-        "population": 5827069
-      },
-      {
-        "year": 1980,
-        "population": 4408230
-      },
-      {
-        "year": 1970,
-        "population": 3667394
-      }
-    ],
-    "area_km2": 1284000,
-    "population_density": 13.8032,
-    "population_growth_rate": 1.0316,
-    "percentage_world_population": 0.22
-  },
-  {
-    "rank": 65,
-    "cca3": "CHL",
-    "capital": "Santiago",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 19603733
-      },
-      {
-        "year": 2020,
-        "population": 19300315
-      },
-      {
-        "year": 2015,
-        "population": 17870124
-      },
-      {
-        "year": 2010,
-        "population": 17004162
-      },
-      {
-        "year": 2000,
-        "population": 15351799
-      },
-      {
-        "year": 1990,
-        "population": 13342868
-      },
-      {
-        "year": 1980,
-        "population": 11469828
-      },
-      {
-        "year": 1970,
-        "population": 9820481
-      }
-    ],
-    "area_km2": 756102,
-    "population_density": 25.9274,
-    "population_growth_rate": 1.0057,
-    "percentage_world_population": 0.25
-  },
-  {
-    "rank": 1,
-    "cca3": "CHN",
-    "capital": "Beijing",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1425887337
-      },
-      {
-        "year": 2020,
-        "population": 1424929781
-      },
-      {
-        "year": 2015,
-        "population": 1393715448
-      },
-      {
-        "year": 2010,
-        "population": 1348191368
-      },
-      {
-        "year": 2000,
-        "population": 1264099069
-      },
-      {
-        "year": 1990,
-        "population": 1153704252
-      },
-      {
-        "year": 1980,
-        "population": 982372466
-      },
-      {
-        "year": 1970,
-        "population": 822534450
-      }
-    ],
-    "area_km2": 9706961,
-    "population_density": 146.8933,
-    "population_growth_rate": 1,
-    "percentage_world_population": 17.88
-  },
-  {
-    "rank": 28,
-    "cca3": "COL",
-    "capital": "Bogota",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 51874024
-      },
-      {
-        "year": 2020,
-        "population": 50930662
-      },
-      {
-        "year": 2015,
-        "population": 47119728
-      },
-      {
-        "year": 2010,
-        "population": 44816108
-      },
-      {
-        "year": 2000,
-        "population": 39215135
-      },
-      {
-        "year": 1990,
-        "population": 32601393
-      },
-      {
-        "year": 1980,
-        "population": 26176195
-      },
-      {
-        "year": 1970,
-        "population": 20905254
-      }
-    ],
-    "area_km2": 1141748,
-    "population_density": 45.4339,
-    "population_growth_rate": 1.0069,
-    "percentage_world_population": 0.65
-  },
-  {
-    "rank": 163,
-    "cca3": "COM",
-    "capital": "Moroni",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 836774
-      },
-      {
-        "year": 2020,
-        "population": 806166
-      },
-      {
-        "year": 2015,
-        "population": 730216
-      },
-      {
-        "year": 2010,
-        "population": 656024
-      },
-      {
-        "year": 2000,
-        "population": 536758
-      },
-      {
-        "year": 1990,
-        "population": 431119
-      },
-      {
-        "year": 1980,
-        "population": 328328
-      },
-      {
-        "year": 1970,
-        "population": 242351
-      }
-    ],
-    "area_km2": 1862,
-    "population_density": 449.3953,
-    "population_growth_rate": 1.0184,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 223,
-    "cca3": "COK",
-    "capital": "Avarua",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17011
-      },
-      {
-        "year": 2020,
-        "population": 17029
-      },
-      {
-        "year": 2015,
-        "population": 17695
-      },
-      {
-        "year": 2010,
-        "population": 17212
-      },
-      {
-        "year": 2000,
-        "population": 15897
-      },
-      {
-        "year": 1990,
-        "population": 17123
-      },
-      {
-        "year": 1980,
-        "population": 17651
-      },
-      {
-        "year": 1970,
-        "population": 20470
-      }
-    ],
-    "area_km2": 236,
-    "population_density": 72.0805,
-    "population_growth_rate": 1.0005,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 124,
-    "cca3": "CRI",
-    "capital": "San José",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5180829
-      },
-      {
-        "year": 2020,
-        "population": 5123105
-      },
-      {
-        "year": 2015,
-        "population": 4895242
-      },
-      {
-        "year": 2010,
-        "population": 4622252
-      },
-      {
-        "year": 2000,
-        "population": 3979193
-      },
-      {
-        "year": 1990,
-        "population": 3158253
-      },
-      {
-        "year": 1980,
-        "population": 2414303
-      },
-      {
-        "year": 1970,
-        "population": 1855697
-      }
-    ],
-    "area_km2": 51100,
-    "population_density": 101.3861,
-    "population_growth_rate": 1.0052,
-    "percentage_world_population": 0.06
-  },
-  {
-    "rank": 130,
-    "cca3": "HRV",
-    "capital": "Zagreb",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4030358
-      },
-      {
-        "year": 2020,
-        "population": 4096868
-      },
-      {
-        "year": 2015,
-        "population": 4254815
-      },
-      {
-        "year": 2010,
-        "population": 4368682
-      },
-      {
-        "year": 2000,
-        "population": 4548434
-      },
-      {
-        "year": 1990,
-        "population": 4873707
-      },
-      {
-        "year": 1980,
-        "population": 4680144
-      },
-      {
-        "year": 1970,
-        "population": 4492638
-      }
-    ],
-    "area_km2": 56594,
-    "population_density": 71.2153,
-    "population_growth_rate": 0.9927,
-    "percentage_world_population": 0.05
-  },
-  {
-    "rank": 85,
-    "cca3": "CUB",
-    "capital": "Havana",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11212191
-      },
-      {
-        "year": 2020,
-        "population": 11300698
-      },
-      {
-        "year": 2015,
-        "population": 11339894
-      },
-      {
-        "year": 2010,
-        "population": 11290417
-      },
-      {
-        "year": 2000,
-        "population": 11105791
-      },
-      {
-        "year": 1990,
-        "population": 10626680
-      },
-      {
-        "year": 1980,
-        "population": 9809107
-      },
-      {
-        "year": 1970,
-        "population": 8869636
-      }
-    ],
-    "area_km2": 109884,
-    "population_density": 102.0366,
-    "population_growth_rate": 0.9961,
-    "percentage_world_population": 0.14
-  },
-  {
-    "rank": 189,
-    "cca3": "CUW",
-    "capital": "Willemstad",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 191163
-      },
-      {
-        "year": 2020,
-        "population": 189288
-      },
-      {
-        "year": 2015,
-        "population": 169572
-      },
-      {
-        "year": 2010,
-        "population": 159380
-      },
-      {
-        "year": 2000,
-        "population": 141424
-      },
-      {
-        "year": 1990,
-        "population": 155446
-      },
-      {
-        "year": 1980,
-        "population": 156851
-      },
-      {
-        "year": 1970,
-        "population": 150385
-      }
-    ],
-    "area_km2": 444,
-    "population_density": 430.5473,
-    "population_growth_rate": 1.0043,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 158,
-    "cca3": "CYP",
-    "capital": "Nicosia",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1251488
-      },
-      {
-        "year": 2020,
-        "population": 1237537
-      },
-      {
-        "year": 2015,
-        "population": 1187280
-      },
-      {
-        "year": 2010,
-        "population": 1129686
-      },
-      {
-        "year": 2000,
-        "population": 948237
-      },
-      {
-        "year": 1990,
-        "population": 788500
-      },
-      {
-        "year": 1980,
-        "population": 679327
-      },
-      {
-        "year": 1970,
-        "population": 640804
-      }
-    ],
-    "area_km2": 9251,
-    "population_density": 135.2814,
-    "population_growth_rate": 1.0059,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 88,
-    "cca3": "CZE",
-    "capital": "Prague",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10493986
-      },
-      {
-        "year": 2020,
-        "population": 10530953
-      },
-      {
-        "year": 2015,
-        "population": 10523798
-      },
-      {
-        "year": 2010,
-        "population": 10464749
-      },
-      {
-        "year": 2000,
-        "population": 10234710
-      },
-      {
-        "year": 1990,
-        "population": 10301192
-      },
-      {
-        "year": 1980,
-        "population": 10270060
-      },
-      {
-        "year": 1970,
-        "population": 9795744
-      }
-    ],
-    "area_km2": 78865,
-    "population_density": 133.0627,
-    "population_growth_rate": 0.9984,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 115,
-    "cca3": "DNK",
-    "capital": "Copenhagen",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5882261
-      },
-      {
-        "year": 2020,
-        "population": 5825641
-      },
-      {
-        "year": 2015,
-        "population": 5677796
-      },
-      {
-        "year": 2010,
-        "population": 5550849
-      },
-      {
-        "year": 2000,
-        "population": 5340655
-      },
-      {
-        "year": 1990,
-        "population": 5144623
-      },
-      {
-        "year": 1980,
-        "population": 5125392
-      },
-      {
-        "year": 1970,
-        "population": 4922963
-      }
-    ],
-    "area_km2": 43094,
-    "population_density": 136.4984,
-    "population_growth_rate": 1.0048,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 160,
-    "cca3": "DJI",
-    "capital": "Djibouti",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1120849
-      },
-      {
-        "year": 2020,
-        "population": 1090156
-      },
-      {
-        "year": 2015,
-        "population": 1006259
-      },
-      {
-        "year": 2010,
-        "population": 919199
-      },
-      {
-        "year": 2000,
-        "population": 742033
-      },
-      {
-        "year": 1990,
-        "population": 577173
-      },
-      {
-        "year": 1980,
-        "population": 324121
-      },
-      {
-        "year": 1970,
-        "population": 144379
-      }
-    ],
-    "area_km2": 23200,
-    "population_density": 48.3125,
-    "population_growth_rate": 1.0138,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 204,
-    "cca3": "DMA",
-    "capital": "Roseau",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 72737
-      },
-      {
-        "year": 2020,
-        "population": 71995
-      },
-      {
-        "year": 2015,
-        "population": 70007
-      },
-      {
-        "year": 2010,
-        "population": 68755
-      },
-      {
-        "year": 2000,
-        "population": 68346
-      },
-      {
-        "year": 1990,
-        "population": 69481
-      },
-      {
-        "year": 1980,
-        "population": 72978
-      },
-      {
-        "year": 1970,
-        "population": 68895
-      }
-    ],
-    "area_km2": 751,
-    "population_density": 96.8535,
-    "population_growth_rate": 1.0045,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 84,
-    "cca3": "DOM",
-    "capital": "Santo Domingo",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11228821
-      },
-      {
-        "year": 2020,
-        "population": 10999664
-      },
-      {
-        "year": 2015,
-        "population": 10405832
-      },
-      {
-        "year": 2010,
-        "population": 9775755
-      },
-      {
-        "year": 2000,
-        "population": 8540791
-      },
-      {
-        "year": 1990,
-        "population": 7129004
-      },
-      {
-        "year": 1980,
-        "population": 5755800
-      },
-      {
-        "year": 1970,
-        "population": 4475871
-      }
-    ],
-    "area_km2": 48671,
-    "population_density": 230.7087,
-    "population_growth_rate": 1.01,
-    "percentage_world_population": 0.14
-  },
-  {
-    "rank": 15,
-    "cca3": "COD",
-    "capital": "Kinshasa",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 99010212
-      },
-      {
-        "year": 2020,
-        "population": 92853164
-      },
-      {
-        "year": 2015,
-        "population": 78656904
-      },
-      {
-        "year": 2010,
-        "population": 66391257
-      },
-      {
-        "year": 2000,
-        "population": 48616317
-      },
-      {
-        "year": 1990,
-        "population": 35987541
-      },
-      {
-        "year": 1980,
-        "population": 26708686
-      },
-      {
-        "year": 1970,
-        "population": 20151733
-      }
-    ],
-    "area_km2": 2344858,
-    "population_density": 42.2244,
-    "population_growth_rate": 1.0325,
-    "percentage_world_population": 1.24
-  },
-  {
-    "rank": 67,
-    "cca3": "ECU",
-    "capital": "Quito",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 18001000
-      },
-      {
-        "year": 2020,
-        "population": 17588595
-      },
-      {
-        "year": 2015,
-        "population": 16195902
-      },
-      {
-        "year": 2010,
-        "population": 14989585
-      },
-      {
-        "year": 2000,
-        "population": 12626507
-      },
-      {
-        "year": 1990,
-        "population": 10449837
-      },
-      {
-        "year": 1980,
-        "population": 8135845
-      },
-      {
-        "year": 1970,
-        "population": 6172215
-      }
-    ],
-    "area_km2": 276841,
-    "population_density": 65.0229,
-    "population_growth_rate": 1.0114,
-    "percentage_world_population": 0.23
-  },
-  {
-    "rank": 14,
-    "cca3": "EGY",
-    "capital": "Cairo",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 110990103
-      },
-      {
-        "year": 2020,
-        "population": 107465134
-      },
-      {
-        "year": 2015,
-        "population": 97723799
-      },
-      {
-        "year": 2010,
-        "population": 87252413
-      },
-      {
-        "year": 2000,
-        "population": 71371371
-      },
-      {
-        "year": 1990,
-        "population": 57214630
-      },
-      {
-        "year": 1980,
-        "population": 43748556
-      },
-      {
-        "year": 1970,
-        "population": 34781986
-      }
-    ],
-    "area_km2": 1002450,
-    "population_density": 110.7188,
-    "population_growth_rate": 1.0158,
-    "percentage_world_population": 1.39
-  },
-  {
-    "rank": 112,
-    "cca3": "SLV",
-    "capital": "San Salvador",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6336392
-      },
-      {
-        "year": 2020,
-        "population": 6292731
-      },
-      {
-        "year": 2015,
-        "population": 6231066
-      },
-      {
-        "year": 2010,
-        "population": 6114034
-      },
-      {
-        "year": 2000,
-        "population": 5958482
-      },
-      {
-        "year": 1990,
-        "population": 5367179
-      },
-      {
-        "year": 1980,
-        "population": 4508992
-      },
-      {
-        "year": 1970,
-        "population": 3619090
-      }
-    ],
-    "area_km2": 21041,
-    "population_density": 301.145,
-    "population_growth_rate": 1.0035,
-    "percentage_world_population": 0.08
-  },
-  {
-    "rank": 152,
-    "cca3": "GNQ",
-    "capital": "Malabo",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1674908
-      },
-      {
-        "year": 2020,
-        "population": 1596049
-      },
-      {
-        "year": 2015,
-        "population": 1346973
-      },
-      {
-        "year": 2010,
-        "population": 1094524
-      },
-      {
-        "year": 2000,
-        "population": 684977
-      },
-      {
-        "year": 1990,
-        "population": 465549
-      },
-      {
-        "year": 1980,
-        "population": 282509
-      },
-      {
-        "year": 1970,
-        "population": 316955
-      }
-    ],
-    "area_km2": 28051,
-    "population_density": 59.7094,
-    "population_growth_rate": 1.0247,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 132,
-    "cca3": "ERI",
-    "capital": "Asmara",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3684032
-      },
-      {
-        "year": 2020,
-        "population": 3555868
-      },
-      {
-        "year": 2015,
-        "population": 3340006
-      },
-      {
-        "year": 2010,
-        "population": 3147727
-      },
-      {
-        "year": 2000,
-        "population": 2392880
-      },
-      {
-        "year": 1990,
-        "population": 2149960
-      },
-      {
-        "year": 1980,
-        "population": 1657982
-      },
-      {
-        "year": 1970,
-        "population": 1272748
-      }
-    ],
-    "area_km2": 117600,
-    "population_density": 31.3268,
-    "population_growth_rate": 1.0176,
-    "percentage_world_population": 0.05
-  },
-  {
-    "rank": 156,
-    "cca3": "EST",
-    "capital": "Tallinn",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1326062
-      },
-      {
-        "year": 2020,
-        "population": 1329444
-      },
-      {
-        "year": 2015,
-        "population": 1314657
-      },
-      {
-        "year": 2010,
-        "population": 1331535
-      },
-      {
-        "year": 2000,
-        "population": 1396877
-      },
-      {
-        "year": 1990,
-        "population": 1570674
-      },
-      {
-        "year": 1980,
-        "population": 1476983
-      },
-      {
-        "year": 1970,
-        "population": 1361999
-      }
-    ],
-    "area_km2": 45227,
-    "population_density": 29.3201,
-    "population_growth_rate": 0.998,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 159,
-    "cca3": "SWZ",
-    "capital": "Mbabane",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1201670
-      },
-      {
-        "year": 2020,
-        "population": 1180655
-      },
-      {
-        "year": 2015,
-        "population": 1133936
-      },
-      {
-        "year": 2010,
-        "population": 1099920
-      },
-      {
-        "year": 2000,
-        "population": 1030496
-      },
-      {
-        "year": 1990,
-        "population": 854011
-      },
-      {
-        "year": 1980,
-        "population": 598564
-      },
-      {
-        "year": 1970,
-        "population": 442865
-      }
-    ],
-    "area_km2": 17364,
-    "population_density": 69.2047,
-    "population_growth_rate": 1.0079,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 12,
-    "cca3": "ETH",
-    "capital": "Addis Ababa",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 123379924
-      },
-      {
-        "year": 2020,
-        "population": 117190911
-      },
-      {
-        "year": 2015,
-        "population": 102471895
-      },
-      {
-        "year": 2010,
-        "population": 89237791
-      },
-      {
-        "year": 2000,
-        "population": 67031867
-      },
-      {
-        "year": 1990,
-        "population": 47878073
-      },
-      {
-        "year": 1980,
-        "population": 34945469
-      },
-      {
-        "year": 1970,
-        "population": 28308246
-      }
-    ],
-    "area_km2": 1104300,
-    "population_density": 111.7268,
-    "population_growth_rate": 1.0257,
-    "percentage_world_population": 1.55
-  },
-  {
-    "rank": 231,
-    "cca3": "FLK",
-    "capital": "Stanley",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3780
-      },
-      {
-        "year": 2020,
-        "population": 3747
-      },
-      {
-        "year": 2015,
-        "population": 3408
-      },
-      {
-        "year": 2010,
-        "population": 3187
-      },
-      {
-        "year": 2000,
-        "population": 3080
-      },
-      {
-        "year": 1990,
-        "population": 2332
-      },
-      {
-        "year": 1980,
-        "population": 2240
-      },
-      {
-        "year": 1970,
-        "population": 2274
-      }
-    ],
-    "area_km2": 12173,
-    "population_density": 0.3105,
-    "population_growth_rate": 1.0043,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 209,
-    "cca3": "FRO",
-    "capital": "Tórshavn",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 53090
-      },
-      {
-        "year": 2020,
-        "population": 52415
-      },
-      {
-        "year": 2015,
-        "population": 48816
-      },
-      {
-        "year": 2010,
-        "population": 48410
-      },
-      {
-        "year": 2000,
-        "population": 45660
-      },
-      {
-        "year": 1990,
-        "population": 47479
-      },
-      {
-        "year": 1980,
-        "population": 43054
-      },
-      {
-        "year": 1970,
-        "population": 38416
-      }
-    ],
-    "area_km2": 1393,
-    "population_density": 38.112,
-    "population_growth_rate": 1.0038,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 162,
-    "cca3": "FJI",
-    "capital": "Suva",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 929766
-      },
-      {
-        "year": 2020,
-        "population": 920422
-      },
-      {
-        "year": 2015,
-        "population": 917200
-      },
-      {
-        "year": 2010,
-        "population": 905169
-      },
-      {
-        "year": 2000,
-        "population": 832509
-      },
-      {
-        "year": 1990,
-        "population": 780430
-      },
-      {
-        "year": 1980,
-        "population": 644582
-      },
-      {
-        "year": 1970,
-        "population": 527634
-      }
-    ],
-    "area_km2": 18272,
-    "population_density": 50.8847,
-    "population_growth_rate": 1.0056,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 118,
-    "cca3": "FIN",
-    "capital": "Helsinki",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5540745
-      },
-      {
-        "year": 2020,
-        "population": 5529468
-      },
-      {
-        "year": 2015,
-        "population": 5479461
-      },
-      {
-        "year": 2010,
-        "population": 5363271
-      },
-      {
-        "year": 2000,
-        "population": 5176209
-      },
-      {
-        "year": 1990,
-        "population": 4986545
-      },
-      {
-        "year": 1980,
-        "population": 4779418
-      },
-      {
-        "year": 1970,
-        "population": 4606621
-      }
-    ],
-    "area_km2": 338424,
-    "population_density": 16.3722,
-    "population_growth_rate": 1.0009,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 23,
-    "cca3": "FRA",
-    "capital": "Paris",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 64626628
-      },
-      {
-        "year": 2020,
-        "population": 64480053
-      },
-      {
-        "year": 2015,
-        "population": 63809769
-      },
-      {
-        "year": 2010,
-        "population": 62444567
-      },
-      {
-        "year": 2000,
-        "population": 58665453
-      },
-      {
-        "year": 1990,
-        "population": 56412897
-      },
-      {
-        "year": 1980,
-        "population": 53713830
-      },
-      {
-        "year": 1970,
-        "population": 50523586
-      }
-    ],
-    "area_km2": 551695,
-    "population_density": 117.1419,
-    "population_growth_rate": 1.0015,
-    "percentage_world_population": 0.81
-  },
-  {
-    "rank": 184,
-    "cca3": "GUF",
-    "capital": "Cayenne",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 304557
-      },
-      {
-        "year": 2020,
-        "population": 290969
-      },
-      {
-        "year": 2015,
-        "population": 257026
-      },
-      {
-        "year": 2010,
-        "population": 228453
-      },
-      {
-        "year": 2000,
-        "population": 164351
-      },
-      {
-        "year": 1990,
-        "population": 113931
-      },
-      {
-        "year": 1980,
-        "population": 66825
-      },
-      {
-        "year": 1970,
-        "population": 46484
-      }
-    ],
-    "area_km2": 83534,
-    "population_density": 3.6459,
-    "population_growth_rate": 1.0239,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 183,
-    "cca3": "PYF",
-    "capital": "Papeete",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 306279
-      },
-      {
-        "year": 2020,
-        "population": 301920
-      },
-      {
-        "year": 2015,
-        "population": 291787
-      },
-      {
-        "year": 2010,
-        "population": 283788
-      },
-      {
-        "year": 2000,
-        "population": 250927
-      },
-      {
-        "year": 1990,
-        "population": 211089
-      },
-      {
-        "year": 1980,
-        "population": 163591
-      },
-      {
-        "year": 1970,
-        "population": 117891
-      }
-    ],
-    "area_km2": 4167,
-    "population_density": 73.5011,
-    "population_growth_rate": 1.0074,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 146,
-    "cca3": "GAB",
-    "capital": "Libreville",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2388992
-      },
-      {
-        "year": 2020,
-        "population": 2292573
-      },
-      {
-        "year": 2015,
-        "population": 2028517
-      },
-      {
-        "year": 2010,
-        "population": 1711105
-      },
-      {
-        "year": 2000,
-        "population": 1272935
-      },
-      {
-        "year": 1990,
-        "population": 983028
-      },
-      {
-        "year": 1980,
-        "population": 749078
-      },
-      {
-        "year": 1970,
-        "population": 597192
-      }
-    ],
-    "area_km2": 267668,
-    "population_density": 8.9252,
-    "population_growth_rate": 1.0204,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 142,
-    "cca3": "GMB",
-    "capital": "Banjul",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2705992
-      },
-      {
-        "year": 2020,
-        "population": 2573995
-      },
-      {
-        "year": 2015,
-        "population": 2253133
-      },
-      {
-        "year": 2010,
-        "population": 1937275
-      },
-      {
-        "year": 2000,
-        "population": 1437539
-      },
-      {
-        "year": 1990,
-        "population": 1040616
-      },
-      {
-        "year": 1980,
-        "population": 718586
-      },
-      {
-        "year": 1970,
-        "population": 528731
-      }
-    ],
-    "area_km2": 10689,
-    "population_density": 253.1567,
-    "population_growth_rate": 1.025,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 131,
-    "cca3": "GEO",
-    "capital": "Tbilisi",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3744385
-      },
-      {
-        "year": 2020,
-        "population": 3765912
-      },
-      {
-        "year": 2015,
-        "population": 3771132
-      },
-      {
-        "year": 2010,
-        "population": 3836831
-      },
-      {
-        "year": 2000,
-        "population": 4265172
-      },
-      {
-        "year": 1990,
-        "population": 5391636
-      },
-      {
-        "year": 1980,
-        "population": 5145843
-      },
-      {
-        "year": 1970,
-        "population": 4800426
-      }
-    ],
-    "area_km2": 69700,
-    "population_density": 53.7214,
-    "population_growth_rate": 0.9964,
-    "percentage_world_population": 0.05
-  },
-  {
-    "rank": 19,
-    "cca3": "DEU",
-    "capital": "Berlin",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 83369843
-      },
-      {
-        "year": 2020,
-        "population": 83328988
-      },
-      {
-        "year": 2015,
-        "population": 82073226
-      },
-      {
-        "year": 2010,
-        "population": 81325090
-      },
-      {
-        "year": 2000,
-        "population": 81551677
-      },
-      {
-        "year": 1990,
-        "population": 79370196
-      },
-      {
-        "year": 1980,
-        "population": 77786703
-      },
-      {
-        "year": 1970,
-        "population": 78294583
-      }
-    ],
-    "area_km2": 357114,
-    "population_density": 233.4544,
-    "population_growth_rate": 0.9995,
-    "percentage_world_population": 1.05
-  },
-  {
-    "rank": 47,
-    "cca3": "GHA",
-    "capital": "Accra",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 33475870
-      },
-      {
-        "year": 2020,
-        "population": 32180401
-      },
-      {
-        "year": 2015,
-        "population": 28870939
-      },
-      {
-        "year": 2010,
-        "population": 25574719
-      },
-      {
-        "year": 2000,
-        "population": 19665502
-      },
-      {
-        "year": 1990,
-        "population": 15446982
-      },
-      {
-        "year": 1980,
-        "population": 11865246
-      },
-      {
-        "year": 1970,
-        "population": 8861895
-      }
-    ],
-    "area_km2": 238533,
-    "population_density": 140.3406,
-    "population_growth_rate": 1.0196,
-    "percentage_world_population": 0.42
-  },
-  {
-    "rank": 219,
-    "cca3": "GIB",
-    "capital": "Gibraltar",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 32649
-      },
-      {
-        "year": 2020,
-        "population": 32709
-      },
-      {
-        "year": 2015,
-        "population": 32520
-      },
-      {
-        "year": 2010,
-        "population": 31262
-      },
-      {
-        "year": 2000,
-        "population": 27741
-      },
-      {
-        "year": 1990,
-        "population": 27317
-      },
-      {
-        "year": 1980,
-        "population": 28734
-      },
-      {
-        "year": 1970,
-        "population": 26685
-      }
-    ],
-    "area_km2": 6,
-    "population_density": 5441.5,
-    "population_growth_rate": 0.9994,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 90,
-    "cca3": "GRC",
-    "capital": "Athens",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10384971
-      },
-      {
-        "year": 2020,
-        "population": 10512232
-      },
-      {
-        "year": 2015,
-        "population": 10806641
-      },
-      {
-        "year": 2010,
-        "population": 11033783
-      },
-      {
-        "year": 2000,
-        "population": 11038109
-      },
-      {
-        "year": 1990,
-        "population": 10302255
-      },
-      {
-        "year": 1980,
-        "population": 9307148
-      },
-      {
-        "year": 1970,
-        "population": 8544873
-      }
-    ],
-    "area_km2": 131990,
-    "population_density": 78.68,
-    "population_growth_rate": 0.9942,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 208,
-    "cca3": "GRL",
-    "capital": "Nuuk",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 56466
-      },
-      {
-        "year": 2020,
-        "population": 56026
-      },
-      {
-        "year": 2015,
-        "population": 55895
-      },
-      {
-        "year": 2010,
-        "population": 56351
-      },
-      {
-        "year": 2000,
-        "population": 56184
-      },
-      {
-        "year": 1990,
-        "population": 55599
-      },
-      {
-        "year": 1980,
-        "population": 50106
-      },
-      {
-        "year": 1970,
-        "population": 45434
-      }
-    ],
-    "area_km2": 2166086,
-    "population_density": 0.0261,
-    "population_growth_rate": 1.004,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 193,
-    "cca3": "GRD",
-    "capital": "Saint George's",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 125438
-      },
-      {
-        "year": 2020,
-        "population": 123663
-      },
-      {
-        "year": 2015,
-        "population": 118980
-      },
-      {
-        "year": 2010,
-        "population": 114039
-      },
-      {
-        "year": 2000,
-        "population": 107432
-      },
-      {
-        "year": 1990,
-        "population": 99047
-      },
-      {
-        "year": 1980,
-        "population": 94838
-      },
-      {
-        "year": 1970,
-        "population": 98794
-      }
-    ],
-    "area_km2": 344,
-    "population_density": 364.6453,
-    "population_growth_rate": 1.0066,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 178,
-    "cca3": "GLP",
-    "capital": "Basse-Terre",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 395752
-      },
-      {
-        "year": 2020,
-        "population": 395642
-      },
-      {
-        "year": 2015,
-        "population": 399089
-      },
-      {
-        "year": 2010,
-        "population": 403072
-      },
-      {
-        "year": 2000,
-        "population": 424067
-      },
-      {
-        "year": 1990,
-        "population": 391951
-      },
-      {
-        "year": 1980,
-        "population": 334234
-      },
-      {
-        "year": 1970,
-        "population": 318310
-      }
-    ],
-    "area_km2": 1628,
-    "population_density": 243.0909,
-    "population_growth_rate": 0.9992,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 191,
-    "cca3": "GUM",
-    "capital": "Hagåtña",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 171774
-      },
-      {
-        "year": 2020,
-        "population": 169231
-      },
-      {
-        "year": 2015,
-        "population": 167978
-      },
-      {
-        "year": 2010,
-        "population": 164905
-      },
-      {
-        "year": 2000,
-        "population": 160188
-      },
-      {
-        "year": 1990,
-        "population": 138263
-      },
-      {
-        "year": 1980,
-        "population": 110286
-      },
-      {
-        "year": 1970,
-        "population": 88300
-      }
-    ],
-    "area_km2": 549,
-    "population_density": 312.8852,
-    "population_growth_rate": 1.0073,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 68,
-    "cca3": "GTM",
-    "capital": "Guatemala City",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17843908
-      },
-      {
-        "year": 2020,
-        "population": 17362718
-      },
-      {
-        "year": 2015,
-        "population": 16001107
-      },
-      {
-        "year": 2010,
-        "population": 14543121
-      },
-      {
-        "year": 2000,
-        "population": 11735894
-      },
-      {
-        "year": 1990,
-        "population": 9084780
-      },
-      {
-        "year": 1980,
-        "population": 6987767
-      },
-      {
-        "year": 1970,
-        "population": 5453208
-      }
-    ],
-    "area_km2": 108889,
-    "population_density": 163.8725,
-    "population_growth_rate": 1.0134,
-    "percentage_world_population": 0.22
-  },
-  {
-    "rank": 207,
-    "cca3": "GGY",
-    "capital": "Saint Peter Port",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 63301
-      },
-      {
-        "year": 2020,
-        "population": 62794
-      },
-      {
-        "year": 2015,
-        "population": 61629
-      },
-      {
-        "year": 2010,
-        "population": 60782
-      },
-      {
-        "year": 2000,
-        "population": 59114
-      },
-      {
-        "year": 1990,
-        "population": 57727
-      },
-      {
-        "year": 1980,
-        "population": 52860
-      },
-      {
-        "year": 1970,
-        "population": 52656
-      }
-    ],
-    "area_km2": 78,
-    "population_density": 811.5513,
-    "population_growth_rate": 1.0037,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 75,
-    "cca3": "GIN",
-    "capital": "Conakry",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 13859341
-      },
-      {
-        "year": 2020,
-        "population": 13205153
-      },
-      {
-        "year": 2015,
-        "population": 11625998
-      },
-      {
-        "year": 2010,
-        "population": 10270728
-      },
-      {
-        "year": 2000,
-        "population": 8336967
-      },
-      {
-        "year": 1990,
-        "population": 6354145
-      },
-      {
-        "year": 1980,
-        "population": 4972609
-      },
-      {
-        "year": 1970,
-        "population": 4222374
-      }
-    ],
-    "area_km2": 245857,
-    "population_density": 56.3716,
-    "population_growth_rate": 1.0242,
-    "percentage_world_population": 0.17
-  },
-  {
-    "rank": 149,
-    "cca3": "GNB",
-    "capital": "Bissau",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2105566
-      },
-      {
-        "year": 2020,
-        "population": 2015828
-      },
-      {
-        "year": 2015,
-        "population": 1788919
-      },
-      {
-        "year": 2010,
-        "population": 1567220
-      },
-      {
-        "year": 2000,
-        "population": 1230849
-      },
-      {
-        "year": 1990,
-        "population": 973551
-      },
-      {
-        "year": 1980,
-        "population": 831462
-      },
-      {
-        "year": 1970,
-        "population": 591663
-      }
-    ],
-    "area_km2": 36125,
-    "population_density": 58.2856,
-    "population_growth_rate": 1.0218,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 164,
-    "cca3": "GUY",
-    "capital": "Georgetown",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 808726
-      },
-      {
-        "year": 2020,
-        "population": 797202
-      },
-      {
-        "year": 2015,
-        "population": 755031
-      },
-      {
-        "year": 2010,
-        "population": 747932
-      },
-      {
-        "year": 2000,
-        "population": 759051
-      },
-      {
-        "year": 1990,
-        "population": 747116
-      },
-      {
-        "year": 1980,
-        "population": 778176
-      },
-      {
-        "year": 1970,
-        "population": 705261
-      }
-    ],
-    "area_km2": 214969,
-    "population_density": 3.7621,
-    "population_growth_rate": 1.0052,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 82,
-    "cca3": "HTI",
-    "capital": "Port-au-Prince",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11584996
-      },
-      {
-        "year": 2020,
-        "population": 11306801
-      },
-      {
-        "year": 2015,
-        "population": 10563757
-      },
-      {
-        "year": 2010,
-        "population": 9842880
-      },
-      {
-        "year": 2000,
-        "population": 8360225
-      },
-      {
-        "year": 1990,
-        "population": 6925331
-      },
-      {
-        "year": 1980,
-        "population": 5646676
-      },
-      {
-        "year": 1970,
-        "population": 4680812
-      }
-    ],
-    "area_km2": 27750,
-    "population_density": 417.4773,
-    "population_growth_rate": 1.012,
-    "percentage_world_population": 0.15
-  },
-  {
-    "rank": 89,
-    "cca3": "HND",
-    "capital": "Tegucigalpa",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10432860
-      },
-      {
-        "year": 2020,
-        "population": 10121763
-      },
-      {
-        "year": 2015,
-        "population": 9294505
-      },
-      {
-        "year": 2010,
-        "population": 8450933
-      },
-      {
-        "year": 2000,
-        "population": 6656725
-      },
-      {
-        "year": 1990,
-        "population": 5053234
-      },
-      {
-        "year": 1980,
-        "population": 3777990
-      },
-      {
-        "year": 1970,
-        "population": 2782753
-      }
-    ],
-    "area_km2": 112492,
-    "population_density": 92.7431,
-    "population_growth_rate": 1.015,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 104,
-    "cca3": "HKG",
-    "capital": "Hong Kong",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 7488865
-      },
-      {
-        "year": 2020,
-        "population": 7500958
-      },
-      {
-        "year": 2015,
-        "population": 7399838
-      },
-      {
-        "year": 2010,
-        "population": 7132438
-      },
-      {
-        "year": 2000,
-        "population": 6731195
-      },
-      {
-        "year": 1990,
-        "population": 5838574
-      },
-      {
-        "year": 1980,
-        "population": 4978544
-      },
-      {
-        "year": 1970,
-        "population": 3955072
-      }
-    ],
-    "area_km2": 1104,
-    "population_density": 6783.3922,
-    "population_growth_rate": 0.9992,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 94,
-    "cca3": "HUN",
-    "capital": "Budapest",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 9967308
-      },
-      {
-        "year": 2020,
-        "population": 9750573
-      },
-      {
-        "year": 2015,
-        "population": 9844246
-      },
-      {
-        "year": 2010,
-        "population": 9986825
-      },
-      {
-        "year": 2000,
-        "population": 10202055
-      },
-      {
-        "year": 1990,
-        "population": 10375989
-      },
-      {
-        "year": 1980,
-        "population": 10698679
-      },
-      {
-        "year": 1970,
-        "population": 10315366
-      }
-    ],
-    "area_km2": 93028,
-    "population_density": 107.1431,
-    "population_growth_rate": 1.0265,
-    "percentage_world_population": 0.12
-  },
-  {
-    "rank": 179,
-    "cca3": "ISL",
-    "capital": "Reykjavík",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 372899
-      },
-      {
-        "year": 2020,
-        "population": 366669
-      },
-      {
-        "year": 2015,
-        "population": 331060
-      },
-      {
-        "year": 2010,
-        "population": 318333
-      },
-      {
-        "year": 2000,
-        "population": 281462
-      },
-      {
-        "year": 1990,
-        "population": 255019
-      },
-      {
-        "year": 1980,
-        "population": 228263
-      },
-      {
-        "year": 1970,
-        "population": 204468
-      }
-    ],
-    "area_km2": 103000,
-    "population_density": 3.6204,
-    "population_growth_rate": 1.0069,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 2,
-    "cca3": "IND",
-    "capital": "New Delhi",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1417173173
-      },
-      {
-        "year": 2020,
-        "population": 1396387127
-      },
-      {
-        "year": 2015,
-        "population": 1322866505
-      },
-      {
-        "year": 2010,
-        "population": 1240613620
-      },
-      {
-        "year": 2000,
-        "population": 1059633675
-      },
-      {
-        "year": 1990,
-        "population": 870452165
-      },
-      {
-        "year": 1980,
-        "population": 696828385
-      },
-      {
-        "year": 1970,
-        "population": 557501301
-      }
-    ],
-    "area_km2": 3287590,
-    "population_density": 431.0675,
-    "population_growth_rate": 1.0068,
-    "percentage_world_population": 17.77
-  },
-  {
-    "rank": 4,
-    "cca3": "IDN",
-    "capital": "Jakarta",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 275501339
-      },
-      {
-        "year": 2020,
-        "population": 271857970
-      },
-      {
-        "year": 2015,
-        "population": 259091970
-      },
-      {
-        "year": 2010,
-        "population": 244016173
-      },
-      {
-        "year": 2000,
-        "population": 214072421
-      },
-      {
-        "year": 1990,
-        "population": 182159874
-      },
-      {
-        "year": 1980,
-        "population": 148177096
-      },
-      {
-        "year": 1970,
-        "population": 115228394
-      }
-    ],
-    "area_km2": 1904569,
-    "population_density": 144.6529,
-    "population_growth_rate": 1.0064,
-    "percentage_world_population": 3.45
-  },
-  {
-    "rank": 17,
-    "cca3": "IRN",
-    "capital": "Tehran",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 88550570
-      },
-      {
-        "year": 2020,
-        "population": 87290193
-      },
-      {
-        "year": 2015,
-        "population": 81790841
-      },
-      {
-        "year": 2010,
-        "population": 75373855
-      },
-      {
-        "year": 2000,
-        "population": 65544383
-      },
-      {
-        "year": 1990,
-        "population": 55793629
-      },
-      {
-        "year": 1980,
-        "population": 38520664
-      },
-      {
-        "year": 1970,
-        "population": 28449705
-      }
-    ],
-    "area_km2": 1648195,
-    "population_density": 53.7258,
-    "population_growth_rate": 1.0071,
-    "percentage_world_population": 1.11
-  },
-  {
-    "rank": 35,
-    "cca3": "IRQ",
-    "capital": "Baghdad",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 44496122
-      },
-      {
-        "year": 2020,
-        "population": 42556984
-      },
-      {
-        "year": 2015,
-        "population": 37757813
-      },
-      {
-        "year": 2010,
-        "population": 31264875
-      },
-      {
-        "year": 2000,
-        "population": 24628858
-      },
-      {
-        "year": 1990,
-        "population": 17658381
-      },
-      {
-        "year": 1980,
-        "population": 13653369
-      },
-      {
-        "year": 1970,
-        "population": 9811347
-      }
-    ],
-    "area_km2": 438317,
-    "population_density": 101.5158,
-    "population_growth_rate": 1.0221,
-    "percentage_world_population": 0.56
-  },
-  {
-    "rank": 125,
-    "cca3": "IRL",
-    "capital": "Dublin",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5023109
-      },
-      {
-        "year": 2020,
-        "population": 4946119
-      },
-      {
-        "year": 2015,
-        "population": 4665760
-      },
-      {
-        "year": 2010,
-        "population": 4524585
-      },
-      {
-        "year": 2000,
-        "population": 3768950
-      },
-      {
-        "year": 1990,
-        "population": 3485374
-      },
-      {
-        "year": 1980,
-        "population": 3391387
-      },
-      {
-        "year": 1970,
-        "population": 2937637
-      }
-    ],
-    "area_km2": 70273,
-    "population_density": 71.4799,
-    "population_growth_rate": 1.0073,
-    "percentage_world_population": 0.06
-  },
-  {
-    "rank": 202,
-    "cca3": "IMN",
-    "capital": "Douglas",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 84519
-      },
-      {
-        "year": 2020,
-        "population": 84046
-      },
-      {
-        "year": 2015,
-        "population": 83593
-      },
-      {
-        "year": 2010,
-        "population": 83828
-      },
-      {
-        "year": 2000,
-        "population": 75562
-      },
-      {
-        "year": 1990,
-        "population": 68865
-      },
-      {
-        "year": 1980,
-        "population": 64022
-      },
-      {
-        "year": 1970,
-        "population": 55298
-      }
-    ],
-    "area_km2": 572,
-    "population_density": 147.7605,
-    "population_growth_rate": 1.003,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 98,
-    "cca3": "ISR",
-    "capital": "Jerusalem",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 9038309
-      },
-      {
-        "year": 2020,
-        "population": 8757489
-      },
-      {
-        "year": 2015,
-        "population": 8007778
-      },
-      {
-        "year": 2010,
-        "population": 7328445
-      },
-      {
-        "year": 2000,
-        "population": 6116958
-      },
-      {
-        "year": 1990,
-        "population": 4803254
-      },
-      {
-        "year": 1980,
-        "population": 3744608
-      },
-      {
-        "year": 1970,
-        "population": 2907307
-      }
-    ],
-    "area_km2": 20770,
-    "population_density": 435.1617,
-    "population_growth_rate": 1.0155,
-    "percentage_world_population": 0.11
-  },
-  {
-    "rank": 25,
-    "cca3": "ITA",
-    "capital": "Rome",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 59037474
-      },
-      {
-        "year": 2020,
-        "population": 59500579
-      },
-      {
-        "year": 2015,
-        "population": 60232906
-      },
-      {
-        "year": 2010,
-        "population": 59822450
-      },
-      {
-        "year": 2000,
-        "population": 56966397
-      },
-      {
-        "year": 1990,
-        "population": 56756561
-      },
-      {
-        "year": 1980,
-        "population": 56329482
-      },
-      {
-        "year": 1970,
-        "population": 53324036
-      }
-    ],
-    "area_km2": 301336,
-    "population_density": 195.9191,
-    "population_growth_rate": 0.9966,
-    "percentage_world_population": 0.74
-  },
-  {
-    "rank": 52,
-    "cca3": "CIV",
-    "capital": "Yamoussoukro",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 28160542
-      },
-      {
-        "year": 2020,
-        "population": 26811790
-      },
-      {
-        "year": 2015,
-        "population": 23596741
-      },
-      {
-        "year": 2010,
-        "population": 21120042
-      },
-      {
-        "year": 2000,
-        "population": 16799670
-      },
-      {
-        "year": 1990,
-        "population": 11910540
-      },
-      {
-        "year": 1980,
-        "population": 8303809
-      },
-      {
-        "year": 1970,
-        "population": 5477086
-      }
-    ],
-    "area_km2": 322463,
-    "population_density": 87.3295,
-    "population_growth_rate": 1.0248,
-    "percentage_world_population": 0.35
-  },
-  {
-    "rank": 139,
-    "cca3": "JAM",
-    "capital": "Kingston",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2827377
-      },
-      {
-        "year": 2020,
-        "population": 2820436
-      },
-      {
-        "year": 2015,
-        "population": 2794445
-      },
-      {
-        "year": 2010,
-        "population": 2733896
-      },
-      {
-        "year": 2000,
-        "population": 2612205
-      },
-      {
-        "year": 1990,
-        "population": 2392030
-      },
-      {
-        "year": 1980,
-        "population": 2135546
-      },
-      {
-        "year": 1970,
-        "population": 1859091
-      }
-    ],
-    "area_km2": 10991,
-    "population_density": 257.2447,
-    "population_growth_rate": 0.9999,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 11,
-    "cca3": "JPN",
-    "capital": "Tokyo",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 123951692
-      },
-      {
-        "year": 2020,
-        "population": 125244761
-      },
-      {
-        "year": 2015,
-        "population": 127250933
-      },
-      {
-        "year": 2010,
-        "population": 128105431
-      },
-      {
-        "year": 2000,
-        "population": 126803861
-      },
-      {
-        "year": 1990,
-        "population": 123686321
-      },
-      {
-        "year": 1980,
-        "population": 117624196
-      },
-      {
-        "year": 1970,
-        "population": 105416839
-      }
-    ],
-    "area_km2": 377930,
-    "population_density": 327.9753,
-    "population_growth_rate": 0.9947,
-    "percentage_world_population": 1.55
-  },
-  {
-    "rank": 195,
-    "cca3": "JEY",
-    "capital": "Saint Helier",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 110778
-      },
-      {
-        "year": 2020,
-        "population": 108319
-      },
-      {
-        "year": 2015,
-        "population": 100561
-      },
-      {
-        "year": 2010,
-        "population": 96151
-      },
-      {
-        "year": 2000,
-        "population": 86192
-      },
-      {
-        "year": 1990,
-        "population": 82874
-      },
-      {
-        "year": 1980,
-        "population": 75124
-      },
-      {
-        "year": 1970,
-        "population": 68347
-      }
-    ],
-    "area_km2": 116,
-    "population_density": 954.9828,
-    "population_growth_rate": 1.0106,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 83,
-    "cca3": "JOR",
-    "capital": "Amman",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11285869
-      },
-      {
-        "year": 2020,
-        "population": 10928721
-      },
-      {
-        "year": 2015,
-        "population": 9494246
-      },
-      {
-        "year": 2010,
-        "population": 6931258
-      },
-      {
-        "year": 2000,
-        "population": 5056174
-      },
-      {
-        "year": 1990,
-        "population": 3480587
-      },
-      {
-        "year": 1980,
-        "population": 2216903
-      },
-      {
-        "year": 1970,
-        "population": 1557374
-      }
-    ],
-    "area_km2": 89342,
-    "population_density": 126.3221,
-    "population_growth_rate": 1.0123,
-    "percentage_world_population": 0.14
-  },
-  {
-    "rank": 66,
-    "cca3": "KAZ",
-    "capital": "Nursultan",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 19397998
-      },
-      {
-        "year": 2020,
-        "population": 18979243
-      },
-      {
-        "year": 2015,
-        "population": 17835909
-      },
-      {
-        "year": 2010,
-        "population": 16627837
-      },
-      {
-        "year": 2000,
-        "population": 15236253
-      },
-      {
-        "year": 1990,
-        "population": 16866563
-      },
-      {
-        "year": 1980,
-        "population": 14172710
-      },
-      {
-        "year": 1970,
-        "population": 12265305
-      }
-    ],
-    "area_km2": 2724900,
-    "population_density": 7.1188,
-    "population_growth_rate": 1.0105,
-    "percentage_world_population": 0.24
-  },
-  {
-    "rank": 27,
-    "cca3": "KEN",
-    "capital": "Nairobi",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 54027487
-      },
-      {
-        "year": 2020,
-        "population": 51985780
-      },
-      {
-        "year": 2015,
-        "population": 46851488
-      },
-      {
-        "year": 2010,
-        "population": 41517895
-      },
-      {
-        "year": 2000,
-        "population": 30851606
-      },
-      {
-        "year": 1990,
-        "population": 23162269
-      },
-      {
-        "year": 1980,
-        "population": 16187124
-      },
-      {
-        "year": 1970,
-        "population": 11473087
-      }
-    ],
-    "area_km2": 580367,
-    "population_density": 93.0919,
-    "population_growth_rate": 1.0193,
-    "percentage_world_population": 0.68
-  },
-  {
-    "rank": 192,
-    "cca3": "KIR",
-    "capital": "Tarawa",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 131232
-      },
-      {
-        "year": 2020,
-        "population": 126463
-      },
-      {
-        "year": 2015,
-        "population": 116707
-      },
-      {
-        "year": 2010,
-        "population": 107995
-      },
-      {
-        "year": 2000,
-        "population": 88826
-      },
-      {
-        "year": 1990,
-        "population": 75124
-      },
-      {
-        "year": 1980,
-        "population": 60813
-      },
-      {
-        "year": 1970,
-        "population": 57437
-      }
-    ],
-    "area_km2": 811,
-    "population_density": 161.815,
-    "population_growth_rate": 1.0183,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 129,
-    "cca3": "KWT",
-    "capital": "Kuwait City",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4268873
-      },
-      {
-        "year": 2020,
-        "population": 4360444
-      },
-      {
-        "year": 2015,
-        "population": 3908743
-      },
-      {
-        "year": 2010,
-        "population": 2943356
-      },
-      {
-        "year": 2000,
-        "population": 1934901
-      },
-      {
-        "year": 1990,
-        "population": 1674938
-      },
-      {
-        "year": 1980,
-        "population": 1493870
-      },
-      {
-        "year": 1970,
-        "population": 802786
-      }
-    ],
-    "area_km2": 17818,
-    "population_density": 239.5821,
-    "population_growth_rate": 1.0044,
-    "percentage_world_population": 0.05
-  },
-  {
-    "rank": 110,
-    "cca3": "KGZ",
-    "capital": "Bishkek",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6630623
-      },
-      {
-        "year": 2020,
-        "population": 6424874
-      },
-      {
-        "year": 2015,
-        "population": 5914980
-      },
-      {
-        "year": 2010,
-        "population": 5483774
-      },
-      {
-        "year": 2000,
-        "population": 4935182
-      },
-      {
-        "year": 1990,
-        "population": 4394734
-      },
-      {
-        "year": 1980,
-        "population": 3691209
-      },
-      {
-        "year": 1970,
-        "population": 3016384
-      }
-    ],
-    "area_km2": 199951,
-    "population_density": 33.1612,
-    "population_growth_rate": 1.0158,
-    "percentage_world_population": 0.08
-  },
-  {
-    "rank": 103,
-    "cca3": "LAO",
-    "capital": "Vientiane",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 7529475
-      },
-      {
-        "year": 2020,
-        "population": 7319399
-      },
-      {
-        "year": 2015,
-        "population": 6787419
-      },
-      {
-        "year": 2010,
-        "population": 6323418
-      },
-      {
-        "year": 2000,
-        "population": 5430853
-      },
-      {
-        "year": 1990,
-        "population": 4314443
-      },
-      {
-        "year": 1980,
-        "population": 3297519
-      },
-      {
-        "year": 1970,
-        "population": 2675283
-      }
-    ],
-    "area_km2": 236800,
-    "population_density": 31.7968,
-    "population_growth_rate": 1.0141,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 151,
-    "cca3": "LVA",
-    "capital": "Riga",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1850651
-      },
-      {
-        "year": 2020,
-        "population": 1897052
-      },
-      {
-        "year": 2015,
-        "population": 1991955
-      },
-      {
-        "year": 2010,
-        "population": 2101530
-      },
-      {
-        "year": 2000,
-        "population": 2392530
-      },
-      {
-        "year": 1990,
-        "population": 2689391
-      },
-      {
-        "year": 1980,
-        "population": 2572037
-      },
-      {
-        "year": 1970,
-        "population": 2397414
-      }
-    ],
-    "area_km2": 64559,
-    "population_density": 28.666,
-    "population_growth_rate": 0.9876,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 119,
-    "cca3": "LBN",
-    "capital": "Beirut",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5489739
-      },
-      {
-        "year": 2020,
-        "population": 5662923
-      },
-      {
-        "year": 2015,
-        "population": 6398940
-      },
-      {
-        "year": 2010,
-        "population": 4995800
-      },
-      {
-        "year": 2000,
-        "population": 4320642
-      },
-      {
-        "year": 1990,
-        "population": 3593700
-      },
-      {
-        "year": 1980,
-        "population": 2963702
-      },
-      {
-        "year": 1970,
-        "population": 2381791
-      }
-    ],
-    "area_km2": 10452,
-    "population_density": 525.2334,
-    "population_growth_rate": 0.9816,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 147,
-    "cca3": "LSO",
-    "capital": "Maseru",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2305825
-      },
-      {
-        "year": 2020,
-        "population": 2254100
-      },
-      {
-        "year": 2015,
-        "population": 2118521
-      },
-      {
-        "year": 2010,
-        "population": 2022747
-      },
-      {
-        "year": 2000,
-        "population": 1998630
-      },
-      {
-        "year": 1990,
-        "population": 1798997
-      },
-      {
-        "year": 1980,
-        "population": 1407672
-      },
-      {
-        "year": 1970,
-        "population": 1023481
-      }
-    ],
-    "area_km2": 30355,
-    "population_density": 75.962,
-    "population_growth_rate": 1.0107,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 121,
-    "cca3": "LBR",
-    "capital": "Monrovia",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5302681
-      },
-      {
-        "year": 2020,
-        "population": 5087584
-      },
-      {
-        "year": 2015,
-        "population": 4612329
-      },
-      {
-        "year": 2010,
-        "population": 4019956
-      },
-      {
-        "year": 2000,
-        "population": 2895224
-      },
-      {
-        "year": 1990,
-        "population": 2209731
-      },
-      {
-        "year": 1980,
-        "population": 1932169
-      },
-      {
-        "year": 1970,
-        "population": 1463563
-      }
-    ],
-    "area_km2": 111369,
-    "population_density": 47.6136,
-    "population_growth_rate": 1.021,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 107,
-    "cca3": "LBY",
-    "capital": "Tripoli",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6812341
-      },
-      {
-        "year": 2020,
-        "population": 6653942
-      },
-      {
-        "year": 2015,
-        "population": 6192235
-      },
-      {
-        "year": 2010,
-        "population": 6491988
-      },
-      {
-        "year": 2000,
-        "population": 5154790
-      },
-      {
-        "year": 1990,
-        "population": 4236983
-      },
-      {
-        "year": 1980,
-        "population": 2962720
-      },
-      {
-        "year": 1970,
-        "population": 1909177
-      }
-    ],
-    "area_km2": 1759540,
-    "population_density": 3.8717,
-    "population_growth_rate": 1.0114,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 216,
-    "cca3": "LIE",
-    "capital": "Vaduz",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 39327
-      },
-      {
-        "year": 2020,
-        "population": 38756
-      },
-      {
-        "year": 2015,
-        "population": 37355
-      },
-      {
-        "year": 2010,
-        "population": 35926
-      },
-      {
-        "year": 2000,
-        "population": 33026
-      },
-      {
-        "year": 1990,
-        "population": 28765
-      },
-      {
-        "year": 1980,
-        "population": 25003
-      },
-      {
-        "year": 1970,
-        "population": 21089
-      }
-    ],
-    "area_km2": 160,
-    "population_density": 245.7937,
-    "population_growth_rate": 1.0074,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 141,
-    "cca3": "LTU",
-    "capital": "Vilnius",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2750055
-      },
-      {
-        "year": 2020,
-        "population": 2820267
-      },
-      {
-        "year": 2015,
-        "population": 2963765
-      },
-      {
-        "year": 2010,
-        "population": 3139019
-      },
-      {
-        "year": 2000,
-        "population": 3599637
-      },
-      {
-        "year": 1990,
-        "population": 3785847
-      },
-      {
-        "year": 1980,
-        "population": 3521206
-      },
-      {
-        "year": 1970,
-        "population": 3210147
-      }
-    ],
-    "area_km2": 65300,
-    "population_density": 42.1142,
-    "population_growth_rate": 0.9869,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 168,
-    "cca3": "LUX",
-    "capital": "Luxembourg",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 647599
-      },
-      {
-        "year": 2020,
-        "population": 630399
-      },
-      {
-        "year": 2015,
-        "population": 569408
-      },
-      {
-        "year": 2010,
-        "population": 507070
-      },
-      {
-        "year": 2000,
-        "population": 435628
-      },
-      {
-        "year": 1990,
-        "population": 381267
-      },
-      {
-        "year": 1980,
-        "population": 363741
-      },
-      {
-        "year": 1970,
-        "population": 339342
-      }
-    ],
-    "area_km2": 2586,
-    "population_density": 250.425,
-    "population_growth_rate": 1.0129,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 167,
-    "cca3": "MAC",
-    "capital": "Concelho de Macau",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 695168
-      },
-      {
-        "year": 2020,
-        "population": 676283
-      },
-      {
-        "year": 2015,
-        "population": 615239
-      },
-      {
-        "year": 2010,
-        "population": 557297
-      },
-      {
-        "year": 2000,
-        "population": 431896
-      },
-      {
-        "year": 1990,
-        "population": 350227
-      },
-      {
-        "year": 1980,
-        "population": 245332
-      },
-      {
-        "year": 1970,
-        "population": 247284
-      }
-    ],
-    "area_km2": 30,
-    "population_density": 23172.2667,
-    "population_growth_rate": 1.0125,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 50,
-    "cca3": "MDG",
-    "capital": "Antananarivo",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 29611714
-      },
-      {
-        "year": 2020,
-        "population": 28225177
-      },
-      {
-        "year": 2015,
-        "population": 24850912
-      },
-      {
-        "year": 2010,
-        "population": 21731053
-      },
-      {
-        "year": 2000,
-        "population": 16216431
-      },
-      {
-        "year": 1990,
-        "population": 11882762
-      },
-      {
-        "year": 1980,
-        "population": 8948162
-      },
-      {
-        "year": 1970,
-        "population": 6639751
-      }
-    ],
-    "area_km2": 587041,
-    "population_density": 50.4423,
-    "population_growth_rate": 1.0241,
-    "percentage_world_population": 0.37
-  },
-  {
-    "rank": 62,
-    "cca3": "MWI",
-    "capital": "Lilongwe",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 20405317
-      },
-      {
-        "year": 2020,
-        "population": 19377061
-      },
-      {
-        "year": 2015,
-        "population": 16938942
-      },
-      {
-        "year": 2010,
-        "population": 14718422
-      },
-      {
-        "year": 2000,
-        "population": 11229387
-      },
-      {
-        "year": 1990,
-        "population": 9539665
-      },
-      {
-        "year": 1980,
-        "population": 6267369
-      },
-      {
-        "year": 1970,
-        "population": 4625141
-      }
-    ],
-    "area_km2": 118484,
-    "population_density": 172.22,
-    "population_growth_rate": 1.0259,
-    "percentage_world_population": 0.26
-  },
-  {
-    "rank": 45,
-    "cca3": "MYS",
-    "capital": "Kuala Lumpur",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 33938221
-      },
-      {
-        "year": 2020,
-        "population": 33199993
-      },
-      {
-        "year": 2015,
-        "population": 31068833
-      },
-      {
-        "year": 2010,
-        "population": 28717731
-      },
-      {
-        "year": 2000,
-        "population": 22945150
-      },
-      {
-        "year": 1990,
-        "population": 17517054
-      },
-      {
-        "year": 1980,
-        "population": 13215707
-      },
-      {
-        "year": 1970,
-        "population": 10306508
-      }
-    ],
-    "area_km2": 330803,
-    "population_density": 102.5934,
-    "population_growth_rate": 1.0109,
-    "percentage_world_population": 0.43
-  },
-  {
-    "rank": 174,
-    "cca3": "MDV",
-    "capital": "Malé",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 523787
-      },
-      {
-        "year": 2020,
-        "population": 514438
-      },
-      {
-        "year": 2015,
-        "population": 435582
-      },
-      {
-        "year": 2010,
-        "population": 361575
-      },
-      {
-        "year": 2000,
-        "population": 282507
-      },
-      {
-        "year": 1990,
-        "population": 224957
-      },
-      {
-        "year": 1980,
-        "population": 164887
-      },
-      {
-        "year": 1970,
-        "population": 123243
-      }
-    ],
-    "area_km2": 300,
-    "population_density": 1745.9567,
-    "population_growth_rate": 1.0045,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 59,
-    "cca3": "MLI",
-    "capital": "Bamako",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 22593590
-      },
-      {
-        "year": 2020,
-        "population": 21224040
-      },
-      {
-        "year": 2015,
-        "population": 18112907
-      },
-      {
-        "year": 2010,
-        "population": 15529181
-      },
-      {
-        "year": 2000,
-        "population": 11239101
-      },
-      {
-        "year": 1990,
-        "population": 8945026
-      },
-      {
-        "year": 1980,
-        "population": 7372581
-      },
-      {
-        "year": 1970,
-        "population": 6153587
-      }
-    ],
-    "area_km2": 1240192,
-    "population_density": 18.2178,
-    "population_growth_rate": 1.0314,
-    "percentage_world_population": 0.28
-  },
-  {
-    "rank": 173,
-    "cca3": "MLT",
-    "capital": "Valletta",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 533286
-      },
-      {
-        "year": 2020,
-        "population": 515357
-      },
-      {
-        "year": 2015,
-        "population": 456579
-      },
-      {
-        "year": 2010,
-        "population": 418755
-      },
-      {
-        "year": 2000,
-        "population": 399212
-      },
-      {
-        "year": 1990,
-        "population": 365392
-      },
-      {
-        "year": 1980,
-        "population": 333587
-      },
-      {
-        "year": 1970,
-        "population": 315414
-      }
-    ],
-    "area_km2": 316,
-    "population_density": 1687.6139,
-    "population_growth_rate": 1.0124,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 215,
-    "cca3": "MHL",
-    "capital": "Majuro",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 41569
-      },
-      {
-        "year": 2020,
-        "population": 43413
-      },
-      {
-        "year": 2015,
-        "population": 49410
-      },
-      {
-        "year": 2010,
-        "population": 53416
-      },
-      {
-        "year": 2000,
-        "population": 54224
-      },
-      {
-        "year": 1990,
-        "population": 46047
-      },
-      {
-        "year": 1980,
-        "population": 31988
-      },
-      {
-        "year": 1970,
-        "population": 23969
-      }
-    ],
-    "area_km2": 181,
-    "population_density": 229.663,
-    "population_growth_rate": 0.9886,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 180,
-    "cca3": "MTQ",
-    "capital": "Fort-de-France",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 367507
-      },
-      {
-        "year": 2020,
-        "population": 370391
-      },
-      {
-        "year": 2015,
-        "population": 383515
-      },
-      {
-        "year": 2010,
-        "population": 392181
-      },
-      {
-        "year": 2000,
-        "population": 432543
-      },
-      {
-        "year": 1990,
-        "population": 374271
-      },
-      {
-        "year": 1980,
-        "population": 333786
-      },
-      {
-        "year": 1970,
-        "population": 326428
-      }
-    ],
-    "area_km2": 1128,
-    "population_density": 325.8041,
-    "population_growth_rate": 0.9965,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 126,
-    "cca3": "MRT",
-    "capital": "Nouakchott",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4736139
-      },
-      {
-        "year": 2020,
-        "population": 4498604
-      },
-      {
-        "year": 2015,
-        "population": 3946220
-      },
-      {
-        "year": 2010,
-        "population": 3419461
-      },
-      {
-        "year": 2000,
-        "population": 2695003
-      },
-      {
-        "year": 1990,
-        "population": 2006027
-      },
-      {
-        "year": 1980,
-        "population": 1506694
-      },
-      {
-        "year": 1970,
-        "population": 1122198
-      }
-    ],
-    "area_km2": 1030700,
-    "population_density": 4.5951,
-    "population_growth_rate": 1.0263,
-    "percentage_world_population": 0.06
-  },
-  {
-    "rank": 157,
-    "cca3": "MUS",
-    "capital": "Port Louis",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1299469
-      },
-      {
-        "year": 2020,
-        "population": 1297828
-      },
-      {
-        "year": 2015,
-        "population": 1293153
-      },
-      {
-        "year": 2010,
-        "population": 1283330
-      },
-      {
-        "year": 2000,
-        "population": 1215930
-      },
-      {
-        "year": 1990,
-        "population": 1090290
-      },
-      {
-        "year": 1980,
-        "population": 954865
-      },
-      {
-        "year": 1970,
-        "population": 830115
-      }
-    ],
-    "area_km2": 2040,
-    "population_density": 636.9946,
-    "population_growth_rate": 1.0004,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 182,
-    "cca3": "MYT",
-    "capital": "Mamoudzou",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 326101
-      },
-      {
-        "year": 2020,
-        "population": 305587
-      },
-      {
-        "year": 2015,
-        "population": 249545
-      },
-      {
-        "year": 2010,
-        "population": 211786
-      },
-      {
-        "year": 2000,
-        "population": 159215
-      },
-      {
-        "year": 1990,
-        "population": 92659
-      },
-      {
-        "year": 1980,
-        "population": 52233
-      },
-      {
-        "year": 1970,
-        "population": 35383
-      }
-    ],
-    "area_km2": 374,
-    "population_density": 871.9278,
-    "population_growth_rate": 1.0319,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 10,
-    "cca3": "MEX",
-    "capital": "Mexico City",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 127504125
-      },
-      {
-        "year": 2020,
-        "population": 125998302
-      },
-      {
-        "year": 2015,
-        "population": 120149897
-      },
-      {
-        "year": 2010,
-        "population": 112532401
-      },
-      {
-        "year": 2000,
-        "population": 97873442
-      },
-      {
-        "year": 1990,
-        "population": 81720428
-      },
-      {
-        "year": 1980,
-        "population": 67705186
-      },
-      {
-        "year": 1970,
-        "population": 50289306
-      }
-    ],
-    "area_km2": 1964375,
-    "population_density": 64.9082,
-    "population_growth_rate": 1.0063,
-    "percentage_world_population": 1.6
-  },
-  {
-    "rank": 194,
-    "cca3": "FSM",
-    "capital": "Palikir",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 114164
-      },
-      {
-        "year": 2020,
-        "population": 112106
-      },
-      {
-        "year": 2015,
-        "population": 109462
-      },
-      {
-        "year": 2010,
-        "population": 107588
-      },
-      {
-        "year": 2000,
-        "population": 111709
-      },
-      {
-        "year": 1990,
-        "population": 98603
-      },
-      {
-        "year": 1980,
-        "population": 76299
-      },
-      {
-        "year": 1970,
-        "population": 58989
-      }
-    ],
-    "area_km2": 702,
-    "population_density": 162.6268,
-    "population_growth_rate": 1.0091,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 135,
-    "cca3": "MDA",
-    "capital": "Chisinau",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3272996
-      },
-      {
-        "year": 2020,
-        "population": 3084847
-      },
-      {
-        "year": 2015,
-        "population": 3277388
-      },
-      {
-        "year": 2010,
-        "population": 3678186
-      },
-      {
-        "year": 2000,
-        "population": 4251573
-      },
-      {
-        "year": 1990,
-        "population": 4480199
-      },
-      {
-        "year": 1980,
-        "population": 4103240
-      },
-      {
-        "year": 1970,
-        "population": 3711140
-      }
-    ],
-    "area_km2": 33846,
-    "population_density": 96.7026,
-    "population_growth_rate": 1.0691,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 217,
-    "cca3": "MCO",
-    "capital": "Monaco",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 36469
-      },
-      {
-        "year": 2020,
-        "population": 36922
-      },
-      {
-        "year": 2015,
-        "population": 36760
-      },
-      {
-        "year": 2010,
-        "population": 33178
-      },
-      {
-        "year": 2000,
-        "population": 32465
-      },
-      {
-        "year": 1990,
-        "population": 30329
-      },
-      {
-        "year": 1980,
-        "population": 27076
-      },
-      {
-        "year": 1970,
-        "population": 24270
-      }
-    ],
-    "area_km2": 2,
-    "population_density": 18234.5,
-    "population_growth_rate": 0.9941,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 134,
-    "cca3": "MNG",
-    "capital": "Ulaanbaatar",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3398366
-      },
-      {
-        "year": 2020,
-        "population": 3294335
-      },
-      {
-        "year": 2015,
-        "population": 2964749
-      },
-      {
-        "year": 2010,
-        "population": 2702520
-      },
-      {
-        "year": 2000,
-        "population": 2450979
-      },
-      {
-        "year": 1990,
-        "population": 2161433
-      },
-      {
-        "year": 1980,
-        "population": 1697780
-      },
-      {
-        "year": 1970,
-        "population": 1293880
-      }
-    ],
-    "area_km2": 1564110,
-    "population_density": 2.1727,
-    "population_growth_rate": 1.0151,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 169,
-    "cca3": "MNE",
-    "capital": "Podgorica",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 627082
-      },
-      {
-        "year": 2020,
-        "population": 629048
-      },
-      {
-        "year": 2015,
-        "population": 633966
-      },
-      {
-        "year": 2010,
-        "population": 631044
-      },
-      {
-        "year": 2000,
-        "population": 633324
-      },
-      {
-        "year": 1990,
-        "population": 621442
-      },
-      {
-        "year": 1980,
-        "population": 589324
-      },
-      {
-        "year": 1970,
-        "population": 530268
-      }
-    ],
-    "area_km2": 13812,
-    "population_density": 45.4012,
-    "population_growth_rate": 0.9988,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 230,
-    "cca3": "MSR",
-    "capital": "Brades",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4390
-      },
-      {
-        "year": 2020,
-        "population": 4500
-      },
-      {
-        "year": 2015,
-        "population": 5059
-      },
-      {
-        "year": 2010,
-        "population": 4938
-      },
-      {
-        "year": 2000,
-        "population": 5138
-      },
-      {
-        "year": 1990,
-        "population": 10805
-      },
-      {
-        "year": 1980,
-        "population": 11452
-      },
-      {
-        "year": 1970,
-        "population": 11402
-      }
-    ],
-    "area_km2": 102,
-    "population_density": 43.0392,
-    "population_growth_rate": 0.9939,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 40,
-    "cca3": "MAR",
-    "capital": "Rabat",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 37457971
-      },
-      {
-        "year": 2020,
-        "population": 36688772
-      },
-      {
-        "year": 2015,
-        "population": 34680458
-      },
-      {
-        "year": 2010,
-        "population": 32464865
-      },
-      {
-        "year": 2000,
-        "population": 28554415
-      },
-      {
-        "year": 1990,
-        "population": 24570814
-      },
-      {
-        "year": 1980,
-        "population": 19678444
-      },
-      {
-        "year": 1970,
-        "population": 15274351
-      }
-    ],
-    "area_km2": 446550,
-    "population_density": 83.883,
-    "population_growth_rate": 1.0103,
-    "percentage_world_population": 0.47
-  },
-  {
-    "rank": 48,
-    "cca3": "MOZ",
-    "capital": "Maputo",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 32969517
-      },
-      {
-        "year": 2020,
-        "population": 31178239
-      },
-      {
-        "year": 2015,
-        "population": 26843246
-      },
-      {
-        "year": 2010,
-        "population": 23073723
-      },
-      {
-        "year": 2000,
-        "population": 17768505
-      },
-      {
-        "year": 1990,
-        "population": 13303459
-      },
-      {
-        "year": 1980,
-        "population": 11413587
-      },
-      {
-        "year": 1970,
-        "population": 8411676
-      }
-    ],
-    "area_km2": 801590,
-    "population_density": 41.1302,
-    "population_growth_rate": 1.0278,
-    "percentage_world_population": 0.41
-  },
-  {
-    "rank": 26,
-    "cca3": "MMR",
-    "capital": "Nay Pyi Taw",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 54179306
-      },
-      {
-        "year": 2020,
-        "population": 53423198
-      },
-      {
-        "year": 2015,
-        "population": 51483949
-      },
-      {
-        "year": 2010,
-        "population": 49390988
-      },
-      {
-        "year": 2000,
-        "population": 45538332
-      },
-      {
-        "year": 1990,
-        "population": 40099553
-      },
-      {
-        "year": 1980,
-        "population": 33465781
-      },
-      {
-        "year": 1970,
-        "population": 27284112
-      }
-    ],
-    "area_km2": 676578,
-    "population_density": 80.0784,
-    "population_growth_rate": 1.0071,
-    "percentage_world_population": 0.68
-  },
-  {
-    "rank": 145,
-    "cca3": "NAM",
-    "capital": "Windhoek",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2567012
-      },
-      {
-        "year": 2020,
-        "population": 2489098
-      },
-      {
-        "year": 2015,
-        "population": 2282704
-      },
-      {
-        "year": 2010,
-        "population": 2099271
-      },
-      {
-        "year": 2000,
-        "population": 1819141
-      },
-      {
-        "year": 1990,
-        "population": 1369011
-      },
-      {
-        "year": 1980,
-        "population": 975994
-      },
-      {
-        "year": 1970,
-        "population": 754467
-      }
-    ],
-    "area_km2": 825615,
-    "population_density": 3.1092,
-    "population_growth_rate": 1.0146,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 225,
-    "cca3": "NRU",
-    "capital": "Yaren",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 12668
-      },
-      {
-        "year": 2020,
-        "population": 12315
-      },
-      {
-        "year": 2015,
-        "population": 11185
-      },
-      {
-        "year": 2010,
-        "population": 10241
-      },
-      {
-        "year": 2000,
-        "population": 10377
-      },
-      {
-        "year": 1990,
-        "population": 9598
-      },
-      {
-        "year": 1980,
-        "population": 7635
-      },
-      {
-        "year": 1970,
-        "population": 6663
-      }
-    ],
-    "area_km2": 21,
-    "population_density": 603.2381,
-    "population_growth_rate": 1.0125,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 49,
-    "cca3": "NPL",
-    "capital": "Kathmandu",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 30547580
-      },
-      {
-        "year": 2020,
-        "population": 29348627
-      },
-      {
-        "year": 2015,
-        "population": 27610325
-      },
-      {
-        "year": 2010,
-        "population": 27161567
-      },
-      {
-        "year": 2000,
-        "population": 24559500
-      },
-      {
-        "year": 1990,
-        "population": 19616530
-      },
-      {
-        "year": 1980,
-        "population": 15600442
-      },
-      {
-        "year": 1970,
-        "population": 12501285
-      }
-    ],
-    "area_km2": 147181,
-    "population_density": 207.5511,
-    "population_growth_rate": 1.0171,
-    "percentage_world_population": 0.38
-  },
-  {
-    "rank": 71,
-    "cca3": "NLD",
-    "capital": "Amsterdam",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17564014
-      },
-      {
-        "year": 2020,
-        "population": 17434557
-      },
-      {
-        "year": 2015,
-        "population": 17041107
-      },
-      {
-        "year": 2010,
-        "population": 16617116
-      },
-      {
-        "year": 2000,
-        "population": 15899135
-      },
-      {
-        "year": 1990,
-        "population": 14944548
-      },
-      {
-        "year": 1980,
-        "population": 14130387
-      },
-      {
-        "year": 1970,
-        "population": 13037686
-      }
-    ],
-    "area_km2": 41850,
-    "population_density": 419.6897,
-    "population_growth_rate": 1.0036,
-    "percentage_world_population": 0.22
-  },
-  {
-    "rank": 185,
-    "cca3": "NCL",
-    "capital": "Nouméa",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 289950
-      },
-      {
-        "year": 2020,
-        "population": 286403
-      },
-      {
-        "year": 2015,
-        "population": 283032
-      },
-      {
-        "year": 2010,
-        "population": 261426
-      },
-      {
-        "year": 2000,
-        "population": 221537
-      },
-      {
-        "year": 1990,
-        "population": 177264
-      },
-      {
-        "year": 1980,
-        "population": 148599
-      },
-      {
-        "year": 1970,
-        "population": 110982
-      }
-    ],
-    "area_km2": 18575,
-    "population_density": 15.6097,
-    "population_growth_rate": 1.0075,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 123,
-    "cca3": "NZL",
-    "capital": "Wellington",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5185288
-      },
-      {
-        "year": 2020,
-        "population": 5061133
-      },
-      {
-        "year": 2015,
-        "population": 4590590
-      },
-      {
-        "year": 2010,
-        "population": 4346338
-      },
-      {
-        "year": 2000,
-        "population": 3855266
-      },
-      {
-        "year": 1990,
-        "population": 3397389
-      },
-      {
-        "year": 1980,
-        "population": 3147168
-      },
-      {
-        "year": 1970,
-        "population": 2824061
-      }
-    ],
-    "area_km2": 270467,
-    "population_density": 19.1716,
-    "population_growth_rate": 1.0108,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 106,
-    "cca3": "NIC",
-    "capital": "Managua",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6948392
-      },
-      {
-        "year": 2020,
-        "population": 6755895
-      },
-      {
-        "year": 2015,
-        "population": 6298598
-      },
-      {
-        "year": 2010,
-        "population": 5855734
-      },
-      {
-        "year": 2000,
-        "population": 5123222
-      },
-      {
-        "year": 1990,
-        "population": 4227820
-      },
-      {
-        "year": 1980,
-        "population": 3303309
-      },
-      {
-        "year": 1970,
-        "population": 2444767
-      }
-    ],
-    "area_km2": 130373,
-    "population_density": 53.2962,
-    "population_growth_rate": 1.0143,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 54,
-    "cca3": "NER",
-    "capital": "Niamey",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 26207977
-      },
-      {
-        "year": 2020,
-        "population": 24333639
-      },
-      {
-        "year": 2015,
-        "population": 20128124
-      },
-      {
-        "year": 2010,
-        "population": 16647543
-      },
-      {
-        "year": 2000,
-        "population": 11622665
-      },
-      {
-        "year": 1990,
-        "population": 8370647
-      },
-      {
-        "year": 1980,
-        "population": 6173177
-      },
-      {
-        "year": 1970,
-        "population": 4669708
-      }
-    ],
-    "area_km2": 1267000,
-    "population_density": 20.6851,
-    "population_growth_rate": 1.0378,
-    "percentage_world_population": 0.33
-  },
-  {
-    "rank": 6,
-    "cca3": "NGA",
-    "capital": "Abuja",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 218541212
-      },
-      {
-        "year": 2020,
-        "population": 208327405
-      },
-      {
-        "year": 2015,
-        "population": 183995785
-      },
-      {
-        "year": 2010,
-        "population": 160952853
-      },
-      {
-        "year": 2000,
-        "population": 122851984
-      },
-      {
-        "year": 1990,
-        "population": 95214257
-      },
-      {
-        "year": 1980,
-        "population": 72951439
-      },
-      {
-        "year": 1970,
-        "population": 55569264
-      }
-    ],
-    "area_km2": 923768,
-    "population_density": 236.5759,
-    "population_growth_rate": 1.0241,
-    "percentage_world_population": 2.74
-  },
-  {
-    "rank": 232,
-    "cca3": "NIU",
-    "capital": "Alofi",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1934
-      },
-      {
-        "year": 2020,
-        "population": 1942
-      },
-      {
-        "year": 2015,
-        "population": 1847
-      },
-      {
-        "year": 2010,
-        "population": 1812
-      },
-      {
-        "year": 2000,
-        "population": 2074
-      },
-      {
-        "year": 1990,
-        "population": 2533
-      },
-      {
-        "year": 1980,
-        "population": 3637
-      },
-      {
-        "year": 1970,
-        "population": 5185
-      }
-    ],
-    "area_km2": 260,
-    "population_density": 7.4385,
-    "population_growth_rate": 0.9985,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 56,
-    "cca3": "PRK",
-    "capital": "Pyongyang",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 26069416
-      },
-      {
-        "year": 2020,
-        "population": 25867467
-      },
-      {
-        "year": 2015,
-        "population": 25258015
-      },
-      {
-        "year": 2010,
-        "population": 24686435
-      },
-      {
-        "year": 2000,
-        "population": 23367059
-      },
-      {
-        "year": 1990,
-        "population": 20799523
-      },
-      {
-        "year": 1980,
-        "population": 17973650
-      },
-      {
-        "year": 1970,
-        "population": 14996879
-      }
-    ],
-    "area_km2": 120538,
-    "population_density": 216.2755,
-    "population_growth_rate": 1.0038,
-    "percentage_world_population": 0.33
-  },
-  {
-    "rank": 150,
-    "cca3": "MKD",
-    "capital": "Skopje",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2093599
-      },
-      {
-        "year": 2020,
-        "population": 2111072
-      },
-      {
-        "year": 2015,
-        "population": 2107962
-      },
-      {
-        "year": 2010,
-        "population": 2093828
-      },
-      {
-        "year": 2000,
-        "population": 2037936
-      },
-      {
-        "year": 1990,
-        "population": 2044174
-      },
-      {
-        "year": 1980,
-        "population": 1907023
-      },
-      {
-        "year": 1970,
-        "population": 1656783
-      }
-    ],
-    "area_km2": 25713,
-    "population_density": 81.4218,
-    "population_growth_rate": 0.9954,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 210,
-    "cca3": "NFK",
-    "capital": "Saipan",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 49551
-      },
-      {
-        "year": 2020,
-        "population": 49587
-      },
-      {
-        "year": 2015,
-        "population": 51514
-      },
-      {
-        "year": 2010,
-        "population": 54087
-      },
-      {
-        "year": 2000,
-        "population": 80338
-      },
-      {
-        "year": 1990,
-        "population": 48002
-      },
-      {
-        "year": 1980,
-        "population": 17613
-      },
-      {
-        "year": 1970,
-        "population": 10143
-      }
-    ],
-    "area_km2": 464,
-    "population_density": 106.7909,
-    "population_growth_rate": 1.0014,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 120,
-    "cca3": "NOR",
-    "capital": "Oslo",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5434319
-      },
-      {
-        "year": 2020,
-        "population": 5379839
-      },
-      {
-        "year": 2015,
-        "population": 5190356
-      },
-      {
-        "year": 2010,
-        "population": 4889741
-      },
-      {
-        "year": 2000,
-        "population": 4491202
-      },
-      {
-        "year": 1990,
-        "population": 4241636
-      },
-      {
-        "year": 1980,
-        "population": 4085776
-      },
-      {
-        "year": 1970,
-        "population": 3875546
-      }
-    ],
-    "area_km2": 323802,
-    "population_density": 16.7828,
-    "population_growth_rate": 1.0058,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 127,
-    "cca3": "OMN",
-    "capital": "Muscat",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4576298
-      },
-      {
-        "year": 2020,
-        "population": 4543399
-      },
-      {
-        "year": 2015,
-        "population": 4191776
-      },
-      {
-        "year": 2010,
-        "population": 2881914
-      },
-      {
-        "year": 2000,
-        "population": 2344253
-      },
-      {
-        "year": 1990,
-        "population": 1804524
-      },
-      {
-        "year": 1980,
-        "population": 1017462
-      },
-      {
-        "year": 1970,
-        "population": 670693
-      }
-    ],
-    "area_km2": 309500,
-    "population_density": 14.7861,
-    "population_growth_rate": 1.0123,
-    "percentage_world_population": 0.06
-  },
-  {
-    "rank": 5,
-    "cca3": "PAK",
-    "capital": "Islamabad",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 235824862
-      },
-      {
-        "year": 2020,
-        "population": 227196741
-      },
-      {
-        "year": 2015,
-        "population": 210969298
-      },
-      {
-        "year": 2010,
-        "population": 194454498
-      },
-      {
-        "year": 2000,
-        "population": 154369924
-      },
-      {
-        "year": 1990,
-        "population": 115414069
-      },
-      {
-        "year": 1980,
-        "population": 80624057
-      },
-      {
-        "year": 1970,
-        "population": 59290872
-      }
-    ],
-    "area_km2": 881912,
-    "population_density": 267.4018,
-    "population_growth_rate": 1.0191,
-    "percentage_world_population": 2.96
-  },
-  {
-    "rank": 222,
-    "cca3": "PLW",
-    "capital": "Ngerulmud",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 18055
-      },
-      {
-        "year": 2020,
-        "population": 17972
-      },
-      {
-        "year": 2015,
-        "population": 17794
-      },
-      {
-        "year": 2010,
-        "population": 18540
-      },
-      {
-        "year": 2000,
-        "population": 19726
-      },
-      {
-        "year": 1990,
-        "population": 15293
-      },
-      {
-        "year": 1980,
-        "population": 12252
-      },
-      {
-        "year": 1970,
-        "population": 11366
-      }
-    ],
-    "area_km2": 459,
-    "population_density": 39.3355,
-    "population_growth_rate": 1.0017,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 122,
-    "cca3": "PSE",
-    "capital": "Ramallah",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5250072
-      },
-      {
-        "year": 2020,
-        "population": 5019401
-      },
-      {
-        "year": 2015,
-        "population": 4484614
-      },
-      {
-        "year": 2010,
-        "population": 3992278
-      },
-      {
-        "year": 2000,
-        "population": 3139954
-      },
-      {
-        "year": 1990,
-        "population": 2124609
-      },
-      {
-        "year": 1980,
-        "population": 1453620
-      },
-      {
-        "year": 1970,
-        "population": 1118241
-      }
-    ],
-    "area_km2": 6220,
-    "population_density": 844.063,
-    "population_growth_rate": 1.0227,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 128,
-    "cca3": "PAN",
-    "capital": "Panama City",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 4408581
-      },
-      {
-        "year": 2020,
-        "population": 4294396
-      },
-      {
-        "year": 2015,
-        "population": 3957099
-      },
-      {
-        "year": 2010,
-        "population": 3623617
-      },
-      {
-        "year": 2000,
-        "population": 3001731
-      },
-      {
-        "year": 1990,
-        "population": 2449968
-      },
-      {
-        "year": 1980,
-        "population": 1956987
-      },
-      {
-        "year": 1970,
-        "population": 1516188
-      }
-    ],
-    "area_km2": 75417,
-    "population_density": 58.4561,
-    "population_growth_rate": 1.0132,
-    "percentage_world_population": 0.06
-  },
-  {
-    "rank": 93,
-    "cca3": "PNG",
-    "capital": "Port Moresby",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10142619
-      },
-      {
-        "year": 2020,
-        "population": 9749640
-      },
-      {
-        "year": 2015,
-        "population": 8682174
-      },
-      {
-        "year": 2010,
-        "population": 7583269
-      },
-      {
-        "year": 2000,
-        "population": 5508297
-      },
-      {
-        "year": 1990,
-        "population": 3864972
-      },
-      {
-        "year": 1980,
-        "population": 3104788
-      },
-      {
-        "year": 1970,
-        "population": 2489059
-      }
-    ],
-    "area_km2": 462840,
-    "population_density": 21.9139,
-    "population_growth_rate": 1.0194,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 109,
-    "cca3": "PRY",
-    "capital": "Asunción",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6780744
-      },
-      {
-        "year": 2020,
-        "population": 6618695
-      },
-      {
-        "year": 2015,
-        "population": 6177950
-      },
-      {
-        "year": 2010,
-        "population": 5768613
-      },
-      {
-        "year": 2000,
-        "population": 5123819
-      },
-      {
-        "year": 1990,
-        "population": 4059195
-      },
-      {
-        "year": 1980,
-        "population": 3078912
-      },
-      {
-        "year": 1970,
-        "population": 2408787
-      }
-    ],
-    "area_km2": 406752,
-    "population_density": 16.6705,
-    "population_growth_rate": 1.0115,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 44,
-    "cca3": "PER",
-    "capital": "Lima",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 34049588
-      },
-      {
-        "year": 2020,
-        "population": 33304756
-      },
-      {
-        "year": 2015,
-        "population": 30711863
-      },
-      {
-        "year": 2010,
-        "population": 29229572
-      },
-      {
-        "year": 2000,
-        "population": 26654439
-      },
-      {
-        "year": 1990,
-        "population": 22109099
-      },
-      {
-        "year": 1980,
-        "population": 17492406
-      },
-      {
-        "year": 1970,
-        "population": 13562371
-      }
-    ],
-    "area_km2": 1285216,
-    "population_density": 26.4933,
-    "population_growth_rate": 1.0099,
-    "percentage_world_population": 0.43
-  },
-  {
-    "rank": 13,
-    "cca3": "PHL",
-    "capital": "Manila",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 115559009
-      },
-      {
-        "year": 2020,
-        "population": 112190977
-      },
-      {
-        "year": 2015,
-        "population": 103031365
-      },
-      {
-        "year": 2010,
-        "population": 94636700
-      },
-      {
-        "year": 2000,
-        "population": 77958223
-      },
-      {
-        "year": 1990,
-        "population": 61558898
-      },
-      {
-        "year": 1980,
-        "population": 48419546
-      },
-      {
-        "year": 1970,
-        "population": 37435586
-      }
-    ],
-    "area_km2": 342353,
-    "population_density": 337.5434,
-    "population_growth_rate": 1.0147,
-    "percentage_world_population": 1.45
-  },
-  {
-    "rank": 37,
-    "cca3": "POL",
-    "capital": "Warsaw",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 39857145
-      },
-      {
-        "year": 2020,
-        "population": 38428366
-      },
-      {
-        "year": 2015,
-        "population": 38553146
-      },
-      {
-        "year": 2010,
-        "population": 38597353
-      },
-      {
-        "year": 2000,
-        "population": 38504431
-      },
-      {
-        "year": 1990,
-        "population": 38064255
-      },
-      {
-        "year": 1980,
-        "population": 35521429
-      },
-      {
-        "year": 1970,
-        "population": 32482943
-      }
-    ],
-    "area_km2": 312679,
-    "population_density": 127.4698,
-    "population_growth_rate": 1.0404,
-    "percentage_world_population": 0.5
-  },
-  {
-    "rank": 92,
-    "cca3": "PRT",
-    "capital": "Lisbon",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10270865
-      },
-      {
-        "year": 2020,
-        "population": 10298192
-      },
-      {
-        "year": 2015,
-        "population": 10365435
-      },
-      {
-        "year": 2010,
-        "population": 10588401
-      },
-      {
-        "year": 2000,
-        "population": 10300626
-      },
-      {
-        "year": 1990,
-        "population": 10007346
-      },
-      {
-        "year": 1980,
-        "population": 9785252
-      },
-      {
-        "year": 1970,
-        "population": 8683631
-      }
-    ],
-    "area_km2": 92090,
-    "population_density": 111.5307,
-    "population_growth_rate": 0.9981,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 136,
-    "cca3": "PRI",
-    "capital": "San Juan",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3252407
-      },
-      {
-        "year": 2020,
-        "population": 3271564
-      },
-      {
-        "year": 2015,
-        "population": 3497335
-      },
-      {
-        "year": 2010,
-        "population": 3717922
-      },
-      {
-        "year": 2000,
-        "population": 3827108
-      },
-      {
-        "year": 1990,
-        "population": 3543776
-      },
-      {
-        "year": 1980,
-        "population": 3214568
-      },
-      {
-        "year": 1970,
-        "population": 2737619
-      }
-    ],
-    "area_km2": 8870,
-    "population_density": 366.675,
-    "population_growth_rate": 0.9989,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 143,
-    "cca3": "QAT",
-    "capital": "Doha",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2695122
-      },
-      {
-        "year": 2020,
-        "population": 2760385
-      },
-      {
-        "year": 2015,
-        "population": 2414573
-      },
-      {
-        "year": 2010,
-        "population": 1713504
-      },
-      {
-        "year": 2000,
-        "population": 645937
-      },
-      {
-        "year": 1990,
-        "population": 441675
-      },
-      {
-        "year": 1980,
-        "population": 277450
-      },
-      {
-        "year": 1970,
-        "population": 118007
-      }
-    ],
-    "area_km2": 11586,
-    "population_density": 232.6189,
-    "population_growth_rate": 1.0026,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 114,
-    "cca3": "COG",
-    "capital": "Brazzaville",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5970424
-      },
-      {
-        "year": 2020,
-        "population": 5702174
-      },
-      {
-        "year": 2015,
-        "population": 5064386
-      },
-      {
-        "year": 2010,
-        "population": 4437884
-      },
-      {
-        "year": 2000,
-        "population": 3134030
-      },
-      {
-        "year": 1990,
-        "population": 2385435
-      },
-      {
-        "year": 1980,
-        "population": 1829256
-      },
-      {
-        "year": 1970,
-        "population": 1396989
-      }
-    ],
-    "area_km2": 342000,
-    "population_density": 17.4574,
-    "population_growth_rate": 1.0231,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 161,
-    "cca3": "REU",
-    "capital": "Saint-Denis",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 974052
-      },
-      {
-        "year": 2020,
-        "population": 957822
-      },
-      {
-        "year": 2015,
-        "population": 922495
-      },
-      {
-        "year": 2010,
-        "population": 890130
-      },
-      {
-        "year": 2000,
-        "population": 785424
-      },
-      {
-        "year": 1990,
-        "population": 658992
-      },
-      {
-        "year": 1980,
-        "population": 551674
-      },
-      {
-        "year": 1970,
-        "population": 473925
-      }
-    ],
-    "area_km2": 2511,
-    "population_density": 387.914,
-    "population_growth_rate": 1.0082,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 64,
-    "cca3": "ROU",
-    "capital": "Bucharest",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 19659267
-      },
-      {
-        "year": 2020,
-        "population": 19442038
-      },
-      {
-        "year": 2015,
-        "population": 19906079
-      },
-      {
-        "year": 2010,
-        "population": 20335211
-      },
-      {
-        "year": 2000,
-        "population": 21919876
-      },
-      {
-        "year": 1990,
-        "population": 22836234
-      },
-      {
-        "year": 1980,
-        "population": 22125224
-      },
-      {
-        "year": 1970,
-        "population": 19922618
-      }
-    ],
-    "area_km2": 238391,
-    "population_density": 82.4665,
-    "population_growth_rate": 1.0171,
-    "percentage_world_population": 0.25
-  },
-  {
-    "rank": 9,
-    "cca3": "RUS",
-    "capital": "Moscow",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 144713314
-      },
-      {
-        "year": 2020,
-        "population": 145617329
-      },
-      {
-        "year": 2015,
-        "population": 144668389
-      },
-      {
-        "year": 2010,
-        "population": 143242599
-      },
-      {
-        "year": 2000,
-        "population": 146844839
-      },
-      {
-        "year": 1990,
-        "population": 148005704
-      },
-      {
-        "year": 1980,
-        "population": 138257420
-      },
-      {
-        "year": 1970,
-        "population": 130093010
-      }
-    ],
-    "area_km2": 17098242,
-    "population_density": 8.4636,
-    "population_growth_rate": 0.9973,
-    "percentage_world_population": 1.81
-  },
-  {
-    "rank": 76,
-    "cca3": "RWA",
-    "capital": "Kigali",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 13776698
-      },
-      {
-        "year": 2020,
-        "population": 13146362
-      },
-      {
-        "year": 2015,
-        "population": 11642959
-      },
-      {
-        "year": 2010,
-        "population": 10309031
-      },
-      {
-        "year": 2000,
-        "population": 8109989
-      },
-      {
-        "year": 1990,
-        "population": 7319962
-      },
-      {
-        "year": 1980,
-        "population": 5247532
-      },
-      {
-        "year": 1970,
-        "population": 3896367
-      }
-    ],
-    "area_km2": 26338,
-    "population_density": 523.0731,
-    "population_growth_rate": 1.0234,
-    "percentage_world_population": 0.17
-  },
-  {
-    "rank": 228,
-    "cca3": "BLM",
-    "capital": "Gustavia",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10967
-      },
-      {
-        "year": 2020,
-        "population": 10681
-      },
-      {
-        "year": 2015,
-        "population": 9643
-      },
-      {
-        "year": 2010,
-        "population": 8988
-      },
-      {
-        "year": 2000,
-        "population": 7082
-      },
-      {
-        "year": 1990,
-        "population": 5168
-      },
-      {
-        "year": 1980,
-        "population": 2983
-      },
-      {
-        "year": 1970,
-        "population": 2417
-      }
-    ],
-    "area_km2": 21,
-    "population_density": 522.2381,
-    "population_growth_rate": 1.0098,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 211,
-    "cca3": "KNA",
-    "capital": "Basseterre",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 47657
-      },
-      {
-        "year": 2020,
-        "population": 47642
-      },
-      {
-        "year": 2015,
-        "population": 47790
-      },
-      {
-        "year": 2010,
-        "population": 47403
-      },
-      {
-        "year": 2000,
-        "population": 45461
-      },
-      {
-        "year": 1990,
-        "population": 40636
-      },
-      {
-        "year": 1980,
-        "population": 43097
-      },
-      {
-        "year": 1970,
-        "population": 44968
-      }
-    ],
-    "area_km2": 261,
-    "population_density": 182.5939,
-    "population_growth_rate": 1.0011,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 190,
-    "cca3": "LCA",
-    "capital": "Castries",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 179857
-      },
-      {
-        "year": 2020,
-        "population": 179237
-      },
-      {
-        "year": 2015,
-        "population": 175623
-      },
-      {
-        "year": 2010,
-        "population": 170935
-      },
-      {
-        "year": 2000,
-        "population": 159500
-      },
-      {
-        "year": 1990,
-        "population": 142301
-      },
-      {
-        "year": 1980,
-        "population": 121633
-      },
-      {
-        "year": 1970,
-        "population": 103090
-      }
-    ],
-    "area_km2": 616,
-    "population_density": 291.9756,
-    "population_growth_rate": 1.0011,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 220,
-    "cca3": "MAF",
-    "capital": "Marigot",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 31791
-      },
-      {
-        "year": 2020,
-        "population": 32552
-      },
-      {
-        "year": 2015,
-        "population": 35020
-      },
-      {
-        "year": 2010,
-        "population": 36458
-      },
-      {
-        "year": 2000,
-        "population": 29610
-      },
-      {
-        "year": 1990,
-        "population": 28127
-      },
-      {
-        "year": 1980,
-        "population": 7776
-      },
-      {
-        "year": 1970,
-        "population": 5802
-      }
-    ],
-    "area_km2": 53,
-    "population_density": 599.8302,
-    "population_growth_rate": 0.9951,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 229,
-    "cca3": "SPM",
-    "capital": "Saint-Pierre",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5862
-      },
-      {
-        "year": 2020,
-        "population": 5906
-      },
-      {
-        "year": 2015,
-        "population": 5978
-      },
-      {
-        "year": 2010,
-        "population": 6052
-      },
-      {
-        "year": 2000,
-        "population": 6274
-      },
-      {
-        "year": 1990,
-        "population": 6324
-      },
-      {
-        "year": 1980,
-        "population": 6106
-      },
-      {
-        "year": 1970,
-        "population": 5537
-      }
-    ],
-    "area_km2": 242,
-    "population_density": 24.2231,
-    "population_growth_rate": 0.9964,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 199,
-    "cca3": "VCT",
-    "capital": "Kingstown",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 103948
-      },
-      {
-        "year": 2020,
-        "population": 104632
-      },
-      {
-        "year": 2015,
-        "population": 106482
-      },
-      {
-        "year": 2010,
-        "population": 109308
-      },
-      {
-        "year": 2000,
-        "population": 113813
-      },
-      {
-        "year": 1990,
-        "population": 112487
-      },
-      {
-        "year": 1980,
-        "population": 107480
-      },
-      {
-        "year": 1970,
-        "population": 98459
-      }
-    ],
-    "area_km2": 389,
-    "population_density": 267.2185,
-    "population_growth_rate": 0.9963,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 188,
-    "cca3": "WSM",
-    "capital": "Apia",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 222382
-      },
-      {
-        "year": 2020,
-        "population": 214929
-      },
-      {
-        "year": 2015,
-        "population": 203571
-      },
-      {
-        "year": 2010,
-        "population": 194672
-      },
-      {
-        "year": 2000,
-        "population": 184008
-      },
-      {
-        "year": 1990,
-        "population": 168186
-      },
-      {
-        "year": 1980,
-        "population": 164905
-      },
-      {
-        "year": 1970,
-        "population": 142771
-      }
-    ],
-    "area_km2": 2842,
-    "population_density": 78.2484,
-    "population_growth_rate": 1.0165,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 218,
-    "cca3": "SMR",
-    "capital": "San Marino",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 33660
-      },
-      {
-        "year": 2020,
-        "population": 34007
-      },
-      {
-        "year": 2015,
-        "population": 33570
-      },
-      {
-        "year": 2010,
-        "population": 31608
-      },
-      {
-        "year": 2000,
-        "population": 26823
-      },
-      {
-        "year": 1990,
-        "population": 23132
-      },
-      {
-        "year": 1980,
-        "population": 21346
-      },
-      {
-        "year": 1970,
-        "population": 18169
-      }
-    ],
-    "area_km2": 61,
-    "population_density": 551.8033,
-    "population_growth_rate": 0.9975,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 187,
-    "cca3": "STP",
-    "capital": "São Tomé",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 227380
-      },
-      {
-        "year": 2020,
-        "population": 218641
-      },
-      {
-        "year": 2015,
-        "population": 201124
-      },
-      {
-        "year": 2010,
-        "population": 182138
-      },
-      {
-        "year": 2000,
-        "population": 143714
-      },
-      {
-        "year": 1990,
-        "population": 120343
-      },
-      {
-        "year": 1980,
-        "population": 97210
-      },
-      {
-        "year": 1970,
-        "population": 77583
-      }
-    ],
-    "area_km2": 964,
-    "population_density": 235.8714,
-    "population_growth_rate": 1.0192,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 41,
-    "cca3": "SAU",
-    "capital": "Riyadh",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 36408820
-      },
-      {
-        "year": 2020,
-        "population": 35997107
-      },
-      {
-        "year": 2015,
-        "population": 32749848
-      },
-      {
-        "year": 2010,
-        "population": 29411929
-      },
-      {
-        "year": 2000,
-        "population": 21547390
-      },
-      {
-        "year": 1990,
-        "population": 16004763
-      },
-      {
-        "year": 1980,
-        "population": 10171710
-      },
-      {
-        "year": 1970,
-        "population": 6106191
-      }
-    ],
-    "area_km2": 2149690,
-    "population_density": 16.9368,
-    "population_growth_rate": 1.0128,
-    "percentage_world_population": 0.46
-  },
-  {
-    "rank": 72,
-    "cca3": "SEN",
-    "capital": "Dakar",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17316449
-      },
-      {
-        "year": 2020,
-        "population": 16436119
-      },
-      {
-        "year": 2015,
-        "population": 14356181
-      },
-      {
-        "year": 2010,
-        "population": 12530121
-      },
-      {
-        "year": 2000,
-        "population": 9704287
-      },
-      {
-        "year": 1990,
-        "population": 7536001
-      },
-      {
-        "year": 1980,
-        "population": 5703869
-      },
-      {
-        "year": 1970,
-        "population": 4367744
-      }
-    ],
-    "area_km2": 196722,
-    "population_density": 88.025,
-    "population_growth_rate": 1.0261,
-    "percentage_world_population": 0.22
-  },
-  {
-    "rank": 105,
-    "cca3": "SRB",
-    "capital": "Belgrade",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 7221365
-      },
-      {
-        "year": 2020,
-        "population": 7358005
-      },
-      {
-        "year": 2015,
-        "population": 7519496
-      },
-      {
-        "year": 2010,
-        "population": 7653748
-      },
-      {
-        "year": 2000,
-        "population": 7935022
-      },
-      {
-        "year": 1990,
-        "population": 7987529
-      },
-      {
-        "year": 1980,
-        "population": 7777010
-      },
-      {
-        "year": 1970,
-        "population": 7193533
-      }
-    ],
-    "area_km2": 88361,
-    "population_density": 81.7257,
-    "population_growth_rate": 0.9897,
-    "percentage_world_population": 0.09
-  },
-  {
-    "rank": 196,
-    "cca3": "SYC",
-    "capital": "Victoria",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 107118
-      },
-      {
-        "year": 2020,
-        "population": 105530
-      },
-      {
-        "year": 2015,
-        "population": 99240
-      },
-      {
-        "year": 2010,
-        "population": 92409
-      },
-      {
-        "year": 2000,
-        "population": 80060
-      },
-      {
-        "year": 1990,
-        "population": 71057
-      },
-      {
-        "year": 1980,
-        "population": 65290
-      },
-      {
-        "year": 1970,
-        "population": 54379
-      }
-    ],
-    "area_km2": 452,
-    "population_density": 236.9867,
-    "population_growth_rate": 1.0061,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 102,
-    "cca3": "SLE",
-    "capital": "Freetown",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 8605718
-      },
-      {
-        "year": 2020,
-        "population": 8233969
-      },
-      {
-        "year": 2015,
-        "population": 7314773
-      },
-      {
-        "year": 2010,
-        "population": 6436698
-      },
-      {
-        "year": 2000,
-        "population": 4584067
-      },
-      {
-        "year": 1990,
-        "population": 4325388
-      },
-      {
-        "year": 1980,
-        "population": 3367477
-      },
-      {
-        "year": 1970,
-        "population": 2778557
-      }
-    ],
-    "area_km2": 71740,
-    "population_density": 119.957,
-    "population_growth_rate": 1.022,
-    "percentage_world_population": 0.11
-  },
-  {
-    "rank": 113,
-    "cca3": "SGP",
-    "capital": "Singapore",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5975689
-      },
-      {
-        "year": 2020,
-        "population": 5909869
-      },
-      {
-        "year": 2015,
-        "population": 5650018
-      },
-      {
-        "year": 2010,
-        "population": 5163590
-      },
-      {
-        "year": 2000,
-        "population": 4053602
-      },
-      {
-        "year": 1990,
-        "population": 3022209
-      },
-      {
-        "year": 1980,
-        "population": 2400729
-      },
-      {
-        "year": 1970,
-        "population": 2061831
-      }
-    ],
-    "area_km2": 710,
-    "population_density": 8416.4634,
-    "population_growth_rate": 1.0058,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 214,
-    "cca3": "SXM",
-    "capital": "Philipsburg",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 44175
-      },
-      {
-        "year": 2020,
-        "population": 43621
-      },
-      {
-        "year": 2015,
-        "population": 40205
-      },
-      {
-        "year": 2010,
-        "population": 33034
-      },
-      {
-        "year": 2000,
-        "population": 30489
-      },
-      {
-        "year": 1990,
-        "population": 27845
-      },
-      {
-        "year": 1980,
-        "population": 12243
-      },
-      {
-        "year": 1970,
-        "population": 6260
-      }
-    ],
-    "area_km2": 34,
-    "population_density": 1299.2647,
-    "population_growth_rate": 1.003,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 116,
-    "cca3": "SVK",
-    "capital": "Bratislava",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 5643453
-      },
-      {
-        "year": 2020,
-        "population": 5456681
-      },
-      {
-        "year": 2015,
-        "population": 5424444
-      },
-      {
-        "year": 2010,
-        "population": 5396424
-      },
-      {
-        "year": 2000,
-        "population": 5376690
-      },
-      {
-        "year": 1990,
-        "population": 5261305
-      },
-      {
-        "year": 1980,
-        "population": 4973883
-      },
-      {
-        "year": 1970,
-        "population": 4522867
-      }
-    ],
-    "area_km2": 49037,
-    "population_density": 115.0856,
-    "population_growth_rate": 1.0359,
-    "percentage_world_population": 0.07
-  },
-  {
-    "rank": 148,
-    "cca3": "SVN",
-    "capital": "Ljubljana",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 2119844
-      },
-      {
-        "year": 2020,
-        "population": 2117641
-      },
-      {
-        "year": 2015,
-        "population": 2080862
-      },
-      {
-        "year": 2010,
-        "population": 2057286
-      },
-      {
-        "year": 2000,
-        "population": 1984339
-      },
-      {
-        "year": 1990,
-        "population": 1986024
-      },
-      {
-        "year": 1980,
-        "population": 1901570
-      },
-      {
-        "year": 1970,
-        "population": 1741286
-      }
-    ],
-    "area_km2": 20273,
-    "population_density": 104.5649,
-    "population_growth_rate": 1.0002,
-    "percentage_world_population": 0.03
-  },
-  {
-    "rank": 166,
-    "cca3": "SLB",
-    "capital": "Honiara",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 724273
-      },
-      {
-        "year": 2020,
-        "population": 691191
-      },
-      {
-        "year": 2015,
-        "population": 612660
-      },
-      {
-        "year": 2010,
-        "population": 540394
-      },
-      {
-        "year": 2000,
-        "population": 429978
-      },
-      {
-        "year": 1990,
-        "population": 324171
-      },
-      {
-        "year": 1980,
-        "population": 233668
-      },
-      {
-        "year": 1970,
-        "population": 172833
-      }
-    ],
-    "area_km2": 28896,
-    "population_density": 25.0648,
-    "population_growth_rate": 1.0232,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 70,
-    "cca3": "SOM",
-    "capital": "Mogadishu",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 17597511
-      },
-      {
-        "year": 2020,
-        "population": 16537016
-      },
-      {
-        "year": 2015,
-        "population": 13763906
-      },
-      {
-        "year": 2010,
-        "population": 12026649
-      },
-      {
-        "year": 2000,
-        "population": 8721465
-      },
-      {
-        "year": 1990,
-        "population": 6999096
-      },
-      {
-        "year": 1980,
-        "population": 5892224
-      },
-      {
-        "year": 1970,
-        "population": 3720977
-      }
-    ],
-    "area_km2": 637657,
-    "population_density": 27.5971,
-    "population_growth_rate": 1.0312,
-    "percentage_world_population": 0.22
-  },
-  {
-    "rank": 24,
-    "cca3": "ZAF",
-    "capital": "Pretoria",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 59893885
-      },
-      {
-        "year": 2020,
-        "population": 58801927
-      },
-      {
-        "year": 2015,
-        "population": 55876504
-      },
-      {
-        "year": 2010,
-        "population": 51784921
-      },
-      {
-        "year": 2000,
-        "population": 46813266
-      },
-      {
-        "year": 1990,
-        "population": 39877570
-      },
-      {
-        "year": 1980,
-        "population": 29463549
-      },
-      {
-        "year": 1970,
-        "population": 22368306
-      }
-    ],
-    "area_km2": 1221037,
-    "population_density": 49.0517,
-    "population_growth_rate": 1.0084,
-    "percentage_world_population": 0.75
-  },
-  {
-    "rank": 29,
-    "cca3": "KOR",
-    "capital": "Seoul",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 51815810
-      },
-      {
-        "year": 2020,
-        "population": 51844690
-      },
-      {
-        "year": 2015,
-        "population": 50994401
-      },
-      {
-        "year": 2010,
-        "population": 48813042
-      },
-      {
-        "year": 2000,
-        "population": 46788591
-      },
-      {
-        "year": 1990,
-        "population": 44120039
-      },
-      {
-        "year": 1980,
-        "population": 38170501
-      },
-      {
-        "year": 1970,
-        "population": 32601143
-      }
-    ],
-    "area_km2": 100210,
-    "population_density": 517.0722,
-    "population_growth_rate": 0.9997,
-    "percentage_world_population": 0.65
-  },
-  {
-    "rank": 86,
-    "cca3": "SSD",
-    "capital": "Juba",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10913164
-      },
-      {
-        "year": 2020,
-        "population": 10606227
-      },
-      {
-        "year": 2015,
-        "population": 11194299
-      },
-      {
-        "year": 2010,
-        "population": 9714419
-      },
-      {
-        "year": 2000,
-        "population": 6114440
-      },
-      {
-        "year": 1990,
-        "population": 4750817
-      },
-      {
-        "year": 1980,
-        "population": 4192011
-      },
-      {
-        "year": 1970,
-        "population": 3342410
-      }
-    ],
-    "area_km2": 619745,
-    "population_density": 17.6091,
-    "population_growth_rate": 1.0153,
-    "percentage_world_population": 0.14
-  },
-  {
-    "rank": 30,
-    "cca3": "ESP",
-    "capital": "Madrid",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 47558630
-      },
-      {
-        "year": 2020,
-        "population": 47363807
-      },
-      {
-        "year": 2015,
-        "population": 46431342
-      },
-      {
-        "year": 2010,
-        "population": 46572772
-      },
-      {
-        "year": 2000,
-        "population": 40741651
-      },
-      {
-        "year": 1990,
-        "population": 38889889
-      },
-      {
-        "year": 1980,
-        "population": 37491666
-      },
-      {
-        "year": 1970,
-        "population": 33792617
-      }
-    ],
-    "area_km2": 505992,
-    "population_density": 93.9909,
-    "population_growth_rate": 1.0015,
-    "percentage_world_population": 0.6
-  },
-  {
-    "rank": 61,
-    "cca3": "LKA",
-    "capital": "Colombo",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 21832143
-      },
-      {
-        "year": 2020,
-        "population": 21715079
-      },
-      {
-        "year": 2015,
-        "population": 21336697
-      },
-      {
-        "year": 2010,
-        "population": 20668557
-      },
-      {
-        "year": 2000,
-        "population": 18776371
-      },
-      {
-        "year": 1990,
-        "population": 17204094
-      },
-      {
-        "year": 1980,
-        "population": 14943645
-      },
-      {
-        "year": 1970,
-        "population": 12388769
-      }
-    ],
-    "area_km2": 65610,
-    "population_density": 332.7563,
-    "population_growth_rate": 1.0027,
-    "percentage_world_population": 0.27
-  },
-  {
-    "rank": 32,
-    "cca3": "SDN",
-    "capital": "Khartoum",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 46874204
-      },
-      {
-        "year": 2020,
-        "population": 44440486
-      },
-      {
-        "year": 2015,
-        "population": 38171178
-      },
-      {
-        "year": 2010,
-        "population": 33739933
-      },
-      {
-        "year": 2000,
-        "population": 26298773
-      },
-      {
-        "year": 1990,
-        "population": 21090886
-      },
-      {
-        "year": 1980,
-        "population": 16673586
-      },
-      {
-        "year": 1970,
-        "population": 11305206
-      }
-    ],
-    "area_km2": 1886068,
-    "population_density": 24.8529,
-    "population_growth_rate": 1.0267,
-    "percentage_world_population": 0.59
-  },
-  {
-    "rank": 170,
-    "cca3": "SUR",
-    "capital": "Paramaribo",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 618040
-      },
-      {
-        "year": 2020,
-        "population": 607065
-      },
-      {
-        "year": 2015,
-        "population": 575475
-      },
-      {
-        "year": 2010,
-        "population": 546080
-      },
-      {
-        "year": 2000,
-        "population": 478998
-      },
-      {
-        "year": 1990,
-        "population": 412756
-      },
-      {
-        "year": 1980,
-        "population": 375112
-      },
-      {
-        "year": 1970,
-        "population": 379918
-      }
-    ],
-    "area_km2": 163820,
-    "population_density": 3.7727,
-    "population_growth_rate": 1.0082,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 87,
-    "cca3": "SWE",
-    "capital": "Stockholm",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 10549347
-      },
-      {
-        "year": 2020,
-        "population": 10368969
-      },
-      {
-        "year": 2015,
-        "population": 9849349
-      },
-      {
-        "year": 2010,
-        "population": 9381729
-      },
-      {
-        "year": 2000,
-        "population": 8871043
-      },
-      {
-        "year": 1990,
-        "population": 8548406
-      },
-      {
-        "year": 1980,
-        "population": 8311763
-      },
-      {
-        "year": 1970,
-        "population": 8027702
-      }
-    ],
-    "area_km2": 450295,
-    "population_density": 23.4276,
-    "population_growth_rate": 1.0079,
-    "percentage_world_population": 0.13
-  },
-  {
-    "rank": 101,
-    "cca3": "CHE",
-    "capital": "Bern",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 8740472
-      },
-      {
-        "year": 2020,
-        "population": 8638613
-      },
-      {
-        "year": 2015,
-        "population": 8281732
-      },
-      {
-        "year": 2010,
-        "population": 7822435
-      },
-      {
-        "year": 2000,
-        "population": 7182059
-      },
-      {
-        "year": 1990,
-        "population": 6711693
-      },
-      {
-        "year": 1980,
-        "population": 6319113
-      },
-      {
-        "year": 1970,
-        "population": 6181227
-      }
-    ],
-    "area_km2": 41284,
-    "population_density": 211.7157,
-    "population_growth_rate": 1.0056,
-    "percentage_world_population": 0.11
-  },
-  {
-    "rank": 60,
-    "cca3": "SYR",
-    "capital": "Damascus",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 22125249
-      },
-      {
-        "year": 2020,
-        "population": 20772595
-      },
-      {
-        "year": 2015,
-        "population": 19205178
-      },
-      {
-        "year": 2010,
-        "population": 22337563
-      },
-      {
-        "year": 2000,
-        "population": 16307654
-      },
-      {
-        "year": 1990,
-        "population": 12408996
-      },
-      {
-        "year": 1980,
-        "population": 8898954
-      },
-      {
-        "year": 1970,
-        "population": 6319199
-      }
-    ],
-    "area_km2": 185180,
-    "population_density": 119.4797,
-    "population_growth_rate": 1.0376,
-    "percentage_world_population": 0.28
-  },
-  {
-    "rank": 57,
-    "cca3": "TWN",
-    "capital": "Taipei",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 23893394
-      },
-      {
-        "year": 2020,
-        "population": 23821464
-      },
-      {
-        "year": 2015,
-        "population": 23512136
-      },
-      {
-        "year": 2010,
-        "population": 23083083
-      },
-      {
-        "year": 2000,
-        "population": 22194731
-      },
-      {
-        "year": 1990,
-        "population": 20586174
-      },
-      {
-        "year": 1980,
-        "population": 18100281
-      },
-      {
-        "year": 1970,
-        "population": 14957870
-      }
-    ],
-    "area_km2": 36193,
-    "population_density": 660.1662,
-    "population_growth_rate": 1.0014,
-    "percentage_world_population": 0.3
-  },
-  {
-    "rank": 95,
-    "cca3": "TJK",
-    "capital": "Dushanbe",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 9952787
-      },
-      {
-        "year": 2020,
-        "population": 9543207
-      },
-      {
-        "year": 2015,
-        "population": 8524063
-      },
-      {
-        "year": 2010,
-        "population": 7621779
-      },
-      {
-        "year": 2000,
-        "population": 6272998
-      },
-      {
-        "year": 1990,
-        "population": 5417860
-      },
-      {
-        "year": 1980,
-        "population": 4045965
-      },
-      {
-        "year": 1970,
-        "population": 2993019
-      }
-    ],
-    "area_km2": 143100,
-    "population_density": 69.5513,
-    "population_growth_rate": 1.0208,
-    "percentage_world_population": 0.12
-  },
-  {
-    "rank": 22,
-    "cca3": "TZA",
-    "capital": "Dodoma",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 65497748
-      },
-      {
-        "year": 2020,
-        "population": 61704518
-      },
-      {
-        "year": 2015,
-        "population": 52542823
-      },
-      {
-        "year": 2010,
-        "population": 45110527
-      },
-      {
-        "year": 2000,
-        "population": 34463704
-      },
-      {
-        "year": 1990,
-        "population": 26206012
-      },
-      {
-        "year": 1980,
-        "population": 19297659
-      },
-      {
-        "year": 1970,
-        "population": 13618192
-      }
-    ],
-    "area_km2": 945087,
-    "population_density": 69.3034,
-    "population_growth_rate": 1.03,
-    "percentage_world_population": 0.82
-  },
-  {
-    "rank": 20,
-    "cca3": "THA",
-    "capital": "Bangkok",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 71697030
-      },
-      {
-        "year": 2020,
-        "population": 71475664
-      },
-      {
-        "year": 2015,
-        "population": 70294397
-      },
-      {
-        "year": 2010,
-        "population": 68270489
-      },
-      {
-        "year": 2000,
-        "population": 63066603
-      },
-      {
-        "year": 1990,
-        "population": 55228410
-      },
-      {
-        "year": 1980,
-        "population": 45737753
-      },
-      {
-        "year": 1970,
-        "population": 35791728
-      }
-    ],
-    "area_km2": 513120,
-    "population_density": 139.7276,
-    "population_growth_rate": 1.0013,
-    "percentage_world_population": 0.9
-  },
-  {
-    "rank": 155,
-    "cca3": "TLS",
-    "capital": "Dili",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1341296
-      },
-      {
-        "year": 2020,
-        "population": 1299995
-      },
-      {
-        "year": 2015,
-        "population": 1205813
-      },
-      {
-        "year": 2010,
-        "population": 1088486
-      },
-      {
-        "year": 2000,
-        "population": 878360
-      },
-      {
-        "year": 1990,
-        "population": 758106
-      },
-      {
-        "year": 1980,
-        "population": 642224
-      },
-      {
-        "year": 1970,
-        "population": 554021
-      }
-    ],
-    "area_km2": 14874,
-    "population_density": 90.1772,
-    "population_growth_rate": 1.0154,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 100,
-    "cca3": "TGO",
-    "capital": "Lomé",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 8848699
-      },
-      {
-        "year": 2020,
-        "population": 8442580
-      },
-      {
-        "year": 2015,
-        "population": 7473229
-      },
-      {
-        "year": 2010,
-        "population": 6571855
-      },
-      {
-        "year": 2000,
-        "population": 5008035
-      },
-      {
-        "year": 1990,
-        "population": 3875947
-      },
-      {
-        "year": 1980,
-        "population": 2838110
-      },
-      {
-        "year": 1970,
-        "population": 2197383
-      }
-    ],
-    "area_km2": 56785,
-    "population_density": 155.8281,
-    "population_growth_rate": 1.0236,
-    "percentage_world_population": 0.11
-  },
-  {
-    "rank": 233,
-    "cca3": "TKL",
-    "capital": "Nukunonu",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1871
-      },
-      {
-        "year": 2020,
-        "population": 1827
-      },
-      {
-        "year": 2015,
-        "population": 1454
-      },
-      {
-        "year": 2010,
-        "population": 1367
-      },
-      {
-        "year": 2000,
-        "population": 1666
-      },
-      {
-        "year": 1990,
-        "population": 1669
-      },
-      {
-        "year": 1980,
-        "population": 1647
-      },
-      {
-        "year": 1970,
-        "population": 1714
-      }
-    ],
-    "area_km2": 12,
-    "population_density": 155.9167,
-    "population_growth_rate": 1.0119,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 197,
-    "cca3": "TON",
-    "capital": "Nuku‘alofa",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 106858
-      },
-      {
-        "year": 2020,
-        "population": 105254
-      },
-      {
-        "year": 2015,
-        "population": 106122
-      },
-      {
-        "year": 2010,
-        "population": 107383
-      },
-      {
-        "year": 2000,
-        "population": 102603
-      },
-      {
-        "year": 1990,
-        "population": 98727
-      },
-      {
-        "year": 1980,
-        "population": 96708
-      },
-      {
-        "year": 1970,
-        "population": 86484
-      }
-    ],
-    "area_km2": 747,
-    "population_density": 143.0495,
-    "population_growth_rate": 1.0079,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 153,
-    "cca3": "TTO",
-    "capital": "Port-of-Spain",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 1531044
-      },
-      {
-        "year": 2020,
-        "population": 1518147
-      },
-      {
-        "year": 2015,
-        "population": 1460177
-      },
-      {
-        "year": 2010,
-        "population": 1410296
-      },
-      {
-        "year": 2000,
-        "population": 1332203
-      },
-      {
-        "year": 1990,
-        "population": 1266518
-      },
-      {
-        "year": 1980,
-        "population": 1127852
-      },
-      {
-        "year": 1970,
-        "population": 988890
-      }
-    ],
-    "area_km2": 5130,
-    "population_density": 298.4491,
-    "population_growth_rate": 1.0035,
-    "percentage_world_population": 0.02
-  },
-  {
-    "rank": 79,
-    "cca3": "TUN",
-    "capital": "Tunis",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 12356117
-      },
-      {
-        "year": 2020,
-        "population": 12161723
-      },
-      {
-        "year": 2015,
-        "population": 11557779
-      },
-      {
-        "year": 2010,
-        "population": 10895063
-      },
-      {
-        "year": 2000,
-        "population": 9893316
-      },
-      {
-        "year": 1990,
-        "population": 8440023
-      },
-      {
-        "year": 1980,
-        "population": 6578156
-      },
-      {
-        "year": 1970,
-        "population": 5047404
-      }
-    ],
-    "area_km2": 163610,
-    "population_density": 75.5218,
-    "population_growth_rate": 1.0076,
-    "percentage_world_population": 0.15
-  },
-  {
-    "rank": 18,
-    "cca3": "TUR",
-    "capital": "Ankara",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 85341241
-      },
-      {
-        "year": 2020,
-        "population": 84135428
-      },
-      {
-        "year": 2015,
-        "population": 79646178
-      },
-      {
-        "year": 2010,
-        "population": 73195345
-      },
-      {
-        "year": 2000,
-        "population": 64113547
-      },
-      {
-        "year": 1990,
-        "population": 54324142
-      },
-      {
-        "year": 1980,
-        "population": 44089069
-      },
-      {
-        "year": 1970,
-        "population": 35540990
-      }
-    ],
-    "area_km2": 783562,
-    "population_density": 108.9145,
-    "population_growth_rate": 1.0067,
-    "percentage_world_population": 1.07
-  },
-  {
-    "rank": 111,
-    "cca3": "TKM",
-    "capital": "Ashgabat",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 6430770
-      },
-      {
-        "year": 2020,
-        "population": 6250438
-      },
-      {
-        "year": 2015,
-        "population": 5766431
-      },
-      {
-        "year": 2010,
-        "population": 5267970
-      },
-      {
-        "year": 2000,
-        "population": 4569132
-      },
-      {
-        "year": 1990,
-        "population": 3720278
-      },
-      {
-        "year": 1980,
-        "population": 2862903
-      },
-      {
-        "year": 1970,
-        "population": 2201432
-      }
-    ],
-    "area_km2": 488100,
-    "population_density": 13.1751,
-    "population_growth_rate": 1.014,
-    "percentage_world_population": 0.08
-  },
-  {
-    "rank": 212,
-    "cca3": "TCA",
-    "capital": "Cockburn Town",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 45703
-      },
-      {
-        "year": 2020,
-        "population": 44276
-      },
-      {
-        "year": 2015,
-        "population": 36538
-      },
-      {
-        "year": 2010,
-        "population": 29726
-      },
-      {
-        "year": 2000,
-        "population": 18744
-      },
-      {
-        "year": 1990,
-        "population": 11709
-      },
-      {
-        "year": 1980,
-        "population": 7598
-      },
-      {
-        "year": 1970,
-        "population": 5665
-      }
-    ],
-    "area_km2": 948,
-    "population_density": 48.2099,
-    "population_growth_rate": 1.0131,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 227,
-    "cca3": "TUV",
-    "capital": "Funafuti",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11312
-      },
-      {
-        "year": 2020,
-        "population": 11069
-      },
-      {
-        "year": 2015,
-        "population": 10877
-      },
-      {
-        "year": 2010,
-        "population": 10550
-      },
-      {
-        "year": 2000,
-        "population": 9638
-      },
-      {
-        "year": 1990,
-        "population": 9182
-      },
-      {
-        "year": 1980,
-        "population": 7731
-      },
-      {
-        "year": 1970,
-        "population": 5814
-      }
-    ],
-    "area_km2": 26,
-    "population_density": 435.0769,
-    "population_growth_rate": 1.0096,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 31,
-    "cca3": "UGA",
-    "capital": "Kampala",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 47249585
-      },
-      {
-        "year": 2020,
-        "population": 44404611
-      },
-      {
-        "year": 2015,
-        "population": 37477356
-      },
-      {
-        "year": 2010,
-        "population": 32341728
-      },
-      {
-        "year": 2000,
-        "population": 24020697
-      },
-      {
-        "year": 1990,
-        "population": 17586630
-      },
-      {
-        "year": 1980,
-        "population": 13284026
-      },
-      {
-        "year": 1970,
-        "population": 10317212
-      }
-    ],
-    "area_km2": 241550,
-    "population_density": 195.61,
-    "population_growth_rate": 1.0304,
-    "percentage_world_population": 0.59
-  },
-  {
-    "rank": 38,
-    "cca3": "UKR",
-    "capital": "Kiev",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 39701739
-      },
-      {
-        "year": 2020,
-        "population": 43909666
-      },
-      {
-        "year": 2015,
-        "population": 44982564
-      },
-      {
-        "year": 2010,
-        "population": 45683020
-      },
-      {
-        "year": 2000,
-        "population": 48879755
-      },
-      {
-        "year": 1990,
-        "population": 51589817
-      },
-      {
-        "year": 1980,
-        "population": 49973920
-      },
-      {
-        "year": 1970,
-        "population": 47279086
-      }
-    ],
-    "area_km2": 603500,
-    "population_density": 65.7858,
-    "population_growth_rate": 0.912,
-    "percentage_world_population": 0.5
-  },
-  {
-    "rank": 97,
-    "cca3": "ARE",
-    "capital": "Abu Dhabi",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 9441129
-      },
-      {
-        "year": 2020,
-        "population": 9287289
-      },
-      {
-        "year": 2015,
-        "population": 8916899
-      },
-      {
-        "year": 2010,
-        "population": 8481771
-      },
-      {
-        "year": 2000,
-        "population": 3275333
-      },
-      {
-        "year": 1990,
-        "population": 1900151
-      },
-      {
-        "year": 1980,
-        "population": 1014048
-      },
-      {
-        "year": 1970,
-        "population": 298084
-      }
-    ],
-    "area_km2": 83600,
-    "population_density": 112.9322,
-    "population_growth_rate": 1.0081,
-    "percentage_world_population": 0.12
-  },
-  {
-    "rank": 21,
-    "cca3": "GBR",
-    "capital": "London",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 67508936
-      },
-      {
-        "year": 2020,
-        "population": 67059474
-      },
-      {
-        "year": 2015,
-        "population": 65224364
-      },
-      {
-        "year": 2010,
-        "population": 62760039
-      },
-      {
-        "year": 2000,
-        "population": 58850043
-      },
-      {
-        "year": 1990,
-        "population": 57210442
-      },
-      {
-        "year": 1980,
-        "population": 56326328
-      },
-      {
-        "year": 1970,
-        "population": 55650166
-      }
-    ],
-    "area_km2": 242900,
-    "population_density": 277.9289,
-    "population_growth_rate": 1.0034,
-    "percentage_world_population": 0.85
-  },
-  {
-    "rank": 3,
-    "cca3": "USA",
-    "capital": "Washington, D.C.",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 338289857
-      },
-      {
-        "year": 2020,
-        "population": 335942003
-      },
-      {
-        "year": 2015,
-        "population": 324607776
-      },
-      {
-        "year": 2010,
-        "population": 311182845
-      },
-      {
-        "year": 2000,
-        "population": 282398554
-      },
-      {
-        "year": 1990,
-        "population": 248083732
-      },
-      {
-        "year": 1980,
-        "population": 223140018
-      },
-      {
-        "year": 1970,
-        "population": 200328340
-      }
-    ],
-    "area_km2": 9372610,
-    "population_density": 36.0935,
-    "population_growth_rate": 1.0038,
-    "percentage_world_population": 4.24
-  },
-  {
-    "rank": 200,
-    "cca3": "VIR",
-    "capital": "Charlotte Amalie",
-    "continent": "North America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 99465
-      },
-      {
-        "year": 2020,
-        "population": 100442
-      },
-      {
-        "year": 2015,
-        "population": 102803
-      },
-      {
-        "year": 2010,
-        "population": 106142
-      },
-      {
-        "year": 2000,
-        "population": 108185
-      },
-      {
-        "year": 1990,
-        "population": 100685
-      },
-      {
-        "year": 1980,
-        "population": 96640
-      },
-      {
-        "year": 1970,
-        "population": 63446
-      }
-    ],
-    "area_km2": 347,
-    "population_density": 286.6427,
-    "population_growth_rate": 0.9937,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 133,
-    "cca3": "URY",
-    "capital": "Montevideo",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 3422794
-      },
-      {
-        "year": 2020,
-        "population": 3429086
-      },
-      {
-        "year": 2015,
-        "population": 3402818
-      },
-      {
-        "year": 2010,
-        "population": 3352651
-      },
-      {
-        "year": 2000,
-        "population": 3292224
-      },
-      {
-        "year": 1990,
-        "population": 3117012
-      },
-      {
-        "year": 1980,
-        "population": 2953750
-      },
-      {
-        "year": 1970,
-        "population": 2790265
-      }
-    ],
-    "area_km2": 181034,
-    "population_density": 18.9069,
-    "population_growth_rate": 0.999,
-    "percentage_world_population": 0.04
-  },
-  {
-    "rank": 43,
-    "cca3": "UZB",
-    "capital": "Tashkent",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 34627652
-      },
-      {
-        "year": 2020,
-        "population": 33526656
-      },
-      {
-        "year": 2015,
-        "population": 30949417
-      },
-      {
-        "year": 2010,
-        "population": 28614227
-      },
-      {
-        "year": 2000,
-        "population": 24925554
-      },
-      {
-        "year": 1990,
-        "population": 20579100
-      },
-      {
-        "year": 1980,
-        "population": 15947129
-      },
-      {
-        "year": 1970,
-        "population": 12011361
-      }
-    ],
-    "area_km2": 447400,
-    "population_density": 77.3975,
-    "population_growth_rate": 1.016,
-    "percentage_world_population": 0.43
-  },
-  {
-    "rank": 181,
-    "cca3": "VUT",
-    "capital": "Port-Vila",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 326740
-      },
-      {
-        "year": 2020,
-        "population": 311685
-      },
-      {
-        "year": 2015,
-        "population": 276438
-      },
-      {
-        "year": 2010,
-        "population": 245453
-      },
-      {
-        "year": 2000,
-        "population": 192074
-      },
-      {
-        "year": 1990,
-        "population": 150882
-      },
-      {
-        "year": 1980,
-        "population": 118156
-      },
-      {
-        "year": 1970,
-        "population": 87019
-      }
-    ],
-    "area_km2": 12189,
-    "population_density": 26.8061,
-    "population_growth_rate": 1.0238,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 234,
-    "cca3": "VAT",
-    "capital": "Vatican City",
-    "continent": "Europe",
-    "population": [
-      {
-        "year": 2022,
-        "population": 510
-      },
-      {
-        "year": 2020,
-        "population": 520
-      },
-      {
-        "year": 2015,
-        "population": 564
-      },
-      {
-        "year": 2010,
-        "population": 596
-      },
-      {
-        "year": 2000,
-        "population": 651
-      },
-      {
-        "year": 1990,
-        "population": 700
-      },
-      {
-        "year": 1980,
-        "population": 733
-      },
-      {
-        "year": 1970,
-        "population": 752
-      }
-    ],
-    "area_km2": 1,
-    "population_density": 510,
-    "population_growth_rate": 0.998,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 51,
-    "cca3": "VEN",
-    "capital": "Caracas",
-    "continent": "South America",
-    "population": [
-      {
-        "year": 2022,
-        "population": 28301696
-      },
-      {
-        "year": 2020,
-        "population": 28490453
-      },
-      {
-        "year": 2015,
-        "population": 30529716
-      },
-      {
-        "year": 2010,
-        "population": 28715022
-      },
-      {
-        "year": 2000,
-        "population": 24427729
-      },
-      {
-        "year": 1990,
-        "population": 19750579
-      },
-      {
-        "year": 1980,
-        "population": 15210443
-      },
-      {
-        "year": 1970,
-        "population": 11355475
-      }
-    ],
-    "area_km2": 916445,
-    "population_density": 30.882,
-    "population_growth_rate": 1.0036,
-    "percentage_world_population": 0.35
-  },
-  {
-    "rank": 16,
-    "cca3": "VNM",
-    "capital": "Hanoi",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 98186856
-      },
-      {
-        "year": 2020,
-        "population": 96648685
-      },
-      {
-        "year": 2015,
-        "population": 92191398
-      },
-      {
-        "year": 2010,
-        "population": 87411012
-      },
-      {
-        "year": 2000,
-        "population": 79001142
-      },
-      {
-        "year": 1990,
-        "population": 66912613
-      },
-      {
-        "year": 1980,
-        "population": 52968270
-      },
-      {
-        "year": 1970,
-        "population": 41928849
-      }
-    ],
-    "area_km2": 331212,
-    "population_density": 296.4472,
-    "population_growth_rate": 1.0074,
-    "percentage_world_population": 1.23
-  },
-  {
-    "rank": 226,
-    "cca3": "WLF",
-    "capital": "Mata-Utu",
-    "continent": "Oceania",
-    "population": [
-      {
-        "year": 2022,
-        "population": 11572
-      },
-      {
-        "year": 2020,
-        "population": 11655
-      },
-      {
-        "year": 2015,
-        "population": 12182
-      },
-      {
-        "year": 2010,
-        "population": 13142
-      },
-      {
-        "year": 2000,
-        "population": 14723
-      },
-      {
-        "year": 1990,
-        "population": 13454
-      },
-      {
-        "year": 1980,
-        "population": 11315
-      },
-      {
-        "year": 1970,
-        "population": 9377
-      }
-    ],
-    "area_km2": 142,
-    "population_density": 81.493,
-    "population_growth_rate": 0.9953,
-    "percentage_world_population": 0
-  },
-  {
-    "rank": 172,
-    "cca3": "ESH",
-    "capital": "El Aaiún",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 575986
-      },
-      {
-        "year": 2020,
-        "population": 556048
-      },
-      {
-        "year": 2015,
-        "population": 491824
-      },
-      {
-        "year": 2010,
-        "population": 413296
-      },
-      {
-        "year": 2000,
-        "population": 270375
-      },
-      {
-        "year": 1990,
-        "population": 178529
-      },
-      {
-        "year": 1980,
-        "population": 116775
-      },
-      {
-        "year": 1970,
-        "population": 76371
-      }
-    ],
-    "area_km2": 266000,
-    "population_density": 2.1654,
-    "population_growth_rate": 1.0184,
-    "percentage_world_population": 0.01
-  },
-  {
-    "rank": 46,
-    "cca3": "YEM",
-    "capital": "Sanaa",
-    "continent": "Asia",
-    "population": [
-      {
-        "year": 2022,
-        "population": 33696614
-      },
-      {
-        "year": 2020,
-        "population": 32284046
-      },
-      {
-        "year": 2015,
-        "population": 28516545
-      },
-      {
-        "year": 2010,
-        "population": 24743946
-      },
-      {
-        "year": 2000,
-        "population": 18628700
-      },
-      {
-        "year": 1990,
-        "population": 13375121
-      },
-      {
-        "year": 1980,
-        "population": 9204938
-      },
-      {
-        "year": 1970,
-        "population": 6843607
-      }
-    ],
-    "area_km2": 527968,
-    "population_density": 63.8232,
-    "population_growth_rate": 1.0217,
-    "percentage_world_population": 0.42
-  },
-  {
-    "rank": 63,
-    "cca3": "ZMB",
-    "capital": "Lusaka",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 20017675
-      },
-      {
-        "year": 2020,
-        "population": 18927715
-      },
-      {
-        "year": 2015,
-        "population": 16248230
-      },
-      {
-        "year": 2010,
-        "population": 13792086
-      },
-      {
-        "year": 2000,
-        "population": 9891136
-      },
-      {
-        "year": 1990,
-        "population": 7686401
-      },
-      {
-        "year": 1980,
-        "population": 5720438
-      },
-      {
-        "year": 1970,
-        "population": 4281671
-      }
-    ],
-    "area_km2": 752612,
-    "population_density": 26.5976,
-    "population_growth_rate": 1.028,
-    "percentage_world_population": 0.25
-  },
-  {
-    "rank": 74,
-    "cca3": "ZWE",
-    "capital": "Harare",
-    "continent": "Africa",
-    "population": [
-      {
-        "year": 2022,
-        "population": 16320537
-      },
-      {
-        "year": 2020,
-        "population": 15669666
-      },
-      {
-        "year": 2015,
-        "population": 14154937
-      },
-      {
-        "year": 2010,
-        "population": 12839771
-      },
-      {
-        "year": 2000,
-        "population": 11834676
-      },
-      {
-        "year": 1990,
-        "population": 10113893
-      },
-      {
-        "year": 1980,
-        "population": 7049926
-      },
-      {
-        "year": 1970,
-        "population": 5202918
-      }
-    ],
-    "area_km2": 390757,
-    "population_density": 41.7665,
-    "population_growth_rate": 1.0204,
-    "percentage_world_population": 0.2
-  }
-]
+{
+  "country": "Afghanistan",
+  "rank": 36,
+  "cca3": "AFG",
+  "capital": "Kabul",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 41128771
+    },
+    {
+      "year": 2020,
+      "population": 38972230
+    },
+    {
+      "year": 2015,
+      "population": 33753499
+    },
+    {
+      "year": 2010,
+      "population": 28189672
+    },
+    {
+      "year": 2000,
+      "population": 19542982
+    },
+    {
+      "year": 1990,
+      "population": 10694796
+    },
+    {
+      "year": 1980,
+      "population": 12486631
+    },
+    {
+      "year": 1970,
+      "population": 10752971
+    }
+  ],
+  "area_km2": 652230,
+  "population_density": 63.0587,
+  "population_growth_rate": 1.0257,
+  "percentage_world_population": 0.52
+}
+{
+  "country": "Albania",
+  "rank": 138,
+  "cca3": "ALB",
+  "capital": "Tirana",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2842321
+    },
+    {
+      "year": 2020,
+      "population": 2866849
+    },
+    {
+      "year": 2015,
+      "population": 2882481
+    },
+    {
+      "year": 2010,
+      "population": 2913399
+    },
+    {
+      "year": 2000,
+      "population": 3182021
+    },
+    {
+      "year": 1990,
+      "population": 3295066
+    },
+    {
+      "year": 1980,
+      "population": 2941651
+    },
+    {
+      "year": 1970,
+      "population": 2324731
+    }
+  ],
+  "area_km2": 28748,
+  "population_density": 98.8702,
+  "population_growth_rate": 0.9957,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Algeria",
+  "rank": 34,
+  "cca3": "DZA",
+  "capital": "Algiers",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 44903225
+    },
+    {
+      "year": 2020,
+      "population": 43451666
+    },
+    {
+      "year": 2015,
+      "population": 39543154
+    },
+    {
+      "year": 2010,
+      "population": 35856344
+    },
+    {
+      "year": 2000,
+      "population": 30774621
+    },
+    {
+      "year": 1990,
+      "population": 25518074
+    },
+    {
+      "year": 1980,
+      "population": 18739378
+    },
+    {
+      "year": 1970,
+      "population": 13795915
+    }
+  ],
+  "area_km2": 2381741,
+  "population_density": 18.8531,
+  "population_growth_rate": 1.0164,
+  "percentage_world_population": 0.56
+}
+{
+  "country": "American Samoa",
+  "rank": 213,
+  "cca3": "ASM",
+  "capital": "Pago Pago",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 44273
+    },
+    {
+      "year": 2020,
+      "population": 46189
+    },
+    {
+      "year": 2015,
+      "population": 51368
+    },
+    {
+      "year": 2010,
+      "population": 54849
+    },
+    {
+      "year": 2000,
+      "population": 58230
+    },
+    {
+      "year": 1990,
+      "population": 47818
+    },
+    {
+      "year": 1980,
+      "population": 32886
+    },
+    {
+      "year": 1970,
+      "population": 27075
+    }
+  ],
+  "area_km2": 199,
+  "population_density": 222.4774,
+  "population_growth_rate": 0.9831,
+  "percentage_world_population": 0
+}
+{
+  "country": "Andorra",
+  "rank": 203,
+  "cca3": "AND",
+  "capital": "Andorra la Vella",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 79824
+    },
+    {
+      "year": 2020,
+      "population": 77700
+    },
+    {
+      "year": 2015,
+      "population": 71746
+    },
+    {
+      "year": 2010,
+      "population": 71519
+    },
+    {
+      "year": 2000,
+      "population": 66097
+    },
+    {
+      "year": 1990,
+      "population": 53569
+    },
+    {
+      "year": 1980,
+      "population": 35611
+    },
+    {
+      "year": 1970,
+      "population": 19860
+    }
+  ],
+  "area_km2": 468,
+  "population_density": 170.5641,
+  "population_growth_rate": 1.01,
+  "percentage_world_population": 0
+}
+{
+  "country": "Angola",
+  "rank": 42,
+  "cca3": "AGO",
+  "capital": "Luanda",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 35588987
+    },
+    {
+      "year": 2020,
+      "population": 33428485
+    },
+    {
+      "year": 2015,
+      "population": 28127721
+    },
+    {
+      "year": 2010,
+      "population": 23364185
+    },
+    {
+      "year": 2000,
+      "population": 16394062
+    },
+    {
+      "year": 1990,
+      "population": 11828638
+    },
+    {
+      "year": 1980,
+      "population": 8330047
+    },
+    {
+      "year": 1970,
+      "population": 6029700
+    }
+  ],
+  "area_km2": 1246700,
+  "population_density": 28.5466,
+  "population_growth_rate": 1.0315,
+  "percentage_world_population": 0.45
+}
+{
+  "country": "Anguilla",
+  "rank": 224,
+  "cca3": "AIA",
+  "capital": "The Valley",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 15857
+    },
+    {
+      "year": 2020,
+      "population": 15585
+    },
+    {
+      "year": 2015,
+      "population": 14525
+    },
+    {
+      "year": 2010,
+      "population": 13172
+    },
+    {
+      "year": 2000,
+      "population": 11047
+    },
+    {
+      "year": 1990,
+      "population": 8316
+    },
+    {
+      "year": 1980,
+      "population": 6560
+    },
+    {
+      "year": 1970,
+      "population": 6283
+    }
+  ],
+  "area_km2": 91,
+  "population_density": 174.2527,
+  "population_growth_rate": 1.0066,
+  "percentage_world_population": 0
+}
+{
+  "country": "Antigua and Barbuda",
+  "rank": 201,
+  "cca3": "ATG",
+  "capital": "Saint John’s",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 93763
+    },
+    {
+      "year": 2020,
+      "population": 92664
+    },
+    {
+      "year": 2015,
+      "population": 89941
+    },
+    {
+      "year": 2010,
+      "population": 85695
+    },
+    {
+      "year": 2000,
+      "population": 75055
+    },
+    {
+      "year": 1990,
+      "population": 63328
+    },
+    {
+      "year": 1980,
+      "population": 64888
+    },
+    {
+      "year": 1970,
+      "population": 64516
+    }
+  ],
+  "area_km2": 442,
+  "population_density": 212.1335,
+  "population_growth_rate": 1.0058,
+  "percentage_world_population": 0
+}
+{
+  "country": "Argentina",
+  "rank": 33,
+  "cca3": "ARG",
+  "capital": "Buenos Aires",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 45510318
+    },
+    {
+      "year": 2020,
+      "population": 45036032
+    },
+    {
+      "year": 2015,
+      "population": 43257065
+    },
+    {
+      "year": 2010,
+      "population": 41100123
+    },
+    {
+      "year": 2000,
+      "population": 37070774
+    },
+    {
+      "year": 1990,
+      "population": 32637657
+    },
+    {
+      "year": 1980,
+      "population": 28024803
+    },
+    {
+      "year": 1970,
+      "population": 23842803
+    }
+  ],
+  "area_km2": 2780400,
+  "population_density": 16.3683,
+  "population_growth_rate": 1.0052,
+  "percentage_world_population": 0.57
+}
+{
+  "country": "Armenia",
+  "rank": 140,
+  "cca3": "ARM",
+  "capital": "Yerevan",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2780469
+    },
+    {
+      "year": 2020,
+      "population": 2805608
+    },
+    {
+      "year": 2015,
+      "population": 2878595
+    },
+    {
+      "year": 2010,
+      "population": 2946293
+    },
+    {
+      "year": 2000,
+      "population": 3168523
+    },
+    {
+      "year": 1990,
+      "population": 3556539
+    },
+    {
+      "year": 1980,
+      "population": 3135123
+    },
+    {
+      "year": 1970,
+      "population": 2534377
+    }
+  ],
+  "area_km2": 29743,
+  "population_density": 93.4831,
+  "population_growth_rate": 0.9962,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Aruba",
+  "rank": 198,
+  "cca3": "ABW",
+  "capital": "Oranjestad",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 106445
+    },
+    {
+      "year": 2020,
+      "population": 106585
+    },
+    {
+      "year": 2015,
+      "population": 104257
+    },
+    {
+      "year": 2010,
+      "population": 100341
+    },
+    {
+      "year": 2000,
+      "population": 89101
+    },
+    {
+      "year": 1990,
+      "population": 65712
+    },
+    {
+      "year": 1980,
+      "population": 62267
+    },
+    {
+      "year": 1970,
+      "population": 59106
+    }
+  ],
+  "area_km2": 180,
+  "population_density": 591.3611,
+  "population_growth_rate": 0.9991,
+  "percentage_world_population": 0
+}
+{
+  "country": "Australia",
+  "rank": 55,
+  "cca3": "AUS",
+  "capital": "Canberra",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 26177413
+    },
+    {
+      "year": 2020,
+      "population": 25670051
+    },
+    {
+      "year": 2015,
+      "population": 23820236
+    },
+    {
+      "year": 2010,
+      "population": 22019168
+    },
+    {
+      "year": 2000,
+      "population": 19017963
+    },
+    {
+      "year": 1990,
+      "population": 17048003
+    },
+    {
+      "year": 1980,
+      "population": 14706322
+    },
+    {
+      "year": 1970,
+      "population": 12595034
+    }
+  ],
+  "area_km2": 7692024,
+  "population_density": 3.4032,
+  "population_growth_rate": 1.0099,
+  "percentage_world_population": 0.33
+}
+{
+  "country": "Austria",
+  "rank": 99,
+  "cca3": "AUT",
+  "capital": "Vienna",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 8939617
+    },
+    {
+      "year": 2020,
+      "population": 8907777
+    },
+    {
+      "year": 2015,
+      "population": 8642421
+    },
+    {
+      "year": 2010,
+      "population": 8362829
+    },
+    {
+      "year": 2000,
+      "population": 8010428
+    },
+    {
+      "year": 1990,
+      "population": 7678729
+    },
+    {
+      "year": 1980,
+      "population": 7547561
+    },
+    {
+      "year": 1970,
+      "population": 7465301
+    }
+  ],
+  "area_km2": 83871,
+  "population_density": 106.5877,
+  "population_growth_rate": 1.002,
+  "percentage_world_population": 0.11
+}
+{
+  "country": "Azerbaijan",
+  "rank": 91,
+  "cca3": "AZE",
+  "capital": "Baku",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10358074
+    },
+    {
+      "year": 2020,
+      "population": 10284951
+    },
+    {
+      "year": 2015,
+      "population": 9863480
+    },
+    {
+      "year": 2010,
+      "population": 9237202
+    },
+    {
+      "year": 2000,
+      "population": 8190337
+    },
+    {
+      "year": 1990,
+      "population": 7427836
+    },
+    {
+      "year": 1980,
+      "population": 6383060
+    },
+    {
+      "year": 1970,
+      "population": 5425317
+    }
+  ],
+  "area_km2": 86600,
+  "population_density": 119.6082,
+  "population_growth_rate": 1.0044,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Bahamas",
+  "rank": 176,
+  "cca3": "BHS",
+  "capital": "Nassau",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 409984
+    },
+    {
+      "year": 2020,
+      "population": 406471
+    },
+    {
+      "year": 2015,
+      "population": 392697
+    },
+    {
+      "year": 2010,
+      "population": 373272
+    },
+    {
+      "year": 2000,
+      "population": 325014
+    },
+    {
+      "year": 1990,
+      "population": 270679
+    },
+    {
+      "year": 1980,
+      "population": 223752
+    },
+    {
+      "year": 1970,
+      "population": 179129
+    }
+  ],
+  "area_km2": 13943,
+  "population_density": 29.4043,
+  "population_growth_rate": 1.0051,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Bahrain",
+  "rank": 154,
+  "cca3": "BHR",
+  "capital": "Manama",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1472233
+    },
+    {
+      "year": 2020,
+      "population": 1477469
+    },
+    {
+      "year": 2015,
+      "population": 1362142
+    },
+    {
+      "year": 2010,
+      "population": 1213645
+    },
+    {
+      "year": 2000,
+      "population": 711442
+    },
+    {
+      "year": 1990,
+      "population": 517418
+    },
+    {
+      "year": 1980,
+      "population": 362595
+    },
+    {
+      "year": 1970,
+      "population": 222555
+    }
+  ],
+  "area_km2": 765,
+  "population_density": 1924.4876,
+  "population_growth_rate": 1.0061,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Bangladesh",
+  "rank": 8,
+  "cca3": "BGD",
+  "capital": "Dhaka",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 171186372
+    },
+    {
+      "year": 2020,
+      "population": 167420951
+    },
+    {
+      "year": 2015,
+      "population": 157830000
+    },
+    {
+      "year": 2010,
+      "population": 148391139
+    },
+    {
+      "year": 2000,
+      "population": 129193327
+    },
+    {
+      "year": 1990,
+      "population": 107147651
+    },
+    {
+      "year": 1980,
+      "population": 83929765
+    },
+    {
+      "year": 1970,
+      "population": 67541860
+    }
+  ],
+  "area_km2": 147570,
+  "population_density": 1160.035,
+  "population_growth_rate": 1.0108,
+  "percentage_world_population": 2.15
+}
+{
+  "country": "Barbados",
+  "rank": 186,
+  "cca3": "BRB",
+  "capital": "Bridgetown",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 281635
+    },
+    {
+      "year": 2020,
+      "population": 280693
+    },
+    {
+      "year": 2015,
+      "population": 278083
+    },
+    {
+      "year": 2010,
+      "population": 274711
+    },
+    {
+      "year": 2000,
+      "population": 264657
+    },
+    {
+      "year": 1990,
+      "population": 258868
+    },
+    {
+      "year": 1980,
+      "population": 253575
+    },
+    {
+      "year": 1970,
+      "population": 241397
+    }
+  ],
+  "area_km2": 430,
+  "population_density": 654.9651,
+  "population_growth_rate": 1.0015,
+  "percentage_world_population": 0
+}
+{
+  "country": "Belarus",
+  "rank": 96,
+  "cca3": "BLR",
+  "capital": "Minsk",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 9534954
+    },
+    {
+      "year": 2020,
+      "population": 9633740
+    },
+    {
+      "year": 2015,
+      "population": 9700609
+    },
+    {
+      "year": 2010,
+      "population": 9731427
+    },
+    {
+      "year": 2000,
+      "population": 10256483
+    },
+    {
+      "year": 1990,
+      "population": 10428525
+    },
+    {
+      "year": 1980,
+      "population": 9817257
+    },
+    {
+      "year": 1970,
+      "population": 9170786
+    }
+  ],
+  "area_km2": 207600,
+  "population_density": 45.9295,
+  "population_growth_rate": 0.9955,
+  "percentage_world_population": 0.12
+}
+{
+  "country": "Belgium",
+  "rank": 81,
+  "cca3": "BEL",
+  "capital": "Brussels",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11655930
+    },
+    {
+      "year": 2020,
+      "population": 11561717
+    },
+    {
+      "year": 2015,
+      "population": 11248303
+    },
+    {
+      "year": 2010,
+      "population": 10877947
+    },
+    {
+      "year": 2000,
+      "population": 10264343
+    },
+    {
+      "year": 1990,
+      "population": 9959560
+    },
+    {
+      "year": 1980,
+      "population": 9828986
+    },
+    {
+      "year": 1970,
+      "population": 9629376
+    }
+  ],
+  "area_km2": 30528,
+  "population_density": 381.8111,
+  "population_growth_rate": 1.0038,
+  "percentage_world_population": 0.15
+}
+{
+  "country": "Belize",
+  "rank": 177,
+  "cca3": "BLZ",
+  "capital": "Belmopan",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 405272
+    },
+    {
+      "year": 2020,
+      "population": 394921
+    },
+    {
+      "year": 2015,
+      "population": 359871
+    },
+    {
+      "year": 2010,
+      "population": 322106
+    },
+    {
+      "year": 2000,
+      "population": 240406
+    },
+    {
+      "year": 1990,
+      "population": 182589
+    },
+    {
+      "year": 1980,
+      "population": 145133
+    },
+    {
+      "year": 1970,
+      "population": 120905
+    }
+  ],
+  "area_km2": 22966,
+  "population_density": 17.6466,
+  "population_growth_rate": 1.0131,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Benin",
+  "rank": 77,
+  "cca3": "BEN",
+  "capital": "Porto-Novo",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 13352864
+    },
+    {
+      "year": 2020,
+      "population": 12643123
+    },
+    {
+      "year": 2015,
+      "population": 10932783
+    },
+    {
+      "year": 2010,
+      "population": 9445710
+    },
+    {
+      "year": 2000,
+      "population": 6998023
+    },
+    {
+      "year": 1990,
+      "population": 5133419
+    },
+    {
+      "year": 1980,
+      "population": 3833939
+    },
+    {
+      "year": 1970,
+      "population": 3023443
+    }
+  ],
+  "area_km2": 112622,
+  "population_density": 118.5635,
+  "population_growth_rate": 1.0274,
+  "percentage_world_population": 0.17
+}
+{
+  "country": "Bermuda",
+  "rank": 206,
+  "cca3": "BMU",
+  "capital": "Hamilton",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 64184
+    },
+    {
+      "year": 2020,
+      "population": 64031
+    },
+    {
+      "year": 2015,
+      "population": 63144
+    },
+    {
+      "year": 2010,
+      "population": 63447
+    },
+    {
+      "year": 2000,
+      "population": 61371
+    },
+    {
+      "year": 1990,
+      "population": 57470
+    },
+    {
+      "year": 1980,
+      "population": 53565
+    },
+    {
+      "year": 1970,
+      "population": 52019
+    }
+  ],
+  "area_km2": 54,
+  "population_density": 1188.5926,
+  "population_growth_rate": 1,
+  "percentage_world_population": 0
+}
+{
+  "country": "Bhutan",
+  "rank": 165,
+  "cca3": "BTN",
+  "capital": "Thimphu",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 782455
+    },
+    {
+      "year": 2020,
+      "population": 772506
+    },
+    {
+      "year": 2015,
+      "population": 743274
+    },
+    {
+      "year": 2010,
+      "population": 705516
+    },
+    {
+      "year": 2000,
+      "population": 587207
+    },
+    {
+      "year": 1990,
+      "population": 558442
+    },
+    {
+      "year": 1980,
+      "population": 415257
+    },
+    {
+      "year": 1970,
+      "population": 298894
+    }
+  ],
+  "area_km2": 38394,
+  "population_density": 20.3796,
+  "population_growth_rate": 1.0064,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Bolivia",
+  "rank": 80,
+  "cca3": "BOL",
+  "capital": "Sucre",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 12224110
+    },
+    {
+      "year": 2020,
+      "population": 11936162
+    },
+    {
+      "year": 2015,
+      "population": 11090085
+    },
+    {
+      "year": 2010,
+      "population": 10223270
+    },
+    {
+      "year": 2000,
+      "population": 8592656
+    },
+    {
+      "year": 1990,
+      "population": 7096194
+    },
+    {
+      "year": 1980,
+      "population": 5736088
+    },
+    {
+      "year": 1970,
+      "population": 4585693
+    }
+  ],
+  "area_km2": 1098581,
+  "population_density": 11.1272,
+  "population_growth_rate": 1.012,
+  "percentage_world_population": 0.15
+}
+{
+  "country": "Bosnia and Herzegovina",
+  "rank": 137,
+  "cca3": "BIH",
+  "capital": "Sarajevo",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3233526
+    },
+    {
+      "year": 2020,
+      "population": 3318407
+    },
+    {
+      "year": 2015,
+      "population": 3524324
+    },
+    {
+      "year": 2010,
+      "population": 3811088
+    },
+    {
+      "year": 2000,
+      "population": 4179350
+    },
+    {
+      "year": 1990,
+      "population": 4494310
+    },
+    {
+      "year": 1980,
+      "population": 4199820
+    },
+    {
+      "year": 1970,
+      "population": 3815561
+    }
+  ],
+  "area_km2": 51209,
+  "population_density": 63.1437,
+  "population_growth_rate": 0.9886,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Botswana",
+  "rank": 144,
+  "cca3": "BWA",
+  "capital": "Gaborone",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2630296
+    },
+    {
+      "year": 2020,
+      "population": 2546402
+    },
+    {
+      "year": 2015,
+      "population": 2305171
+    },
+    {
+      "year": 2010,
+      "population": 2091664
+    },
+    {
+      "year": 2000,
+      "population": 1726985
+    },
+    {
+      "year": 1990,
+      "population": 1341474
+    },
+    {
+      "year": 1980,
+      "population": 938578
+    },
+    {
+      "year": 1970,
+      "population": 592244
+    }
+  ],
+  "area_km2": 582000,
+  "population_density": 4.5194,
+  "population_growth_rate": 1.0162,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Brazil",
+  "rank": 7,
+  "cca3": "BRA",
+  "capital": "Brasilia",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 215313498
+    },
+    {
+      "year": 2020,
+      "population": 213196304
+    },
+    {
+      "year": 2015,
+      "population": 205188205
+    },
+    {
+      "year": 2010,
+      "population": 196353492
+    },
+    {
+      "year": 2000,
+      "population": 175873720
+    },
+    {
+      "year": 1990,
+      "population": 150706446
+    },
+    {
+      "year": 1980,
+      "population": 122288383
+    },
+    {
+      "year": 1970,
+      "population": 96369875
+    }
+  ],
+  "area_km2": 8515767,
+  "population_density": 25.2841,
+  "population_growth_rate": 1.0046,
+  "percentage_world_population": 2.7
+}
+{
+  "country": "British Virgin Islands",
+  "rank": 221,
+  "cca3": "VGB",
+  "capital": "Road Town",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 31305
+    },
+    {
+      "year": 2020,
+      "population": 30910
+    },
+    {
+      "year": 2015,
+      "population": 29366
+    },
+    {
+      "year": 2010,
+      "population": 27556
+    },
+    {
+      "year": 2000,
+      "population": 20104
+    },
+    {
+      "year": 1990,
+      "population": 15617
+    },
+    {
+      "year": 1980,
+      "population": 11109
+    },
+    {
+      "year": 1970,
+      "population": 9581
+    }
+  ],
+  "area_km2": 151,
+  "population_density": 207.3179,
+  "population_growth_rate": 1.0059,
+  "percentage_world_population": 0
+}
+{
+  "country": "Brunei",
+  "rank": 175,
+  "cca3": "BRN",
+  "capital": "Bandar Seri Begawan",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 449002
+    },
+    {
+      "year": 2020,
+      "population": 441725
+    },
+    {
+      "year": 2015,
+      "population": 421437
+    },
+    {
+      "year": 2010,
+      "population": 396053
+    },
+    {
+      "year": 2000,
+      "population": 333926
+    },
+    {
+      "year": 1990,
+      "population": 261928
+    },
+    {
+      "year": 1980,
+      "population": 187921
+    },
+    {
+      "year": 1970,
+      "population": 133343
+    }
+  ],
+  "area_km2": 5765,
+  "population_density": 77.8841,
+  "population_growth_rate": 1.0081,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Bulgaria",
+  "rank": 108,
+  "cca3": "BGR",
+  "capital": "Sofia",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6781953
+    },
+    {
+      "year": 2020,
+      "population": 6979175
+    },
+    {
+      "year": 2015,
+      "population": 7309253
+    },
+    {
+      "year": 2010,
+      "population": 7592273
+    },
+    {
+      "year": 2000,
+      "population": 8097691
+    },
+    {
+      "year": 1990,
+      "population": 8767778
+    },
+    {
+      "year": 1980,
+      "population": 8980606
+    },
+    {
+      "year": 1970,
+      "population": 8582950
+    }
+  ],
+  "area_km2": 110879,
+  "population_density": 61.1654,
+  "population_growth_rate": 0.9849,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Burkina Faso",
+  "rank": 58,
+  "cca3": "BFA",
+  "capital": "Ouagadougou",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 22673762
+    },
+    {
+      "year": 2020,
+      "population": 21522626
+    },
+    {
+      "year": 2015,
+      "population": 18718019
+    },
+    {
+      "year": 2010,
+      "population": 16116845
+    },
+    {
+      "year": 2000,
+      "population": 11882888
+    },
+    {
+      "year": 1990,
+      "population": 9131361
+    },
+    {
+      "year": 1980,
+      "population": 6932967
+    },
+    {
+      "year": 1970,
+      "population": 5611666
+    }
+  ],
+  "area_km2": 272967,
+  "population_density": 83.0641,
+  "population_growth_rate": 1.0259,
+  "percentage_world_population": 0.28
+}
+{
+  "country": "Burundi",
+  "rank": 78,
+  "cca3": "BDI",
+  "capital": "Bujumbura",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 12889576
+    },
+    {
+      "year": 2020,
+      "population": 12220227
+    },
+    {
+      "year": 2015,
+      "population": 10727148
+    },
+    {
+      "year": 2010,
+      "population": 9126605
+    },
+    {
+      "year": 2000,
+      "population": 6307659
+    },
+    {
+      "year": 1990,
+      "population": 5483793
+    },
+    {
+      "year": 1980,
+      "population": 4312834
+    },
+    {
+      "year": 1970,
+      "population": 3497834
+    }
+  ],
+  "area_km2": 27834,
+  "population_density": 463.0874,
+  "population_growth_rate": 1.027,
+  "percentage_world_population": 0.16
+}
+{
+  "country": "Cambodia",
+  "rank": 73,
+  "cca3": "KHM",
+  "capital": "Phnom Penh",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 16767842
+    },
+    {
+      "year": 2020,
+      "population": 16396860
+    },
+    {
+      "year": 2015,
+      "population": 15417523
+    },
+    {
+      "year": 2010,
+      "population": 14363532
+    },
+    {
+      "year": 2000,
+      "population": 12118841
+    },
+    {
+      "year": 1990,
+      "population": 8910808
+    },
+    {
+      "year": 1980,
+      "population": 6198959
+    },
+    {
+      "year": 1970,
+      "population": 6708525
+    }
+  ],
+  "area_km2": 181035,
+  "population_density": 92.6221,
+  "population_growth_rate": 1.0108,
+  "percentage_world_population": 0.21
+}
+{
+  "country": "Cameroon",
+  "rank": 53,
+  "cca3": "CMR",
+  "capital": "Yaounde",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 27914536
+    },
+    {
+      "year": 2020,
+      "population": 26491087
+    },
+    {
+      "year": 2015,
+      "population": 23012646
+    },
+    {
+      "year": 2010,
+      "population": 19878036
+    },
+    {
+      "year": 2000,
+      "population": 15091594
+    },
+    {
+      "year": 1990,
+      "population": 11430520
+    },
+    {
+      "year": 1980,
+      "population": 8519891
+    },
+    {
+      "year": 1970,
+      "population": 6452787
+    }
+  ],
+  "area_km2": 475442,
+  "population_density": 58.7128,
+  "population_growth_rate": 1.0263,
+  "percentage_world_population": 0.35
+}
+{
+  "country": "Canada",
+  "rank": 39,
+  "cca3": "CAN",
+  "capital": "Ottawa",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 38454327
+    },
+    {
+      "year": 2020,
+      "population": 37888705
+    },
+    {
+      "year": 2015,
+      "population": 35732126
+    },
+    {
+      "year": 2010,
+      "population": 33963412
+    },
+    {
+      "year": 2000,
+      "population": 30683313
+    },
+    {
+      "year": 1990,
+      "population": 27657204
+    },
+    {
+      "year": 1980,
+      "population": 24511510
+    },
+    {
+      "year": 1970,
+      "population": 21434577
+    }
+  ],
+  "area_km2": 9984670,
+  "population_density": 3.8513,
+  "population_growth_rate": 1.0078,
+  "percentage_world_population": 0.48
+}
+{
+  "country": "Cape Verde",
+  "rank": 171,
+  "cca3": "CPV",
+  "capital": "Praia",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 593149
+    },
+    {
+      "year": 2020,
+      "population": 582640
+    },
+    {
+      "year": 2015,
+      "population": 552166
+    },
+    {
+      "year": 2010,
+      "population": 521212
+    },
+    {
+      "year": 2000,
+      "population": 458251
+    },
+    {
+      "year": 1990,
+      "population": 364563
+    },
+    {
+      "year": 1980,
+      "population": 317234
+    },
+    {
+      "year": 1970,
+      "population": 287262
+    }
+  ],
+  "area_km2": 4033,
+  "population_density": 147.0739,
+  "population_growth_rate": 1.0089,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Cayman Islands",
+  "rank": 205,
+  "cca3": "CYM",
+  "capital": "George Town",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 68706
+    },
+    {
+      "year": 2020,
+      "population": 67311
+    },
+    {
+      "year": 2015,
+      "population": 60911
+    },
+    {
+      "year": 2010,
+      "population": 54074
+    },
+    {
+      "year": 2000,
+      "population": 39658
+    },
+    {
+      "year": 1990,
+      "population": 26027
+    },
+    {
+      "year": 1980,
+      "population": 17100
+    },
+    {
+      "year": 1970,
+      "population": 10533
+    }
+  ],
+  "area_km2": 264,
+  "population_density": 260.25,
+  "population_growth_rate": 1.0084,
+  "percentage_world_population": 0
+}
+{
+  "country": "Central African Republic",
+  "rank": 117,
+  "cca3": "CAF",
+  "capital": "Bangui",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5579144
+    },
+    {
+      "year": 2020,
+      "population": 5343020
+    },
+    {
+      "year": 2015,
+      "population": 4819333
+    },
+    {
+      "year": 2010,
+      "population": 4660067
+    },
+    {
+      "year": 2000,
+      "population": 3759170
+    },
+    {
+      "year": 1990,
+      "population": 2809221
+    },
+    {
+      "year": 1980,
+      "population": 2415276
+    },
+    {
+      "year": 1970,
+      "population": 2067356
+    }
+  ],
+  "area_km2": 622984,
+  "population_density": 8.9555,
+  "population_growth_rate": 1.0224,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Chad",
+  "rank": 69,
+  "cca3": "TCD",
+  "capital": "N'Djamena",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17723315
+    },
+    {
+      "year": 2020,
+      "population": 16644701
+    },
+    {
+      "year": 2015,
+      "population": 14140274
+    },
+    {
+      "year": 2010,
+      "population": 11894727
+    },
+    {
+      "year": 2000,
+      "population": 8259137
+    },
+    {
+      "year": 1990,
+      "population": 5827069
+    },
+    {
+      "year": 1980,
+      "population": 4408230
+    },
+    {
+      "year": 1970,
+      "population": 3667394
+    }
+  ],
+  "area_km2": 1284000,
+  "population_density": 13.8032,
+  "population_growth_rate": 1.0316,
+  "percentage_world_population": 0.22
+}
+{
+  "country": "Chile",
+  "rank": 65,
+  "cca3": "CHL",
+  "capital": "Santiago",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 19603733
+    },
+    {
+      "year": 2020,
+      "population": 19300315
+    },
+    {
+      "year": 2015,
+      "population": 17870124
+    },
+    {
+      "year": 2010,
+      "population": 17004162
+    },
+    {
+      "year": 2000,
+      "population": 15351799
+    },
+    {
+      "year": 1990,
+      "population": 13342868
+    },
+    {
+      "year": 1980,
+      "population": 11469828
+    },
+    {
+      "year": 1970,
+      "population": 9820481
+    }
+  ],
+  "area_km2": 756102,
+  "population_density": 25.9274,
+  "population_growth_rate": 1.0057,
+  "percentage_world_population": 0.25
+}
+{
+  "country": "China",
+  "rank": 1,
+  "cca3": "CHN",
+  "capital": "Beijing",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1425887337
+    },
+    {
+      "year": 2020,
+      "population": 1424929781
+    },
+    {
+      "year": 2015,
+      "population": 1393715448
+    },
+    {
+      "year": 2010,
+      "population": 1348191368
+    },
+    {
+      "year": 2000,
+      "population": 1264099069
+    },
+    {
+      "year": 1990,
+      "population": 1153704252
+    },
+    {
+      "year": 1980,
+      "population": 982372466
+    },
+    {
+      "year": 1970,
+      "population": 822534450
+    }
+  ],
+  "area_km2": 9706961,
+  "population_density": 146.8933,
+  "population_growth_rate": 1,
+  "percentage_world_population": 17.88
+}
+{
+  "country": "Colombia",
+  "rank": 28,
+  "cca3": "COL",
+  "capital": "Bogota",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 51874024
+    },
+    {
+      "year": 2020,
+      "population": 50930662
+    },
+    {
+      "year": 2015,
+      "population": 47119728
+    },
+    {
+      "year": 2010,
+      "population": 44816108
+    },
+    {
+      "year": 2000,
+      "population": 39215135
+    },
+    {
+      "year": 1990,
+      "population": 32601393
+    },
+    {
+      "year": 1980,
+      "population": 26176195
+    },
+    {
+      "year": 1970,
+      "population": 20905254
+    }
+  ],
+  "area_km2": 1141748,
+  "population_density": 45.4339,
+  "population_growth_rate": 1.0069,
+  "percentage_world_population": 0.65
+}
+{
+  "country": "Comoros",
+  "rank": 163,
+  "cca3": "COM",
+  "capital": "Moroni",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 836774
+    },
+    {
+      "year": 2020,
+      "population": 806166
+    },
+    {
+      "year": 2015,
+      "population": 730216
+    },
+    {
+      "year": 2010,
+      "population": 656024
+    },
+    {
+      "year": 2000,
+      "population": 536758
+    },
+    {
+      "year": 1990,
+      "population": 431119
+    },
+    {
+      "year": 1980,
+      "population": 328328
+    },
+    {
+      "year": 1970,
+      "population": 242351
+    }
+  ],
+  "area_km2": 1862,
+  "population_density": 449.3953,
+  "population_growth_rate": 1.0184,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Cook Islands",
+  "rank": 223,
+  "cca3": "COK",
+  "capital": "Avarua",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17011
+    },
+    {
+      "year": 2020,
+      "population": 17029
+    },
+    {
+      "year": 2015,
+      "population": 17695
+    },
+    {
+      "year": 2010,
+      "population": 17212
+    },
+    {
+      "year": 2000,
+      "population": 15897
+    },
+    {
+      "year": 1990,
+      "population": 17123
+    },
+    {
+      "year": 1980,
+      "population": 17651
+    },
+    {
+      "year": 1970,
+      "population": 20470
+    }
+  ],
+  "area_km2": 236,
+  "population_density": 72.0805,
+  "population_growth_rate": 1.0005,
+  "percentage_world_population": 0
+}
+{
+  "country": "Costa Rica",
+  "rank": 124,
+  "cca3": "CRI",
+  "capital": "San José",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5180829
+    },
+    {
+      "year": 2020,
+      "population": 5123105
+    },
+    {
+      "year": 2015,
+      "population": 4895242
+    },
+    {
+      "year": 2010,
+      "population": 4622252
+    },
+    {
+      "year": 2000,
+      "population": 3979193
+    },
+    {
+      "year": 1990,
+      "population": 3158253
+    },
+    {
+      "year": 1980,
+      "population": 2414303
+    },
+    {
+      "year": 1970,
+      "population": 1855697
+    }
+  ],
+  "area_km2": 51100,
+  "population_density": 101.3861,
+  "population_growth_rate": 1.0052,
+  "percentage_world_population": 0.06
+}
+{
+  "country": "Croatia",
+  "rank": 130,
+  "cca3": "HRV",
+  "capital": "Zagreb",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4030358
+    },
+    {
+      "year": 2020,
+      "population": 4096868
+    },
+    {
+      "year": 2015,
+      "population": 4254815
+    },
+    {
+      "year": 2010,
+      "population": 4368682
+    },
+    {
+      "year": 2000,
+      "population": 4548434
+    },
+    {
+      "year": 1990,
+      "population": 4873707
+    },
+    {
+      "year": 1980,
+      "population": 4680144
+    },
+    {
+      "year": 1970,
+      "population": 4492638
+    }
+  ],
+  "area_km2": 56594,
+  "population_density": 71.2153,
+  "population_growth_rate": 0.9927,
+  "percentage_world_population": 0.05
+}
+{
+  "country": "Cuba",
+  "rank": 85,
+  "cca3": "CUB",
+  "capital": "Havana",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11212191
+    },
+    {
+      "year": 2020,
+      "population": 11300698
+    },
+    {
+      "year": 2015,
+      "population": 11339894
+    },
+    {
+      "year": 2010,
+      "population": 11290417
+    },
+    {
+      "year": 2000,
+      "population": 11105791
+    },
+    {
+      "year": 1990,
+      "population": 10626680
+    },
+    {
+      "year": 1980,
+      "population": 9809107
+    },
+    {
+      "year": 1970,
+      "population": 8869636
+    }
+  ],
+  "area_km2": 109884,
+  "population_density": 102.0366,
+  "population_growth_rate": 0.9961,
+  "percentage_world_population": 0.14
+}
+{
+  "country": "Curacao",
+  "rank": 189,
+  "cca3": "CUW",
+  "capital": "Willemstad",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 191163
+    },
+    {
+      "year": 2020,
+      "population": 189288
+    },
+    {
+      "year": 2015,
+      "population": 169572
+    },
+    {
+      "year": 2010,
+      "population": 159380
+    },
+    {
+      "year": 2000,
+      "population": 141424
+    },
+    {
+      "year": 1990,
+      "population": 155446
+    },
+    {
+      "year": 1980,
+      "population": 156851
+    },
+    {
+      "year": 1970,
+      "population": 150385
+    }
+  ],
+  "area_km2": 444,
+  "population_density": 430.5473,
+  "population_growth_rate": 1.0043,
+  "percentage_world_population": 0
+}
+{
+  "country": "Cyprus",
+  "rank": 158,
+  "cca3": "CYP",
+  "capital": "Nicosia",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1251488
+    },
+    {
+      "year": 2020,
+      "population": 1237537
+    },
+    {
+      "year": 2015,
+      "population": 1187280
+    },
+    {
+      "year": 2010,
+      "population": 1129686
+    },
+    {
+      "year": 2000,
+      "population": 948237
+    },
+    {
+      "year": 1990,
+      "population": 788500
+    },
+    {
+      "year": 1980,
+      "population": 679327
+    },
+    {
+      "year": 1970,
+      "population": 640804
+    }
+  ],
+  "area_km2": 9251,
+  "population_density": 135.2814,
+  "population_growth_rate": 1.0059,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Czech Republic",
+  "rank": 88,
+  "cca3": "CZE",
+  "capital": "Prague",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10493986
+    },
+    {
+      "year": 2020,
+      "population": 10530953
+    },
+    {
+      "year": 2015,
+      "population": 10523798
+    },
+    {
+      "year": 2010,
+      "population": 10464749
+    },
+    {
+      "year": 2000,
+      "population": 10234710
+    },
+    {
+      "year": 1990,
+      "population": 10301192
+    },
+    {
+      "year": 1980,
+      "population": 10270060
+    },
+    {
+      "year": 1970,
+      "population": 9795744
+    }
+  ],
+  "area_km2": 78865,
+  "population_density": 133.0627,
+  "population_growth_rate": 0.9984,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Denmark",
+  "rank": 115,
+  "cca3": "DNK",
+  "capital": "Copenhagen",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5882261
+    },
+    {
+      "year": 2020,
+      "population": 5825641
+    },
+    {
+      "year": 2015,
+      "population": 5677796
+    },
+    {
+      "year": 2010,
+      "population": 5550849
+    },
+    {
+      "year": 2000,
+      "population": 5340655
+    },
+    {
+      "year": 1990,
+      "population": 5144623
+    },
+    {
+      "year": 1980,
+      "population": 5125392
+    },
+    {
+      "year": 1970,
+      "population": 4922963
+    }
+  ],
+  "area_km2": 43094,
+  "population_density": 136.4984,
+  "population_growth_rate": 1.0048,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Djibouti",
+  "rank": 160,
+  "cca3": "DJI",
+  "capital": "Djibouti",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1120849
+    },
+    {
+      "year": 2020,
+      "population": 1090156
+    },
+    {
+      "year": 2015,
+      "population": 1006259
+    },
+    {
+      "year": 2010,
+      "population": 919199
+    },
+    {
+      "year": 2000,
+      "population": 742033
+    },
+    {
+      "year": 1990,
+      "population": 577173
+    },
+    {
+      "year": 1980,
+      "population": 324121
+    },
+    {
+      "year": 1970,
+      "population": 144379
+    }
+  ],
+  "area_km2": 23200,
+  "population_density": 48.3125,
+  "population_growth_rate": 1.0138,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Dominica",
+  "rank": 204,
+  "cca3": "DMA",
+  "capital": "Roseau",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 72737
+    },
+    {
+      "year": 2020,
+      "population": 71995
+    },
+    {
+      "year": 2015,
+      "population": 70007
+    },
+    {
+      "year": 2010,
+      "population": 68755
+    },
+    {
+      "year": 2000,
+      "population": 68346
+    },
+    {
+      "year": 1990,
+      "population": 69481
+    },
+    {
+      "year": 1980,
+      "population": 72978
+    },
+    {
+      "year": 1970,
+      "population": 68895
+    }
+  ],
+  "area_km2": 751,
+  "population_density": 96.8535,
+  "population_growth_rate": 1.0045,
+  "percentage_world_population": 0
+}
+{
+  "country": "Dominican Republic",
+  "rank": 84,
+  "cca3": "DOM",
+  "capital": "Santo Domingo",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11228821
+    },
+    {
+      "year": 2020,
+      "population": 10999664
+    },
+    {
+      "year": 2015,
+      "population": 10405832
+    },
+    {
+      "year": 2010,
+      "population": 9775755
+    },
+    {
+      "year": 2000,
+      "population": 8540791
+    },
+    {
+      "year": 1990,
+      "population": 7129004
+    },
+    {
+      "year": 1980,
+      "population": 5755800
+    },
+    {
+      "year": 1970,
+      "population": 4475871
+    }
+  ],
+  "area_km2": 48671,
+  "population_density": 230.7087,
+  "population_growth_rate": 1.01,
+  "percentage_world_population": 0.14
+}
+{
+  "country": "DR Congo",
+  "rank": 15,
+  "cca3": "COD",
+  "capital": "Kinshasa",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 99010212
+    },
+    {
+      "year": 2020,
+      "population": 92853164
+    },
+    {
+      "year": 2015,
+      "population": 78656904
+    },
+    {
+      "year": 2010,
+      "population": 66391257
+    },
+    {
+      "year": 2000,
+      "population": 48616317
+    },
+    {
+      "year": 1990,
+      "population": 35987541
+    },
+    {
+      "year": 1980,
+      "population": 26708686
+    },
+    {
+      "year": 1970,
+      "population": 20151733
+    }
+  ],
+  "area_km2": 2344858,
+  "population_density": 42.2244,
+  "population_growth_rate": 1.0325,
+  "percentage_world_population": 1.24
+}
+{
+  "country": "Ecuador",
+  "rank": 67,
+  "cca3": "ECU",
+  "capital": "Quito",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 18001000
+    },
+    {
+      "year": 2020,
+      "population": 17588595
+    },
+    {
+      "year": 2015,
+      "population": 16195902
+    },
+    {
+      "year": 2010,
+      "population": 14989585
+    },
+    {
+      "year": 2000,
+      "population": 12626507
+    },
+    {
+      "year": 1990,
+      "population": 10449837
+    },
+    {
+      "year": 1980,
+      "population": 8135845
+    },
+    {
+      "year": 1970,
+      "population": 6172215
+    }
+  ],
+  "area_km2": 276841,
+  "population_density": 65.0229,
+  "population_growth_rate": 1.0114,
+  "percentage_world_population": 0.23
+}
+{
+  "country": "Egypt",
+  "rank": 14,
+  "cca3": "EGY",
+  "capital": "Cairo",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 110990103
+    },
+    {
+      "year": 2020,
+      "population": 107465134
+    },
+    {
+      "year": 2015,
+      "population": 97723799
+    },
+    {
+      "year": 2010,
+      "population": 87252413
+    },
+    {
+      "year": 2000,
+      "population": 71371371
+    },
+    {
+      "year": 1990,
+      "population": 57214630
+    },
+    {
+      "year": 1980,
+      "population": 43748556
+    },
+    {
+      "year": 1970,
+      "population": 34781986
+    }
+  ],
+  "area_km2": 1002450,
+  "population_density": 110.7188,
+  "population_growth_rate": 1.0158,
+  "percentage_world_population": 1.39
+}
+{
+  "country": "El Salvador",
+  "rank": 112,
+  "cca3": "SLV",
+  "capital": "San Salvador",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6336392
+    },
+    {
+      "year": 2020,
+      "population": 6292731
+    },
+    {
+      "year": 2015,
+      "population": 6231066
+    },
+    {
+      "year": 2010,
+      "population": 6114034
+    },
+    {
+      "year": 2000,
+      "population": 5958482
+    },
+    {
+      "year": 1990,
+      "population": 5367179
+    },
+    {
+      "year": 1980,
+      "population": 4508992
+    },
+    {
+      "year": 1970,
+      "population": 3619090
+    }
+  ],
+  "area_km2": 21041,
+  "population_density": 301.145,
+  "population_growth_rate": 1.0035,
+  "percentage_world_population": 0.08
+}
+{
+  "country": "Equatorial Guinea",
+  "rank": 152,
+  "cca3": "GNQ",
+  "capital": "Malabo",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1674908
+    },
+    {
+      "year": 2020,
+      "population": 1596049
+    },
+    {
+      "year": 2015,
+      "population": 1346973
+    },
+    {
+      "year": 2010,
+      "population": 1094524
+    },
+    {
+      "year": 2000,
+      "population": 684977
+    },
+    {
+      "year": 1990,
+      "population": 465549
+    },
+    {
+      "year": 1980,
+      "population": 282509
+    },
+    {
+      "year": 1970,
+      "population": 316955
+    }
+  ],
+  "area_km2": 28051,
+  "population_density": 59.7094,
+  "population_growth_rate": 1.0247,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Eritrea",
+  "rank": 132,
+  "cca3": "ERI",
+  "capital": "Asmara",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3684032
+    },
+    {
+      "year": 2020,
+      "population": 3555868
+    },
+    {
+      "year": 2015,
+      "population": 3340006
+    },
+    {
+      "year": 2010,
+      "population": 3147727
+    },
+    {
+      "year": 2000,
+      "population": 2392880
+    },
+    {
+      "year": 1990,
+      "population": 2149960
+    },
+    {
+      "year": 1980,
+      "population": 1657982
+    },
+    {
+      "year": 1970,
+      "population": 1272748
+    }
+  ],
+  "area_km2": 117600,
+  "population_density": 31.3268,
+  "population_growth_rate": 1.0176,
+  "percentage_world_population": 0.05
+}
+{
+  "country": "Estonia",
+  "rank": 156,
+  "cca3": "EST",
+  "capital": "Tallinn",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1326062
+    },
+    {
+      "year": 2020,
+      "population": 1329444
+    },
+    {
+      "year": 2015,
+      "population": 1314657
+    },
+    {
+      "year": 2010,
+      "population": 1331535
+    },
+    {
+      "year": 2000,
+      "population": 1396877
+    },
+    {
+      "year": 1990,
+      "population": 1570674
+    },
+    {
+      "year": 1980,
+      "population": 1476983
+    },
+    {
+      "year": 1970,
+      "population": 1361999
+    }
+  ],
+  "area_km2": 45227,
+  "population_density": 29.3201,
+  "population_growth_rate": 0.998,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Eswatini",
+  "rank": 159,
+  "cca3": "SWZ",
+  "capital": "Mbabane",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1201670
+    },
+    {
+      "year": 2020,
+      "population": 1180655
+    },
+    {
+      "year": 2015,
+      "population": 1133936
+    },
+    {
+      "year": 2010,
+      "population": 1099920
+    },
+    {
+      "year": 2000,
+      "population": 1030496
+    },
+    {
+      "year": 1990,
+      "population": 854011
+    },
+    {
+      "year": 1980,
+      "population": 598564
+    },
+    {
+      "year": 1970,
+      "population": 442865
+    }
+  ],
+  "area_km2": 17364,
+  "population_density": 69.2047,
+  "population_growth_rate": 1.0079,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Ethiopia",
+  "rank": 12,
+  "cca3": "ETH",
+  "capital": "Addis Ababa",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 123379924
+    },
+    {
+      "year": 2020,
+      "population": 117190911
+    },
+    {
+      "year": 2015,
+      "population": 102471895
+    },
+    {
+      "year": 2010,
+      "population": 89237791
+    },
+    {
+      "year": 2000,
+      "population": 67031867
+    },
+    {
+      "year": 1990,
+      "population": 47878073
+    },
+    {
+      "year": 1980,
+      "population": 34945469
+    },
+    {
+      "year": 1970,
+      "population": 28308246
+    }
+  ],
+  "area_km2": 1104300,
+  "population_density": 111.7268,
+  "population_growth_rate": 1.0257,
+  "percentage_world_population": 1.55
+}
+{
+  "country": "Falkland Islands",
+  "rank": 231,
+  "cca3": "FLK",
+  "capital": "Stanley",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3780
+    },
+    {
+      "year": 2020,
+      "population": 3747
+    },
+    {
+      "year": 2015,
+      "population": 3408
+    },
+    {
+      "year": 2010,
+      "population": 3187
+    },
+    {
+      "year": 2000,
+      "population": 3080
+    },
+    {
+      "year": 1990,
+      "population": 2332
+    },
+    {
+      "year": 1980,
+      "population": 2240
+    },
+    {
+      "year": 1970,
+      "population": 2274
+    }
+  ],
+  "area_km2": 12173,
+  "population_density": 0.3105,
+  "population_growth_rate": 1.0043,
+  "percentage_world_population": 0
+}
+{
+  "country": "Faroe Islands",
+  "rank": 209,
+  "cca3": "FRO",
+  "capital": "Tórshavn",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 53090
+    },
+    {
+      "year": 2020,
+      "population": 52415
+    },
+    {
+      "year": 2015,
+      "population": 48816
+    },
+    {
+      "year": 2010,
+      "population": 48410
+    },
+    {
+      "year": 2000,
+      "population": 45660
+    },
+    {
+      "year": 1990,
+      "population": 47479
+    },
+    {
+      "year": 1980,
+      "population": 43054
+    },
+    {
+      "year": 1970,
+      "population": 38416
+    }
+  ],
+  "area_km2": 1393,
+  "population_density": 38.112,
+  "population_growth_rate": 1.0038,
+  "percentage_world_population": 0
+}
+{
+  "country": "Fiji",
+  "rank": 162,
+  "cca3": "FJI",
+  "capital": "Suva",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 929766
+    },
+    {
+      "year": 2020,
+      "population": 920422
+    },
+    {
+      "year": 2015,
+      "population": 917200
+    },
+    {
+      "year": 2010,
+      "population": 905169
+    },
+    {
+      "year": 2000,
+      "population": 832509
+    },
+    {
+      "year": 1990,
+      "population": 780430
+    },
+    {
+      "year": 1980,
+      "population": 644582
+    },
+    {
+      "year": 1970,
+      "population": 527634
+    }
+  ],
+  "area_km2": 18272,
+  "population_density": 50.8847,
+  "population_growth_rate": 1.0056,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Finland",
+  "rank": 118,
+  "cca3": "FIN",
+  "capital": "Helsinki",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5540745
+    },
+    {
+      "year": 2020,
+      "population": 5529468
+    },
+    {
+      "year": 2015,
+      "population": 5479461
+    },
+    {
+      "year": 2010,
+      "population": 5363271
+    },
+    {
+      "year": 2000,
+      "population": 5176209
+    },
+    {
+      "year": 1990,
+      "population": 4986545
+    },
+    {
+      "year": 1980,
+      "population": 4779418
+    },
+    {
+      "year": 1970,
+      "population": 4606621
+    }
+  ],
+  "area_km2": 338424,
+  "population_density": 16.3722,
+  "population_growth_rate": 1.0009,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "France",
+  "rank": 23,
+  "cca3": "FRA",
+  "capital": "Paris",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 64626628
+    },
+    {
+      "year": 2020,
+      "population": 64480053
+    },
+    {
+      "year": 2015,
+      "population": 63809769
+    },
+    {
+      "year": 2010,
+      "population": 62444567
+    },
+    {
+      "year": 2000,
+      "population": 58665453
+    },
+    {
+      "year": 1990,
+      "population": 56412897
+    },
+    {
+      "year": 1980,
+      "population": 53713830
+    },
+    {
+      "year": 1970,
+      "population": 50523586
+    }
+  ],
+  "area_km2": 551695,
+  "population_density": 117.1419,
+  "population_growth_rate": 1.0015,
+  "percentage_world_population": 0.81
+}
+{
+  "country": "French Guiana",
+  "rank": 184,
+  "cca3": "GUF",
+  "capital": "Cayenne",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 304557
+    },
+    {
+      "year": 2020,
+      "population": 290969
+    },
+    {
+      "year": 2015,
+      "population": 257026
+    },
+    {
+      "year": 2010,
+      "population": 228453
+    },
+    {
+      "year": 2000,
+      "population": 164351
+    },
+    {
+      "year": 1990,
+      "population": 113931
+    },
+    {
+      "year": 1980,
+      "population": 66825
+    },
+    {
+      "year": 1970,
+      "population": 46484
+    }
+  ],
+  "area_km2": 83534,
+  "population_density": 3.6459,
+  "population_growth_rate": 1.0239,
+  "percentage_world_population": 0
+}
+{
+  "country": "French Polynesia",
+  "rank": 183,
+  "cca3": "PYF",
+  "capital": "Papeete",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 306279
+    },
+    {
+      "year": 2020,
+      "population": 301920
+    },
+    {
+      "year": 2015,
+      "population": 291787
+    },
+    {
+      "year": 2010,
+      "population": 283788
+    },
+    {
+      "year": 2000,
+      "population": 250927
+    },
+    {
+      "year": 1990,
+      "population": 211089
+    },
+    {
+      "year": 1980,
+      "population": 163591
+    },
+    {
+      "year": 1970,
+      "population": 117891
+    }
+  ],
+  "area_km2": 4167,
+  "population_density": 73.5011,
+  "population_growth_rate": 1.0074,
+  "percentage_world_population": 0
+}
+{
+  "country": "Gabon",
+  "rank": 146,
+  "cca3": "GAB",
+  "capital": "Libreville",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2388992
+    },
+    {
+      "year": 2020,
+      "population": 2292573
+    },
+    {
+      "year": 2015,
+      "population": 2028517
+    },
+    {
+      "year": 2010,
+      "population": 1711105
+    },
+    {
+      "year": 2000,
+      "population": 1272935
+    },
+    {
+      "year": 1990,
+      "population": 983028
+    },
+    {
+      "year": 1980,
+      "population": 749078
+    },
+    {
+      "year": 1970,
+      "population": 597192
+    }
+  ],
+  "area_km2": 267668,
+  "population_density": 8.9252,
+  "population_growth_rate": 1.0204,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Gambia",
+  "rank": 142,
+  "cca3": "GMB",
+  "capital": "Banjul",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2705992
+    },
+    {
+      "year": 2020,
+      "population": 2573995
+    },
+    {
+      "year": 2015,
+      "population": 2253133
+    },
+    {
+      "year": 2010,
+      "population": 1937275
+    },
+    {
+      "year": 2000,
+      "population": 1437539
+    },
+    {
+      "year": 1990,
+      "population": 1040616
+    },
+    {
+      "year": 1980,
+      "population": 718586
+    },
+    {
+      "year": 1970,
+      "population": 528731
+    }
+  ],
+  "area_km2": 10689,
+  "population_density": 253.1567,
+  "population_growth_rate": 1.025,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Georgia",
+  "rank": 131,
+  "cca3": "GEO",
+  "capital": "Tbilisi",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3744385
+    },
+    {
+      "year": 2020,
+      "population": 3765912
+    },
+    {
+      "year": 2015,
+      "population": 3771132
+    },
+    {
+      "year": 2010,
+      "population": 3836831
+    },
+    {
+      "year": 2000,
+      "population": 4265172
+    },
+    {
+      "year": 1990,
+      "population": 5391636
+    },
+    {
+      "year": 1980,
+      "population": 5145843
+    },
+    {
+      "year": 1970,
+      "population": 4800426
+    }
+  ],
+  "area_km2": 69700,
+  "population_density": 53.7214,
+  "population_growth_rate": 0.9964,
+  "percentage_world_population": 0.05
+}
+{
+  "country": "Germany",
+  "rank": 19,
+  "cca3": "DEU",
+  "capital": "Berlin",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 83369843
+    },
+    {
+      "year": 2020,
+      "population": 83328988
+    },
+    {
+      "year": 2015,
+      "population": 82073226
+    },
+    {
+      "year": 2010,
+      "population": 81325090
+    },
+    {
+      "year": 2000,
+      "population": 81551677
+    },
+    {
+      "year": 1990,
+      "population": 79370196
+    },
+    {
+      "year": 1980,
+      "population": 77786703
+    },
+    {
+      "year": 1970,
+      "population": 78294583
+    }
+  ],
+  "area_km2": 357114,
+  "population_density": 233.4544,
+  "population_growth_rate": 0.9995,
+  "percentage_world_population": 1.05
+}
+{
+  "country": "Ghana",
+  "rank": 47,
+  "cca3": "GHA",
+  "capital": "Accra",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 33475870
+    },
+    {
+      "year": 2020,
+      "population": 32180401
+    },
+    {
+      "year": 2015,
+      "population": 28870939
+    },
+    {
+      "year": 2010,
+      "population": 25574719
+    },
+    {
+      "year": 2000,
+      "population": 19665502
+    },
+    {
+      "year": 1990,
+      "population": 15446982
+    },
+    {
+      "year": 1980,
+      "population": 11865246
+    },
+    {
+      "year": 1970,
+      "population": 8861895
+    }
+  ],
+  "area_km2": 238533,
+  "population_density": 140.3406,
+  "population_growth_rate": 1.0196,
+  "percentage_world_population": 0.42
+}
+{
+  "country": "Gibraltar",
+  "rank": 219,
+  "cca3": "GIB",
+  "capital": "Gibraltar",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 32649
+    },
+    {
+      "year": 2020,
+      "population": 32709
+    },
+    {
+      "year": 2015,
+      "population": 32520
+    },
+    {
+      "year": 2010,
+      "population": 31262
+    },
+    {
+      "year": 2000,
+      "population": 27741
+    },
+    {
+      "year": 1990,
+      "population": 27317
+    },
+    {
+      "year": 1980,
+      "population": 28734
+    },
+    {
+      "year": 1970,
+      "population": 26685
+    }
+  ],
+  "area_km2": 6,
+  "population_density": 5441.5,
+  "population_growth_rate": 0.9994,
+  "percentage_world_population": 0
+}
+{
+  "country": "Greece",
+  "rank": 90,
+  "cca3": "GRC",
+  "capital": "Athens",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10384971
+    },
+    {
+      "year": 2020,
+      "population": 10512232
+    },
+    {
+      "year": 2015,
+      "population": 10806641
+    },
+    {
+      "year": 2010,
+      "population": 11033783
+    },
+    {
+      "year": 2000,
+      "population": 11038109
+    },
+    {
+      "year": 1990,
+      "population": 10302255
+    },
+    {
+      "year": 1980,
+      "population": 9307148
+    },
+    {
+      "year": 1970,
+      "population": 8544873
+    }
+  ],
+  "area_km2": 131990,
+  "population_density": 78.68,
+  "population_growth_rate": 0.9942,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Greenland",
+  "rank": 208,
+  "cca3": "GRL",
+  "capital": "Nuuk",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 56466
+    },
+    {
+      "year": 2020,
+      "population": 56026
+    },
+    {
+      "year": 2015,
+      "population": 55895
+    },
+    {
+      "year": 2010,
+      "population": 56351
+    },
+    {
+      "year": 2000,
+      "population": 56184
+    },
+    {
+      "year": 1990,
+      "population": 55599
+    },
+    {
+      "year": 1980,
+      "population": 50106
+    },
+    {
+      "year": 1970,
+      "population": 45434
+    }
+  ],
+  "area_km2": 2166086,
+  "population_density": 0.0261,
+  "population_growth_rate": 1.004,
+  "percentage_world_population": 0
+}
+{
+  "country": "Grenada",
+  "rank": 193,
+  "cca3": "GRD",
+  "capital": "Saint George's",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 125438
+    },
+    {
+      "year": 2020,
+      "population": 123663
+    },
+    {
+      "year": 2015,
+      "population": 118980
+    },
+    {
+      "year": 2010,
+      "population": 114039
+    },
+    {
+      "year": 2000,
+      "population": 107432
+    },
+    {
+      "year": 1990,
+      "population": 99047
+    },
+    {
+      "year": 1980,
+      "population": 94838
+    },
+    {
+      "year": 1970,
+      "population": 98794
+    }
+  ],
+  "area_km2": 344,
+  "population_density": 364.6453,
+  "population_growth_rate": 1.0066,
+  "percentage_world_population": 0
+}
+{
+  "country": "Guadeloupe",
+  "rank": 178,
+  "cca3": "GLP",
+  "capital": "Basse-Terre",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 395752
+    },
+    {
+      "year": 2020,
+      "population": 395642
+    },
+    {
+      "year": 2015,
+      "population": 399089
+    },
+    {
+      "year": 2010,
+      "population": 403072
+    },
+    {
+      "year": 2000,
+      "population": 424067
+    },
+    {
+      "year": 1990,
+      "population": 391951
+    },
+    {
+      "year": 1980,
+      "population": 334234
+    },
+    {
+      "year": 1970,
+      "population": 318310
+    }
+  ],
+  "area_km2": 1628,
+  "population_density": 243.0909,
+  "population_growth_rate": 0.9992,
+  "percentage_world_population": 0
+}
+{
+  "country": "Guam",
+  "rank": 191,
+  "cca3": "GUM",
+  "capital": "Hagåtña",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 171774
+    },
+    {
+      "year": 2020,
+      "population": 169231
+    },
+    {
+      "year": 2015,
+      "population": 167978
+    },
+    {
+      "year": 2010,
+      "population": 164905
+    },
+    {
+      "year": 2000,
+      "population": 160188
+    },
+    {
+      "year": 1990,
+      "population": 138263
+    },
+    {
+      "year": 1980,
+      "population": 110286
+    },
+    {
+      "year": 1970,
+      "population": 88300
+    }
+  ],
+  "area_km2": 549,
+  "population_density": 312.8852,
+  "population_growth_rate": 1.0073,
+  "percentage_world_population": 0
+}
+{
+  "country": "Guatemala",
+  "rank": 68,
+  "cca3": "GTM",
+  "capital": "Guatemala City",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17843908
+    },
+    {
+      "year": 2020,
+      "population": 17362718
+    },
+    {
+      "year": 2015,
+      "population": 16001107
+    },
+    {
+      "year": 2010,
+      "population": 14543121
+    },
+    {
+      "year": 2000,
+      "population": 11735894
+    },
+    {
+      "year": 1990,
+      "population": 9084780
+    },
+    {
+      "year": 1980,
+      "population": 6987767
+    },
+    {
+      "year": 1970,
+      "population": 5453208
+    }
+  ],
+  "area_km2": 108889,
+  "population_density": 163.8725,
+  "population_growth_rate": 1.0134,
+  "percentage_world_population": 0.22
+}
+{
+  "country": "Guernsey",
+  "rank": 207,
+  "cca3": "GGY",
+  "capital": "Saint Peter Port",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 63301
+    },
+    {
+      "year": 2020,
+      "population": 62794
+    },
+    {
+      "year": 2015,
+      "population": 61629
+    },
+    {
+      "year": 2010,
+      "population": 60782
+    },
+    {
+      "year": 2000,
+      "population": 59114
+    },
+    {
+      "year": 1990,
+      "population": 57727
+    },
+    {
+      "year": 1980,
+      "population": 52860
+    },
+    {
+      "year": 1970,
+      "population": 52656
+    }
+  ],
+  "area_km2": 78,
+  "population_density": 811.5513,
+  "population_growth_rate": 1.0037,
+  "percentage_world_population": 0
+}
+{
+  "country": "Guinea",
+  "rank": 75,
+  "cca3": "GIN",
+  "capital": "Conakry",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 13859341
+    },
+    {
+      "year": 2020,
+      "population": 13205153
+    },
+    {
+      "year": 2015,
+      "population": 11625998
+    },
+    {
+      "year": 2010,
+      "population": 10270728
+    },
+    {
+      "year": 2000,
+      "population": 8336967
+    },
+    {
+      "year": 1990,
+      "population": 6354145
+    },
+    {
+      "year": 1980,
+      "population": 4972609
+    },
+    {
+      "year": 1970,
+      "population": 4222374
+    }
+  ],
+  "area_km2": 245857,
+  "population_density": 56.3716,
+  "population_growth_rate": 1.0242,
+  "percentage_world_population": 0.17
+}
+{
+  "country": "Guinea-Bissau",
+  "rank": 149,
+  "cca3": "GNB",
+  "capital": "Bissau",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2105566
+    },
+    {
+      "year": 2020,
+      "population": 2015828
+    },
+    {
+      "year": 2015,
+      "population": 1788919
+    },
+    {
+      "year": 2010,
+      "population": 1567220
+    },
+    {
+      "year": 2000,
+      "population": 1230849
+    },
+    {
+      "year": 1990,
+      "population": 973551
+    },
+    {
+      "year": 1980,
+      "population": 831462
+    },
+    {
+      "year": 1970,
+      "population": 591663
+    }
+  ],
+  "area_km2": 36125,
+  "population_density": 58.2856,
+  "population_growth_rate": 1.0218,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Guyana",
+  "rank": 164,
+  "cca3": "GUY",
+  "capital": "Georgetown",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 808726
+    },
+    {
+      "year": 2020,
+      "population": 797202
+    },
+    {
+      "year": 2015,
+      "population": 755031
+    },
+    {
+      "year": 2010,
+      "population": 747932
+    },
+    {
+      "year": 2000,
+      "population": 759051
+    },
+    {
+      "year": 1990,
+      "population": 747116
+    },
+    {
+      "year": 1980,
+      "population": 778176
+    },
+    {
+      "year": 1970,
+      "population": 705261
+    }
+  ],
+  "area_km2": 214969,
+  "population_density": 3.7621,
+  "population_growth_rate": 1.0052,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Haiti",
+  "rank": 82,
+  "cca3": "HTI",
+  "capital": "Port-au-Prince",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11584996
+    },
+    {
+      "year": 2020,
+      "population": 11306801
+    },
+    {
+      "year": 2015,
+      "population": 10563757
+    },
+    {
+      "year": 2010,
+      "population": 9842880
+    },
+    {
+      "year": 2000,
+      "population": 8360225
+    },
+    {
+      "year": 1990,
+      "population": 6925331
+    },
+    {
+      "year": 1980,
+      "population": 5646676
+    },
+    {
+      "year": 1970,
+      "population": 4680812
+    }
+  ],
+  "area_km2": 27750,
+  "population_density": 417.4773,
+  "population_growth_rate": 1.012,
+  "percentage_world_population": 0.15
+}
+{
+  "country": "Honduras",
+  "rank": 89,
+  "cca3": "HND",
+  "capital": "Tegucigalpa",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10432860
+    },
+    {
+      "year": 2020,
+      "population": 10121763
+    },
+    {
+      "year": 2015,
+      "population": 9294505
+    },
+    {
+      "year": 2010,
+      "population": 8450933
+    },
+    {
+      "year": 2000,
+      "population": 6656725
+    },
+    {
+      "year": 1990,
+      "population": 5053234
+    },
+    {
+      "year": 1980,
+      "population": 3777990
+    },
+    {
+      "year": 1970,
+      "population": 2782753
+    }
+  ],
+  "area_km2": 112492,
+  "population_density": 92.7431,
+  "population_growth_rate": 1.015,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Hong Kong",
+  "rank": 104,
+  "cca3": "HKG",
+  "capital": "Hong Kong",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 7488865
+    },
+    {
+      "year": 2020,
+      "population": 7500958
+    },
+    {
+      "year": 2015,
+      "population": 7399838
+    },
+    {
+      "year": 2010,
+      "population": 7132438
+    },
+    {
+      "year": 2000,
+      "population": 6731195
+    },
+    {
+      "year": 1990,
+      "population": 5838574
+    },
+    {
+      "year": 1980,
+      "population": 4978544
+    },
+    {
+      "year": 1970,
+      "population": 3955072
+    }
+  ],
+  "area_km2": 1104,
+  "population_density": 6783.3922,
+  "population_growth_rate": 0.9992,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Hungary",
+  "rank": 94,
+  "cca3": "HUN",
+  "capital": "Budapest",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 9967308
+    },
+    {
+      "year": 2020,
+      "population": 9750573
+    },
+    {
+      "year": 2015,
+      "population": 9844246
+    },
+    {
+      "year": 2010,
+      "population": 9986825
+    },
+    {
+      "year": 2000,
+      "population": 10202055
+    },
+    {
+      "year": 1990,
+      "population": 10375989
+    },
+    {
+      "year": 1980,
+      "population": 10698679
+    },
+    {
+      "year": 1970,
+      "population": 10315366
+    }
+  ],
+  "area_km2": 93028,
+  "population_density": 107.1431,
+  "population_growth_rate": 1.0265,
+  "percentage_world_population": 0.12
+}
+{
+  "country": "Iceland",
+  "rank": 179,
+  "cca3": "ISL",
+  "capital": "Reykjavík",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 372899
+    },
+    {
+      "year": 2020,
+      "population": 366669
+    },
+    {
+      "year": 2015,
+      "population": 331060
+    },
+    {
+      "year": 2010,
+      "population": 318333
+    },
+    {
+      "year": 2000,
+      "population": 281462
+    },
+    {
+      "year": 1990,
+      "population": 255019
+    },
+    {
+      "year": 1980,
+      "population": 228263
+    },
+    {
+      "year": 1970,
+      "population": 204468
+    }
+  ],
+  "area_km2": 103000,
+  "population_density": 3.6204,
+  "population_growth_rate": 1.0069,
+  "percentage_world_population": 0
+}
+{
+  "country": "India",
+  "rank": 2,
+  "cca3": "IND",
+  "capital": "New Delhi",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1417173173
+    },
+    {
+      "year": 2020,
+      "population": 1396387127
+    },
+    {
+      "year": 2015,
+      "population": 1322866505
+    },
+    {
+      "year": 2010,
+      "population": 1240613620
+    },
+    {
+      "year": 2000,
+      "population": 1059633675
+    },
+    {
+      "year": 1990,
+      "population": 870452165
+    },
+    {
+      "year": 1980,
+      "population": 696828385
+    },
+    {
+      "year": 1970,
+      "population": 557501301
+    }
+  ],
+  "area_km2": 3287590,
+  "population_density": 431.0675,
+  "population_growth_rate": 1.0068,
+  "percentage_world_population": 17.77
+}
+{
+  "country": "Indonesia",
+  "rank": 4,
+  "cca3": "IDN",
+  "capital": "Jakarta",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 275501339
+    },
+    {
+      "year": 2020,
+      "population": 271857970
+    },
+    {
+      "year": 2015,
+      "population": 259091970
+    },
+    {
+      "year": 2010,
+      "population": 244016173
+    },
+    {
+      "year": 2000,
+      "population": 214072421
+    },
+    {
+      "year": 1990,
+      "population": 182159874
+    },
+    {
+      "year": 1980,
+      "population": 148177096
+    },
+    {
+      "year": 1970,
+      "population": 115228394
+    }
+  ],
+  "area_km2": 1904569,
+  "population_density": 144.6529,
+  "population_growth_rate": 1.0064,
+  "percentage_world_population": 3.45
+}
+{
+  "country": "Iran",
+  "rank": 17,
+  "cca3": "IRN",
+  "capital": "Tehran",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 88550570
+    },
+    {
+      "year": 2020,
+      "population": 87290193
+    },
+    {
+      "year": 2015,
+      "population": 81790841
+    },
+    {
+      "year": 2010,
+      "population": 75373855
+    },
+    {
+      "year": 2000,
+      "population": 65544383
+    },
+    {
+      "year": 1990,
+      "population": 55793629
+    },
+    {
+      "year": 1980,
+      "population": 38520664
+    },
+    {
+      "year": 1970,
+      "population": 28449705
+    }
+  ],
+  "area_km2": 1648195,
+  "population_density": 53.7258,
+  "population_growth_rate": 1.0071,
+  "percentage_world_population": 1.11
+}
+{
+  "country": "Iraq",
+  "rank": 35,
+  "cca3": "IRQ",
+  "capital": "Baghdad",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 44496122
+    },
+    {
+      "year": 2020,
+      "population": 42556984
+    },
+    {
+      "year": 2015,
+      "population": 37757813
+    },
+    {
+      "year": 2010,
+      "population": 31264875
+    },
+    {
+      "year": 2000,
+      "population": 24628858
+    },
+    {
+      "year": 1990,
+      "population": 17658381
+    },
+    {
+      "year": 1980,
+      "population": 13653369
+    },
+    {
+      "year": 1970,
+      "population": 9811347
+    }
+  ],
+  "area_km2": 438317,
+  "population_density": 101.5158,
+  "population_growth_rate": 1.0221,
+  "percentage_world_population": 0.56
+}
+{
+  "country": "Ireland",
+  "rank": 125,
+  "cca3": "IRL",
+  "capital": "Dublin",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5023109
+    },
+    {
+      "year": 2020,
+      "population": 4946119
+    },
+    {
+      "year": 2015,
+      "population": 4665760
+    },
+    {
+      "year": 2010,
+      "population": 4524585
+    },
+    {
+      "year": 2000,
+      "population": 3768950
+    },
+    {
+      "year": 1990,
+      "population": 3485374
+    },
+    {
+      "year": 1980,
+      "population": 3391387
+    },
+    {
+      "year": 1970,
+      "population": 2937637
+    }
+  ],
+  "area_km2": 70273,
+  "population_density": 71.4799,
+  "population_growth_rate": 1.0073,
+  "percentage_world_population": 0.06
+}
+{
+  "country": "Isle of Man",
+  "rank": 202,
+  "cca3": "IMN",
+  "capital": "Douglas",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 84519
+    },
+    {
+      "year": 2020,
+      "population": 84046
+    },
+    {
+      "year": 2015,
+      "population": 83593
+    },
+    {
+      "year": 2010,
+      "population": 83828
+    },
+    {
+      "year": 2000,
+      "population": 75562
+    },
+    {
+      "year": 1990,
+      "population": 68865
+    },
+    {
+      "year": 1980,
+      "population": 64022
+    },
+    {
+      "year": 1970,
+      "population": 55298
+    }
+  ],
+  "area_km2": 572,
+  "population_density": 147.7605,
+  "population_growth_rate": 1.003,
+  "percentage_world_population": 0
+}
+{
+  "country": "Israel",
+  "rank": 98,
+  "cca3": "ISR",
+  "capital": "Jerusalem",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 9038309
+    },
+    {
+      "year": 2020,
+      "population": 8757489
+    },
+    {
+      "year": 2015,
+      "population": 8007778
+    },
+    {
+      "year": 2010,
+      "population": 7328445
+    },
+    {
+      "year": 2000,
+      "population": 6116958
+    },
+    {
+      "year": 1990,
+      "population": 4803254
+    },
+    {
+      "year": 1980,
+      "population": 3744608
+    },
+    {
+      "year": 1970,
+      "population": 2907307
+    }
+  ],
+  "area_km2": 20770,
+  "population_density": 435.1617,
+  "population_growth_rate": 1.0155,
+  "percentage_world_population": 0.11
+}
+{
+  "country": "Italy",
+  "rank": 25,
+  "cca3": "ITA",
+  "capital": "Rome",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 59037474
+    },
+    {
+      "year": 2020,
+      "population": 59500579
+    },
+    {
+      "year": 2015,
+      "population": 60232906
+    },
+    {
+      "year": 2010,
+      "population": 59822450
+    },
+    {
+      "year": 2000,
+      "population": 56966397
+    },
+    {
+      "year": 1990,
+      "population": 56756561
+    },
+    {
+      "year": 1980,
+      "population": 56329482
+    },
+    {
+      "year": 1970,
+      "population": 53324036
+    }
+  ],
+  "area_km2": 301336,
+  "population_density": 195.9191,
+  "population_growth_rate": 0.9966,
+  "percentage_world_population": 0.74
+}
+{
+  "country": "Ivory Coast",
+  "rank": 52,
+  "cca3": "CIV",
+  "capital": "Yamoussoukro",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 28160542
+    },
+    {
+      "year": 2020,
+      "population": 26811790
+    },
+    {
+      "year": 2015,
+      "population": 23596741
+    },
+    {
+      "year": 2010,
+      "population": 21120042
+    },
+    {
+      "year": 2000,
+      "population": 16799670
+    },
+    {
+      "year": 1990,
+      "population": 11910540
+    },
+    {
+      "year": 1980,
+      "population": 8303809
+    },
+    {
+      "year": 1970,
+      "population": 5477086
+    }
+  ],
+  "area_km2": 322463,
+  "population_density": 87.3295,
+  "population_growth_rate": 1.0248,
+  "percentage_world_population": 0.35
+}
+{
+  "country": "Jamaica",
+  "rank": 139,
+  "cca3": "JAM",
+  "capital": "Kingston",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2827377
+    },
+    {
+      "year": 2020,
+      "population": 2820436
+    },
+    {
+      "year": 2015,
+      "population": 2794445
+    },
+    {
+      "year": 2010,
+      "population": 2733896
+    },
+    {
+      "year": 2000,
+      "population": 2612205
+    },
+    {
+      "year": 1990,
+      "population": 2392030
+    },
+    {
+      "year": 1980,
+      "population": 2135546
+    },
+    {
+      "year": 1970,
+      "population": 1859091
+    }
+  ],
+  "area_km2": 10991,
+  "population_density": 257.2447,
+  "population_growth_rate": 0.9999,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Japan",
+  "rank": 11,
+  "cca3": "JPN",
+  "capital": "Tokyo",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 123951692
+    },
+    {
+      "year": 2020,
+      "population": 125244761
+    },
+    {
+      "year": 2015,
+      "population": 127250933
+    },
+    {
+      "year": 2010,
+      "population": 128105431
+    },
+    {
+      "year": 2000,
+      "population": 126803861
+    },
+    {
+      "year": 1990,
+      "population": 123686321
+    },
+    {
+      "year": 1980,
+      "population": 117624196
+    },
+    {
+      "year": 1970,
+      "population": 105416839
+    }
+  ],
+  "area_km2": 377930,
+  "population_density": 327.9753,
+  "population_growth_rate": 0.9947,
+  "percentage_world_population": 1.55
+}
+{
+  "country": "Jersey",
+  "rank": 195,
+  "cca3": "JEY",
+  "capital": "Saint Helier",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 110778
+    },
+    {
+      "year": 2020,
+      "population": 108319
+    },
+    {
+      "year": 2015,
+      "population": 100561
+    },
+    {
+      "year": 2010,
+      "population": 96151
+    },
+    {
+      "year": 2000,
+      "population": 86192
+    },
+    {
+      "year": 1990,
+      "population": 82874
+    },
+    {
+      "year": 1980,
+      "population": 75124
+    },
+    {
+      "year": 1970,
+      "population": 68347
+    }
+  ],
+  "area_km2": 116,
+  "population_density": 954.9828,
+  "population_growth_rate": 1.0106,
+  "percentage_world_population": 0
+}
+{
+  "country": "Jordan",
+  "rank": 83,
+  "cca3": "JOR",
+  "capital": "Amman",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11285869
+    },
+    {
+      "year": 2020,
+      "population": 10928721
+    },
+    {
+      "year": 2015,
+      "population": 9494246
+    },
+    {
+      "year": 2010,
+      "population": 6931258
+    },
+    {
+      "year": 2000,
+      "population": 5056174
+    },
+    {
+      "year": 1990,
+      "population": 3480587
+    },
+    {
+      "year": 1980,
+      "population": 2216903
+    },
+    {
+      "year": 1970,
+      "population": 1557374
+    }
+  ],
+  "area_km2": 89342,
+  "population_density": 126.3221,
+  "population_growth_rate": 1.0123,
+  "percentage_world_population": 0.14
+}
+{
+  "country": "Kazakhstan",
+  "rank": 66,
+  "cca3": "KAZ",
+  "capital": "Nursultan",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 19397998
+    },
+    {
+      "year": 2020,
+      "population": 18979243
+    },
+    {
+      "year": 2015,
+      "population": 17835909
+    },
+    {
+      "year": 2010,
+      "population": 16627837
+    },
+    {
+      "year": 2000,
+      "population": 15236253
+    },
+    {
+      "year": 1990,
+      "population": 16866563
+    },
+    {
+      "year": 1980,
+      "population": 14172710
+    },
+    {
+      "year": 1970,
+      "population": 12265305
+    }
+  ],
+  "area_km2": 2724900,
+  "population_density": 7.1188,
+  "population_growth_rate": 1.0105,
+  "percentage_world_population": 0.24
+}
+{
+  "country": "Kenya",
+  "rank": 27,
+  "cca3": "KEN",
+  "capital": "Nairobi",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 54027487
+    },
+    {
+      "year": 2020,
+      "population": 51985780
+    },
+    {
+      "year": 2015,
+      "population": 46851488
+    },
+    {
+      "year": 2010,
+      "population": 41517895
+    },
+    {
+      "year": 2000,
+      "population": 30851606
+    },
+    {
+      "year": 1990,
+      "population": 23162269
+    },
+    {
+      "year": 1980,
+      "population": 16187124
+    },
+    {
+      "year": 1970,
+      "population": 11473087
+    }
+  ],
+  "area_km2": 580367,
+  "population_density": 93.0919,
+  "population_growth_rate": 1.0193,
+  "percentage_world_population": 0.68
+}
+{
+  "country": "Kiribati",
+  "rank": 192,
+  "cca3": "KIR",
+  "capital": "Tarawa",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 131232
+    },
+    {
+      "year": 2020,
+      "population": 126463
+    },
+    {
+      "year": 2015,
+      "population": 116707
+    },
+    {
+      "year": 2010,
+      "population": 107995
+    },
+    {
+      "year": 2000,
+      "population": 88826
+    },
+    {
+      "year": 1990,
+      "population": 75124
+    },
+    {
+      "year": 1980,
+      "population": 60813
+    },
+    {
+      "year": 1970,
+      "population": 57437
+    }
+  ],
+  "area_km2": 811,
+  "population_density": 161.815,
+  "population_growth_rate": 1.0183,
+  "percentage_world_population": 0
+}
+{
+  "country": "Kuwait",
+  "rank": 129,
+  "cca3": "KWT",
+  "capital": "Kuwait City",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4268873
+    },
+    {
+      "year": 2020,
+      "population": 4360444
+    },
+    {
+      "year": 2015,
+      "population": 3908743
+    },
+    {
+      "year": 2010,
+      "population": 2943356
+    },
+    {
+      "year": 2000,
+      "population": 1934901
+    },
+    {
+      "year": 1990,
+      "population": 1674938
+    },
+    {
+      "year": 1980,
+      "population": 1493870
+    },
+    {
+      "year": 1970,
+      "population": 802786
+    }
+  ],
+  "area_km2": 17818,
+  "population_density": 239.5821,
+  "population_growth_rate": 1.0044,
+  "percentage_world_population": 0.05
+}
+{
+  "country": "Kyrgyzstan",
+  "rank": 110,
+  "cca3": "KGZ",
+  "capital": "Bishkek",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6630623
+    },
+    {
+      "year": 2020,
+      "population": 6424874
+    },
+    {
+      "year": 2015,
+      "population": 5914980
+    },
+    {
+      "year": 2010,
+      "population": 5483774
+    },
+    {
+      "year": 2000,
+      "population": 4935182
+    },
+    {
+      "year": 1990,
+      "population": 4394734
+    },
+    {
+      "year": 1980,
+      "population": 3691209
+    },
+    {
+      "year": 1970,
+      "population": 3016384
+    }
+  ],
+  "area_km2": 199951,
+  "population_density": 33.1612,
+  "population_growth_rate": 1.0158,
+  "percentage_world_population": 0.08
+}
+{
+  "country": "Laos",
+  "rank": 103,
+  "cca3": "LAO",
+  "capital": "Vientiane",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 7529475
+    },
+    {
+      "year": 2020,
+      "population": 7319399
+    },
+    {
+      "year": 2015,
+      "population": 6787419
+    },
+    {
+      "year": 2010,
+      "population": 6323418
+    },
+    {
+      "year": 2000,
+      "population": 5430853
+    },
+    {
+      "year": 1990,
+      "population": 4314443
+    },
+    {
+      "year": 1980,
+      "population": 3297519
+    },
+    {
+      "year": 1970,
+      "population": 2675283
+    }
+  ],
+  "area_km2": 236800,
+  "population_density": 31.7968,
+  "population_growth_rate": 1.0141,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Latvia",
+  "rank": 151,
+  "cca3": "LVA",
+  "capital": "Riga",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1850651
+    },
+    {
+      "year": 2020,
+      "population": 1897052
+    },
+    {
+      "year": 2015,
+      "population": 1991955
+    },
+    {
+      "year": 2010,
+      "population": 2101530
+    },
+    {
+      "year": 2000,
+      "population": 2392530
+    },
+    {
+      "year": 1990,
+      "population": 2689391
+    },
+    {
+      "year": 1980,
+      "population": 2572037
+    },
+    {
+      "year": 1970,
+      "population": 2397414
+    }
+  ],
+  "area_km2": 64559,
+  "population_density": 28.666,
+  "population_growth_rate": 0.9876,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Lebanon",
+  "rank": 119,
+  "cca3": "LBN",
+  "capital": "Beirut",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5489739
+    },
+    {
+      "year": 2020,
+      "population": 5662923
+    },
+    {
+      "year": 2015,
+      "population": 6398940
+    },
+    {
+      "year": 2010,
+      "population": 4995800
+    },
+    {
+      "year": 2000,
+      "population": 4320642
+    },
+    {
+      "year": 1990,
+      "population": 3593700
+    },
+    {
+      "year": 1980,
+      "population": 2963702
+    },
+    {
+      "year": 1970,
+      "population": 2381791
+    }
+  ],
+  "area_km2": 10452,
+  "population_density": 525.2334,
+  "population_growth_rate": 0.9816,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Lesotho",
+  "rank": 147,
+  "cca3": "LSO",
+  "capital": "Maseru",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2305825
+    },
+    {
+      "year": 2020,
+      "population": 2254100
+    },
+    {
+      "year": 2015,
+      "population": 2118521
+    },
+    {
+      "year": 2010,
+      "population": 2022747
+    },
+    {
+      "year": 2000,
+      "population": 1998630
+    },
+    {
+      "year": 1990,
+      "population": 1798997
+    },
+    {
+      "year": 1980,
+      "population": 1407672
+    },
+    {
+      "year": 1970,
+      "population": 1023481
+    }
+  ],
+  "area_km2": 30355,
+  "population_density": 75.962,
+  "population_growth_rate": 1.0107,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Liberia",
+  "rank": 121,
+  "cca3": "LBR",
+  "capital": "Monrovia",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5302681
+    },
+    {
+      "year": 2020,
+      "population": 5087584
+    },
+    {
+      "year": 2015,
+      "population": 4612329
+    },
+    {
+      "year": 2010,
+      "population": 4019956
+    },
+    {
+      "year": 2000,
+      "population": 2895224
+    },
+    {
+      "year": 1990,
+      "population": 2209731
+    },
+    {
+      "year": 1980,
+      "population": 1932169
+    },
+    {
+      "year": 1970,
+      "population": 1463563
+    }
+  ],
+  "area_km2": 111369,
+  "population_density": 47.6136,
+  "population_growth_rate": 1.021,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Libya",
+  "rank": 107,
+  "cca3": "LBY",
+  "capital": "Tripoli",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6812341
+    },
+    {
+      "year": 2020,
+      "population": 6653942
+    },
+    {
+      "year": 2015,
+      "population": 6192235
+    },
+    {
+      "year": 2010,
+      "population": 6491988
+    },
+    {
+      "year": 2000,
+      "population": 5154790
+    },
+    {
+      "year": 1990,
+      "population": 4236983
+    },
+    {
+      "year": 1980,
+      "population": 2962720
+    },
+    {
+      "year": 1970,
+      "population": 1909177
+    }
+  ],
+  "area_km2": 1759540,
+  "population_density": 3.8717,
+  "population_growth_rate": 1.0114,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Liechtenstein",
+  "rank": 216,
+  "cca3": "LIE",
+  "capital": "Vaduz",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 39327
+    },
+    {
+      "year": 2020,
+      "population": 38756
+    },
+    {
+      "year": 2015,
+      "population": 37355
+    },
+    {
+      "year": 2010,
+      "population": 35926
+    },
+    {
+      "year": 2000,
+      "population": 33026
+    },
+    {
+      "year": 1990,
+      "population": 28765
+    },
+    {
+      "year": 1980,
+      "population": 25003
+    },
+    {
+      "year": 1970,
+      "population": 21089
+    }
+  ],
+  "area_km2": 160,
+  "population_density": 245.7937,
+  "population_growth_rate": 1.0074,
+  "percentage_world_population": 0
+}
+{
+  "country": "Lithuania",
+  "rank": 141,
+  "cca3": "LTU",
+  "capital": "Vilnius",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2750055
+    },
+    {
+      "year": 2020,
+      "population": 2820267
+    },
+    {
+      "year": 2015,
+      "population": 2963765
+    },
+    {
+      "year": 2010,
+      "population": 3139019
+    },
+    {
+      "year": 2000,
+      "population": 3599637
+    },
+    {
+      "year": 1990,
+      "population": 3785847
+    },
+    {
+      "year": 1980,
+      "population": 3521206
+    },
+    {
+      "year": 1970,
+      "population": 3210147
+    }
+  ],
+  "area_km2": 65300,
+  "population_density": 42.1142,
+  "population_growth_rate": 0.9869,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Luxembourg",
+  "rank": 168,
+  "cca3": "LUX",
+  "capital": "Luxembourg",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 647599
+    },
+    {
+      "year": 2020,
+      "population": 630399
+    },
+    {
+      "year": 2015,
+      "population": 569408
+    },
+    {
+      "year": 2010,
+      "population": 507070
+    },
+    {
+      "year": 2000,
+      "population": 435628
+    },
+    {
+      "year": 1990,
+      "population": 381267
+    },
+    {
+      "year": 1980,
+      "population": 363741
+    },
+    {
+      "year": 1970,
+      "population": 339342
+    }
+  ],
+  "area_km2": 2586,
+  "population_density": 250.425,
+  "population_growth_rate": 1.0129,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Macau",
+  "rank": 167,
+  "cca3": "MAC",
+  "capital": "Concelho de Macau",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 695168
+    },
+    {
+      "year": 2020,
+      "population": 676283
+    },
+    {
+      "year": 2015,
+      "population": 615239
+    },
+    {
+      "year": 2010,
+      "population": 557297
+    },
+    {
+      "year": 2000,
+      "population": 431896
+    },
+    {
+      "year": 1990,
+      "population": 350227
+    },
+    {
+      "year": 1980,
+      "population": 245332
+    },
+    {
+      "year": 1970,
+      "population": 247284
+    }
+  ],
+  "area_km2": 30,
+  "population_density": 23172.2667,
+  "population_growth_rate": 1.0125,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Madagascar",
+  "rank": 50,
+  "cca3": "MDG",
+  "capital": "Antananarivo",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 29611714
+    },
+    {
+      "year": 2020,
+      "population": 28225177
+    },
+    {
+      "year": 2015,
+      "population": 24850912
+    },
+    {
+      "year": 2010,
+      "population": 21731053
+    },
+    {
+      "year": 2000,
+      "population": 16216431
+    },
+    {
+      "year": 1990,
+      "population": 11882762
+    },
+    {
+      "year": 1980,
+      "population": 8948162
+    },
+    {
+      "year": 1970,
+      "population": 6639751
+    }
+  ],
+  "area_km2": 587041,
+  "population_density": 50.4423,
+  "population_growth_rate": 1.0241,
+  "percentage_world_population": 0.37
+}
+{
+  "country": "Malawi",
+  "rank": 62,
+  "cca3": "MWI",
+  "capital": "Lilongwe",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 20405317
+    },
+    {
+      "year": 2020,
+      "population": 19377061
+    },
+    {
+      "year": 2015,
+      "population": 16938942
+    },
+    {
+      "year": 2010,
+      "population": 14718422
+    },
+    {
+      "year": 2000,
+      "population": 11229387
+    },
+    {
+      "year": 1990,
+      "population": 9539665
+    },
+    {
+      "year": 1980,
+      "population": 6267369
+    },
+    {
+      "year": 1970,
+      "population": 4625141
+    }
+  ],
+  "area_km2": 118484,
+  "population_density": 172.22,
+  "population_growth_rate": 1.0259,
+  "percentage_world_population": 0.26
+}
+{
+  "country": "Malaysia",
+  "rank": 45,
+  "cca3": "MYS",
+  "capital": "Kuala Lumpur",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 33938221
+    },
+    {
+      "year": 2020,
+      "population": 33199993
+    },
+    {
+      "year": 2015,
+      "population": 31068833
+    },
+    {
+      "year": 2010,
+      "population": 28717731
+    },
+    {
+      "year": 2000,
+      "population": 22945150
+    },
+    {
+      "year": 1990,
+      "population": 17517054
+    },
+    {
+      "year": 1980,
+      "population": 13215707
+    },
+    {
+      "year": 1970,
+      "population": 10306508
+    }
+  ],
+  "area_km2": 330803,
+  "population_density": 102.5934,
+  "population_growth_rate": 1.0109,
+  "percentage_world_population": 0.43
+}
+{
+  "country": "Maldives",
+  "rank": 174,
+  "cca3": "MDV",
+  "capital": "Malé",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 523787
+    },
+    {
+      "year": 2020,
+      "population": 514438
+    },
+    {
+      "year": 2015,
+      "population": 435582
+    },
+    {
+      "year": 2010,
+      "population": 361575
+    },
+    {
+      "year": 2000,
+      "population": 282507
+    },
+    {
+      "year": 1990,
+      "population": 224957
+    },
+    {
+      "year": 1980,
+      "population": 164887
+    },
+    {
+      "year": 1970,
+      "population": 123243
+    }
+  ],
+  "area_km2": 300,
+  "population_density": 1745.9567,
+  "population_growth_rate": 1.0045,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Mali",
+  "rank": 59,
+  "cca3": "MLI",
+  "capital": "Bamako",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 22593590
+    },
+    {
+      "year": 2020,
+      "population": 21224040
+    },
+    {
+      "year": 2015,
+      "population": 18112907
+    },
+    {
+      "year": 2010,
+      "population": 15529181
+    },
+    {
+      "year": 2000,
+      "population": 11239101
+    },
+    {
+      "year": 1990,
+      "population": 8945026
+    },
+    {
+      "year": 1980,
+      "population": 7372581
+    },
+    {
+      "year": 1970,
+      "population": 6153587
+    }
+  ],
+  "area_km2": 1240192,
+  "population_density": 18.2178,
+  "population_growth_rate": 1.0314,
+  "percentage_world_population": 0.28
+}
+{
+  "country": "Malta",
+  "rank": 173,
+  "cca3": "MLT",
+  "capital": "Valletta",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 533286
+    },
+    {
+      "year": 2020,
+      "population": 515357
+    },
+    {
+      "year": 2015,
+      "population": 456579
+    },
+    {
+      "year": 2010,
+      "population": 418755
+    },
+    {
+      "year": 2000,
+      "population": 399212
+    },
+    {
+      "year": 1990,
+      "population": 365392
+    },
+    {
+      "year": 1980,
+      "population": 333587
+    },
+    {
+      "year": 1970,
+      "population": 315414
+    }
+  ],
+  "area_km2": 316,
+  "population_density": 1687.6139,
+  "population_growth_rate": 1.0124,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Marshall Islands",
+  "rank": 215,
+  "cca3": "MHL",
+  "capital": "Majuro",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 41569
+    },
+    {
+      "year": 2020,
+      "population": 43413
+    },
+    {
+      "year": 2015,
+      "population": 49410
+    },
+    {
+      "year": 2010,
+      "population": 53416
+    },
+    {
+      "year": 2000,
+      "population": 54224
+    },
+    {
+      "year": 1990,
+      "population": 46047
+    },
+    {
+      "year": 1980,
+      "population": 31988
+    },
+    {
+      "year": 1970,
+      "population": 23969
+    }
+  ],
+  "area_km2": 181,
+  "population_density": 229.663,
+  "population_growth_rate": 0.9886,
+  "percentage_world_population": 0
+}
+{
+  "country": "Martinique",
+  "rank": 180,
+  "cca3": "MTQ",
+  "capital": "Fort-de-France",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 367507
+    },
+    {
+      "year": 2020,
+      "population": 370391
+    },
+    {
+      "year": 2015,
+      "population": 383515
+    },
+    {
+      "year": 2010,
+      "population": 392181
+    },
+    {
+      "year": 2000,
+      "population": 432543
+    },
+    {
+      "year": 1990,
+      "population": 374271
+    },
+    {
+      "year": 1980,
+      "population": 333786
+    },
+    {
+      "year": 1970,
+      "population": 326428
+    }
+  ],
+  "area_km2": 1128,
+  "population_density": 325.8041,
+  "population_growth_rate": 0.9965,
+  "percentage_world_population": 0
+}
+{
+  "country": "Mauritania",
+  "rank": 126,
+  "cca3": "MRT",
+  "capital": "Nouakchott",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4736139
+    },
+    {
+      "year": 2020,
+      "population": 4498604
+    },
+    {
+      "year": 2015,
+      "population": 3946220
+    },
+    {
+      "year": 2010,
+      "population": 3419461
+    },
+    {
+      "year": 2000,
+      "population": 2695003
+    },
+    {
+      "year": 1990,
+      "population": 2006027
+    },
+    {
+      "year": 1980,
+      "population": 1506694
+    },
+    {
+      "year": 1970,
+      "population": 1122198
+    }
+  ],
+  "area_km2": 1030700,
+  "population_density": 4.5951,
+  "population_growth_rate": 1.0263,
+  "percentage_world_population": 0.06
+}
+{
+  "country": "Mauritius",
+  "rank": 157,
+  "cca3": "MUS",
+  "capital": "Port Louis",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1299469
+    },
+    {
+      "year": 2020,
+      "population": 1297828
+    },
+    {
+      "year": 2015,
+      "population": 1293153
+    },
+    {
+      "year": 2010,
+      "population": 1283330
+    },
+    {
+      "year": 2000,
+      "population": 1215930
+    },
+    {
+      "year": 1990,
+      "population": 1090290
+    },
+    {
+      "year": 1980,
+      "population": 954865
+    },
+    {
+      "year": 1970,
+      "population": 830115
+    }
+  ],
+  "area_km2": 2040,
+  "population_density": 636.9946,
+  "population_growth_rate": 1.0004,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Mayotte",
+  "rank": 182,
+  "cca3": "MYT",
+  "capital": "Mamoudzou",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 326101
+    },
+    {
+      "year": 2020,
+      "population": 305587
+    },
+    {
+      "year": 2015,
+      "population": 249545
+    },
+    {
+      "year": 2010,
+      "population": 211786
+    },
+    {
+      "year": 2000,
+      "population": 159215
+    },
+    {
+      "year": 1990,
+      "population": 92659
+    },
+    {
+      "year": 1980,
+      "population": 52233
+    },
+    {
+      "year": 1970,
+      "population": 35383
+    }
+  ],
+  "area_km2": 374,
+  "population_density": 871.9278,
+  "population_growth_rate": 1.0319,
+  "percentage_world_population": 0
+}
+{
+  "country": "Mexico",
+  "rank": 10,
+  "cca3": "MEX",
+  "capital": "Mexico City",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 127504125
+    },
+    {
+      "year": 2020,
+      "population": 125998302
+    },
+    {
+      "year": 2015,
+      "population": 120149897
+    },
+    {
+      "year": 2010,
+      "population": 112532401
+    },
+    {
+      "year": 2000,
+      "population": 97873442
+    },
+    {
+      "year": 1990,
+      "population": 81720428
+    },
+    {
+      "year": 1980,
+      "population": 67705186
+    },
+    {
+      "year": 1970,
+      "population": 50289306
+    }
+  ],
+  "area_km2": 1964375,
+  "population_density": 64.9082,
+  "population_growth_rate": 1.0063,
+  "percentage_world_population": 1.6
+}
+{
+  "country": "Micronesia",
+  "rank": 194,
+  "cca3": "FSM",
+  "capital": "Palikir",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 114164
+    },
+    {
+      "year": 2020,
+      "population": 112106
+    },
+    {
+      "year": 2015,
+      "population": 109462
+    },
+    {
+      "year": 2010,
+      "population": 107588
+    },
+    {
+      "year": 2000,
+      "population": 111709
+    },
+    {
+      "year": 1990,
+      "population": 98603
+    },
+    {
+      "year": 1980,
+      "population": 76299
+    },
+    {
+      "year": 1970,
+      "population": 58989
+    }
+  ],
+  "area_km2": 702,
+  "population_density": 162.6268,
+  "population_growth_rate": 1.0091,
+  "percentage_world_population": 0
+}
+{
+  "country": "Moldova",
+  "rank": 135,
+  "cca3": "MDA",
+  "capital": "Chisinau",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3272996
+    },
+    {
+      "year": 2020,
+      "population": 3084847
+    },
+    {
+      "year": 2015,
+      "population": 3277388
+    },
+    {
+      "year": 2010,
+      "population": 3678186
+    },
+    {
+      "year": 2000,
+      "population": 4251573
+    },
+    {
+      "year": 1990,
+      "population": 4480199
+    },
+    {
+      "year": 1980,
+      "population": 4103240
+    },
+    {
+      "year": 1970,
+      "population": 3711140
+    }
+  ],
+  "area_km2": 33846,
+  "population_density": 96.7026,
+  "population_growth_rate": 1.0691,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Monaco",
+  "rank": 217,
+  "cca3": "MCO",
+  "capital": "Monaco",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 36469
+    },
+    {
+      "year": 2020,
+      "population": 36922
+    },
+    {
+      "year": 2015,
+      "population": 36760
+    },
+    {
+      "year": 2010,
+      "population": 33178
+    },
+    {
+      "year": 2000,
+      "population": 32465
+    },
+    {
+      "year": 1990,
+      "population": 30329
+    },
+    {
+      "year": 1980,
+      "population": 27076
+    },
+    {
+      "year": 1970,
+      "population": 24270
+    }
+  ],
+  "area_km2": 2,
+  "population_density": 18234.5,
+  "population_growth_rate": 0.9941,
+  "percentage_world_population": 0
+}
+{
+  "country": "Mongolia",
+  "rank": 134,
+  "cca3": "MNG",
+  "capital": "Ulaanbaatar",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3398366
+    },
+    {
+      "year": 2020,
+      "population": 3294335
+    },
+    {
+      "year": 2015,
+      "population": 2964749
+    },
+    {
+      "year": 2010,
+      "population": 2702520
+    },
+    {
+      "year": 2000,
+      "population": 2450979
+    },
+    {
+      "year": 1990,
+      "population": 2161433
+    },
+    {
+      "year": 1980,
+      "population": 1697780
+    },
+    {
+      "year": 1970,
+      "population": 1293880
+    }
+  ],
+  "area_km2": 1564110,
+  "population_density": 2.1727,
+  "population_growth_rate": 1.0151,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Montenegro",
+  "rank": 169,
+  "cca3": "MNE",
+  "capital": "Podgorica",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 627082
+    },
+    {
+      "year": 2020,
+      "population": 629048
+    },
+    {
+      "year": 2015,
+      "population": 633966
+    },
+    {
+      "year": 2010,
+      "population": 631044
+    },
+    {
+      "year": 2000,
+      "population": 633324
+    },
+    {
+      "year": 1990,
+      "population": 621442
+    },
+    {
+      "year": 1980,
+      "population": 589324
+    },
+    {
+      "year": 1970,
+      "population": 530268
+    }
+  ],
+  "area_km2": 13812,
+  "population_density": 45.4012,
+  "population_growth_rate": 0.9988,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Montserrat",
+  "rank": 230,
+  "cca3": "MSR",
+  "capital": "Brades",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4390
+    },
+    {
+      "year": 2020,
+      "population": 4500
+    },
+    {
+      "year": 2015,
+      "population": 5059
+    },
+    {
+      "year": 2010,
+      "population": 4938
+    },
+    {
+      "year": 2000,
+      "population": 5138
+    },
+    {
+      "year": 1990,
+      "population": 10805
+    },
+    {
+      "year": 1980,
+      "population": 11452
+    },
+    {
+      "year": 1970,
+      "population": 11402
+    }
+  ],
+  "area_km2": 102,
+  "population_density": 43.0392,
+  "population_growth_rate": 0.9939,
+  "percentage_world_population": 0
+}
+{
+  "country": "Morocco",
+  "rank": 40,
+  "cca3": "MAR",
+  "capital": "Rabat",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 37457971
+    },
+    {
+      "year": 2020,
+      "population": 36688772
+    },
+    {
+      "year": 2015,
+      "population": 34680458
+    },
+    {
+      "year": 2010,
+      "population": 32464865
+    },
+    {
+      "year": 2000,
+      "population": 28554415
+    },
+    {
+      "year": 1990,
+      "population": 24570814
+    },
+    {
+      "year": 1980,
+      "population": 19678444
+    },
+    {
+      "year": 1970,
+      "population": 15274351
+    }
+  ],
+  "area_km2": 446550,
+  "population_density": 83.883,
+  "population_growth_rate": 1.0103,
+  "percentage_world_population": 0.47
+}
+{
+  "country": "Mozambique",
+  "rank": 48,
+  "cca3": "MOZ",
+  "capital": "Maputo",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 32969517
+    },
+    {
+      "year": 2020,
+      "population": 31178239
+    },
+    {
+      "year": 2015,
+      "population": 26843246
+    },
+    {
+      "year": 2010,
+      "population": 23073723
+    },
+    {
+      "year": 2000,
+      "population": 17768505
+    },
+    {
+      "year": 1990,
+      "population": 13303459
+    },
+    {
+      "year": 1980,
+      "population": 11413587
+    },
+    {
+      "year": 1970,
+      "population": 8411676
+    }
+  ],
+  "area_km2": 801590,
+  "population_density": 41.1302,
+  "population_growth_rate": 1.0278,
+  "percentage_world_population": 0.41
+}
+{
+  "country": "Myanmar",
+  "rank": 26,
+  "cca3": "MMR",
+  "capital": "Nay Pyi Taw",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 54179306
+    },
+    {
+      "year": 2020,
+      "population": 53423198
+    },
+    {
+      "year": 2015,
+      "population": 51483949
+    },
+    {
+      "year": 2010,
+      "population": 49390988
+    },
+    {
+      "year": 2000,
+      "population": 45538332
+    },
+    {
+      "year": 1990,
+      "population": 40099553
+    },
+    {
+      "year": 1980,
+      "population": 33465781
+    },
+    {
+      "year": 1970,
+      "population": 27284112
+    }
+  ],
+  "area_km2": 676578,
+  "population_density": 80.0784,
+  "population_growth_rate": 1.0071,
+  "percentage_world_population": 0.68
+}
+{
+  "country": "Namibia",
+  "rank": 145,
+  "cca3": "NAM",
+  "capital": "Windhoek",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2567012
+    },
+    {
+      "year": 2020,
+      "population": 2489098
+    },
+    {
+      "year": 2015,
+      "population": 2282704
+    },
+    {
+      "year": 2010,
+      "population": 2099271
+    },
+    {
+      "year": 2000,
+      "population": 1819141
+    },
+    {
+      "year": 1990,
+      "population": 1369011
+    },
+    {
+      "year": 1980,
+      "population": 975994
+    },
+    {
+      "year": 1970,
+      "population": 754467
+    }
+  ],
+  "area_km2": 825615,
+  "population_density": 3.1092,
+  "population_growth_rate": 1.0146,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Nauru",
+  "rank": 225,
+  "cca3": "NRU",
+  "capital": "Yaren",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 12668
+    },
+    {
+      "year": 2020,
+      "population": 12315
+    },
+    {
+      "year": 2015,
+      "population": 11185
+    },
+    {
+      "year": 2010,
+      "population": 10241
+    },
+    {
+      "year": 2000,
+      "population": 10377
+    },
+    {
+      "year": 1990,
+      "population": 9598
+    },
+    {
+      "year": 1980,
+      "population": 7635
+    },
+    {
+      "year": 1970,
+      "population": 6663
+    }
+  ],
+  "area_km2": 21,
+  "population_density": 603.2381,
+  "population_growth_rate": 1.0125,
+  "percentage_world_population": 0
+}
+{
+  "country": "Nepal",
+  "rank": 49,
+  "cca3": "NPL",
+  "capital": "Kathmandu",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 30547580
+    },
+    {
+      "year": 2020,
+      "population": 29348627
+    },
+    {
+      "year": 2015,
+      "population": 27610325
+    },
+    {
+      "year": 2010,
+      "population": 27161567
+    },
+    {
+      "year": 2000,
+      "population": 24559500
+    },
+    {
+      "year": 1990,
+      "population": 19616530
+    },
+    {
+      "year": 1980,
+      "population": 15600442
+    },
+    {
+      "year": 1970,
+      "population": 12501285
+    }
+  ],
+  "area_km2": 147181,
+  "population_density": 207.5511,
+  "population_growth_rate": 1.0171,
+  "percentage_world_population": 0.38
+}
+{
+  "country": "Netherlands",
+  "rank": 71,
+  "cca3": "NLD",
+  "capital": "Amsterdam",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17564014
+    },
+    {
+      "year": 2020,
+      "population": 17434557
+    },
+    {
+      "year": 2015,
+      "population": 17041107
+    },
+    {
+      "year": 2010,
+      "population": 16617116
+    },
+    {
+      "year": 2000,
+      "population": 15899135
+    },
+    {
+      "year": 1990,
+      "population": 14944548
+    },
+    {
+      "year": 1980,
+      "population": 14130387
+    },
+    {
+      "year": 1970,
+      "population": 13037686
+    }
+  ],
+  "area_km2": 41850,
+  "population_density": 419.6897,
+  "population_growth_rate": 1.0036,
+  "percentage_world_population": 0.22
+}
+{
+  "country": "New Caledonia",
+  "rank": 185,
+  "cca3": "NCL",
+  "capital": "Nouméa",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 289950
+    },
+    {
+      "year": 2020,
+      "population": 286403
+    },
+    {
+      "year": 2015,
+      "population": 283032
+    },
+    {
+      "year": 2010,
+      "population": 261426
+    },
+    {
+      "year": 2000,
+      "population": 221537
+    },
+    {
+      "year": 1990,
+      "population": 177264
+    },
+    {
+      "year": 1980,
+      "population": 148599
+    },
+    {
+      "year": 1970,
+      "population": 110982
+    }
+  ],
+  "area_km2": 18575,
+  "population_density": 15.6097,
+  "population_growth_rate": 1.0075,
+  "percentage_world_population": 0
+}
+{
+  "country": "New Zealand",
+  "rank": 123,
+  "cca3": "NZL",
+  "capital": "Wellington",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5185288
+    },
+    {
+      "year": 2020,
+      "population": 5061133
+    },
+    {
+      "year": 2015,
+      "population": 4590590
+    },
+    {
+      "year": 2010,
+      "population": 4346338
+    },
+    {
+      "year": 2000,
+      "population": 3855266
+    },
+    {
+      "year": 1990,
+      "population": 3397389
+    },
+    {
+      "year": 1980,
+      "population": 3147168
+    },
+    {
+      "year": 1970,
+      "population": 2824061
+    }
+  ],
+  "area_km2": 270467,
+  "population_density": 19.1716,
+  "population_growth_rate": 1.0108,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Nicaragua",
+  "rank": 106,
+  "cca3": "NIC",
+  "capital": "Managua",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6948392
+    },
+    {
+      "year": 2020,
+      "population": 6755895
+    },
+    {
+      "year": 2015,
+      "population": 6298598
+    },
+    {
+      "year": 2010,
+      "population": 5855734
+    },
+    {
+      "year": 2000,
+      "population": 5123222
+    },
+    {
+      "year": 1990,
+      "population": 4227820
+    },
+    {
+      "year": 1980,
+      "population": 3303309
+    },
+    {
+      "year": 1970,
+      "population": 2444767
+    }
+  ],
+  "area_km2": 130373,
+  "population_density": 53.2962,
+  "population_growth_rate": 1.0143,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Niger",
+  "rank": 54,
+  "cca3": "NER",
+  "capital": "Niamey",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 26207977
+    },
+    {
+      "year": 2020,
+      "population": 24333639
+    },
+    {
+      "year": 2015,
+      "population": 20128124
+    },
+    {
+      "year": 2010,
+      "population": 16647543
+    },
+    {
+      "year": 2000,
+      "population": 11622665
+    },
+    {
+      "year": 1990,
+      "population": 8370647
+    },
+    {
+      "year": 1980,
+      "population": 6173177
+    },
+    {
+      "year": 1970,
+      "population": 4669708
+    }
+  ],
+  "area_km2": 1267000,
+  "population_density": 20.6851,
+  "population_growth_rate": 1.0378,
+  "percentage_world_population": 0.33
+}
+{
+  "country": "Nigeria",
+  "rank": 6,
+  "cca3": "NGA",
+  "capital": "Abuja",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 218541212
+    },
+    {
+      "year": 2020,
+      "population": 208327405
+    },
+    {
+      "year": 2015,
+      "population": 183995785
+    },
+    {
+      "year": 2010,
+      "population": 160952853
+    },
+    {
+      "year": 2000,
+      "population": 122851984
+    },
+    {
+      "year": 1990,
+      "population": 95214257
+    },
+    {
+      "year": 1980,
+      "population": 72951439
+    },
+    {
+      "year": 1970,
+      "population": 55569264
+    }
+  ],
+  "area_km2": 923768,
+  "population_density": 236.5759,
+  "population_growth_rate": 1.0241,
+  "percentage_world_population": 2.74
+}
+{
+  "country": "Niue",
+  "rank": 232,
+  "cca3": "NIU",
+  "capital": "Alofi",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1934
+    },
+    {
+      "year": 2020,
+      "population": 1942
+    },
+    {
+      "year": 2015,
+      "population": 1847
+    },
+    {
+      "year": 2010,
+      "population": 1812
+    },
+    {
+      "year": 2000,
+      "population": 2074
+    },
+    {
+      "year": 1990,
+      "population": 2533
+    },
+    {
+      "year": 1980,
+      "population": 3637
+    },
+    {
+      "year": 1970,
+      "population": 5185
+    }
+  ],
+  "area_km2": 260,
+  "population_density": 7.4385,
+  "population_growth_rate": 0.9985,
+  "percentage_world_population": 0
+}
+{
+  "country": "North Korea",
+  "rank": 56,
+  "cca3": "PRK",
+  "capital": "Pyongyang",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 26069416
+    },
+    {
+      "year": 2020,
+      "population": 25867467
+    },
+    {
+      "year": 2015,
+      "population": 25258015
+    },
+    {
+      "year": 2010,
+      "population": 24686435
+    },
+    {
+      "year": 2000,
+      "population": 23367059
+    },
+    {
+      "year": 1990,
+      "population": 20799523
+    },
+    {
+      "year": 1980,
+      "population": 17973650
+    },
+    {
+      "year": 1970,
+      "population": 14996879
+    }
+  ],
+  "area_km2": 120538,
+  "population_density": 216.2755,
+  "population_growth_rate": 1.0038,
+  "percentage_world_population": 0.33
+}
+{
+  "country": "North Macedonia",
+  "rank": 150,
+  "cca3": "MKD",
+  "capital": "Skopje",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2093599
+    },
+    {
+      "year": 2020,
+      "population": 2111072
+    },
+    {
+      "year": 2015,
+      "population": 2107962
+    },
+    {
+      "year": 2010,
+      "population": 2093828
+    },
+    {
+      "year": 2000,
+      "population": 2037936
+    },
+    {
+      "year": 1990,
+      "population": 2044174
+    },
+    {
+      "year": 1980,
+      "population": 1907023
+    },
+    {
+      "year": 1970,
+      "population": 1656783
+    }
+  ],
+  "area_km2": 25713,
+  "population_density": 81.4218,
+  "population_growth_rate": 0.9954,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Northern Mariana Islands",
+  "rank": 210,
+  "cca3": "NFK",
+  "capital": "Saipan",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 49551
+    },
+    {
+      "year": 2020,
+      "population": 49587
+    },
+    {
+      "year": 2015,
+      "population": 51514
+    },
+    {
+      "year": 2010,
+      "population": 54087
+    },
+    {
+      "year": 2000,
+      "population": 80338
+    },
+    {
+      "year": 1990,
+      "population": 48002
+    },
+    {
+      "year": 1980,
+      "population": 17613
+    },
+    {
+      "year": 1970,
+      "population": 10143
+    }
+  ],
+  "area_km2": 464,
+  "population_density": 106.7909,
+  "population_growth_rate": 1.0014,
+  "percentage_world_population": 0
+}
+{
+  "country": "Norway",
+  "rank": 120,
+  "cca3": "NOR",
+  "capital": "Oslo",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5434319
+    },
+    {
+      "year": 2020,
+      "population": 5379839
+    },
+    {
+      "year": 2015,
+      "population": 5190356
+    },
+    {
+      "year": 2010,
+      "population": 4889741
+    },
+    {
+      "year": 2000,
+      "population": 4491202
+    },
+    {
+      "year": 1990,
+      "population": 4241636
+    },
+    {
+      "year": 1980,
+      "population": 4085776
+    },
+    {
+      "year": 1970,
+      "population": 3875546
+    }
+  ],
+  "area_km2": 323802,
+  "population_density": 16.7828,
+  "population_growth_rate": 1.0058,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Oman",
+  "rank": 127,
+  "cca3": "OMN",
+  "capital": "Muscat",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4576298
+    },
+    {
+      "year": 2020,
+      "population": 4543399
+    },
+    {
+      "year": 2015,
+      "population": 4191776
+    },
+    {
+      "year": 2010,
+      "population": 2881914
+    },
+    {
+      "year": 2000,
+      "population": 2344253
+    },
+    {
+      "year": 1990,
+      "population": 1804524
+    },
+    {
+      "year": 1980,
+      "population": 1017462
+    },
+    {
+      "year": 1970,
+      "population": 670693
+    }
+  ],
+  "area_km2": 309500,
+  "population_density": 14.7861,
+  "population_growth_rate": 1.0123,
+  "percentage_world_population": 0.06
+}
+{
+  "country": "Pakistan",
+  "rank": 5,
+  "cca3": "PAK",
+  "capital": "Islamabad",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 235824862
+    },
+    {
+      "year": 2020,
+      "population": 227196741
+    },
+    {
+      "year": 2015,
+      "population": 210969298
+    },
+    {
+      "year": 2010,
+      "population": 194454498
+    },
+    {
+      "year": 2000,
+      "population": 154369924
+    },
+    {
+      "year": 1990,
+      "population": 115414069
+    },
+    {
+      "year": 1980,
+      "population": 80624057
+    },
+    {
+      "year": 1970,
+      "population": 59290872
+    }
+  ],
+  "area_km2": 881912,
+  "population_density": 267.4018,
+  "population_growth_rate": 1.0191,
+  "percentage_world_population": 2.96
+}
+{
+  "country": "Palau",
+  "rank": 222,
+  "cca3": "PLW",
+  "capital": "Ngerulmud",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 18055
+    },
+    {
+      "year": 2020,
+      "population": 17972
+    },
+    {
+      "year": 2015,
+      "population": 17794
+    },
+    {
+      "year": 2010,
+      "population": 18540
+    },
+    {
+      "year": 2000,
+      "population": 19726
+    },
+    {
+      "year": 1990,
+      "population": 15293
+    },
+    {
+      "year": 1980,
+      "population": 12252
+    },
+    {
+      "year": 1970,
+      "population": 11366
+    }
+  ],
+  "area_km2": 459,
+  "population_density": 39.3355,
+  "population_growth_rate": 1.0017,
+  "percentage_world_population": 0
+}
+{
+  "country": "Palestine",
+  "rank": 122,
+  "cca3": "PSE",
+  "capital": "Ramallah",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5250072
+    },
+    {
+      "year": 2020,
+      "population": 5019401
+    },
+    {
+      "year": 2015,
+      "population": 4484614
+    },
+    {
+      "year": 2010,
+      "population": 3992278
+    },
+    {
+      "year": 2000,
+      "population": 3139954
+    },
+    {
+      "year": 1990,
+      "population": 2124609
+    },
+    {
+      "year": 1980,
+      "population": 1453620
+    },
+    {
+      "year": 1970,
+      "population": 1118241
+    }
+  ],
+  "area_km2": 6220,
+  "population_density": 844.063,
+  "population_growth_rate": 1.0227,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Panama",
+  "rank": 128,
+  "cca3": "PAN",
+  "capital": "Panama City",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 4408581
+    },
+    {
+      "year": 2020,
+      "population": 4294396
+    },
+    {
+      "year": 2015,
+      "population": 3957099
+    },
+    {
+      "year": 2010,
+      "population": 3623617
+    },
+    {
+      "year": 2000,
+      "population": 3001731
+    },
+    {
+      "year": 1990,
+      "population": 2449968
+    },
+    {
+      "year": 1980,
+      "population": 1956987
+    },
+    {
+      "year": 1970,
+      "population": 1516188
+    }
+  ],
+  "area_km2": 75417,
+  "population_density": 58.4561,
+  "population_growth_rate": 1.0132,
+  "percentage_world_population": 0.06
+}
+{
+  "country": "Papua New Guinea",
+  "rank": 93,
+  "cca3": "PNG",
+  "capital": "Port Moresby",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10142619
+    },
+    {
+      "year": 2020,
+      "population": 9749640
+    },
+    {
+      "year": 2015,
+      "population": 8682174
+    },
+    {
+      "year": 2010,
+      "population": 7583269
+    },
+    {
+      "year": 2000,
+      "population": 5508297
+    },
+    {
+      "year": 1990,
+      "population": 3864972
+    },
+    {
+      "year": 1980,
+      "population": 3104788
+    },
+    {
+      "year": 1970,
+      "population": 2489059
+    }
+  ],
+  "area_km2": 462840,
+  "population_density": 21.9139,
+  "population_growth_rate": 1.0194,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Paraguay",
+  "rank": 109,
+  "cca3": "PRY",
+  "capital": "Asunción",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6780744
+    },
+    {
+      "year": 2020,
+      "population": 6618695
+    },
+    {
+      "year": 2015,
+      "population": 6177950
+    },
+    {
+      "year": 2010,
+      "population": 5768613
+    },
+    {
+      "year": 2000,
+      "population": 5123819
+    },
+    {
+      "year": 1990,
+      "population": 4059195
+    },
+    {
+      "year": 1980,
+      "population": 3078912
+    },
+    {
+      "year": 1970,
+      "population": 2408787
+    }
+  ],
+  "area_km2": 406752,
+  "population_density": 16.6705,
+  "population_growth_rate": 1.0115,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Peru",
+  "rank": 44,
+  "cca3": "PER",
+  "capital": "Lima",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 34049588
+    },
+    {
+      "year": 2020,
+      "population": 33304756
+    },
+    {
+      "year": 2015,
+      "population": 30711863
+    },
+    {
+      "year": 2010,
+      "population": 29229572
+    },
+    {
+      "year": 2000,
+      "population": 26654439
+    },
+    {
+      "year": 1990,
+      "population": 22109099
+    },
+    {
+      "year": 1980,
+      "population": 17492406
+    },
+    {
+      "year": 1970,
+      "population": 13562371
+    }
+  ],
+  "area_km2": 1285216,
+  "population_density": 26.4933,
+  "population_growth_rate": 1.0099,
+  "percentage_world_population": 0.43
+}
+{
+  "country": "Philippines",
+  "rank": 13,
+  "cca3": "PHL",
+  "capital": "Manila",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 115559009
+    },
+    {
+      "year": 2020,
+      "population": 112190977
+    },
+    {
+      "year": 2015,
+      "population": 103031365
+    },
+    {
+      "year": 2010,
+      "population": 94636700
+    },
+    {
+      "year": 2000,
+      "population": 77958223
+    },
+    {
+      "year": 1990,
+      "population": 61558898
+    },
+    {
+      "year": 1980,
+      "population": 48419546
+    },
+    {
+      "year": 1970,
+      "population": 37435586
+    }
+  ],
+  "area_km2": 342353,
+  "population_density": 337.5434,
+  "population_growth_rate": 1.0147,
+  "percentage_world_population": 1.45
+}
+{
+  "country": "Poland",
+  "rank": 37,
+  "cca3": "POL",
+  "capital": "Warsaw",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 39857145
+    },
+    {
+      "year": 2020,
+      "population": 38428366
+    },
+    {
+      "year": 2015,
+      "population": 38553146
+    },
+    {
+      "year": 2010,
+      "population": 38597353
+    },
+    {
+      "year": 2000,
+      "population": 38504431
+    },
+    {
+      "year": 1990,
+      "population": 38064255
+    },
+    {
+      "year": 1980,
+      "population": 35521429
+    },
+    {
+      "year": 1970,
+      "population": 32482943
+    }
+  ],
+  "area_km2": 312679,
+  "population_density": 127.4698,
+  "population_growth_rate": 1.0404,
+  "percentage_world_population": 0.5
+}
+{
+  "country": "Portugal",
+  "rank": 92,
+  "cca3": "PRT",
+  "capital": "Lisbon",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10270865
+    },
+    {
+      "year": 2020,
+      "population": 10298192
+    },
+    {
+      "year": 2015,
+      "population": 10365435
+    },
+    {
+      "year": 2010,
+      "population": 10588401
+    },
+    {
+      "year": 2000,
+      "population": 10300626
+    },
+    {
+      "year": 1990,
+      "population": 10007346
+    },
+    {
+      "year": 1980,
+      "population": 9785252
+    },
+    {
+      "year": 1970,
+      "population": 8683631
+    }
+  ],
+  "area_km2": 92090,
+  "population_density": 111.5307,
+  "population_growth_rate": 0.9981,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Puerto Rico",
+  "rank": 136,
+  "cca3": "PRI",
+  "capital": "San Juan",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3252407
+    },
+    {
+      "year": 2020,
+      "population": 3271564
+    },
+    {
+      "year": 2015,
+      "population": 3497335
+    },
+    {
+      "year": 2010,
+      "population": 3717922
+    },
+    {
+      "year": 2000,
+      "population": 3827108
+    },
+    {
+      "year": 1990,
+      "population": 3543776
+    },
+    {
+      "year": 1980,
+      "population": 3214568
+    },
+    {
+      "year": 1970,
+      "population": 2737619
+    }
+  ],
+  "area_km2": 8870,
+  "population_density": 366.675,
+  "population_growth_rate": 0.9989,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Qatar",
+  "rank": 143,
+  "cca3": "QAT",
+  "capital": "Doha",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2695122
+    },
+    {
+      "year": 2020,
+      "population": 2760385
+    },
+    {
+      "year": 2015,
+      "population": 2414573
+    },
+    {
+      "year": 2010,
+      "population": 1713504
+    },
+    {
+      "year": 2000,
+      "population": 645937
+    },
+    {
+      "year": 1990,
+      "population": 441675
+    },
+    {
+      "year": 1980,
+      "population": 277450
+    },
+    {
+      "year": 1970,
+      "population": 118007
+    }
+  ],
+  "area_km2": 11586,
+  "population_density": 232.6189,
+  "population_growth_rate": 1.0026,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Republic of the Congo",
+  "rank": 114,
+  "cca3": "COG",
+  "capital": "Brazzaville",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5970424
+    },
+    {
+      "year": 2020,
+      "population": 5702174
+    },
+    {
+      "year": 2015,
+      "population": 5064386
+    },
+    {
+      "year": 2010,
+      "population": 4437884
+    },
+    {
+      "year": 2000,
+      "population": 3134030
+    },
+    {
+      "year": 1990,
+      "population": 2385435
+    },
+    {
+      "year": 1980,
+      "population": 1829256
+    },
+    {
+      "year": 1970,
+      "population": 1396989
+    }
+  ],
+  "area_km2": 342000,
+  "population_density": 17.4574,
+  "population_growth_rate": 1.0231,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Reunion",
+  "rank": 161,
+  "cca3": "REU",
+  "capital": "Saint-Denis",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 974052
+    },
+    {
+      "year": 2020,
+      "population": 957822
+    },
+    {
+      "year": 2015,
+      "population": 922495
+    },
+    {
+      "year": 2010,
+      "population": 890130
+    },
+    {
+      "year": 2000,
+      "population": 785424
+    },
+    {
+      "year": 1990,
+      "population": 658992
+    },
+    {
+      "year": 1980,
+      "population": 551674
+    },
+    {
+      "year": 1970,
+      "population": 473925
+    }
+  ],
+  "area_km2": 2511,
+  "population_density": 387.914,
+  "population_growth_rate": 1.0082,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Romania",
+  "rank": 64,
+  "cca3": "ROU",
+  "capital": "Bucharest",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 19659267
+    },
+    {
+      "year": 2020,
+      "population": 19442038
+    },
+    {
+      "year": 2015,
+      "population": 19906079
+    },
+    {
+      "year": 2010,
+      "population": 20335211
+    },
+    {
+      "year": 2000,
+      "population": 21919876
+    },
+    {
+      "year": 1990,
+      "population": 22836234
+    },
+    {
+      "year": 1980,
+      "population": 22125224
+    },
+    {
+      "year": 1970,
+      "population": 19922618
+    }
+  ],
+  "area_km2": 238391,
+  "population_density": 82.4665,
+  "population_growth_rate": 1.0171,
+  "percentage_world_population": 0.25
+}
+{
+  "country": "Russia",
+  "rank": 9,
+  "cca3": "RUS",
+  "capital": "Moscow",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 144713314
+    },
+    {
+      "year": 2020,
+      "population": 145617329
+    },
+    {
+      "year": 2015,
+      "population": 144668389
+    },
+    {
+      "year": 2010,
+      "population": 143242599
+    },
+    {
+      "year": 2000,
+      "population": 146844839
+    },
+    {
+      "year": 1990,
+      "population": 148005704
+    },
+    {
+      "year": 1980,
+      "population": 138257420
+    },
+    {
+      "year": 1970,
+      "population": 130093010
+    }
+  ],
+  "area_km2": 17098242,
+  "population_density": 8.4636,
+  "population_growth_rate": 0.9973,
+  "percentage_world_population": 1.81
+}
+{
+  "country": "Rwanda",
+  "rank": 76,
+  "cca3": "RWA",
+  "capital": "Kigali",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 13776698
+    },
+    {
+      "year": 2020,
+      "population": 13146362
+    },
+    {
+      "year": 2015,
+      "population": 11642959
+    },
+    {
+      "year": 2010,
+      "population": 10309031
+    },
+    {
+      "year": 2000,
+      "population": 8109989
+    },
+    {
+      "year": 1990,
+      "population": 7319962
+    },
+    {
+      "year": 1980,
+      "population": 5247532
+    },
+    {
+      "year": 1970,
+      "population": 3896367
+    }
+  ],
+  "area_km2": 26338,
+  "population_density": 523.0731,
+  "population_growth_rate": 1.0234,
+  "percentage_world_population": 0.17
+}
+{
+  "country": "Saint Barthelemy",
+  "rank": 228,
+  "cca3": "BLM",
+  "capital": "Gustavia",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10967
+    },
+    {
+      "year": 2020,
+      "population": 10681
+    },
+    {
+      "year": 2015,
+      "population": 9643
+    },
+    {
+      "year": 2010,
+      "population": 8988
+    },
+    {
+      "year": 2000,
+      "population": 7082
+    },
+    {
+      "year": 1990,
+      "population": 5168
+    },
+    {
+      "year": 1980,
+      "population": 2983
+    },
+    {
+      "year": 1970,
+      "population": 2417
+    }
+  ],
+  "area_km2": 21,
+  "population_density": 522.2381,
+  "population_growth_rate": 1.0098,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saint Kitts and Nevis",
+  "rank": 211,
+  "cca3": "KNA",
+  "capital": "Basseterre",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 47657
+    },
+    {
+      "year": 2020,
+      "population": 47642
+    },
+    {
+      "year": 2015,
+      "population": 47790
+    },
+    {
+      "year": 2010,
+      "population": 47403
+    },
+    {
+      "year": 2000,
+      "population": 45461
+    },
+    {
+      "year": 1990,
+      "population": 40636
+    },
+    {
+      "year": 1980,
+      "population": 43097
+    },
+    {
+      "year": 1970,
+      "population": 44968
+    }
+  ],
+  "area_km2": 261,
+  "population_density": 182.5939,
+  "population_growth_rate": 1.0011,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saint Lucia",
+  "rank": 190,
+  "cca3": "LCA",
+  "capital": "Castries",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 179857
+    },
+    {
+      "year": 2020,
+      "population": 179237
+    },
+    {
+      "year": 2015,
+      "population": 175623
+    },
+    {
+      "year": 2010,
+      "population": 170935
+    },
+    {
+      "year": 2000,
+      "population": 159500
+    },
+    {
+      "year": 1990,
+      "population": 142301
+    },
+    {
+      "year": 1980,
+      "population": 121633
+    },
+    {
+      "year": 1970,
+      "population": 103090
+    }
+  ],
+  "area_km2": 616,
+  "population_density": 291.9756,
+  "population_growth_rate": 1.0011,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saint Martin",
+  "rank": 220,
+  "cca3": "MAF",
+  "capital": "Marigot",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 31791
+    },
+    {
+      "year": 2020,
+      "population": 32552
+    },
+    {
+      "year": 2015,
+      "population": 35020
+    },
+    {
+      "year": 2010,
+      "population": 36458
+    },
+    {
+      "year": 2000,
+      "population": 29610
+    },
+    {
+      "year": 1990,
+      "population": 28127
+    },
+    {
+      "year": 1980,
+      "population": 7776
+    },
+    {
+      "year": 1970,
+      "population": 5802
+    }
+  ],
+  "area_km2": 53,
+  "population_density": 599.8302,
+  "population_growth_rate": 0.9951,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saint Pierre and Miquelon",
+  "rank": 229,
+  "cca3": "SPM",
+  "capital": "Saint-Pierre",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5862
+    },
+    {
+      "year": 2020,
+      "population": 5906
+    },
+    {
+      "year": 2015,
+      "population": 5978
+    },
+    {
+      "year": 2010,
+      "population": 6052
+    },
+    {
+      "year": 2000,
+      "population": 6274
+    },
+    {
+      "year": 1990,
+      "population": 6324
+    },
+    {
+      "year": 1980,
+      "population": 6106
+    },
+    {
+      "year": 1970,
+      "population": 5537
+    }
+  ],
+  "area_km2": 242,
+  "population_density": 24.2231,
+  "population_growth_rate": 0.9964,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saint Vincent and the Grenadines",
+  "rank": 199,
+  "cca3": "VCT",
+  "capital": "Kingstown",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 103948
+    },
+    {
+      "year": 2020,
+      "population": 104632
+    },
+    {
+      "year": 2015,
+      "population": 106482
+    },
+    {
+      "year": 2010,
+      "population": 109308
+    },
+    {
+      "year": 2000,
+      "population": 113813
+    },
+    {
+      "year": 1990,
+      "population": 112487
+    },
+    {
+      "year": 1980,
+      "population": 107480
+    },
+    {
+      "year": 1970,
+      "population": 98459
+    }
+  ],
+  "area_km2": 389,
+  "population_density": 267.2185,
+  "population_growth_rate": 0.9963,
+  "percentage_world_population": 0
+}
+{
+  "country": "Samoa",
+  "rank": 188,
+  "cca3": "WSM",
+  "capital": "Apia",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 222382
+    },
+    {
+      "year": 2020,
+      "population": 214929
+    },
+    {
+      "year": 2015,
+      "population": 203571
+    },
+    {
+      "year": 2010,
+      "population": 194672
+    },
+    {
+      "year": 2000,
+      "population": 184008
+    },
+    {
+      "year": 1990,
+      "population": 168186
+    },
+    {
+      "year": 1980,
+      "population": 164905
+    },
+    {
+      "year": 1970,
+      "population": 142771
+    }
+  ],
+  "area_km2": 2842,
+  "population_density": 78.2484,
+  "population_growth_rate": 1.0165,
+  "percentage_world_population": 0
+}
+{
+  "country": "San Marino",
+  "rank": 218,
+  "cca3": "SMR",
+  "capital": "San Marino",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 33660
+    },
+    {
+      "year": 2020,
+      "population": 34007
+    },
+    {
+      "year": 2015,
+      "population": 33570
+    },
+    {
+      "year": 2010,
+      "population": 31608
+    },
+    {
+      "year": 2000,
+      "population": 26823
+    },
+    {
+      "year": 1990,
+      "population": 23132
+    },
+    {
+      "year": 1980,
+      "population": 21346
+    },
+    {
+      "year": 1970,
+      "population": 18169
+    }
+  ],
+  "area_km2": 61,
+  "population_density": 551.8033,
+  "population_growth_rate": 0.9975,
+  "percentage_world_population": 0
+}
+{
+  "country": "Sao Tome and Principe",
+  "rank": 187,
+  "cca3": "STP",
+  "capital": "São Tomé",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 227380
+    },
+    {
+      "year": 2020,
+      "population": 218641
+    },
+    {
+      "year": 2015,
+      "population": 201124
+    },
+    {
+      "year": 2010,
+      "population": 182138
+    },
+    {
+      "year": 2000,
+      "population": 143714
+    },
+    {
+      "year": 1990,
+      "population": 120343
+    },
+    {
+      "year": 1980,
+      "population": 97210
+    },
+    {
+      "year": 1970,
+      "population": 77583
+    }
+  ],
+  "area_km2": 964,
+  "population_density": 235.8714,
+  "population_growth_rate": 1.0192,
+  "percentage_world_population": 0
+}
+{
+  "country": "Saudi Arabia",
+  "rank": 41,
+  "cca3": "SAU",
+  "capital": "Riyadh",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 36408820
+    },
+    {
+      "year": 2020,
+      "population": 35997107
+    },
+    {
+      "year": 2015,
+      "population": 32749848
+    },
+    {
+      "year": 2010,
+      "population": 29411929
+    },
+    {
+      "year": 2000,
+      "population": 21547390
+    },
+    {
+      "year": 1990,
+      "population": 16004763
+    },
+    {
+      "year": 1980,
+      "population": 10171710
+    },
+    {
+      "year": 1970,
+      "population": 6106191
+    }
+  ],
+  "area_km2": 2149690,
+  "population_density": 16.9368,
+  "population_growth_rate": 1.0128,
+  "percentage_world_population": 0.46
+}
+{
+  "country": "Senegal",
+  "rank": 72,
+  "cca3": "SEN",
+  "capital": "Dakar",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17316449
+    },
+    {
+      "year": 2020,
+      "population": 16436119
+    },
+    {
+      "year": 2015,
+      "population": 14356181
+    },
+    {
+      "year": 2010,
+      "population": 12530121
+    },
+    {
+      "year": 2000,
+      "population": 9704287
+    },
+    {
+      "year": 1990,
+      "population": 7536001
+    },
+    {
+      "year": 1980,
+      "population": 5703869
+    },
+    {
+      "year": 1970,
+      "population": 4367744
+    }
+  ],
+  "area_km2": 196722,
+  "population_density": 88.025,
+  "population_growth_rate": 1.0261,
+  "percentage_world_population": 0.22
+}
+{
+  "country": "Serbia",
+  "rank": 105,
+  "cca3": "SRB",
+  "capital": "Belgrade",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 7221365
+    },
+    {
+      "year": 2020,
+      "population": 7358005
+    },
+    {
+      "year": 2015,
+      "population": 7519496
+    },
+    {
+      "year": 2010,
+      "population": 7653748
+    },
+    {
+      "year": 2000,
+      "population": 7935022
+    },
+    {
+      "year": 1990,
+      "population": 7987529
+    },
+    {
+      "year": 1980,
+      "population": 7777010
+    },
+    {
+      "year": 1970,
+      "population": 7193533
+    }
+  ],
+  "area_km2": 88361,
+  "population_density": 81.7257,
+  "population_growth_rate": 0.9897,
+  "percentage_world_population": 0.09
+}
+{
+  "country": "Seychelles",
+  "rank": 196,
+  "cca3": "SYC",
+  "capital": "Victoria",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 107118
+    },
+    {
+      "year": 2020,
+      "population": 105530
+    },
+    {
+      "year": 2015,
+      "population": 99240
+    },
+    {
+      "year": 2010,
+      "population": 92409
+    },
+    {
+      "year": 2000,
+      "population": 80060
+    },
+    {
+      "year": 1990,
+      "population": 71057
+    },
+    {
+      "year": 1980,
+      "population": 65290
+    },
+    {
+      "year": 1970,
+      "population": 54379
+    }
+  ],
+  "area_km2": 452,
+  "population_density": 236.9867,
+  "population_growth_rate": 1.0061,
+  "percentage_world_population": 0
+}
+{
+  "country": "Sierra Leone",
+  "rank": 102,
+  "cca3": "SLE",
+  "capital": "Freetown",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 8605718
+    },
+    {
+      "year": 2020,
+      "population": 8233969
+    },
+    {
+      "year": 2015,
+      "population": 7314773
+    },
+    {
+      "year": 2010,
+      "population": 6436698
+    },
+    {
+      "year": 2000,
+      "population": 4584067
+    },
+    {
+      "year": 1990,
+      "population": 4325388
+    },
+    {
+      "year": 1980,
+      "population": 3367477
+    },
+    {
+      "year": 1970,
+      "population": 2778557
+    }
+  ],
+  "area_km2": 71740,
+  "population_density": 119.957,
+  "population_growth_rate": 1.022,
+  "percentage_world_population": 0.11
+}
+{
+  "country": "Singapore",
+  "rank": 113,
+  "cca3": "SGP",
+  "capital": "Singapore",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5975689
+    },
+    {
+      "year": 2020,
+      "population": 5909869
+    },
+    {
+      "year": 2015,
+      "population": 5650018
+    },
+    {
+      "year": 2010,
+      "population": 5163590
+    },
+    {
+      "year": 2000,
+      "population": 4053602
+    },
+    {
+      "year": 1990,
+      "population": 3022209
+    },
+    {
+      "year": 1980,
+      "population": 2400729
+    },
+    {
+      "year": 1970,
+      "population": 2061831
+    }
+  ],
+  "area_km2": 710,
+  "population_density": 8416.4634,
+  "population_growth_rate": 1.0058,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Sint Maarten",
+  "rank": 214,
+  "cca3": "SXM",
+  "capital": "Philipsburg",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 44175
+    },
+    {
+      "year": 2020,
+      "population": 43621
+    },
+    {
+      "year": 2015,
+      "population": 40205
+    },
+    {
+      "year": 2010,
+      "population": 33034
+    },
+    {
+      "year": 2000,
+      "population": 30489
+    },
+    {
+      "year": 1990,
+      "population": 27845
+    },
+    {
+      "year": 1980,
+      "population": 12243
+    },
+    {
+      "year": 1970,
+      "population": 6260
+    }
+  ],
+  "area_km2": 34,
+  "population_density": 1299.2647,
+  "population_growth_rate": 1.003,
+  "percentage_world_population": 0
+}
+{
+  "country": "Slovakia",
+  "rank": 116,
+  "cca3": "SVK",
+  "capital": "Bratislava",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 5643453
+    },
+    {
+      "year": 2020,
+      "population": 5456681
+    },
+    {
+      "year": 2015,
+      "population": 5424444
+    },
+    {
+      "year": 2010,
+      "population": 5396424
+    },
+    {
+      "year": 2000,
+      "population": 5376690
+    },
+    {
+      "year": 1990,
+      "population": 5261305
+    },
+    {
+      "year": 1980,
+      "population": 4973883
+    },
+    {
+      "year": 1970,
+      "population": 4522867
+    }
+  ],
+  "area_km2": 49037,
+  "population_density": 115.0856,
+  "population_growth_rate": 1.0359,
+  "percentage_world_population": 0.07
+}
+{
+  "country": "Slovenia",
+  "rank": 148,
+  "cca3": "SVN",
+  "capital": "Ljubljana",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 2119844
+    },
+    {
+      "year": 2020,
+      "population": 2117641
+    },
+    {
+      "year": 2015,
+      "population": 2080862
+    },
+    {
+      "year": 2010,
+      "population": 2057286
+    },
+    {
+      "year": 2000,
+      "population": 1984339
+    },
+    {
+      "year": 1990,
+      "population": 1986024
+    },
+    {
+      "year": 1980,
+      "population": 1901570
+    },
+    {
+      "year": 1970,
+      "population": 1741286
+    }
+  ],
+  "area_km2": 20273,
+  "population_density": 104.5649,
+  "population_growth_rate": 1.0002,
+  "percentage_world_population": 0.03
+}
+{
+  "country": "Solomon Islands",
+  "rank": 166,
+  "cca3": "SLB",
+  "capital": "Honiara",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 724273
+    },
+    {
+      "year": 2020,
+      "population": 691191
+    },
+    {
+      "year": 2015,
+      "population": 612660
+    },
+    {
+      "year": 2010,
+      "population": 540394
+    },
+    {
+      "year": 2000,
+      "population": 429978
+    },
+    {
+      "year": 1990,
+      "population": 324171
+    },
+    {
+      "year": 1980,
+      "population": 233668
+    },
+    {
+      "year": 1970,
+      "population": 172833
+    }
+  ],
+  "area_km2": 28896,
+  "population_density": 25.0648,
+  "population_growth_rate": 1.0232,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Somalia",
+  "rank": 70,
+  "cca3": "SOM",
+  "capital": "Mogadishu",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 17597511
+    },
+    {
+      "year": 2020,
+      "population": 16537016
+    },
+    {
+      "year": 2015,
+      "population": 13763906
+    },
+    {
+      "year": 2010,
+      "population": 12026649
+    },
+    {
+      "year": 2000,
+      "population": 8721465
+    },
+    {
+      "year": 1990,
+      "population": 6999096
+    },
+    {
+      "year": 1980,
+      "population": 5892224
+    },
+    {
+      "year": 1970,
+      "population": 3720977
+    }
+  ],
+  "area_km2": 637657,
+  "population_density": 27.5971,
+  "population_growth_rate": 1.0312,
+  "percentage_world_population": 0.22
+}
+{
+  "country": "South Africa",
+  "rank": 24,
+  "cca3": "ZAF",
+  "capital": "Pretoria",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 59893885
+    },
+    {
+      "year": 2020,
+      "population": 58801927
+    },
+    {
+      "year": 2015,
+      "population": 55876504
+    },
+    {
+      "year": 2010,
+      "population": 51784921
+    },
+    {
+      "year": 2000,
+      "population": 46813266
+    },
+    {
+      "year": 1990,
+      "population": 39877570
+    },
+    {
+      "year": 1980,
+      "population": 29463549
+    },
+    {
+      "year": 1970,
+      "population": 22368306
+    }
+  ],
+  "area_km2": 1221037,
+  "population_density": 49.0517,
+  "population_growth_rate": 1.0084,
+  "percentage_world_population": 0.75
+}
+{
+  "country": "South Korea",
+  "rank": 29,
+  "cca3": "KOR",
+  "capital": "Seoul",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 51815810
+    },
+    {
+      "year": 2020,
+      "population": 51844690
+    },
+    {
+      "year": 2015,
+      "population": 50994401
+    },
+    {
+      "year": 2010,
+      "population": 48813042
+    },
+    {
+      "year": 2000,
+      "population": 46788591
+    },
+    {
+      "year": 1990,
+      "population": 44120039
+    },
+    {
+      "year": 1980,
+      "population": 38170501
+    },
+    {
+      "year": 1970,
+      "population": 32601143
+    }
+  ],
+  "area_km2": 100210,
+  "population_density": 517.0722,
+  "population_growth_rate": 0.9997,
+  "percentage_world_population": 0.65
+}
+{
+  "country": "South Sudan",
+  "rank": 86,
+  "cca3": "SSD",
+  "capital": "Juba",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10913164
+    },
+    {
+      "year": 2020,
+      "population": 10606227
+    },
+    {
+      "year": 2015,
+      "population": 11194299
+    },
+    {
+      "year": 2010,
+      "population": 9714419
+    },
+    {
+      "year": 2000,
+      "population": 6114440
+    },
+    {
+      "year": 1990,
+      "population": 4750817
+    },
+    {
+      "year": 1980,
+      "population": 4192011
+    },
+    {
+      "year": 1970,
+      "population": 3342410
+    }
+  ],
+  "area_km2": 619745,
+  "population_density": 17.6091,
+  "population_growth_rate": 1.0153,
+  "percentage_world_population": 0.14
+}
+{
+  "country": "Spain",
+  "rank": 30,
+  "cca3": "ESP",
+  "capital": "Madrid",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 47558630
+    },
+    {
+      "year": 2020,
+      "population": 47363807
+    },
+    {
+      "year": 2015,
+      "population": 46431342
+    },
+    {
+      "year": 2010,
+      "population": 46572772
+    },
+    {
+      "year": 2000,
+      "population": 40741651
+    },
+    {
+      "year": 1990,
+      "population": 38889889
+    },
+    {
+      "year": 1980,
+      "population": 37491666
+    },
+    {
+      "year": 1970,
+      "population": 33792617
+    }
+  ],
+  "area_km2": 505992,
+  "population_density": 93.9909,
+  "population_growth_rate": 1.0015,
+  "percentage_world_population": 0.6
+}
+{
+  "country": "Sri Lanka",
+  "rank": 61,
+  "cca3": "LKA",
+  "capital": "Colombo",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 21832143
+    },
+    {
+      "year": 2020,
+      "population": 21715079
+    },
+    {
+      "year": 2015,
+      "population": 21336697
+    },
+    {
+      "year": 2010,
+      "population": 20668557
+    },
+    {
+      "year": 2000,
+      "population": 18776371
+    },
+    {
+      "year": 1990,
+      "population": 17204094
+    },
+    {
+      "year": 1980,
+      "population": 14943645
+    },
+    {
+      "year": 1970,
+      "population": 12388769
+    }
+  ],
+  "area_km2": 65610,
+  "population_density": 332.7563,
+  "population_growth_rate": 1.0027,
+  "percentage_world_population": 0.27
+}
+{
+  "country": "Sudan",
+  "rank": 32,
+  "cca3": "SDN",
+  "capital": "Khartoum",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 46874204
+    },
+    {
+      "year": 2020,
+      "population": 44440486
+    },
+    {
+      "year": 2015,
+      "population": 38171178
+    },
+    {
+      "year": 2010,
+      "population": 33739933
+    },
+    {
+      "year": 2000,
+      "population": 26298773
+    },
+    {
+      "year": 1990,
+      "population": 21090886
+    },
+    {
+      "year": 1980,
+      "population": 16673586
+    },
+    {
+      "year": 1970,
+      "population": 11305206
+    }
+  ],
+  "area_km2": 1886068,
+  "population_density": 24.8529,
+  "population_growth_rate": 1.0267,
+  "percentage_world_population": 0.59
+}
+{
+  "country": "Suriname",
+  "rank": 170,
+  "cca3": "SUR",
+  "capital": "Paramaribo",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 618040
+    },
+    {
+      "year": 2020,
+      "population": 607065
+    },
+    {
+      "year": 2015,
+      "population": 575475
+    },
+    {
+      "year": 2010,
+      "population": 546080
+    },
+    {
+      "year": 2000,
+      "population": 478998
+    },
+    {
+      "year": 1990,
+      "population": 412756
+    },
+    {
+      "year": 1980,
+      "population": 375112
+    },
+    {
+      "year": 1970,
+      "population": 379918
+    }
+  ],
+  "area_km2": 163820,
+  "population_density": 3.7727,
+  "population_growth_rate": 1.0082,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Sweden",
+  "rank": 87,
+  "cca3": "SWE",
+  "capital": "Stockholm",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 10549347
+    },
+    {
+      "year": 2020,
+      "population": 10368969
+    },
+    {
+      "year": 2015,
+      "population": 9849349
+    },
+    {
+      "year": 2010,
+      "population": 9381729
+    },
+    {
+      "year": 2000,
+      "population": 8871043
+    },
+    {
+      "year": 1990,
+      "population": 8548406
+    },
+    {
+      "year": 1980,
+      "population": 8311763
+    },
+    {
+      "year": 1970,
+      "population": 8027702
+    }
+  ],
+  "area_km2": 450295,
+  "population_density": 23.4276,
+  "population_growth_rate": 1.0079,
+  "percentage_world_population": 0.13
+}
+{
+  "country": "Switzerland",
+  "rank": 101,
+  "cca3": "CHE",
+  "capital": "Bern",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 8740472
+    },
+    {
+      "year": 2020,
+      "population": 8638613
+    },
+    {
+      "year": 2015,
+      "population": 8281732
+    },
+    {
+      "year": 2010,
+      "population": 7822435
+    },
+    {
+      "year": 2000,
+      "population": 7182059
+    },
+    {
+      "year": 1990,
+      "population": 6711693
+    },
+    {
+      "year": 1980,
+      "population": 6319113
+    },
+    {
+      "year": 1970,
+      "population": 6181227
+    }
+  ],
+  "area_km2": 41284,
+  "population_density": 211.7157,
+  "population_growth_rate": 1.0056,
+  "percentage_world_population": 0.11
+}
+{
+  "country": "Syria",
+  "rank": 60,
+  "cca3": "SYR",
+  "capital": "Damascus",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 22125249
+    },
+    {
+      "year": 2020,
+      "population": 20772595
+    },
+    {
+      "year": 2015,
+      "population": 19205178
+    },
+    {
+      "year": 2010,
+      "population": 22337563
+    },
+    {
+      "year": 2000,
+      "population": 16307654
+    },
+    {
+      "year": 1990,
+      "population": 12408996
+    },
+    {
+      "year": 1980,
+      "population": 8898954
+    },
+    {
+      "year": 1970,
+      "population": 6319199
+    }
+  ],
+  "area_km2": 185180,
+  "population_density": 119.4797,
+  "population_growth_rate": 1.0376,
+  "percentage_world_population": 0.28
+}
+{
+  "country": "Taiwan",
+  "rank": 57,
+  "cca3": "TWN",
+  "capital": "Taipei",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 23893394
+    },
+    {
+      "year": 2020,
+      "population": 23821464
+    },
+    {
+      "year": 2015,
+      "population": 23512136
+    },
+    {
+      "year": 2010,
+      "population": 23083083
+    },
+    {
+      "year": 2000,
+      "population": 22194731
+    },
+    {
+      "year": 1990,
+      "population": 20586174
+    },
+    {
+      "year": 1980,
+      "population": 18100281
+    },
+    {
+      "year": 1970,
+      "population": 14957870
+    }
+  ],
+  "area_km2": 36193,
+  "population_density": 660.1662,
+  "population_growth_rate": 1.0014,
+  "percentage_world_population": 0.3
+}
+{
+  "country": "Tajikistan",
+  "rank": 95,
+  "cca3": "TJK",
+  "capital": "Dushanbe",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 9952787
+    },
+    {
+      "year": 2020,
+      "population": 9543207
+    },
+    {
+      "year": 2015,
+      "population": 8524063
+    },
+    {
+      "year": 2010,
+      "population": 7621779
+    },
+    {
+      "year": 2000,
+      "population": 6272998
+    },
+    {
+      "year": 1990,
+      "population": 5417860
+    },
+    {
+      "year": 1980,
+      "population": 4045965
+    },
+    {
+      "year": 1970,
+      "population": 2993019
+    }
+  ],
+  "area_km2": 143100,
+  "population_density": 69.5513,
+  "population_growth_rate": 1.0208,
+  "percentage_world_population": 0.12
+}
+{
+  "country": "Tanzania",
+  "rank": 22,
+  "cca3": "TZA",
+  "capital": "Dodoma",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 65497748
+    },
+    {
+      "year": 2020,
+      "population": 61704518
+    },
+    {
+      "year": 2015,
+      "population": 52542823
+    },
+    {
+      "year": 2010,
+      "population": 45110527
+    },
+    {
+      "year": 2000,
+      "population": 34463704
+    },
+    {
+      "year": 1990,
+      "population": 26206012
+    },
+    {
+      "year": 1980,
+      "population": 19297659
+    },
+    {
+      "year": 1970,
+      "population": 13618192
+    }
+  ],
+  "area_km2": 945087,
+  "population_density": 69.3034,
+  "population_growth_rate": 1.03,
+  "percentage_world_population": 0.82
+}
+{
+  "country": "Thailand",
+  "rank": 20,
+  "cca3": "THA",
+  "capital": "Bangkok",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 71697030
+    },
+    {
+      "year": 2020,
+      "population": 71475664
+    },
+    {
+      "year": 2015,
+      "population": 70294397
+    },
+    {
+      "year": 2010,
+      "population": 68270489
+    },
+    {
+      "year": 2000,
+      "population": 63066603
+    },
+    {
+      "year": 1990,
+      "population": 55228410
+    },
+    {
+      "year": 1980,
+      "population": 45737753
+    },
+    {
+      "year": 1970,
+      "population": 35791728
+    }
+  ],
+  "area_km2": 513120,
+  "population_density": 139.7276,
+  "population_growth_rate": 1.0013,
+  "percentage_world_population": 0.9
+}
+{
+  "country": "Timor-Leste",
+  "rank": 155,
+  "cca3": "TLS",
+  "capital": "Dili",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1341296
+    },
+    {
+      "year": 2020,
+      "population": 1299995
+    },
+    {
+      "year": 2015,
+      "population": 1205813
+    },
+    {
+      "year": 2010,
+      "population": 1088486
+    },
+    {
+      "year": 2000,
+      "population": 878360
+    },
+    {
+      "year": 1990,
+      "population": 758106
+    },
+    {
+      "year": 1980,
+      "population": 642224
+    },
+    {
+      "year": 1970,
+      "population": 554021
+    }
+  ],
+  "area_km2": 14874,
+  "population_density": 90.1772,
+  "population_growth_rate": 1.0154,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Togo",
+  "rank": 100,
+  "cca3": "TGO",
+  "capital": "Lomé",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 8848699
+    },
+    {
+      "year": 2020,
+      "population": 8442580
+    },
+    {
+      "year": 2015,
+      "population": 7473229
+    },
+    {
+      "year": 2010,
+      "population": 6571855
+    },
+    {
+      "year": 2000,
+      "population": 5008035
+    },
+    {
+      "year": 1990,
+      "population": 3875947
+    },
+    {
+      "year": 1980,
+      "population": 2838110
+    },
+    {
+      "year": 1970,
+      "population": 2197383
+    }
+  ],
+  "area_km2": 56785,
+  "population_density": 155.8281,
+  "population_growth_rate": 1.0236,
+  "percentage_world_population": 0.11
+}
+{
+  "country": "Tokelau",
+  "rank": 233,
+  "cca3": "TKL",
+  "capital": "Nukunonu",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1871
+    },
+    {
+      "year": 2020,
+      "population": 1827
+    },
+    {
+      "year": 2015,
+      "population": 1454
+    },
+    {
+      "year": 2010,
+      "population": 1367
+    },
+    {
+      "year": 2000,
+      "population": 1666
+    },
+    {
+      "year": 1990,
+      "population": 1669
+    },
+    {
+      "year": 1980,
+      "population": 1647
+    },
+    {
+      "year": 1970,
+      "population": 1714
+    }
+  ],
+  "area_km2": 12,
+  "population_density": 155.9167,
+  "population_growth_rate": 1.0119,
+  "percentage_world_population": 0
+}
+{
+  "country": "Tonga",
+  "rank": 197,
+  "cca3": "TON",
+  "capital": "Nuku‘alofa",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 106858
+    },
+    {
+      "year": 2020,
+      "population": 105254
+    },
+    {
+      "year": 2015,
+      "population": 106122
+    },
+    {
+      "year": 2010,
+      "population": 107383
+    },
+    {
+      "year": 2000,
+      "population": 102603
+    },
+    {
+      "year": 1990,
+      "population": 98727
+    },
+    {
+      "year": 1980,
+      "population": 96708
+    },
+    {
+      "year": 1970,
+      "population": 86484
+    }
+  ],
+  "area_km2": 747,
+  "population_density": 143.0495,
+  "population_growth_rate": 1.0079,
+  "percentage_world_population": 0
+}
+{
+  "country": "Trinidad and Tobago",
+  "rank": 153,
+  "cca3": "TTO",
+  "capital": "Port-of-Spain",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 1531044
+    },
+    {
+      "year": 2020,
+      "population": 1518147
+    },
+    {
+      "year": 2015,
+      "population": 1460177
+    },
+    {
+      "year": 2010,
+      "population": 1410296
+    },
+    {
+      "year": 2000,
+      "population": 1332203
+    },
+    {
+      "year": 1990,
+      "population": 1266518
+    },
+    {
+      "year": 1980,
+      "population": 1127852
+    },
+    {
+      "year": 1970,
+      "population": 988890
+    }
+  ],
+  "area_km2": 5130,
+  "population_density": 298.4491,
+  "population_growth_rate": 1.0035,
+  "percentage_world_population": 0.02
+}
+{
+  "country": "Tunisia",
+  "rank": 79,
+  "cca3": "TUN",
+  "capital": "Tunis",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 12356117
+    },
+    {
+      "year": 2020,
+      "population": 12161723
+    },
+    {
+      "year": 2015,
+      "population": 11557779
+    },
+    {
+      "year": 2010,
+      "population": 10895063
+    },
+    {
+      "year": 2000,
+      "population": 9893316
+    },
+    {
+      "year": 1990,
+      "population": 8440023
+    },
+    {
+      "year": 1980,
+      "population": 6578156
+    },
+    {
+      "year": 1970,
+      "population": 5047404
+    }
+  ],
+  "area_km2": 163610,
+  "population_density": 75.5218,
+  "population_growth_rate": 1.0076,
+  "percentage_world_population": 0.15
+}
+{
+  "country": "Turkey",
+  "rank": 18,
+  "cca3": "TUR",
+  "capital": "Ankara",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 85341241
+    },
+    {
+      "year": 2020,
+      "population": 84135428
+    },
+    {
+      "year": 2015,
+      "population": 79646178
+    },
+    {
+      "year": 2010,
+      "population": 73195345
+    },
+    {
+      "year": 2000,
+      "population": 64113547
+    },
+    {
+      "year": 1990,
+      "population": 54324142
+    },
+    {
+      "year": 1980,
+      "population": 44089069
+    },
+    {
+      "year": 1970,
+      "population": 35540990
+    }
+  ],
+  "area_km2": 783562,
+  "population_density": 108.9145,
+  "population_growth_rate": 1.0067,
+  "percentage_world_population": 1.07
+}
+{
+  "country": "Turkmenistan",
+  "rank": 111,
+  "cca3": "TKM",
+  "capital": "Ashgabat",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 6430770
+    },
+    {
+      "year": 2020,
+      "population": 6250438
+    },
+    {
+      "year": 2015,
+      "population": 5766431
+    },
+    {
+      "year": 2010,
+      "population": 5267970
+    },
+    {
+      "year": 2000,
+      "population": 4569132
+    },
+    {
+      "year": 1990,
+      "population": 3720278
+    },
+    {
+      "year": 1980,
+      "population": 2862903
+    },
+    {
+      "year": 1970,
+      "population": 2201432
+    }
+  ],
+  "area_km2": 488100,
+  "population_density": 13.1751,
+  "population_growth_rate": 1.014,
+  "percentage_world_population": 0.08
+}
+{
+  "country": "Turks and Caicos Islands",
+  "rank": 212,
+  "cca3": "TCA",
+  "capital": "Cockburn Town",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 45703
+    },
+    {
+      "year": 2020,
+      "population": 44276
+    },
+    {
+      "year": 2015,
+      "population": 36538
+    },
+    {
+      "year": 2010,
+      "population": 29726
+    },
+    {
+      "year": 2000,
+      "population": 18744
+    },
+    {
+      "year": 1990,
+      "population": 11709
+    },
+    {
+      "year": 1980,
+      "population": 7598
+    },
+    {
+      "year": 1970,
+      "population": 5665
+    }
+  ],
+  "area_km2": 948,
+  "population_density": 48.2099,
+  "population_growth_rate": 1.0131,
+  "percentage_world_population": 0
+}
+{
+  "country": "Tuvalu",
+  "rank": 227,
+  "cca3": "TUV",
+  "capital": "Funafuti",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11312
+    },
+    {
+      "year": 2020,
+      "population": 11069
+    },
+    {
+      "year": 2015,
+      "population": 10877
+    },
+    {
+      "year": 2010,
+      "population": 10550
+    },
+    {
+      "year": 2000,
+      "population": 9638
+    },
+    {
+      "year": 1990,
+      "population": 9182
+    },
+    {
+      "year": 1980,
+      "population": 7731
+    },
+    {
+      "year": 1970,
+      "population": 5814
+    }
+  ],
+  "area_km2": 26,
+  "population_density": 435.0769,
+  "population_growth_rate": 1.0096,
+  "percentage_world_population": 0
+}
+{
+  "country": "Uganda",
+  "rank": 31,
+  "cca3": "UGA",
+  "capital": "Kampala",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 47249585
+    },
+    {
+      "year": 2020,
+      "population": 44404611
+    },
+    {
+      "year": 2015,
+      "population": 37477356
+    },
+    {
+      "year": 2010,
+      "population": 32341728
+    },
+    {
+      "year": 2000,
+      "population": 24020697
+    },
+    {
+      "year": 1990,
+      "population": 17586630
+    },
+    {
+      "year": 1980,
+      "population": 13284026
+    },
+    {
+      "year": 1970,
+      "population": 10317212
+    }
+  ],
+  "area_km2": 241550,
+  "population_density": 195.61,
+  "population_growth_rate": 1.0304,
+  "percentage_world_population": 0.59
+}
+{
+  "country": "Ukraine",
+  "rank": 38,
+  "cca3": "UKR",
+  "capital": "Kiev",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 39701739
+    },
+    {
+      "year": 2020,
+      "population": 43909666
+    },
+    {
+      "year": 2015,
+      "population": 44982564
+    },
+    {
+      "year": 2010,
+      "population": 45683020
+    },
+    {
+      "year": 2000,
+      "population": 48879755
+    },
+    {
+      "year": 1990,
+      "population": 51589817
+    },
+    {
+      "year": 1980,
+      "population": 49973920
+    },
+    {
+      "year": 1970,
+      "population": 47279086
+    }
+  ],
+  "area_km2": 603500,
+  "population_density": 65.7858,
+  "population_growth_rate": 0.912,
+  "percentage_world_population": 0.5
+}
+{
+  "country": "United Arab Emirates",
+  "rank": 97,
+  "cca3": "ARE",
+  "capital": "Abu Dhabi",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 9441129
+    },
+    {
+      "year": 2020,
+      "population": 9287289
+    },
+    {
+      "year": 2015,
+      "population": 8916899
+    },
+    {
+      "year": 2010,
+      "population": 8481771
+    },
+    {
+      "year": 2000,
+      "population": 3275333
+    },
+    {
+      "year": 1990,
+      "population": 1900151
+    },
+    {
+      "year": 1980,
+      "population": 1014048
+    },
+    {
+      "year": 1970,
+      "population": 298084
+    }
+  ],
+  "area_km2": 83600,
+  "population_density": 112.9322,
+  "population_growth_rate": 1.0081,
+  "percentage_world_population": 0.12
+}
+{
+  "country": "United Kingdom",
+  "rank": 21,
+  "cca3": "GBR",
+  "capital": "London",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 67508936
+    },
+    {
+      "year": 2020,
+      "population": 67059474
+    },
+    {
+      "year": 2015,
+      "population": 65224364
+    },
+    {
+      "year": 2010,
+      "population": 62760039
+    },
+    {
+      "year": 2000,
+      "population": 58850043
+    },
+    {
+      "year": 1990,
+      "population": 57210442
+    },
+    {
+      "year": 1980,
+      "population": 56326328
+    },
+    {
+      "year": 1970,
+      "population": 55650166
+    }
+  ],
+  "area_km2": 242900,
+  "population_density": 277.9289,
+  "population_growth_rate": 1.0034,
+  "percentage_world_population": 0.85
+}
+{
+  "country": "United States",
+  "rank": 3,
+  "cca3": "USA",
+  "capital": "Washington, D.C.",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 338289857
+    },
+    {
+      "year": 2020,
+      "population": 335942003
+    },
+    {
+      "year": 2015,
+      "population": 324607776
+    },
+    {
+      "year": 2010,
+      "population": 311182845
+    },
+    {
+      "year": 2000,
+      "population": 282398554
+    },
+    {
+      "year": 1990,
+      "population": 248083732
+    },
+    {
+      "year": 1980,
+      "population": 223140018
+    },
+    {
+      "year": 1970,
+      "population": 200328340
+    }
+  ],
+  "area_km2": 9372610,
+  "population_density": 36.0935,
+  "population_growth_rate": 1.0038,
+  "percentage_world_population": 4.24
+}
+{
+  "country": "United States Virgin Islands",
+  "rank": 200,
+  "cca3": "VIR",
+  "capital": "Charlotte Amalie",
+  "continent": "North America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 99465
+    },
+    {
+      "year": 2020,
+      "population": 100442
+    },
+    {
+      "year": 2015,
+      "population": 102803
+    },
+    {
+      "year": 2010,
+      "population": 106142
+    },
+    {
+      "year": 2000,
+      "population": 108185
+    },
+    {
+      "year": 1990,
+      "population": 100685
+    },
+    {
+      "year": 1980,
+      "population": 96640
+    },
+    {
+      "year": 1970,
+      "population": 63446
+    }
+  ],
+  "area_km2": 347,
+  "population_density": 286.6427,
+  "population_growth_rate": 0.9937,
+  "percentage_world_population": 0
+}
+{
+  "country": "Uruguay",
+  "rank": 133,
+  "cca3": "URY",
+  "capital": "Montevideo",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 3422794
+    },
+    {
+      "year": 2020,
+      "population": 3429086
+    },
+    {
+      "year": 2015,
+      "population": 3402818
+    },
+    {
+      "year": 2010,
+      "population": 3352651
+    },
+    {
+      "year": 2000,
+      "population": 3292224
+    },
+    {
+      "year": 1990,
+      "population": 3117012
+    },
+    {
+      "year": 1980,
+      "population": 2953750
+    },
+    {
+      "year": 1970,
+      "population": 2790265
+    }
+  ],
+  "area_km2": 181034,
+  "population_density": 18.9069,
+  "population_growth_rate": 0.999,
+  "percentage_world_population": 0.04
+}
+{
+  "country": "Uzbekistan",
+  "rank": 43,
+  "cca3": "UZB",
+  "capital": "Tashkent",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 34627652
+    },
+    {
+      "year": 2020,
+      "population": 33526656
+    },
+    {
+      "year": 2015,
+      "population": 30949417
+    },
+    {
+      "year": 2010,
+      "population": 28614227
+    },
+    {
+      "year": 2000,
+      "population": 24925554
+    },
+    {
+      "year": 1990,
+      "population": 20579100
+    },
+    {
+      "year": 1980,
+      "population": 15947129
+    },
+    {
+      "year": 1970,
+      "population": 12011361
+    }
+  ],
+  "area_km2": 447400,
+  "population_density": 77.3975,
+  "population_growth_rate": 1.016,
+  "percentage_world_population": 0.43
+}
+{
+  "country": "Vanuatu",
+  "rank": 181,
+  "cca3": "VUT",
+  "capital": "Port-Vila",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 326740
+    },
+    {
+      "year": 2020,
+      "population": 311685
+    },
+    {
+      "year": 2015,
+      "population": 276438
+    },
+    {
+      "year": 2010,
+      "population": 245453
+    },
+    {
+      "year": 2000,
+      "population": 192074
+    },
+    {
+      "year": 1990,
+      "population": 150882
+    },
+    {
+      "year": 1980,
+      "population": 118156
+    },
+    {
+      "year": 1970,
+      "population": 87019
+    }
+  ],
+  "area_km2": 12189,
+  "population_density": 26.8061,
+  "population_growth_rate": 1.0238,
+  "percentage_world_population": 0
+}
+{
+  "country": "Vatican City",
+  "rank": 234,
+  "cca3": "VAT",
+  "capital": "Vatican City",
+  "continent": "Europe",
+  "population": [
+    {
+      "year": 2022,
+      "population": 510
+    },
+    {
+      "year": 2020,
+      "population": 520
+    },
+    {
+      "year": 2015,
+      "population": 564
+    },
+    {
+      "year": 2010,
+      "population": 596
+    },
+    {
+      "year": 2000,
+      "population": 651
+    },
+    {
+      "year": 1990,
+      "population": 700
+    },
+    {
+      "year": 1980,
+      "population": 733
+    },
+    {
+      "year": 1970,
+      "population": 752
+    }
+  ],
+  "area_km2": 1,
+  "population_density": 510,
+  "population_growth_rate": 0.998,
+  "percentage_world_population": 0
+}
+{
+  "country": "Venezuela",
+  "rank": 51,
+  "cca3": "VEN",
+  "capital": "Caracas",
+  "continent": "South America",
+  "population": [
+    {
+      "year": 2022,
+      "population": 28301696
+    },
+    {
+      "year": 2020,
+      "population": 28490453
+    },
+    {
+      "year": 2015,
+      "population": 30529716
+    },
+    {
+      "year": 2010,
+      "population": 28715022
+    },
+    {
+      "year": 2000,
+      "population": 24427729
+    },
+    {
+      "year": 1990,
+      "population": 19750579
+    },
+    {
+      "year": 1980,
+      "population": 15210443
+    },
+    {
+      "year": 1970,
+      "population": 11355475
+    }
+  ],
+  "area_km2": 916445,
+  "population_density": 30.882,
+  "population_growth_rate": 1.0036,
+  "percentage_world_population": 0.35
+}
+{
+  "country": "Vietnam",
+  "rank": 16,
+  "cca3": "VNM",
+  "capital": "Hanoi",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 98186856
+    },
+    {
+      "year": 2020,
+      "population": 96648685
+    },
+    {
+      "year": 2015,
+      "population": 92191398
+    },
+    {
+      "year": 2010,
+      "population": 87411012
+    },
+    {
+      "year": 2000,
+      "population": 79001142
+    },
+    {
+      "year": 1990,
+      "population": 66912613
+    },
+    {
+      "year": 1980,
+      "population": 52968270
+    },
+    {
+      "year": 1970,
+      "population": 41928849
+    }
+  ],
+  "area_km2": 331212,
+  "population_density": 296.4472,
+  "population_growth_rate": 1.0074,
+  "percentage_world_population": 1.23
+}
+{
+  "country": "Wallis and Futuna",
+  "rank": 226,
+  "cca3": "WLF",
+  "capital": "Mata-Utu",
+  "continent": "Oceania",
+  "population": [
+    {
+      "year": 2022,
+      "population": 11572
+    },
+    {
+      "year": 2020,
+      "population": 11655
+    },
+    {
+      "year": 2015,
+      "population": 12182
+    },
+    {
+      "year": 2010,
+      "population": 13142
+    },
+    {
+      "year": 2000,
+      "population": 14723
+    },
+    {
+      "year": 1990,
+      "population": 13454
+    },
+    {
+      "year": 1980,
+      "population": 11315
+    },
+    {
+      "year": 1970,
+      "population": 9377
+    }
+  ],
+  "area_km2": 142,
+  "population_density": 81.493,
+  "population_growth_rate": 0.9953,
+  "percentage_world_population": 0
+}
+{
+  "country": "Western Sahara",
+  "rank": 172,
+  "cca3": "ESH",
+  "capital": "El Aaiún",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 575986
+    },
+    {
+      "year": 2020,
+      "population": 556048
+    },
+    {
+      "year": 2015,
+      "population": 491824
+    },
+    {
+      "year": 2010,
+      "population": 413296
+    },
+    {
+      "year": 2000,
+      "population": 270375
+    },
+    {
+      "year": 1990,
+      "population": 178529
+    },
+    {
+      "year": 1980,
+      "population": 116775
+    },
+    {
+      "year": 1970,
+      "population": 76371
+    }
+  ],
+  "area_km2": 266000,
+  "population_density": 2.1654,
+  "population_growth_rate": 1.0184,
+  "percentage_world_population": 0.01
+}
+{
+  "country": "Yemen",
+  "rank": 46,
+  "cca3": "YEM",
+  "capital": "Sanaa",
+  "continent": "Asia",
+  "population": [
+    {
+      "year": 2022,
+      "population": 33696614
+    },
+    {
+      "year": 2020,
+      "population": 32284046
+    },
+    {
+      "year": 2015,
+      "population": 28516545
+    },
+    {
+      "year": 2010,
+      "population": 24743946
+    },
+    {
+      "year": 2000,
+      "population": 18628700
+    },
+    {
+      "year": 1990,
+      "population": 13375121
+    },
+    {
+      "year": 1980,
+      "population": 9204938
+    },
+    {
+      "year": 1970,
+      "population": 6843607
+    }
+  ],
+  "area_km2": 527968,
+  "population_density": 63.8232,
+  "population_growth_rate": 1.0217,
+  "percentage_world_population": 0.42
+}
+{
+  "country": "Zambia",
+  "rank": 63,
+  "cca3": "ZMB",
+  "capital": "Lusaka",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 20017675
+    },
+    {
+      "year": 2020,
+      "population": 18927715
+    },
+    {
+      "year": 2015,
+      "population": 16248230
+    },
+    {
+      "year": 2010,
+      "population": 13792086
+    },
+    {
+      "year": 2000,
+      "population": 9891136
+    },
+    {
+      "year": 1990,
+      "population": 7686401
+    },
+    {
+      "year": 1980,
+      "population": 5720438
+    },
+    {
+      "year": 1970,
+      "population": 4281671
+    }
+  ],
+  "area_km2": 752612,
+  "population_density": 26.5976,
+  "population_growth_rate": 1.028,
+  "percentage_world_population": 0.25
+}
+{
+  "country": "Zimbabwe",
+  "rank": 74,
+  "cca3": "ZWE",
+  "capital": "Harare",
+  "continent": "Africa",
+  "population": [
+    {
+      "year": 2022,
+      "population": 16320537
+    },
+    {
+      "year": 2020,
+      "population": 15669666
+    },
+    {
+      "year": 2015,
+      "population": 14154937
+    },
+    {
+      "year": 2010,
+      "population": 12839771
+    },
+    {
+      "year": 2000,
+      "population": 11834676
+    },
+    {
+      "year": 1990,
+      "population": 10113893
+    },
+    {
+      "year": 1980,
+      "population": 7049926
+    },
+    {
+      "year": 1970,
+      "population": 5202918
+    }
+  ],
+  "area_km2": 390757,
+  "population_density": 41.7665,
+  "population_growth_rate": 1.0204,
+  "percentage_world_population": 0.2
+}
+```
 
+Assume a database is created called "demographics" with a database called "world_population" who has the corresponding column names. We can make use of the following jq command: 
+
+`jq -r '
+def quote_if_string($v):
+  if $v | type == "string" then "\"\($v)\""
+  else $v
+  end;
+.[] | [
+  quote_if_string(.country),
+  quote_if_string(.cca3),
+  quote_if_string(.capital),
+  quote_if_string(.continent),
+  .population_2022,
+  .population_2020,
+  .population_2015,
+  .population_2010,
+  .population_2000,
+  .population_1990,
+  .population_1980,
+  .population_1970,
+  .area_km2,
+  .population_growth_rate
+] | "(" + (map(tostring) | join(", ")) + "),"' world-population.json
+`
+
+Then the MySQL command would be:
+
+`INSERT INTO demographics.world_population (country, cca3, capital, continent, population_2022, population_2020, population_2015, population_2010, population_2000, population_1990, population_1980, population_1970, area_km, population_growth_rate) VALUES ("Afghanistan", "AFG", "Kabul", "Asia", 41128771, 38972230, 33753499, 28189672, 19542982, 10694796, 12486631, 10752971, 652230, 1.0257),
+("Albania", "ALB", "Tirana", "Europe", 2842321, 2866849, 2882481, 2913399, 3182021, 3295066, 2941651, 2324731, 28748, 0.9957),
+("Algeria", "DZA", "Algiers", "Africa", 44903225, 43451666, 39543154, 35856344, 30774621, 25518074, 18739378, 13795915, 2381741, 1.0164),
+("American Samoa", "ASM", "Pago Pago", "Oceania", 44273, 46189, 51368, 54849, 58230, 47818, 32886, 27075, 199, 0.9831),
+("Andorra", "AND", "Andorra la Vella", "Europe", 79824, 77700, 71746, 71519, 66097, 53569, 35611, 19860, 468, 1.01),
+("Angola", "AGO", "Luanda", "Africa", 35588987, 33428485, 28127721, 23364185, 16394062, 11828638, 8330047, 6029700, 1246700, 1.0315),
+("Anguilla", "AIA", "The Valley", "North America", 15857, 15585, 14525, 13172, 11047, 8316, 6560, 6283, 91, 1.0066),
+("Antigua and Barbuda", "ATG", "Saint John’s", "North America", 93763, 92664, 89941, 85695, 75055, 63328, 64888, 64516, 442, 1.0058),
+("Argentina", "ARG", "Buenos Aires", "South America", 45510318, 45036032, 43257065, 41100123, 37070774, 32637657, 28024803, 23842803, 2780400, 1.0052),
+("Armenia", "ARM", "Yerevan", "Asia", 2780469, 2805608, 2878595, 2946293, 3168523, 3556539, 3135123, 2534377, 29743, 0.9962),
+("Aruba", "ABW", "Oranjestad", "North America", 106445, 106585, 104257, 100341, 89101, 65712, 62267, 59106, 180, 0.9991),
+("Australia", "AUS", "Canberra", "Oceania", 26177413, 25670051, 23820236, 22019168, 19017963, 17048003, 14706322, 12595034, 7692024, 1.0099),
+("Austria", "AUT", "Vienna", "Europe", 8939617, 8907777, 8642421, 8362829, 8010428, 7678729, 7547561, 7465301, 83871, 1.002),
+("Azerbaijan", "AZE", "Baku", "Asia", 10358074, 10284951, 9863480, 9237202, 8190337, 7427836, 6383060, 5425317, 86600, 1.0044),
+("Bahamas", "BHS", "Nassau", "North America", 409984, 406471, 392697, 373272, 325014, 270679, 223752, 179129, 13943, 1.0051),
+("Bahrain", "BHR", "Manama", "Asia", 1472233, 1477469, 1362142, 1213645, 711442, 517418, 362595, 222555, 765, 1.0061),
+("Bangladesh", "BGD", "Dhaka", "Asia", 171186372, 167420951, 157830000, 148391139, 129193327, 107147651, 83929765, 67541860, 147570, 1.0108),
+("Barbados", "BRB", "Bridgetown", "North America", 281635, 280693, 278083, 274711, 264657, 258868, 253575, 241397, 430, 1.0015),
+("Belarus", "BLR", "Minsk", "Europe", 9534954, 9633740, 9700609, 9731427, 10256483, 10428525, 9817257, 9170786, 207600, 0.9955),
+("Belgium", "BEL", "Brussels", "Europe", 11655930, 11561717, 11248303, 10877947, 10264343, 9959560, 9828986, 9629376, 30528, 1.0038),
+("Belize", "BLZ", "Belmopan", "North America", 405272, 394921, 359871, 322106, 240406, 182589, 145133, 120905, 22966, 1.0131),
+("Benin", "BEN", "Porto-Novo", "Africa", 13352864, 12643123, 10932783, 9445710, 6998023, 5133419, 3833939, 3023443, 112622, 1.0274),
+("Bermuda", "BMU", "Hamilton", "North America", 64184, 64031, 63144, 63447, 61371, 57470, 53565, 52019, 54, 1),
+("Bhutan", "BTN", "Thimphu", "Asia", 782455, 772506, 743274, 705516, 587207, 558442, 415257, 298894, 38394, 1.0064),
+("Bolivia", "BOL", "Sucre", "South America", 12224110, 11936162, 11090085, 10223270, 8592656, 7096194, 5736088, 4585693, 1098581, 1.012),
+("Bosnia and Herzegovina", "BIH", "Sarajevo", "Europe", 3233526, 3318407, 3524324, 3811088, 4179350, 4494310, 4199820, 3815561, 51209, 0.9886),
+("Botswana", "BWA", "Gaborone", "Africa", 2630296, 2546402, 2305171, 2091664, 1726985, 1341474, 938578, 592244, 582000, 1.0162),
+("Brazil", "BRA", "Brasilia", "South America", 215313498, 213196304, 205188205, 196353492, 175873720, 150706446, 122288383, 96369875, 8515767, 1.0046),
+("British Virgin Islands", "VGB", "Road Town", "North America", 31305, 30910, 29366, 27556, 20104, 15617, 11109, 9581, 151, 1.0059),
+("Brunei", "BRN", "Bandar Seri Begawan", "Asia", 449002, 441725, 421437, 396053, 333926, 261928, 187921, 133343, 5765, 1.0081),
+("Bulgaria", "BGR", "Sofia", "Europe", 6781953, 6979175, 7309253, 7592273, 8097691, 8767778, 8980606, 8582950, 110879, 0.9849),
+("Burkina Faso", "BFA", "Ouagadougou", "Africa", 22673762, 21522626, 18718019, 16116845, 11882888, 9131361, 6932967, 5611666, 272967, 1.0259),
+("Burundi", "BDI", "Bujumbura", "Africa", 12889576, 12220227, 10727148, 9126605, 6307659, 5483793, 4312834, 3497834, 27834, 1.027),
+("Cambodia", "KHM", "Phnom Penh", "Asia", 16767842, 16396860, 15417523, 14363532, 12118841, 8910808, 6198959, 6708525, 181035, 1.0108),
+("Cameroon", "CMR", "Yaounde", "Africa", 27914536, 26491087, 23012646, 19878036, 15091594, 11430520, 8519891, 6452787, 475442, 1.0263),
+("Canada", "CAN", "Ottawa", "North America", 38454327, 37888705, 35732126, 33963412, 30683313, 27657204, 24511510, 21434577, 9984670, 1.0078),
+("Cape Verde", "CPV", "Praia", "Africa", 593149, 582640, 552166, 521212, 458251, 364563, 317234, 287262, 4033, 1.0089),
+("Cayman Islands", "CYM", "George Town", "North America", 68706, 67311, 60911, 54074, 39658, 26027, 17100, 10533, 264, 1.0084),
+("Central African Republic", "CAF", "Bangui", "Africa", 5579144, 5343020, 4819333, 4660067, 3759170, 2809221, 2415276, 2067356, 622984, 1.0224),
+("Chad", "TCD", "N'Djamena", "Africa", 17723315, 16644701, 14140274, 11894727, 8259137, 5827069, 4408230, 3667394, 1284000, 1.0316),
+("Chile", "CHL", "Santiago", "South America", 19603733, 19300315, 17870124, 17004162, 15351799, 13342868, 11469828, 9820481, 756102, 1.0057),
+("China", "CHN", "Beijing", "Asia", 1425887337, 1424929781, 1393715448, 1348191368, 1264099069, 1153704252, 982372466, 822534450, 9706961, 1),
+("Colombia", "COL", "Bogota", "South America", 51874024, 50930662, 47119728, 44816108, 39215135, 32601393, 26176195, 20905254, 1141748, 1.0069),
+("Comoros", "COM", "Moroni", "Africa", 836774, 806166, 730216, 656024, 536758, 431119, 328328, 242351, 1862, 1.0184),
+("Cook Islands", "COK", "Avarua", "Oceania", 17011, 17029, 17695, 17212, 15897, 17123, 17651, 20470, 236, 1.0005),
+("Costa Rica", "CRI", "San José", "North America", 5180829, 5123105, 4895242, 4622252, 3979193, 3158253, 2414303, 1855697, 51100, 1.0052),
+("Croatia", "HRV", "Zagreb", "Europe", 4030358, 4096868, 4254815, 4368682, 4548434, 4873707, 4680144, 4492638, 56594, 0.9927),
+("Cuba", "CUB", "Havana", "North America", 11212191, 11300698, 11339894, 11290417, 11105791, 10626680, 9809107, 8869636, 109884, 0.9961),
+("Curacao", "CUW", "Willemstad", "North America", 191163, 189288, 169572, 159380, 141424, 155446, 156851, 150385, 444, 1.0043),
+("Cyprus", "CYP", "Nicosia", "Europe", 1251488, 1237537, 1187280, 1129686, 948237, 788500, 679327, 640804, 9251, 1.0059),
+("Czech Republic", "CZE", "Prague", "Europe", 10493986, 10530953, 10523798, 10464749, 10234710, 10301192, 10270060, 9795744, 78865, 0.9984),
+("Denmark", "DNK", "Copenhagen", "Europe", 5882261, 5825641, 5677796, 5550849, 5340655, 5144623, 5125392, 4922963, 43094, 1.0048),
+("Djibouti", "DJI", "Djibouti", "Africa", 1120849, 1090156, 1006259, 919199, 742033, 577173, 324121, 144379, 23200, 1.0138),
+("Dominica", "DMA", "Roseau", "North America", 72737, 71995, 70007, 68755, 68346, 69481, 72978, 68895, 751, 1.0045),
+("Dominican Republic", "DOM", "Santo Domingo", "North America", 11228821, 10999664, 10405832, 9775755, 8540791, 7129004, 5755800, 4475871, 48671, 1.01),
+("DR Congo", "COD", "Kinshasa", "Africa", 99010212, 92853164, 78656904, 66391257, 48616317, 35987541, 26708686, 20151733, 2344858, 1.0325),
+("Ecuador", "ECU", "Quito", "South America", 18001000, 17588595, 16195902, 14989585, 12626507, 10449837, 8135845, 6172215, 276841, 1.0114),
+("Egypt", "EGY", "Cairo", "Africa", 110990103, 107465134, 97723799, 87252413, 71371371, 57214630, 43748556, 34781986, 1002450, 1.0158),
+("El Salvador", "SLV", "San Salvador", "North America", 6336392, 6292731, 6231066, 6114034, 5958482, 5367179, 4508992, 3619090, 21041, 1.0035),
+("Equatorial Guinea", "GNQ", "Malabo", "Africa", 1674908, 1596049, 1346973, 1094524, 684977, 465549, 282509, 316955, 28051, 1.0247),
+("Eritrea", "ERI", "Asmara", "Africa", 3684032, 3555868, 3340006, 3147727, 2392880, 2149960, 1657982, 1272748, 117600, 1.0176),
+("Estonia", "EST", "Tallinn", "Europe", 1326062, 1329444, 1314657, 1331535, 1396877, 1570674, 1476983, 1361999, 45227, 0.998),
+("Eswatini", "SWZ", "Mbabane", "Africa", 1201670, 1180655, 1133936, 1099920, 1030496, 854011, 598564, 442865, 17364, 1.0079),
+("Ethiopia", "ETH", "Addis Ababa", "Africa", 123379924, 117190911, 102471895, 89237791, 67031867, 47878073, 34945469, 28308246, 1104300, 1.0257),
+("Falkland Islands", "FLK", "Stanley", "South America", 3780, 3747, 3408, 3187, 3080, 2332, 2240, 2274, 12173, 1.0043),
+("Faroe Islands", "FRO", "Tórshavn", "Europe", 53090, 52415, 48816, 48410, 45660, 47479, 43054, 38416, 1393, 1.0038),
+("Fiji", "FJI", "Suva", "Oceania", 929766, 920422, 917200, 905169, 832509, 780430, 644582, 527634, 18272, 1.0056),
+("Finland", "FIN", "Helsinki", "Europe", 5540745, 5529468, 5479461, 5363271, 5176209, 4986545, 4779418, 4606621, 338424, 1.0009),
+("France", "FRA", "Paris", "Europe", 64626628, 64480053, 63809769, 62444567, 58665453, 56412897, 53713830, 50523586, 551695, 1.0015),
+("French Guiana", "GUF", "Cayenne", "South America", 304557, 290969, 257026, 228453, 164351, 113931, 66825, 46484, 83534, 1.0239),
+("French Polynesia", "PYF", "Papeete", "Oceania", 306279, 301920, 291787, 283788, 250927, 211089, 163591, 117891, 4167, 1.0074),
+("Gabon", "GAB", "Libreville", "Africa", 2388992, 2292573, 2028517, 1711105, 1272935, 983028, 749078, 597192, 267668, 1.0204),
+("Gambia", "GMB", "Banjul", "Africa", 2705992, 2573995, 2253133, 1937275, 1437539, 1040616, 718586, 528731, 10689, 1.025),
+("Georgia", "GEO", "Tbilisi", "Asia", 3744385, 3765912, 3771132, 3836831, 4265172, 5391636, 5145843, 4800426, 69700, 0.9964),
+("Germany", "DEU", "Berlin", "Europe", 83369843, 83328988, 82073226, 81325090, 81551677, 79370196, 77786703, 78294583, 357114, 0.9995),
+("Ghana", "GHA", "Accra", "Africa", 33475870, 32180401, 28870939, 25574719, 19665502, 15446982, 11865246, 8861895, 238533, 1.0196),
+("Gibraltar", "GIB", "Gibraltar", "Europe", 32649, 32709, 32520, 31262, 27741, 27317, 28734, 26685, 6, 0.9994),
+("Greece", "GRC", "Athens", "Europe", 10384971, 10512232, 10806641, 11033783, 11038109, 10302255, 9307148, 8544873, 131990, 0.9942),
+("Greenland", "GRL", "Nuuk", "North America", 56466, 56026, 55895, 56351, 56184, 55599, 50106, 45434, 2166086, 1.004),
+("Grenada", "GRD", "Saint George's", "North America", 125438, 123663, 118980, 114039, 107432, 99047, 94838, 98794, 344, 1.0066),
+("Guadeloupe", "GLP", "Basse-Terre", "North America", 395752, 395642, 399089, 403072, 424067, 391951, 334234, 318310, 1628, 0.9992),
+("Guam", "GUM", "Hagåtña", "Oceania", 171774, 169231, 167978, 164905, 160188, 138263, 110286, 88300, 549, 1.0073),
+("Guatemala", "GTM", "Guatemala City", "North America", 17843908, 17362718, 16001107, 14543121, 11735894, 9084780, 6987767, 5453208, 108889, 1.0134),
+("Guernsey", "GGY", "Saint Peter Port", "Europe", 63301, 62794, 61629, 60782, 59114, 57727, 52860, 52656, 78, 1.0037),
+("Guinea", "GIN", "Conakry", "Africa", 13859341, 13205153, 11625998, 10270728, 8336967, 6354145, 4972609, 4222374, 245857, 1.0242),
+("Guinea-Bissau", "GNB", "Bissau", "Africa", 2105566, 2015828, 1788919, 1567220, 1230849, 973551, 831462, 591663, 36125, 1.0218),
+("Guyana", "GUY", "Georgetown", "South America", 808726, 797202, 755031, 747932, 759051, 747116, 778176, 705261, 214969, 1.0052),
+("Haiti", "HTI", "Port-au-Prince", "North America", 11584996, 11306801, 10563757, 9842880, 8360225, 6925331, 5646676, 4680812, 27750, 1.012),
+("Honduras", "HND", "Tegucigalpa", "North America", 10432860, 10121763, 9294505, 8450933, 6656725, 5053234, 3777990, 2782753, 112492, 1.015),
+("Hong Kong", "HKG", "Hong Kong", "Asia", 7488865, 7500958, 7399838, 7132438, 6731195, 5838574, 4978544, 3955072, 1104, 0.9992),
+("Hungary", "HUN", "Budapest", "Europe", 9967308, 9750573, 9844246, 9986825, 10202055, 10375989, 10698679, 10315366, 93028, 1.0265),
+("Iceland", "ISL", "Reykjavík", "Europe", 372899, 366669, 331060, 318333, 281462, 255019, 228263, 204468, 103000, 1.0069),
+("India", "IND", "New Delhi", "Asia", 1417173173, 1396387127, 1322866505, 1240613620, 1059633675, 870452165, 696828385, 557501301, 3287590, 1.0068),
+("Indonesia", "IDN", "Jakarta", "Asia", 275501339, 271857970, 259091970, 244016173, 214072421, 182159874, 148177096, 115228394, 1904569, 1.0064),
+("Iran", "IRN", "Tehran", "Asia", 88550570, 87290193, 81790841, 75373855, 65544383, 55793629, 38520664, 28449705, 1648195, 1.0071),
+("Iraq", "IRQ", "Baghdad", "Asia", 44496122, 42556984, 37757813, 31264875, 24628858, 17658381, 13653369, 9811347, 438317, 1.0221),
+("Ireland", "IRL", "Dublin", "Europe", 5023109, 4946119, 4665760, 4524585, 3768950, 3485374, 3391387, 2937637, 70273, 1.0073),
+("Isle of Man", "IMN", "Douglas", "Europe", 84519, 84046, 83593, 83828, 75562, 68865, 64022, 55298, 572, 1.003),
+("Israel", "ISR", "Jerusalem", "Asia", 9038309, 8757489, 8007778, 7328445, 6116958, 4803254, 3744608, 2907307, 20770, 1.0155),
+("Italy", "ITA", "Rome", "Europe", 59037474, 59500579, 60232906, 59822450, 56966397, 56756561, 56329482, 53324036, 301336, 0.9966),
+("Ivory Coast", "CIV", "Yamoussoukro", "Africa", 28160542, 26811790, 23596741, 21120042, 16799670, 11910540, 8303809, 5477086, 322463, 1.0248),
+("Jamaica", "JAM", "Kingston", "North America", 2827377, 2820436, 2794445, 2733896, 2612205, 2392030, 2135546, 1859091, 10991, 0.9999),
+("Japan", "JPN", "Tokyo", "Asia", 123951692, 125244761, 127250933, 128105431, 126803861, 123686321, 117624196, 105416839, 377930, 0.9947),
+("Jersey", "JEY", "Saint Helier", "Europe", 110778, 108319, 100561, 96151, 86192, 82874, 75124, 68347, 116, 1.0106),
+("Jordan", "JOR", "Amman", "Asia", 11285869, 10928721, 9494246, 6931258, 5056174, 3480587, 2216903, 1557374, 89342, 1.0123),
+("Kazakhstan", "KAZ", "Nursultan", "Asia", 19397998, 18979243, 17835909, 16627837, 15236253, 16866563, 14172710, 12265305, 2724900, 1.0105),
+("Kenya", "KEN", "Nairobi", "Africa", 54027487, 51985780, 46851488, 41517895, 30851606, 23162269, 16187124, 11473087, 580367, 1.0193),
+("Kiribati", "KIR", "Tarawa", "Oceania", 131232, 126463, 116707, 107995, 88826, 75124, 60813, 57437, 811, 1.0183),
+("Kuwait", "KWT", "Kuwait City", "Asia", 4268873, 4360444, 3908743, 2943356, 1934901, 1674938, 1493870, 802786, 17818, 1.0044),
+("Kyrgyzstan", "KGZ", "Bishkek", "Asia", 6630623, 6424874, 5914980, 5483774, 4935182, 4394734, 3691209, 3016384, 199951, 1.0158),
+("Laos", "LAO", "Vientiane", "Asia", 7529475, 7319399, 6787419, 6323418, 5430853, 4314443, 3297519, 2675283, 236800, 1.0141),
+("Latvia", "LVA", "Riga", "Europe", 1850651, 1897052, 1991955, 2101530, 2392530, 2689391, 2572037, 2397414, 64559, 0.9876),
+("Lebanon", "LBN", "Beirut", "Asia", 5489739, 5662923, 6398940, 4995800, 4320642, 3593700, 2963702, 2381791, 10452, 0.9816),
+("Lesotho", "LSO", "Maseru", "Africa", 2305825, 2254100, 2118521, 2022747, 1998630, 1798997, 1407672, 1023481, 30355, 1.0107),
+("Liberia", "LBR", "Monrovia", "Africa", 5302681, 5087584, 4612329, 4019956, 2895224, 2209731, 1932169, 1463563, 111369, 1.021),
+("Libya", "LBY", "Tripoli", "Africa", 6812341, 6653942, 6192235, 6491988, 5154790, 4236983, 2962720, 1909177, 1759540, 1.0114),
+("Liechtenstein", "LIE", "Vaduz", "Europe", 39327, 38756, 37355, 35926, 33026, 28765, 25003, 21089, 160, 1.0074),
+("Lithuania", "LTU", "Vilnius", "Europe", 2750055, 2820267, 2963765, 3139019, 3599637, 3785847, 3521206, 3210147, 65300, 0.9869),
+("Luxembourg", "LUX", "Luxembourg", "Europe", 647599, 630399, 569408, 507070, 435628, 381267, 363741, 339342, 2586, 1.0129),
+("Macau", "MAC", "Concelho de Macau", "Asia", 695168, 676283, 615239, 557297, 431896, 350227, 245332, 247284, 30, 1.0125),
+("Madagascar", "MDG", "Antananarivo", "Africa", 29611714, 28225177, 24850912, 21731053, 16216431, 11882762, 8948162, 6639751, 587041, 1.0241),
+("Malawi", "MWI", "Lilongwe", "Africa", 20405317, 19377061, 16938942, 14718422, 11229387, 9539665, 6267369, 4625141, 118484, 1.0259),
+("Malaysia", "MYS", "Kuala Lumpur", "Asia", 33938221, 33199993, 31068833, 28717731, 22945150, 17517054, 13215707, 10306508, 330803, 1.0109),
+("Maldives", "MDV", "Malé", "Asia", 523787, 514438, 435582, 361575, 282507, 224957, 164887, 123243, 300, 1.0045),
+("Mali", "MLI", "Bamako", "Africa", 22593590, 21224040, 18112907, 15529181, 11239101, 8945026, 7372581, 6153587, 1240192, 1.0314),
+("Malta", "MLT", "Valletta", "Europe", 533286, 515357, 456579, 418755, 399212, 365392, 333587, 315414, 316, 1.0124),
+("Marshall Islands", "MHL", "Majuro", "Oceania", 41569, 43413, 49410, 53416, 54224, 46047, 31988, 23969, 181, 0.9886),
+("Martinique", "MTQ", "Fort-de-France", "North America", 367507, 370391, 383515, 392181, 432543, 374271, 333786, 326428, 1128, 0.9965),
+("Mauritania", "MRT", "Nouakchott", "Africa", 4736139, 4498604, 3946220, 3419461, 2695003, 2006027, 1506694, 1122198, 1030700, 1.0263),
+("Mauritius", "MUS", "Port Louis", "Africa", 1299469, 1297828, 1293153, 1283330, 1215930, 1090290, 954865, 830115, 2040, 1.0004),
+("Mayotte", "MYT", "Mamoudzou", "Africa", 326101, 305587, 249545, 211786, 159215, 92659, 52233, 35383, 374, 1.0319),
+("Mexico", "MEX", "Mexico City", "North America", 127504125, 125998302, 120149897, 112532401, 97873442, 81720428, 67705186, 50289306, 1964375, 1.0063),
+("Micronesia", "FSM", "Palikir", "Oceania", 114164, 112106, 109462, 107588, 111709, 98603, 76299, 58989, 702, 1.0091),
+("Moldova", "MDA", "Chisinau", "Europe", 3272996, 3084847, 3277388, 3678186, 4251573, 4480199, 4103240, 3711140, 33846, 1.0691),
+("Monaco", "MCO", "Monaco", "Europe", 36469, 36922, 36760, 33178, 32465, 30329, 27076, 24270, 2, 0.9941),
+("Mongolia", "MNG", "Ulaanbaatar", "Asia", 3398366, 3294335, 2964749, 2702520, 2450979, 2161433, 1697780, 1293880, 1564110, 1.0151),
+("Montenegro", "MNE", "Podgorica", "Europe", 627082, 629048, 633966, 631044, 633324, 621442, 589324, 530268, 13812, 0.9988),
+("Montserrat", "MSR", "Brades", "North America", 4390, 4500, 5059, 4938, 5138, 10805, 11452, 11402, 102, 0.9939),
+("Morocco", "MAR", "Rabat", "Africa", 37457971, 36688772, 34680458, 32464865, 28554415, 24570814, 19678444, 15274351, 446550, 1.0103),
+("Mozambique", "MOZ", "Maputo", "Africa", 32969517, 31178239, 26843246, 23073723, 17768505, 13303459, 11413587, 8411676, 801590, 1.0278),
+("Myanmar", "MMR", "Nay Pyi Taw", "Asia", 54179306, 53423198, 51483949, 49390988, 45538332, 40099553, 33465781, 27284112, 676578, 1.0071),
+("Namibia", "NAM", "Windhoek", "Africa", 2567012, 2489098, 2282704, 2099271, 1819141, 1369011, 975994, 754467, 825615, 1.0146),
+("Nauru", "NRU", "Yaren", "Oceania", 12668, 12315, 11185, 10241, 10377, 9598, 7635, 6663, 21, 1.0125),
+("Nepal", "NPL", "Kathmandu", "Asia", 30547580, 29348627, 27610325, 27161567, 24559500, 19616530, 15600442, 12501285, 147181, 1.0171),
+("Netherlands", "NLD", "Amsterdam", "Europe", 17564014, 17434557, 17041107, 16617116, 15899135, 14944548, 14130387, 13037686, 41850, 1.0036),
+("New Caledonia", "NCL", "Nouméa", "Oceania", 289950, 286403, 283032, 261426, 221537, 177264, 148599, 110982, 18575, 1.0075),
+("New Zealand", "NZL", "Wellington", "Oceania", 5185288, 5061133, 4590590, 4346338, 3855266, 3397389, 3147168, 2824061, 270467, 1.0108),
+("Nicaragua", "NIC", "Managua", "North America", 6948392, 6755895, 6298598, 5855734, 5123222, 4227820, 3303309, 2444767, 130373, 1.0143),
+("Niger", "NER", "Niamey", "Africa", 26207977, 24333639, 20128124, 16647543, 11622665, 8370647, 6173177, 4669708, 1267000, 1.0378),
+("Nigeria", "NGA", "Abuja", "Africa", 218541212, 208327405, 183995785, 160952853, 122851984, 95214257, 72951439, 55569264, 923768, 1.0241),
+("Niue", "NIU", "Alofi", "Oceania", 1934, 1942, 1847, 1812, 2074, 2533, 3637, 5185, 260, 0.9985),
+("North Korea", "PRK", "Pyongyang", "Asia", 26069416, 25867467, 25258015, 24686435, 23367059, 20799523, 17973650, 14996879, 120538, 1.0038),
+("North Macedonia", "MKD", "Skopje", "Europe", 2093599, 2111072, 2107962, 2093828, 2037936, 2044174, 1907023, 1656783, 25713, 0.9954),
+("Northern Mariana Islands", "NFK", "Saipan", "Oceania", 49551, 49587, 51514, 54087, 80338, 48002, 17613, 10143, 464, 1.0014),
+("Norway", "NOR", "Oslo", "Europe", 5434319, 5379839, 5190356, 4889741, 4491202, 4241636, 4085776, 3875546, 323802, 1.0058),
+("Oman", "OMN", "Muscat", "Asia", 4576298, 4543399, 4191776, 2881914, 2344253, 1804524, 1017462, 670693, 309500, 1.0123),
+("Pakistan", "PAK", "Islamabad", "Asia", 235824862, 227196741, 210969298, 194454498, 154369924, 115414069, 80624057, 59290872, 881912, 1.0191),
+("Palau", "PLW", "Ngerulmud", "Oceania", 18055, 17972, 17794, 18540, 19726, 15293, 12252, 11366, 459, 1.0017),
+("Palestine", "PSE", "Ramallah", "Asia", 5250072, 5019401, 4484614, 3992278, 3139954, 2124609, 1453620, 1118241, 6220, 1.0227),
+("Panama", "PAN", "Panama City", "North America", 4408581, 4294396, 3957099, 3623617, 3001731, 2449968, 1956987, 1516188, 75417, 1.0132),
+("Papua New Guinea", "PNG", "Port Moresby", "Oceania", 10142619, 9749640, 8682174, 7583269, 5508297, 3864972, 3104788, 2489059, 462840, 1.0194),
+("Paraguay", "PRY", "Asunción", "South America", 6780744, 6618695, 6177950, 5768613, 5123819, 4059195, 3078912, 2408787, 406752, 1.0115),
+("Peru", "PER", "Lima", "South America", 34049588, 33304756, 30711863, 29229572, 26654439, 22109099, 17492406, 13562371, 1285216, 1.0099),
+("Philippines", "PHL", "Manila", "Asia", 115559009, 112190977, 103031365, 94636700, 77958223, 61558898, 48419546, 37435586, 342353, 1.0147),
+("Poland", "POL", "Warsaw", "Europe", 39857145, 38428366, 38553146, 38597353, 38504431, 38064255, 35521429, 32482943, 312679, 1.0404),
+("Portugal", "PRT", "Lisbon", "Europe", 10270865, 10298192, 10365435, 10588401, 10300626, 10007346, 9785252, 8683631, 92090, 0.9981),
+("Puerto Rico", "PRI", "San Juan", "North America", 3252407, 3271564, 3497335, 3717922, 3827108, 3543776, 3214568, 2737619, 8870, 0.9989),
+("Qatar", "QAT", "Doha", "Asia", 2695122, 2760385, 2414573, 1713504, 645937, 441675, 277450, 118007, 11586, 1.0026),
+("Republic of the Congo", "COG", "Brazzaville", "Africa", 5970424, 5702174, 5064386, 4437884, 3134030, 2385435, 1829256, 1396989, 342000, 1.0231),
+("Reunion", "REU", "Saint-Denis", "Africa", 974052, 957822, 922495, 890130, 785424, 658992, 551674, 473925, 2511, 1.0082),
+("Romania", "ROU", "Bucharest", "Europe", 19659267, 19442038, 19906079, 20335211, 21919876, 22836234, 22125224, 19922618, 238391, 1.0171),
+("Russia", "RUS", "Moscow", "Europe", 144713314, 145617329, 144668389, 143242599, 146844839, 148005704, 138257420, 130093010, 17098242, 0.9973),
+("Rwanda", "RWA", "Kigali", "Africa", 13776698, 13146362, 11642959, 10309031, 8109989, 7319962, 5247532, 3896367, 26338, 1.0234),
+("Saint Barthelemy", "BLM", "Gustavia", "North America", 10967, 10681, 9643, 8988, 7082, 5168, 2983, 2417, 21, 1.0098),
+("Saint Kitts and Nevis", "KNA", "Basseterre", "North America", 47657, 47642, 47790, 47403, 45461, 40636, 43097, 44968, 261, 1.0011),
+("Saint Lucia", "LCA", "Castries", "North America", 179857, 179237, 175623, 170935, 159500, 142301, 121633, 103090, 616, 1.0011),
+("Saint Martin", "MAF", "Marigot", "North America", 31791, 32552, 35020, 36458, 29610, 28127, 7776, 5802, 53, 0.9951),
+("Saint Pierre and Miquelon", "SPM", "Saint-Pierre", "North America", 5862, 5906, 5978, 6052, 6274, 6324, 6106, 5537, 242, 0.9964),
+("Saint Vincent and the Grenadines", "VCT", "Kingstown", "North America", 103948, 104632, 106482, 109308, 113813, 112487, 107480, 98459, 389, 0.9963),
+("Samoa", "WSM", "Apia", "Oceania", 222382, 214929, 203571, 194672, 184008, 168186, 164905, 142771, 2842, 1.0165),
+("San Marino", "SMR", "San Marino", "Europe", 33660, 34007, 33570, 31608, 26823, 23132, 21346, 18169, 61, 0.9975),
+("Sao Tome and Principe", "STP", "São Tomé", "Africa", 227380, 218641, 201124, 182138, 143714, 120343, 97210, 77583, 964, 1.0192),
+("Saudi Arabia", "SAU", "Riyadh", "Asia", 36408820, 35997107, 32749848, 29411929, 21547390, 16004763, 10171710, 6106191, 2149690, 1.0128),
+("Senegal", "SEN", "Dakar", "Africa", 17316449, 16436119, 14356181, 12530121, 9704287, 7536001, 5703869, 4367744, 196722, 1.0261),
+("Serbia", "SRB", "Belgrade", "Europe", 7221365, 7358005, 7519496, 7653748, 7935022, 7987529, 7777010, 7193533, 88361, 0.9897),
+("Seychelles", "SYC", "Victoria", "Africa", 107118, 105530, 99240, 92409, 80060, 71057, 65290, 54379, 452, 1.0061),
+("Sierra Leone", "SLE", "Freetown", "Africa", 8605718, 8233969, 7314773, 6436698, 4584067, 4325388, 3367477, 2778557, 71740, 1.022),
+("Singapore", "SGP", "Singapore", "Asia", 5975689, 5909869, 5650018, 5163590, 4053602, 3022209, 2400729, 2061831, 710, 1.0058),
+("Sint Maarten", "SXM", "Philipsburg", "North America", 44175, 43621, 40205, 33034, 30489, 27845, 12243, 6260, 34, 1.003),
+("Slovakia", "SVK", "Bratislava", "Europe", 5643453, 5456681, 5424444, 5396424, 5376690, 5261305, 4973883, 4522867, 49037, 1.0359),
+("Slovenia", "SVN", "Ljubljana", "Europe", 2119844, 2117641, 2080862, 2057286, 1984339, 1986024, 1901570, 1741286, 20273, 1.0002),
+("Solomon Islands", "SLB", "Honiara", "Oceania", 724273, 691191, 612660, 540394, 429978, 324171, 233668, 172833, 28896, 1.0232),
+("Somalia", "SOM", "Mogadishu", "Africa", 17597511, 16537016, 13763906, 12026649, 8721465, 6999096, 5892224, 3720977, 637657, 1.0312),
+("South Africa", "ZAF", "Pretoria", "Africa", 59893885, 58801927, 55876504, 51784921, 46813266, 39877570, 29463549, 22368306, 1221037, 1.0084),
+("South Korea", "KOR", "Seoul", "Asia", 51815810, 51844690, 50994401, 48813042, 46788591, 44120039, 38170501, 32601143, 100210, 0.9997),
+("South Sudan", "SSD", "Juba", "Africa", 10913164, 10606227, 11194299, 9714419, 6114440, 4750817, 4192011, 3342410, 619745, 1.0153),
+("Spain", "ESP", "Madrid", "Europe", 47558630, 47363807, 46431342, 46572772, 40741651, 38889889, 37491666, 33792617, 505992, 1.0015),
+("Sri Lanka", "LKA", "Colombo", "Asia", 21832143, 21715079, 21336697, 20668557, 18776371, 17204094, 14943645, 12388769, 65610, 1.0027),
+("Sudan", "SDN", "Khartoum", "Africa", 46874204, 44440486, 38171178, 33739933, 26298773, 21090886, 16673586, 11305206, 1886068, 1.0267),
+("Suriname", "SUR", "Paramaribo", "South America", 618040, 607065, 575475, 546080, 478998, 412756, 375112, 379918, 163820, 1.0082),
+("Sweden", "SWE", "Stockholm", "Europe", 10549347, 10368969, 9849349, 9381729, 8871043, 8548406, 8311763, 8027702, 450295, 1.0079),
+("Switzerland", "CHE", "Bern", "Europe", 8740472, 8638613, 8281732, 7822435, 7182059, 6711693, 6319113, 6181227, 41284, 1.0056),
+("Syria", "SYR", "Damascus", "Asia", 22125249, 20772595, 19205178, 22337563, 16307654, 12408996, 8898954, 6319199, 185180, 1.0376),
+("Taiwan", "TWN", "Taipei", "Asia", 23893394, 23821464, 23512136, 23083083, 22194731, 20586174, 18100281, 14957870, 36193, 1.0014),
+("Tajikistan", "TJK", "Dushanbe", "Asia", 9952787, 9543207, 8524063, 7621779, 6272998, 5417860, 4045965, 2993019, 143100, 1.0208),
+("Tanzania", "TZA", "Dodoma", "Africa", 65497748, 61704518, 52542823, 45110527, 34463704, 26206012, 19297659, 13618192, 945087, 1.03),
+("Thailand", "THA", "Bangkok", "Asia", 71697030, 71475664, 70294397, 68270489, 63066603, 55228410, 45737753, 35791728, 513120, 1.0013),
+("Timor-Leste", "TLS", "Dili", "Asia", 1341296, 1299995, 1205813, 1088486, 878360, 758106, 642224, 554021, 14874, 1.0154),
+("Togo", "TGO", "Lomé", "Africa", 8848699, 8442580, 7473229, 6571855, 5008035, 3875947, 2838110, 2197383, 56785, 1.0236),
+("Tokelau", "TKL", "Nukunonu", "Oceania", 1871, 1827, 1454, 1367, 1666, 1669, 1647, 1714, 12, 1.0119),
+("Tonga", "TON", "Nuku‘alofa", "Oceania", 106858, 105254, 106122, 107383, 102603, 98727, 96708, 86484, 747, 1.0079),
+("Trinidad and Tobago", "TTO", "Port-of-Spain", "North America", 1531044, 1518147, 1460177, 1410296, 1332203, 1266518, 1127852, 988890, 5130, 1.0035),
+("Tunisia", "TUN", "Tunis", "Africa", 12356117, 12161723, 11557779, 10895063, 9893316, 8440023, 6578156, 5047404, 163610, 1.0076),
+("Turkey", "TUR", "Ankara", "Asia", 85341241, 84135428, 79646178, 73195345, 64113547, 54324142, 44089069, 35540990, 783562, 1.0067),
+("Turkmenistan", "TKM", "Ashgabat", "Asia", 6430770, 6250438, 5766431, 5267970, 4569132, 3720278, 2862903, 2201432, 488100, 1.014),
+("Turks and Caicos Islands", "TCA", "Cockburn Town", "North America", 45703, 44276, 36538, 29726, 18744, 11709, 7598, 5665, 948, 1.0131),
+("Tuvalu", "TUV", "Funafuti", "Oceania", 11312, 11069, 10877, 10550, 9638, 9182, 7731, 5814, 26, 1.0096),
+("Uganda", "UGA", "Kampala", "Africa", 47249585, 44404611, 37477356, 32341728, 24020697, 17586630, 13284026, 10317212, 241550, 1.0304),
+("Ukraine", "UKR", "Kiev", "Europe", 39701739, 43909666, 44982564, 45683020, 48879755, 51589817, 49973920, 47279086, 603500, 0.912),
+("United Arab Emirates", "ARE", "Abu Dhabi", "Asia", 9441129, 9287289, 8916899, 8481771, 3275333, 1900151, 1014048, 298084, 83600, 1.0081),
+("United Kingdom", "GBR", "London", "Europe", 67508936, 67059474, 65224364, 62760039, 58850043, 57210442, 56326328, 55650166, 242900, 1.0034),
+("United States", "USA", "Washington, D.C.", "North America", 338289857, 335942003, 324607776, 311182845, 282398554, 248083732, 223140018, 200328340, 9372610, 1.0038),
+("United States Virgin Islands", "VIR", "Charlotte Amalie", "North America", 99465, 100442, 102803, 106142, 108185, 100685, 96640, 63446, 347, 0.9937),
+("Uruguay", "URY", "Montevideo", "South America", 3422794, 3429086, 3402818, 3352651, 3292224, 3117012, 2953750, 2790265, 181034, 0.999),
+("Uzbekistan", "UZB", "Tashkent", "Asia", 34627652, 33526656, 30949417, 28614227, 24925554, 20579100, 15947129, 12011361, 447400, 1.016),
+("Vanuatu", "VUT", "Port-Vila", "Oceania", 326740, 311685, 276438, 245453, 192074, 150882, 118156, 87019, 12189, 1.0238),
+("Vatican City", "VAT", "Vatican City", "Europe", 510, 520, 564, 596, 651, 700, 733, 752, 1, 0.998),
+("Venezuela", "VEN", "Caracas", "South America", 28301696, 28490453, 30529716, 28715022, 24427729, 19750579, 15210443, 11355475, 916445, 1.0036),
+("Vietnam", "VNM", "Hanoi", "Asia", 98186856, 96648685, 92191398, 87411012, 79001142, 66912613, 52968270, 41928849, 331212, 1.0074),
+("Wallis and Futuna", "WLF", "Mata-Utu", "Oceania", 11572, 11655, 12182, 13142, 14723, 13454, 11315, 9377, 142, 0.9953),
+("Western Sahara", "ESH", "El Aaiún", "Africa", 575986, 556048, 491824, 413296, 270375, 178529, 116775, 76371, 266000, 1.0184),
+("Yemen", "YEM", "Sanaa", "Asia", 33696614, 32284046, 28516545, 24743946, 18628700, 13375121, 9204938, 6843607, 527968, 1.0217),
+("Zambia", "ZMB", "Lusaka", "Africa", 20017675, 18927715, 16248230, 13792086, 9891136, 7686401, 5720438, 4281671, 752612, 1.028),
+("Zimbabwe", "ZWE", "Harare", "Africa", 16320537, 15669666, 14154937, 12839771, 11834676, 10113893, 7049926, 5202918, 390757, 1.0204);`
