@@ -1,3 +1,5 @@
+# JSONQuery Exercise 3 Educom Traineeship
+
 `jq 'map({
   country: .country,
   population: [
