@@ -1,3 +1,5 @@
+# JSONQuery Exercise 2 Educom Traineeship
+
 `jq '. [] | {population_growth: (.population_1970 - .population_2022)} | map_values(abs) ' < world-population.json`
 
 ```yaml
