@@ -1,3 +1,5 @@
+# JSONQuery Exercise 5 Educom Traineeship
+
 `jq '[
   group_by(.continent)[] |
   {
